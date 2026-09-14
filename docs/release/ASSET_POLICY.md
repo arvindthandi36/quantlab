@@ -13,6 +13,8 @@ Only genuine reviewed screenshots belong under `docs/assets/readme/`. Final vide
 recorded. Place future `hero-demo.gif` there only when it exists; README must not embed broken placeholders.
 Original imported datasets and their redistribution rights remain the user's responsibility.
 
-This checkout initially had zero tracked files and no configured remote. The release preparation
-uses a controlled source export and a temporary Git repository to verify a fresh clone without
-inventing a public URL or changing the user's Git history. Audit documentation is retained.
+At the Phase 15 installation gate, this checkout had zero tracked files and no configured remote.
+That gate used a controlled source export and a temporary Git repository to verify a fresh local
+clone without changing the working project's Git history. The source is now published at
+[arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab). The original audit evidence
+is retained as a record of that local-clone validation.

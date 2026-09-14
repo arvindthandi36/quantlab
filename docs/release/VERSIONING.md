@@ -15,5 +15,6 @@ The legacy `python -m quantlab --version` reports the financial core version; us
 `quantlab --version` for the release version. Both serve entry points launch the same application.
 
 A future financial-rule change must update the financial model/replay contract and tests explicitly.
-[Original replay policy](replay_policy.md). The 1.1.0 release is prepared locally; no tag or remote
-publication is implied.
+[Original replay policy](replay_policy.md). The 1.1.0 source is published at
+[arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab). Repository publication
+does not itself imply a release tag or a GitHub Release.

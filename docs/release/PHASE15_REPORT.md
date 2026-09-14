@@ -8,7 +8,7 @@ QuantLab now has one shared product identity, navigation and visual system, a Ho
 
 The Home page explains the purpose and offers Start trading, Watch a guided demo, Explore the labs and Learn how QuantLab works. Six recommended journeys open existing Phase 14 demos. The existing `/` trading route remains compatible; the launcher advertises `/home`.
 
-Release preparation includes MIT licensing, a rewritten README, architecture documentation, real screenshots, video/narration plans, reviewer routes and a feature-freeze policy. External publication and video recording are separate actions.
+Release preparation includes MIT licensing, a rewritten README, architecture documentation, real screenshots, video/narration plans, reviewer routes and a feature-freeze policy. The source is now published at [arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab). Video recording remains a separate action.
 
 ## 2. FINAL TEST REPORT
 
@@ -34,9 +34,11 @@ All eight flagship engine-result fingerprints match the approved Phase 14 eviden
 
 ## 5. HOW TO RUN QUANTLAB
 
-From the downloaded or cloned source directory:
+Clone the public repository, then install and launch:
 
 ```sh
+git clone https://github.com/arvindthandi36/quantlab
+cd quantlab
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install .
@@ -44,7 +46,7 @@ quantlab --version
 quantlab serve
 ```
 
-Open the `/home` address printed by the launcher. To choose a free alternative port, use `quantlab serve --port 8772`. The browser is not automatically opened. For development tests install `.[dev]` and run `python -m pytest -q`. No remote repository URL is invented.
+Open the `/home` address printed by the launcher. To choose a free alternative port, use `quantlab serve --port 8772`. The browser is not automatically opened. For development tests install `.[dev]` and run `python -m pytest -q`.
 
 ## 6. HOME PAGE WALKTHROUGH
 
@@ -128,7 +130,7 @@ The guide gives short technical points and deeper references for ticks, event or
 
 **Passed on macOS / Python 3.14.0.** The fresh clone passed all **1,933 tests in 148.47 seconds**, Ruff and dependency checks. The installed product reports 1.1.0, Arvind Thandi and MIT; imports resolve to the new environment’s site-packages. All 16 major page/asset probes returned HTTP 200. Final code, tests, verification scripts, package configuration and licence match the tested clone; later changes only complete documentation/evidence.
 
-The workspace currently has no tracked files or configured remote. Validation therefore exports the intended release source into a temporary Git repository and performs a genuine fresh local clone. It leaves the real workspace index untouched. A new virtual environment installs the package non-editably with the documented `pip install .`; development dependencies are added only for tests. Downloaded dependency wheels are reused in an offline wheelhouse, not inherited from the development environment.
+At the Phase 15 clean-install gate, the workspace had no tracked files or configured remote. Validation therefore exported the intended release source into a temporary Git repository and performed a genuine fresh local clone. It left the working project's index untouched. A new virtual environment installed the package non-editably with the documented `pip install .`; development dependencies were added only for tests. Downloaded dependency wheels were reused in an offline wheelhouse, not inherited from the development environment.
 
 The checks verify installed package origin, MIT metadata/file, console version, dependency consistency, full tests, lint, core output and all major HTTP routes from outside the checkout. The evidence does not claim a public GitHub clone, Windows/Linux installation or a Python-version matrix. [Machine-readable report](phase_15/clean_install.json).
 
@@ -136,7 +138,7 @@ The checks verify installed package origin, MIT metadata/file, console version, 
 
 A controlled release export contains source, documentation, fixtures and reproducible evidence. `.gitignore` excludes user runs, environments, caches, logs, generated packages and local release artifacts. Useful earlier audit reports remain. Existing personal run history is left untouched and excluded from the release. Broken older architecture links were corrected without deleting their substantive content. [Asset policy](ASSET_POLICY.md).
 
-The existing editable development installation was refreshed so its console launcher also reports 1.1.0. No remote repository setting, commit, tag or publication was performed in the working project. Temporary validation commits are confined to the disposable clone source.
+The existing editable development installation was refreshed so its console launcher also reports 1.1.0. During that preparation, no remote repository setting, commit, tag or publication was performed in the working project; temporary validation commits were confined to the disposable clone source. The initial release was subsequently committed and published at [arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab).
 
 ## 21. SECURITY / SECRET SCAN
 
@@ -178,7 +180,7 @@ All pre-existing financial modules and all old test files remain byte-for-byte e
 - Product and financial-core versions intentionally differ; reviewers must use the documented version meanings.
 - Browser QA samples major workflows at four sizes. It is not formal WCAG certification, exhaustive assistive-technology testing or a full browser/platform matrix. The product has a light theme; no dark-theme support is claimed.
 - Dense technical tables use contained scrolling on small screens. Full analytical work is easier on a larger display.
-- Secret scanning is heuristic. Public publication, external videos and review of a real remote repository remain separate tasks.
+- Secret scanning is heuristic. External videos and independent review of the public repository remain separate tasks.
 - A showcase completion or approved implementation phase is not evidence of learner mastery. Arvind's later explanation and practice remain essential.
 
 ## 26. FEATURE FREEZE CONFIRMATION

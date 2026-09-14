@@ -241,11 +241,12 @@ Do not edit old journal metadata to force replay. [Version decision](docs/releas
 
 ## Installation
 
-Download or clone the repository using its actual GitHub URL when published, then enter `quantlab`.
-No public remote URL has been configured in this checkout, so none is invented here.
-From the source directory on macOS/Linux:
+Clone the [public repository](https://github.com/arvindthandi36/quantlab), then install and launch
+on macOS/Linux:
 
 ```bash
+git clone https://github.com/arvindthandi36/quantlab
+cd quantlab
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install .
@@ -329,7 +330,8 @@ scripts/                           Reproducible evidence and release checks
 **1.1.0: planned product features frozen.** Future work defaults to bug fixes, documentation,
 compatibility and test improvements. Optional research directions are not release commitments.
 [Feature freeze](FEATURE_FREEZE.md) · [Changelog](CHANGELOG.md) · [Release report](docs/release/PHASE15_REPORT.md).
-Publication/tagging is separate; no GitHub remote was changed by this preparation.
+Source is public at [arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab).
+Release tagging and external recording remain separate actions.
 
 ## Author
 

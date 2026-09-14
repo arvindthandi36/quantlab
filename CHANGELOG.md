@@ -11,7 +11,8 @@
 - Adopted the MIT licence for Arvind Thandi, 2026. Froze the planned product feature set.
 - Preserved financial replay core 1.0.0 and the approved matching, accounting and numerical behaviour.
 
-This is local release preparation; remote publication and external recording are separate.
+Source is published at [arvindthandi36/quantlab](https://github.com/arvindthandi36/quantlab).
+External recording remains separate.
 [Final release evidence](docs/release/PHASE15_REPORT.md).
 
 ## 1.0.0 — Validated core · 12 September 2026
