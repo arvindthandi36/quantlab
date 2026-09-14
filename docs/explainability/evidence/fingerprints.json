@@ -1,0 +1,20 @@
+{
+  "encoding": "SHA-256 of UTF-8 json.dumps(workflow, sort_keys=True), standard separators",
+  "workflows": {
+    "A_and_D": {
+      "before": "dd664478c90ad6a76a51ceba52bfffe3e7ff034f8c7efea7b1941e501c79756b",
+      "after": "dd664478c90ad6a76a51ceba52bfffe3e7ff034f8c7efea7b1941e501c79756b",
+      "identical": true
+    },
+    "B": {
+      "before": "ba51bd97bd9cb4346134fc1b8212562a5932fa9cbaf780f79654422e5b051fa7",
+      "after": "ba51bd97bd9cb4346134fc1b8212562a5932fa9cbaf780f79654422e5b051fa7",
+      "identical": true
+    },
+    "C": {
+      "before": "f375bb45462068e377616ac1cbd7cdc5a8c49df6e9c2c4235e5ce4cb53667b5c",
+      "after": "f375bb45462068e377616ac1cbd7cdc5a8c49df6e9c2c4235e5ce4cb53667b5c",
+      "identical": true
+    }
+  }
+}

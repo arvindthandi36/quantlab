@@ -1,0 +1,4774 @@
+{
+  "vwap": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "vwap",
+      "name": "VWAP",
+      "domain": "Trading / execution",
+      "definition": "An average execution price that gives larger fills more weight.",
+      "matters": "It tells you what price you actually paid across several fills.",
+      "changes": "Each recorded execution price and quantity.",
+      "limitation": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "prerequisites": [
+        "partial_fills"
+      ],
+      "related": [
+        "execution_cost",
+        "partial_fills",
+        "slippage"
+      ],
+      "affected_by": [
+        "slippage"
+      ],
+      "affects": [
+        "execution_cost"
+      ],
+      "maths": {
+        "equation": "VWAP = \u03a3\u1d62(P\u1d62 Q\u1d62) / \u03a3\u1d62Q\u1d62",
+        "variables": {
+          "P\u1d62": "recorded price of fill i in GBP",
+          "Q\u1d62": "executed units in fill i",
+          "i": "fill index",
+          "\u03a3": "sum across recorded fills",
+          "VWAP": "quantity-weighted execution price in GBP"
+        }
+      },
+      "uses": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types.",
+      "locations": [
+        {
+          "lab": "trading",
+          "url": "/"
+        }
+      ],
+      "assumptions": [
+        "execution"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "interview": "For vwap, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "time_us": 0,
+        "public_event": 1,
+        "frame_index": 0,
+        "status": "paused"
+      }
+    },
+    "current": {
+      "value": "100.01667",
+      "unit": "GBP per executed unit, fees separate",
+      "inputs": {
+        "order_id": "user-1",
+        "side": "buy",
+        "type": "market",
+        "price": null,
+        "original": 6,
+        "filled": 6,
+        "remaining": 0,
+        "cancelled": 0,
+        "status": "filled",
+        "exact_vwap_gbp": "6001/60",
+        "fills": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "role": "aggressor",
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "role": "aggressor",
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ]
+      },
+      "rows": [
+        {
+          "trade_id": 1,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 2,
+          "role": "aggressor",
+          "price": "100.01000",
+          "fee": "0.00200"
+        },
+        {
+          "trade_id": 2,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 4,
+          "role": "aggressor",
+          "price": "100.02000",
+          "fee": "0.00400"
+        }
+      ],
+      "note": "Calculated from these recorded fills using the same execution calculation as the order book. Larger fills receive more weight. Display is rounded to five decimal places; the exact fraction is retained.",
+      "visual": {
+        "kind": "fills",
+        "rows": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "role": "aggressor",
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "role": "aggressor",
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ]
+      }
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 0,
+        "status": "paused"
+      },
+      "before": null,
+      "after": "100.01667",
+      "inputs": [
+        {
+          "input": "cancelled",
+          "before": null,
+          "after": 0,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "exact_vwap_gbp",
+          "before": null,
+          "after": "6001/60",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "filled",
+          "before": null,
+          "after": 6,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "fills",
+          "before": null,
+          "after": [
+            {
+              "trade_id": 1,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 2,
+              "role": "aggressor",
+              "price": "100.01000",
+              "fee": "0.00200"
+            },
+            {
+              "trade_id": 2,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 4,
+              "role": "aggressor",
+              "price": "100.02000",
+              "fee": "0.00400"
+            }
+          ],
+          "relation": "observed changed input"
+        },
+        {
+          "input": "order_id",
+          "before": null,
+          "after": "user-1",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "original",
+          "before": null,
+          "after": 6,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "remaining",
+          "before": null,
+          "after": 0,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "side",
+          "before": null,
+          "after": "buy",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "status",
+          "before": null,
+          "after": "filled",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "type",
+          "before": null,
+          "after": "market",
+          "relation": "observed changed input"
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": null,
+          "after": "100.01667",
+          "relation": "observed changed input"
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "execution",
+        "name": "Visible single-venue execution",
+        "description": "Displayed FIFO liquidity, no hidden orders, latency or exchange competition.",
+        "failure": "Real fills and execution costs can differ when liquidity reacts or moves.",
+        "url": "/explain#model_risk"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "partial_fills",
+        "name": "Partial fill",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "slippage",
+        "name": "Slippage",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Calculated from these recorded fills using the same execution calculation as the order book. Larger fills receive more weight. Display is rounded to five decimal places; the exact fraction is retained."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "user-1",
+        "label": "user-1 \u00b7 buy \u00b7 6 units"
+      }
+    ]
+  },
+  "pnl_change": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "pnl_attribution",
+      "name": "P&L and its changes",
+      "domain": "Trading / execution",
+      "definition": "Profit and loss is the change in account equity from its starting value.",
+      "matters": "Cash movements alone can confuse trade proceeds with profit.",
+      "changes": "Realised P&L, unrealised P&L, fees and financing.",
+      "limitation": "Component changes reconcile accounting; they do not by themselves identify a trader's skill.",
+      "prerequisites": [
+        "realised_pnl",
+        "unrealised_pnl"
+      ],
+      "related": [
+        "architecture",
+        "execution_cost",
+        "exposure",
+        "partial_fills",
+        "position",
+        "realised_pnl",
+        "unrealised_pnl"
+      ],
+      "affected_by": [
+        "execution_cost",
+        "exposure",
+        "partial_fills",
+        "position"
+      ],
+      "affects": [
+        "architecture"
+      ],
+      "maths": {
+        "equation": "P&L = realised gross + unrealised + financing \u2212 fees",
+        "variables": {
+          "P&L": "total net marked gain in GBP",
+          "realised gross": "closed-lot gain before fees",
+          "unrealised": "open-lot gain at the public mark",
+          "financing": "accrued funding in GBP",
+          "fees": "executed trade charges; stock desk realised already includes these"
+        }
+      },
+      "uses": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types.",
+      "locations": [
+        {
+          "lab": "trading",
+          "url": "/"
+        },
+        {
+          "lab": "maker",
+          "url": "/#maker"
+        },
+        {
+          "lab": "options",
+          "url": "/options"
+        },
+        {
+          "lab": "risk",
+          "url": "/risk"
+        },
+        {
+          "lab": "statarb",
+          "url": "/statarb"
+        }
+      ],
+      "assumptions": [
+        "valuation"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "Component changes reconcile accounting; they do not by themselves identify a trader's skill.",
+      "interview": "For p&l and its changes, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "time_us": 0,
+        "public_event": 1,
+        "frame_index": 0,
+        "status": "paused"
+      }
+    },
+    "current": {
+      "value": "-0.07600",
+      "unit": "GBP",
+      "inputs": {
+        "cash": "9399.89400",
+        "position": 6,
+        "average_entry": "100.01667",
+        "realised": "-0.00600",
+        "unrealised": "-0.07000",
+        "total_pnl": "-0.07600",
+        "fees": "0.00600",
+        "exposure": "600.03000",
+        "max_drawdown": "0.07600",
+        "reference": "100.00500",
+        "reference_source": "external midpoint"
+      },
+      "rows": [
+        {
+          "trade_id": 1,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 2,
+          "price": "100.01000",
+          "fee": "0.00200"
+        },
+        {
+          "trade_id": 2,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 4,
+          "price": "100.02000",
+          "fee": "0.00400"
+        }
+      ],
+      "note": "Stock-desk realised P&L is already net of expensed fees. Total equals that realised amount plus unrealised P&L. Fees are shown for context and must not be subtracted twice. Open inventory is valued at the displayed public reference.",
+      "visual": null
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 0,
+        "status": "paused"
+      },
+      "before": "0.00000",
+      "after": "-0.07600",
+      "inputs": [
+        {
+          "input": "average_entry",
+          "before": null,
+          "after": "100.01667",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "cash",
+          "before": "10000.00000",
+          "after": "9399.89400",
+          "relation": "observed changed input",
+          "difference": -600.106
+        },
+        {
+          "input": "exposure",
+          "before": "0.00000",
+          "after": "600.03000",
+          "relation": "observed changed input",
+          "difference": 600.03
+        },
+        {
+          "input": "fees",
+          "before": "0.00000",
+          "after": "0.00600",
+          "relation": "observed changed input",
+          "difference": 0.006
+        },
+        {
+          "input": "max_drawdown",
+          "before": "0.00000",
+          "after": "0.07600",
+          "relation": "observed changed input",
+          "difference": 0.076
+        },
+        {
+          "input": "position",
+          "before": 0,
+          "after": 6,
+          "relation": "observed changed input",
+          "difference": 6.0
+        },
+        {
+          "input": "realised",
+          "before": "0.00000",
+          "after": "-0.00600",
+          "relation": "observed changed input",
+          "difference": -0.006
+        },
+        {
+          "input": "reference",
+          "before": "100.00000",
+          "after": "100.00500",
+          "relation": "observed changed input",
+          "difference": 0.005
+        },
+        {
+          "input": "total_pnl",
+          "before": "0.00000",
+          "after": "-0.07600",
+          "relation": "observed changed input",
+          "difference": -0.076
+        },
+        {
+          "input": "unrealised",
+          "before": "0.00000",
+          "after": "-0.07000",
+          "relation": "observed changed input",
+          "difference": -0.07
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": "0.00000",
+          "after": "-0.07600",
+          "relation": "observed changed input",
+          "difference": -0.076
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "valuation",
+        "name": "Public reference marks",
+        "description": "Open positions use the specified public mark and documented fee convention.",
+        "failure": "Marked equity can differ from proceeds available on liquidation.",
+        "url": "/explain#model_risk"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "realised_pnl",
+        "name": "Realised P&L",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "unrealised_pnl",
+        "name": "Unrealised P&L",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "execution_cost",
+        "name": "Execution cost",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "exposure",
+        "name": "Exposure",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "partial_fills",
+        "name": "Partial fill",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "position",
+        "name": "Position",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Stock-desk realised P&L is already net of expensed fees. Total equals that realised amount plus unrealised P&L. Fees are shown for context and must not be subtracted twice. Open inventory is valued at the displayed public reference."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "Component changes reconcile accounting; they do not by themselves identify a trader's skill."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "user-1",
+        "label": "user-1 \u00b7 buy \u00b7 6 units"
+      }
+    ]
+  },
+  "what_if_order_size": {
+    "schema": "quantlab-explanation-v1",
+    "label": "HYPOTHETICAL SNAPSHOT ANALYSIS",
+    "kind": "order_size",
+    "source_point": {
+      "revision": 1,
+      "time_us": 0,
+      "public_event": 1,
+      "frame_index": 0
+    },
+    "isolation": "No live orders, P&L, risk limits, replay actions, research records, market RNG or learning evidence are changed.",
+    "result": {
+      "submitted": 20,
+      "side": "buy",
+      "filled": 9,
+      "unfilled": 11,
+      "vwap": 100.02888888888889,
+      "exact_vwap_gbp": "45013/450",
+      "fills": [
+        {
+          "price": "100.02",
+          "quantity": 1
+        },
+        {
+          "price": "100.03",
+          "quantity": 8
+        }
+      ],
+      "note": "HYPOTHETICAL SNAPSHOT ANALYSIS. Existing FIFO matching against frozen displayed liquidity, including displayed own orders. No live account, self-trade policy, fees, reserved capacity or subsequent market reaction is simulated. Unfilled market remainder cancels."
+    }
+  },
+  "delta": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "delta",
+      "name": "Delta",
+      "domain": "Derivatives",
+      "definition": "For a small stock move, delta approximates the option value change per unit of stock movement.",
+      "matters": "It sets the first-order stock hedge and contributes to portfolio risk.",
+      "changes": "Spot, strike, time, volatility, rate, dividends and option type.",
+      "limitation": "Delta changes as inputs change; delta-neutral does not mean risk-free.",
+      "prerequisites": [
+        "option_pricing"
+      ],
+      "related": [
+        "option_pricing"
+      ],
+      "affected_by": [],
+      "affects": [],
+      "maths": {
+        "equation": "\u0394 = \u2202V/\u2202S; position \u0394 = q \u00d7 m \u00d7 \u0394",
+        "variables": {
+          "\u0394": "option price sensitivity per underlying unit",
+          "V": "option model value in GBP per unit",
+          "S": "stock price in GBP",
+          "\u2202": "local partial derivative holding other inputs fixed",
+          "q": "signed contracts",
+          "m": "units per contract",
+          "position \u0394": "stock-equivalent option exposure"
+        }
+      },
+      "uses": "Option hedging, derivatives market making and portfolio risk; production pricing can use surfaces and richer models.",
+      "locations": [
+        {
+          "lab": "options",
+          "url": "/options"
+        }
+      ],
+      "assumptions": [
+        "bsm"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "Delta changes as inputs change; delta-neutral does not mean risk-free.",
+      "interview": "For delta, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "step": 0,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 0.5114357531402248,
+      "unit": "per-unit value change / GBP stock move",
+      "inputs": {
+        "spot": 100.0,
+        "strike": 100.0,
+        "time_years": 0.0821917808219178,
+        "volatility": 0.2,
+        "rate": 0.0,
+        "dividend_yield": 0,
+        "option_type": "call",
+        "contract_id": "QL-STOCK:call:100:6/73:x100",
+        "multiplier": 100,
+        "per_unit_greeks": {
+          "delta": 0.5114357531402248,
+          "gamma": 0.06954844076977439,
+          "vega": 11.432620400510856,
+          "theta": -13.909688153954876,
+          "rho": 4.015596549532399,
+          "vega_per_vol_point": 0.11432620400510857,
+          "theta_per_day": -0.038108734668369525,
+          "rho_per_rate_point": 0.040155965495323985,
+          "status": "analytic; volatility held fixed"
+        },
+        "contract_greeks": {
+          "delta": 51.143575314022485,
+          "gamma": 6.954844076977438,
+          "vega": 1143.2620400510857,
+          "theta": -1390.9688153954876,
+          "rho": 401.5596549532399
+        },
+        "portfolio_greeks": {
+          "delta": 51.143575314022485,
+          "option_delta": 51.143575314022485,
+          "gamma": 6.954844076977438,
+          "vega": 1143.2620400510857,
+          "theta": -1390.9688153954876,
+          "rho": 401.5596549532399
+        },
+        "positions": [
+          {
+            "id": "QL-STOCK:call:100:6/73:x100",
+            "quantity": 1,
+            "multiplier": 100,
+            "value": 228.71505
+          }
+        ]
+      },
+      "rows": [],
+      "note": "Selected-contract values are per underlying unit. Contract and portfolio sensitivities retain multipliers and signed quantities. Changes in displayed inputs are observed contributors, not an additive causal attribution.",
+      "visual": {
+        "kind": "curve",
+        "rows": [
+          {
+            "spot": 50.0,
+            "value": 2.0034169200489123e-34,
+            "delta": 8.581079421136207e-34,
+            "gamma": 3.634244297466768e-33
+          },
+          {
+            "spot": 51.66666666666667,
+            "value": 1.911833374950143e-31,
+            "delta": 7.560582276075601e-31,
+            "gamma": 2.9538164890041133e-30
+          },
+          {
+            "spot": 53.333333333333336,
+            "value": 1.0791895700573583e-28,
+            "delta": 3.941908174250602e-28,
+            "gamma": 1.4210910919696835e-27
+          },
+          {
+            "spot": 55.00000000000001,
+            "value": 3.7580909958163376e-26,
+            "delta": 1.2681892868621726e-25,
+            "gamma": 4.219374424880792e-25
+          },
+          {
+            "spot": 56.666666666666664,
+            "value": 8.383906663153817e-24,
+            "delta": 2.6140389861755397e-23,
+            "gamma": 8.026317364384335e-23
+          },
+          {
+            "spot": 58.333333333333336,
+            "value": 1.2396417093803818e-21,
+            "delta": 3.5709846413760895e-21,
+            "gamma": 1.0117044030774707e-20
+          },
+          {
+            "spot": 60.0,
+            "value": 1.252718573005737e-19,
+            "delta": 3.3333807411696454e-19,
+            "gamma": 8.710854292260547e-19
+          },
+          {
+            "spot": 61.66666666666667,
+            "value": 8.896202239129517e-18,
+            "delta": 2.1858689544326458e-17,
+            "gamma": 5.26603751865069e-17
+          },
+          {
+            "spot": 63.33333333333333,
+            "value": 4.553378758414334e-16,
+            "delta": 1.0325787050649163e-15,
+            "gamma": 2.2917238753551568e-15
+          },
+          {
+            "spot": 65.0,
+            "value": 1.7189035572693508e-14,
+            "delta": 3.5952057401684473e-14,
+            "gamma": 7.344365655646644e-14
+          },
+          {
+            "spot": 66.66666666666666,
+            "value": 4.887718542950481e-13,
+            "delta": 9.421116892509532e-13,
+            "gamma": 1.769487300342676e-12
+          },
+          {
+            "spot": 68.33333333333333,
+            "value": 1.0672862375017774e-11,
+            "delta": 1.8939424980459967e-11,
+            "gamma": 3.2662785888421115e-11
+          },
+          {
+            "spot": 70.0,
+            "value": 1.8217067693027457e-10,
+            "delta": 2.9726247178210713e-10,
+            "gamma": 4.69991193757538e-10
+          },
+          {
+            "spot": 71.66666666666667,
+            "value": 2.470564337893595e-09,
+            "delta": 3.7019876519737924e-09,
+            "gamma": 5.356164690213057e-09
+          },
+          {
+            "spot": 73.33333333333334,
+            "value": 2.7026634657196522e-08,
+            "delta": 3.7129505155846836e-08,
+            "gamma": 4.9055191331813196e-08
+          },
+          {
+            "spot": 75.0,
+            "value": 2.418485469224685e-07,
+            "delta": 3.0407009688237643e-07,
+            "gamma": 3.659483659748098e-07
+          },
+          {
+            "spot": 76.66666666666666,
+            "value": 1.7934974600799256e-06,
+            "delta": 2.0594212790062332e-06,
+            "gamma": 2.2513457740112073e-06
+          },
+          {
+            "spot": 78.33333333333333,
+            "value": 1.1156655844512392e-05,
+            "delta": 1.16732806355898e-05,
+            "gamma": 1.1553832882216558e-05
+          },
+          {
+            "spot": 80.0,
+            "value": 5.88812514995523e-05,
+            "delta": 5.599278553137974e-05,
+            "gamma": 4.998894704568687e-05
+          },
+          {
+            "spot": 81.66666666666667,
+            "value": 0.0002664813185063418,
+            "delta": 0.00022965374304172672,
+            "gamma": 0.0001841412967026943
+          },
+          {
+            "spot": 83.33333333333333,
+            "value": 0.001044672691232082,
+            "delta": 0.0008133197540733651,
+            "gamma": 0.000582795414770854
+          },
+          {
+            "spot": 85.0,
+            "value": 0.003581529482256318,
+            "delta": 0.002510200010780143,
+            "gamma": 0.0015982602410894485
+          },
+          {
+            "spot": 86.66666666666667,
+            "value": 0.010836488574255232,
+            "delta": 0.006811315348601048,
+            "gamma": 0.003827970842337388
+          },
+          {
+            "spot": 88.33333333333333,
+            "value": 0.02918991050859643,
+            "delta": 0.016386405326054395,
+            "gamma": 0.008066203980481875
+          },
+          {
+            "spot": 90.0,
+            "value": 0.07059210532210747,
+            "delta": 0.03523655255991806,
+            "gamma": 0.015056530049734188
+          },
+          {
+            "spot": 91.66666666666667,
+            "value": 0.15452574705314248,
+            "delta": 0.06826450277451608,
+            "gamma": 0.025056185707804084
+          },
+          {
+            "spot": 93.33333333333333,
+            "value": 0.30861503614079133,
+            "delta": 0.12007890956762937,
+            "gamma": 0.03739711859168109
+          },
+          {
+            "spot": 95.0,
+            "value": 0.5667338286017021,
+            "delta": 0.19327108650320754,
+            "gamma": 0.05034160534380607
+          },
+          {
+            "spot": 96.66666666666667,
+            "value": 0.9642626283798137,
+            "delta": 0.2868581915852308,
+            "gamma": 0.061441416231153206
+          },
+          {
+            "spot": 98.33333333333334,
+            "value": 1.5314747038847116,
+            "delta": 0.3957153108746629,
+            "gamma": 0.06832486762981056
+          },
+          {
+            "spot": 100.0,
+            "value": 2.2871506280449694,
+            "delta": 0.5114357531402248,
+            "gamma": 0.06954844076977439
+          },
+          {
+            "spot": 101.66666666666666,
+            "value": 3.234683977316287,
+            "delta": 0.6243578355794748,
+            "gamma": 0.06508393008866584
+          },
+          {
+            "spot": 103.33333333333331,
+            "value": 4.3619794054954575,
+            "delta": 0.7259254294338622,
+            "gamma": 0.056222832703914795
+          },
+          {
+            "spot": 105.0,
+            "value": 5.644904107096522,
+            "delta": 0.8104586882667815,
+            "gamma": 0.04500649899667135
+          },
+          {
+            "spot": 106.66666666666667,
+            "value": 7.052787810565533,
+            "delta": 0.8758001502522912,
+            "gamma": 0.033507023307662705
+          },
+          {
+            "spot": 108.33333333333334,
+            "value": 8.554050062058012,
+            "delta": 0.9228699206685812,
+            "gamma": 0.02327981339117576
+          },
+          {
+            "spot": 110.00000000000001,
+            "value": 10.120470223702826,
+            "delta": 0.9545734188434586,
+            "gamma": 0.015142852071310988
+          },
+          {
+            "spot": 111.66666666666667,
+            "value": 11.729478375038124,
+            "delta": 0.9746008983550359,
+            "gamma": 0.009250052650611403
+          },
+          {
+            "spot": 113.33333333333333,
+            "value": 13.364637869240788,
+            "delta": 0.9865015009284482,
+            "gamma": 0.005321577716603477
+          },
+          {
+            "spot": 114.99999999999999,
+            "value": 15.014926239067288,
+            "delta": 0.993171669962072,
+            "gamma": 0.002891212374184382
+          },
+          {
+            "spot": 116.66666666666666,
+            "value": 16.673482226901825,
+            "delta": 0.9967073110506429,
+            "gamma": 0.001487248247894428
+          },
+          {
+            "spot": 118.33333333333333,
+            "value": 18.33631690510833,
+            "delta": 0.9984841240808316,
+            "gamma": 0.0007261264107259922
+          },
+          {
+            "spot": 120.0,
+            "value": 20.00125360722948,
+            "delta": 0.9993326802651845,
+            "gamma": 0.00033726586502943166
+          },
+          {
+            "spot": 121.66666666666669,
+            "value": 21.667172843926235,
+            "delta": 0.9997186521299123,
+            "gamma": 0.00014935446206993159
+          },
+          {
+            "spot": 123.33333333333334,
+            "value": 23.333529984809672,
+            "delta": 0.9998862192097475,
+            "gamma": 6.319101903349268e-05
+          },
+          {
+            "spot": 125.0,
+            "value": 25.000073601564374,
+            "delta": 0.9999557945840899,
+            "gamma": 2.559434088739159e-05
+          },
+          {
+            "spot": 126.66666666666666,
+            "value": 26.66669323799496,
+            "delta": 0.9999834760257528,
+            "gamma": 9.94262932497679e-06
+          },
+          {
+            "spot": 128.33333333333331,
+            "value": 28.333342597627215,
+            "delta": 0.9999940485806865,
+            "gamma": 3.7111139263548783e-06
+          },
+          {
+            "spot": 130.0,
+            "value": 30.000003123294633,
+            "delta": 0.9999979317180389,
+            "gamma": 1.3331906123437974e-06
+          },
+          {
+            "spot": 131.66666666666666,
+            "value": 31.666667686041464,
+            "delta": 0.9999993054894424,
+            "gamma": 4.617093670002178e-07
+          },
+          {
+            "spot": 133.33333333333334,
+            "value": 33.33333365579807,
+            "delta": 0.9999997743659128,
+            "gamma": 1.5438446689562083e-07
+          },
+          {
+            "spot": 135.0,
+            "value": 35.00000009898107,
+            "delta": 0.9999999289859904,
+            "gamma": 4.991549341015035e-08
+          },
+          {
+            "spot": 136.66666666666666,
+            "value": 36.66666669618039,
+            "delta": 0.9999999783212881,
+            "gamma": 1.5626888750848656e-08
+          },
+          {
+            "spot": 138.33333333333334,
+            "value": 38.33333334189119,
+            "delta": 0.999999993573273,
+            "gamma": 4.743462127360439e-09
+          },
+          {
+            "spot": 140.0,
+            "value": 40.000000002415604,
+            "delta": 0.9999999981477034,
+            "gamma": 1.39784142001412e-09
+          },
+          {
+            "spot": 141.66666666666666,
+            "value": 41.66666666733108,
+            "delta": 0.9999999994803942,
+            "gamma": 4.003949365434306e-10
+          },
+          {
+            "spot": 143.33333333333334,
+            "value": 43.3333333335116,
+            "delta": 0.999999999857983,
+            "gamma": 1.1160723276874764e-10
+          },
+          {
+            "spot": 145.0,
+            "value": 45.00000000004669,
+            "delta": 0.9999999999621426,
+            "gamma": 3.030760350985029e-11
+          },
+          {
+            "spot": 146.66666666666669,
+            "value": 46.66666666667864,
+            "delta": 0.9999999999901479,
+            "gamma": 8.0265230988822e-12
+          },
+          {
+            "spot": 148.33333333333334,
+            "value": 48.333333333336334,
+            "delta": 0.9999999999974946,
+            "gamma": 2.0752043756798407e-12
+          },
+          {
+            "spot": 150.0,
+            "value": 50.00000000000073,
+            "delta": 0.9999999999993768,
+            "gamma": 5.242925334348785e-13
+          }
+        ]
+      }
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": 0.5114357531402248,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "bsm",
+        "name": "European Black\u2013Scholes model",
+        "description": "Constant volatility and rates, lognormal underlying and European payoff.",
+        "failure": "Jumps, changing IV, smile and exercise features can invalidate local sensitivities.",
+        "url": "/explain#black_scholes"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "option_pricing",
+        "name": "Option model value",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Selected-contract values are per underlying unit. Contract and portfolio sensitivities retain multipliers and signed quantities. Changes in displayed inputs are observed contributors, not an additive causal attribution."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "Delta changes as inputs change; delta-neutral does not mean risk-free."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Option hedging, derivatives market making and portfolio risk; production pricing can use surfaces and richer models."
+      }
+    ],
+    "selectors": []
+  },
+  "what_if_volatility": {
+    "schema": "quantlab-explanation-v1",
+    "label": "HYPOTHETICAL SNAPSHOT ANALYSIS",
+    "kind": "volatility",
+    "source_point": {
+      "revision": 1,
+      "step": 0,
+      "frame_index": 0
+    },
+    "isolation": "No live orders, P&L, risk limits, replay actions, research records, market RNG or learning evidence are changed.",
+    "result": {
+      "before": {
+        "inputs": {
+          "spot": 100.0,
+          "strike": 100.0,
+          "time_years": 0.0821917808219178,
+          "volatility": 0.2,
+          "rate": 0.0,
+          "dividend_yield": 0.0
+        },
+        "value": 2.2871506280449694,
+        "greeks": {
+          "delta": 0.5114357531402248,
+          "gamma": 0.06954844076977439,
+          "vega": 11.432620400510856,
+          "theta": -13.909688153954876,
+          "rho": 4.015596549532399,
+          "status": "analytic; volatility held fixed",
+          "vega_per_vol_point": 0.11432620400510857,
+          "theta_per_day": -0.038108734668369525,
+          "rho_per_rate_point": 0.040155965495323985
+        }
+      },
+      "after": {
+        "inputs": {
+          "spot": 100.0,
+          "strike": 100.0,
+          "time_years": 0.0821917808219178,
+          "volatility": 0.3,
+          "rate": 0.0,
+          "dividend_yield": 0.0
+        },
+        "value": 3.4301386438779886,
+        "greeks": {
+          "delta": 0.5171506932193899,
+          "gamma": 0.04634181533726096,
+          "vega": 11.426748987269825,
+          "theta": -20.85381690176743,
+          "rho": 3.968624439292685,
+          "status": "analytic; volatility held fixed",
+          "vega_per_vol_point": 0.11426748987269825,
+          "theta_per_day": -0.05713374493634912,
+          "rho_per_rate_point": 0.03968624439292685
+        }
+      },
+      "controlled_inputs": {
+        "volatility": 0.3
+      },
+      "note": "Isolated model repricing. No quote, trade, mark or account is changed. Greeks are per underlying unit; vega uses a 1.0 volatility change."
+    }
+  },
+  "delta_change": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "delta",
+      "name": "Delta",
+      "domain": "Derivatives",
+      "definition": "For a small stock move, delta approximates the option value change per unit of stock movement.",
+      "matters": "It sets the first-order stock hedge and contributes to portfolio risk.",
+      "changes": "Spot, strike, time, volatility, rate, dividends and option type.",
+      "limitation": "Delta changes as inputs change; delta-neutral does not mean risk-free.",
+      "prerequisites": [
+        "option_pricing"
+      ],
+      "related": [
+        "option_pricing"
+      ],
+      "affected_by": [],
+      "affects": [],
+      "maths": {
+        "equation": "\u0394 = \u2202V/\u2202S; position \u0394 = q \u00d7 m \u00d7 \u0394",
+        "variables": {
+          "\u0394": "option price sensitivity per underlying unit",
+          "V": "option model value in GBP per unit",
+          "S": "stock price in GBP",
+          "\u2202": "local partial derivative holding other inputs fixed",
+          "q": "signed contracts",
+          "m": "units per contract",
+          "position \u0394": "stock-equivalent option exposure"
+        }
+      },
+      "uses": "Option hedging, derivatives market making and portfolio risk; production pricing can use surfaces and richer models.",
+      "locations": [
+        {
+          "lab": "options",
+          "url": "/options"
+        }
+      ],
+      "assumptions": [
+        "bsm"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "Delta changes as inputs change; delta-neutral does not mean risk-free.",
+      "interview": "For delta, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 2,
+        "step": 1,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 0.5260707383093957,
+      "unit": "per-unit value change / GBP stock move",
+      "inputs": {
+        "spot": 100.21,
+        "strike": 100.0,
+        "time_years": 0.07945205479452055,
+        "volatility": 0.20006315398030408,
+        "rate": 0.0,
+        "dividend_yield": 0,
+        "option_type": "call",
+        "contract_id": "QL-STOCK:call:100:6/73:x100",
+        "multiplier": 100,
+        "per_unit_greeks": {
+          "delta": 0.5260707383093957,
+          "gamma": 0.070445078809643,
+          "vega": 11.244626335064321,
+          "theta": -14.15718835554963,
+          "rho": 4.001141979171704,
+          "vega_per_vol_point": 0.11244626335064321,
+          "theta_per_day": -0.03878681741246474,
+          "rho_per_rate_point": 0.040011419791717046,
+          "status": "analytic; volatility held fixed"
+        },
+        "contract_greeks": {
+          "delta": 52.60707383093957,
+          "gamma": 7.0445078809643,
+          "vega": 1124.4626335064322,
+          "theta": -1415.718835554963,
+          "rho": 400.11419791717043
+        },
+        "portfolio_greeks": {
+          "delta": 52.60707383093957,
+          "option_delta": 52.60707383093957,
+          "gamma": 7.0445078809643,
+          "vega": 1124.4626335064322,
+          "theta": -1415.718835554963,
+          "rho": 400.11419791717043
+        },
+        "positions": [
+          {
+            "id": "QL-STOCK:call:100:6/73:x100",
+            "quantity": 1,
+            "multiplier": 100,
+            "value": 235.83475
+          }
+        ]
+      },
+      "rows": [],
+      "note": "Selected-contract values are per underlying unit. Contract and portfolio sensitivities retain multipliers and signed quantities. Changes in displayed inputs are observed contributors, not an additive causal attribution.",
+      "visual": {
+        "kind": "curve",
+        "rows": [
+          {
+            "spot": 50.0,
+            "value": 1.6100845855483762e-35,
+            "delta": 7.126082191718136e-35,
+            "gamma": 3.119685651475683e-34
+          },
+          {
+            "spot": 51.66666666666667,
+            "value": 1.9307256788619036e-32,
+            "delta": 7.889291671760541e-32,
+            "gamma": 3.186004565214021e-31
+          },
+          {
+            "spot": 53.333333333333336,
+            "value": 1.345356627295954e-29,
+            "delta": 5.077349593458037e-29,
+            "gamma": 1.8920122277691195e-28
+          },
+          {
+            "spot": 55.00000000000001,
+            "value": 5.6894053506319375e-27,
+            "delta": 1.9835852916376178e-26,
+            "gamma": 6.821447857998681e-26
+          },
+          {
+            "spot": 56.666666666666664,
+            "value": 1.5182676284686963e-24,
+            "delta": 4.890518113506215e-24,
+            "gamma": 1.5520646449383897e-23
+          },
+          {
+            "spot": 58.333333333333336,
+            "value": 2.648130451296311e-22,
+            "delta": 7.880300590034217e-22,
+            "gamma": 2.3075259983402003e-21
+          },
+          {
+            "spot": 60.0,
+            "value": 3.116200013372766e-20,
+            "delta": 8.565162055907282e-20,
+            "gamma": 2.3133180868087047e-19
+          },
+          {
+            "spot": 61.66666666666667,
+            "value": 2.546234011496247e-18,
+            "delta": 6.4618955087012615e-18,
+            "gamma": 1.6088941694658665e-17
+          },
+          {
+            "spot": 63.33333333333333,
+            "value": 1.4828973646161483e-16,
+            "delta": 3.4729724871125987e-16,
+            "gamma": 7.965803994072618e-16
+          },
+          {
+            "spot": 65.0,
+            "value": 6.303906327298288e-15,
+            "delta": 1.3615584438549593e-14,
+            "gamma": 2.874316822872856e-14
+          },
+          {
+            "spot": 66.66666666666666,
+            "value": 1.9991658005814266e-13,
+            "delta": 3.9787496589057873e-13,
+            "gamma": 7.722089907054483e-13
+          },
+          {
+            "spot": 68.33333333333333,
+            "value": 4.824935665163074e-12,
+            "delta": 8.839326001991515e-12,
+            "gamma": 1.5751438873421725e-11
+          },
+          {
+            "spot": 70.0,
+            "value": 9.026048826203725e-11,
+            "delta": 1.5203123314558875e-10,
+            "gamma": 2.4834983712861134e-10
+          },
+          {
+            "spot": 71.66666666666667,
+            "value": 1.3310700485226162e-09,
+            "delta": 2.0584257340767353e-09,
+            "gamma": 3.0767819453603117e-09
+          },
+          {
+            "spot": 73.33333333333334,
+            "value": 1.571727187815144e-08,
+            "delta": 2.227974721251273e-08,
+            "gamma": 3.040695425183079e-08
+          },
+          {
+            "spot": 75.0,
+            "value": 1.5076677435141223e-07,
+            "delta": 1.955413160012448e-07,
+            "gamma": 2.4306779457983e-07
+          },
+          {
+            "spot": 76.66666666666666,
+            "value": 1.1907578847897369e-06,
+            "delta": 1.4101039911430419e-06,
+            "gamma": 1.5919397028899673e-06
+          },
+          {
+            "spot": 78.33333333333333,
+            "value": 7.841064846731576e-06,
+            "delta": 8.458211956938531e-06,
+            "gamma": 8.643968529911889e-06
+          },
+          {
+            "spot": 80.0,
+            "value": 4.355690590207399e-05,
+            "delta": 4.268696009682862e-05,
+            "gamma": 3.934103553009262e-05
+          },
+          {
+            "spot": 81.66666666666667,
+            "value": 0.00020637614809879481,
+            "delta": 0.0001832148863444915,
+            "gamma": 0.0001516122951664621
+          },
+          {
+            "spot": 83.33333333333333,
+            "value": 0.0008427605739292354,
+            "delta": 0.0006755518955964504,
+            "gamma": 0.0004994267521049644
+          },
+          {
+            "spot": 85.0,
+            "value": 0.002995573699598769,
+            "delta": 0.0021603974041055638,
+            "gamma": 0.0014186049116554726
+          },
+          {
+            "spot": 86.66666666666667,
+            "value": 0.009355696424549587,
+            "delta": 0.006046821512188722,
+            "gamma": 0.0035030219729151207
+          },
+          {
+            "spot": 88.33333333333333,
+            "value": 0.025906763557450363,
+            "delta": 0.014942172594006056,
+            "gamma": 0.007577290487603211
+          },
+          {
+            "spot": 90.0,
+            "value": 0.06416110680194498,
+            "delta": 0.03287283444014953,
+            "gamma": 0.014459434815347868
+          },
+          {
+            "spot": 91.66666666666667,
+            "value": 0.14332400491122232,
+            "delta": 0.06491534471123481,
+            "gamma": 0.024503525100073146
+          },
+          {
+            "spot": 93.33333333333333,
+            "value": 0.29115853700787575,
+            "delta": 0.11599485639287926,
+            "gamma": 0.037105015809066874
+          },
+          {
+            "spot": 95.0,
+            "value": 0.542256108244711,
+            "delta": 0.1890550383604576,
+            "gamma": 0.05049852013787044
+          },
+          {
+            "spot": 96.66666666666667,
+            "value": 0.9332134358997095,
+            "delta": 0.2833299793662611,
+            "gamma": 0.06210456417662541
+          },
+          {
+            "spot": 98.33333333333334,
+            "value": 1.4956670623135864,
+            "delta": 0.3936404473426577,
+            "gamma": 0.06937100320207737
+          },
+          {
+            "spot": 100.0,
+            "value": 2.249428540365493,
+            "delta": 0.5112471427018275,
+            "gamma": 0.07071601040386236
+          },
+          {
+            "spot": 101.66666666666666,
+            "value": 3.1982223041583,
+            "delta": 0.6260118726065196,
+            "gamma": 0.06608359179157966
+          },
+          {
+            "spot": 103.33333333333331,
+            "value": 4.329507238471198,
+            "delta": 0.728954992909023,
+            "gamma": 0.05685133793896598
+          },
+          {
+            "spot": 105.0,
+            "value": 5.61815387935512,
+            "delta": 0.8141753813441857,
+            "gamma": 0.04520501240186202
+          },
+          {
+            "spot": 106.66666666666667,
+            "value": 7.032328302140348,
+            "delta": 0.8795324569503156,
+            "gamma": 0.033347198149794526
+          },
+          {
+            "spot": 108.33333333333334,
+            "value": 8.539470871000159,
+            "delta": 0.926133746535088,
+            "gamma": 0.022903101093579122
+          },
+          {
+            "spot": 110.00000000000001,
+            "value": 10.110758942880379,
+            "delta": 0.9571312509133728,
+            "gamma": 0.01469401562774493
+          },
+          {
+            "spot": 111.66666666666667,
+            "value": 11.723412690285068,
+            "delta": 0.9764271920933237,
+            "gamma": 0.00883418957584655
+          },
+          {
+            "spot": 113.33333333333333,
+            "value": 13.361074793026596,
+            "delta": 0.9877024801348097,
+            "gamma": 0.004991910196577706
+          },
+          {
+            "spot": 114.99999999999999,
+            "value": 15.012952338576634,
+            "delta": 0.9939047933178571,
+            "gamma": 0.0026586706054261503
+          },
+          {
+            "spot": 116.66666666666666,
+            "value": 16.672448207108847,
+            "delta": 0.9971252723377135,
+            "gamma": 0.001338192448931132
+          },
+          {
+            "spot": 118.33333333333333,
+            "value": 18.335803424199838,
+            "delta": 0.9987077696242763,
+            "gamma": 0.0006381552310169191
+          },
+          {
+            "spot": 120.0,
+            "value": 20.001011312688714,
+            "delta": 0.9994454676927422,
+            "gamma": 0.00028902011117185636
+          },
+          {
+            "spot": 121.66666666666669,
+            "value": 21.667063959435445,
+            "delta": 0.9997724550732022,
+            "gamma": 0.00012459781901622488
+          },
+          {
+            "spot": 123.33333333333334,
+            "value": 23.33348328435533,
+            "delta": 0.9999105738963739,
+            "gamma": 5.124009217679848e-05
+          },
+          {
+            "spot": 125.0,
+            "value": 25.000054446132378,
+            "delta": 0.9999662860009816,
+            "gamma": 2.014261019140737e-05
+          },
+          {
+            "spot": 126.66666666666666,
+            "value": 26.666685709331116,
+            "delta": 0.999987788139088,
+            "gamma": 7.583557889064736e-06
+          },
+          {
+            "spot": 128.33333333333331,
+            "value": 28.3333397571115,
+            "delta": 0.9999957436415818,
+            "gamma": 2.739587007479904e-06
+          },
+          {
+            "spot": 130.0,
+            "value": 30.000002092696512,
+            "delta": 0.9999985703848854,
+            "gamma": 9.512974007127305e-07
+          },
+          {
+            "spot": 131.66666666666666,
+            "value": 31.66666732586325,
+            "delta": 0.9999995366126408,
+            "gamma": 3.180490446138059e-07
+          },
+          {
+            "spot": 133.33333333333334,
+            "value": 33.33333353435571,
+            "delta": 0.9999998548516807,
+            "gamma": 1.0254422583836407e-07
+          },
+          {
+            "spot": 135.0,
+            "value": 35.00000005941672,
+            "delta": 0.9999999560053106,
+            "gamma": 3.193211688788076e-08
+          },
+          {
+            "spot": 136.66666666666666,
+            "value": 36.66666668370815,
+            "delta": 0.9999999870799079,
+            "gamma": 9.617734906425338e-09
+          },
+          {
+            "spot": 138.33333333333334,
+            "value": 38.33333333808151,
+            "delta": 0.9999999963191841,
+            "gamma": 2.8057345599730377e-09
+          },
+          {
+            "spot": 140.0,
+            "value": 40.00000000128657,
+            "delta": 0.9999999989815225,
+            "gamma": 7.938192867755379e-10
+          },
+          {
+            "spot": 141.66666666666666,
+            "value": 41.666666667006034,
+            "delta": 0.9999999997259791,
+            "gamma": 2.1809444800904013e-10
+          },
+          {
+            "spot": 143.33333333333334,
+            "value": 43.33333333342058,
+            "delta": 0.9999999999282342,
+            "gamma": 5.825557773615867e-11
+          },
+          {
+            "spot": 145.0,
+            "value": 45.00000000002188,
+            "delta": 0.9999999999816848,
+            "gamma": 1.5146041724309342e-11
+          },
+          {
+            "spot": 146.66666666666669,
+            "value": 46.66666666667204,
+            "delta": 0.9999999999954406,
+            "gamma": 3.83712807895297e-12
+          },
+          {
+            "spot": 148.33333333333334,
+            "value": 48.33333333333462,
+            "delta": 0.9999999999988918,
+            "gamma": 9.482326016379767e-13
+          },
+          {
+            "spot": 150.0,
+            "value": 50.0000000000003,
+            "delta": 0.9999999999997368,
+            "gamma": 2.28802663912732e-13
+          }
+        ]
+      }
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 1,
+        "step": 0,
+        "status": "active"
+      },
+      "before": 0.5114357531402248,
+      "after": 0.5260707383093957,
+      "inputs": [
+        {
+          "input": "contract_greeks.delta",
+          "before": 51.143575314022485,
+          "after": 52.60707383093957,
+          "relation": "observed changed input",
+          "difference": 1.463498516917085
+        },
+        {
+          "input": "contract_greeks.gamma",
+          "before": 6.954844076977438,
+          "after": 7.0445078809643,
+          "relation": "observed changed input",
+          "difference": 0.089663803986862
+        },
+        {
+          "input": "contract_greeks.rho",
+          "before": 401.5596549532399,
+          "after": 400.11419791717043,
+          "relation": "observed changed input",
+          "difference": -1.44545703606947
+        },
+        {
+          "input": "contract_greeks.theta",
+          "before": -1390.9688153954876,
+          "after": -1415.718835554963,
+          "relation": "observed changed input",
+          "difference": -24.7500201594754
+        },
+        {
+          "input": "contract_greeks.vega",
+          "before": 1143.2620400510857,
+          "after": 1124.4626335064322,
+          "relation": "observed changed input",
+          "difference": -18.7994065446535
+        },
+        {
+          "input": "per_unit_greeks.delta",
+          "before": 0.5114357531402248,
+          "after": 0.5260707383093957,
+          "relation": "observed changed input",
+          "difference": 0.0146349851691709
+        },
+        {
+          "input": "per_unit_greeks.gamma",
+          "before": 0.06954844076977439,
+          "after": 0.070445078809643,
+          "relation": "observed changed input",
+          "difference": 0.00089663803986861
+        },
+        {
+          "input": "per_unit_greeks.rho",
+          "before": 4.015596549532399,
+          "after": 4.001141979171704,
+          "relation": "observed changed input",
+          "difference": -0.014454570360695
+        },
+        {
+          "input": "per_unit_greeks.rho_per_rate_point",
+          "before": 0.040155965495323985,
+          "after": 0.040011419791717046,
+          "relation": "observed changed input",
+          "difference": -0.000144545703606939
+        },
+        {
+          "input": "per_unit_greeks.theta",
+          "before": -13.909688153954876,
+          "after": -14.15718835554963,
+          "relation": "observed changed input",
+          "difference": -0.247500201594754
+        },
+        {
+          "input": "per_unit_greeks.theta_per_day",
+          "before": -0.038108734668369525,
+          "after": -0.03878681741246474,
+          "relation": "observed changed input",
+          "difference": -0.000678082744095215
+        },
+        {
+          "input": "per_unit_greeks.vega",
+          "before": 11.432620400510856,
+          "after": 11.244626335064321,
+          "relation": "observed changed input",
+          "difference": -0.187994065446535
+        },
+        {
+          "input": "per_unit_greeks.vega_per_vol_point",
+          "before": 0.11432620400510857,
+          "after": 0.11244626335064321,
+          "relation": "observed changed input",
+          "difference": -0.00187994065446536
+        },
+        {
+          "input": "portfolio_greeks.delta",
+          "before": 51.143575314022485,
+          "after": 52.60707383093957,
+          "relation": "observed changed input",
+          "difference": 1.463498516917085
+        },
+        {
+          "input": "portfolio_greeks.gamma",
+          "before": 6.954844076977438,
+          "after": 7.0445078809643,
+          "relation": "observed changed input",
+          "difference": 0.089663803986862
+        },
+        {
+          "input": "portfolio_greeks.option_delta",
+          "before": 51.143575314022485,
+          "after": 52.60707383093957,
+          "relation": "observed changed input",
+          "difference": 1.463498516917085
+        },
+        {
+          "input": "portfolio_greeks.rho",
+          "before": 401.5596549532399,
+          "after": 400.11419791717043,
+          "relation": "observed changed input",
+          "difference": -1.44545703606947
+        },
+        {
+          "input": "portfolio_greeks.theta",
+          "before": -1390.9688153954876,
+          "after": -1415.718835554963,
+          "relation": "observed changed input",
+          "difference": -24.7500201594754
+        },
+        {
+          "input": "portfolio_greeks.vega",
+          "before": 1143.2620400510857,
+          "after": 1124.4626335064322,
+          "relation": "observed changed input",
+          "difference": -18.7994065446535
+        },
+        {
+          "input": "positions",
+          "before": [
+            {
+              "id": "QL-STOCK:call:100:6/73:x100",
+              "quantity": 1,
+              "multiplier": 100,
+              "value": 228.71505
+            }
+          ],
+          "after": [
+            {
+              "id": "QL-STOCK:call:100:6/73:x100",
+              "quantity": 1,
+              "multiplier": 100,
+              "value": 235.83475
+            }
+          ],
+          "relation": "observed changed input"
+        },
+        {
+          "input": "spot",
+          "before": 100.0,
+          "after": 100.21,
+          "relation": "observed changed input",
+          "difference": 0.21
+        },
+        {
+          "input": "time_years",
+          "before": 0.0821917808219178,
+          "after": 0.07945205479452055,
+          "relation": "observed changed input",
+          "difference": -0.00273972602739725
+        },
+        {
+          "input": "volatility",
+          "before": 0.2,
+          "after": 0.20006315398030408,
+          "relation": "observed changed input",
+          "difference": 6.315398030408e-05
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": 0.5114357531402248,
+          "after": 0.5260707383093957,
+          "relation": "observed changed input",
+          "difference": 0.0146349851691709
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "bsm",
+        "name": "European Black\u2013Scholes model",
+        "description": "Constant volatility and rates, lognormal underlying and European payoff.",
+        "failure": "Jumps, changing IV, smile and exercise features can invalidate local sensitivities.",
+        "url": "/explain#black_scholes"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "option_pricing",
+        "name": "Option model value",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Selected-contract values are per underlying unit. Contract and portfolio sensitivities retain multipliers and signed quantities. Changes in displayed inputs are observed contributors, not an additive causal attribution."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "Delta changes as inputs change; delta-neutral does not mean risk-free."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Option hedging, derivatives market making and portfolio risk; production pricing can use surfaces and richer models."
+      }
+    ],
+    "selectors": []
+  },
+  "var_before": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "var",
+      "name": "Value at Risk (VaR)",
+      "domain": "Risk",
+      "definition": "A loss threshold at a chosen confidence level and horizon.",
+      "matters": "It summarises a model's loss distribution while allowing worse outcomes.",
+      "changes": "Holdings, prices, horizon, return model, covariance, confidence and scenario count.",
+      "limitation": "VaR is not the maximum possible loss and does not describe severity beyond its threshold.",
+      "prerequisites": [],
+      "related": [
+        "exposure",
+        "portfolio_optimisation",
+        "portfolio_variance",
+        "stress_testing"
+      ],
+      "affected_by": [
+        "exposure",
+        "portfolio_variance"
+      ],
+      "affects": [
+        "portfolio_optimisation",
+        "stress_testing"
+      ],
+      "maths": {
+        "equation": "VaR_\u03b1 = inf{x : F_L(x) \u2265 \u03b1}; L = \u2212P&L",
+        "variables": {
+          "VaR_\u03b1": "loss threshold at confidence \u03b1",
+          "\u03b1": "confidence level",
+          "F_L": "loss cumulative distribution",
+          "x": "candidate loss in GBP",
+          "inf": "lowest qualifying threshold",
+          "L": "loss over the specified horizon",
+          "P&L": "scenario profit/loss"
+        }
+      },
+      "uses": "Market-risk measurement, limits and reporting contexts; this educational implementation is not a regulatory capital engine.",
+      "locations": [
+        {
+          "lab": "risk",
+          "url": "/risk"
+        }
+      ],
+      "assumptions": [
+        "risk"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "VaR is not the maximum possible loss and does not describe severity beyond its threshold.",
+      "interview": "For value at risk (var), which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 0,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 94.45946811012372,
+      "unit": "GBP loss",
+      "inputs": {
+        "holdings": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "underlying": "QL-STOCK",
+            "quantity": 1,
+            "multiplier": 100,
+            "mark": 2.3583475,
+            "spot": 100.21,
+            "kind": "call",
+            "strike": 100.0,
+            "years": 0.07945205479452055,
+            "volatility": 0.20006315398030408,
+            "rate": 0.0,
+            "dividend": 0.0,
+            "value": 235.83474999999999,
+            "delta_gbp": 5271.754868598454,
+            "greeks": {
+              "delta": 52.60707383093957,
+              "gamma": 7.0445078809643,
+              "vega": 1124.4626335064322,
+              "theta": -1415.718835554963,
+              "rho": 400.11419791717043
+            }
+          },
+          {
+            "instrument": "QL-DESK",
+            "underlying": "QL-DESK",
+            "quantity": 6,
+            "multiplier": 1,
+            "mark": 100.005,
+            "spot": 100.005,
+            "kind": "stock",
+            "strike": 0,
+            "years": 0,
+            "volatility": 0,
+            "rate": 0,
+            "dividend": 0,
+            "value": 600.03,
+            "delta_gbp": 600.03,
+            "greeks": {
+              "delta": 6.0,
+              "gamma": 0.0,
+              "vega": 0.0,
+              "theta": 0.0,
+              "rho": 0.0
+            }
+          }
+        ],
+        "settings": {
+          "confidence": 0.95,
+          "days": 1,
+          "daily_volatility": [
+            0.012,
+            0.01,
+            0.008
+          ],
+          "means": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "correlation": 0.25,
+          "paths": 1000,
+          "seed": 99042,
+          "distribution": "normal",
+          "df": 5.0,
+          "cash_rate": 0.0
+        },
+        "covariance": [
+          [
+            0.000144,
+            3e-05,
+            2.4e-05
+          ],
+          [
+            3e-05,
+            0.0001,
+            2e-05
+          ],
+          [
+            2.4e-05,
+            2e-05,
+            6.4e-05
+          ]
+        ],
+        "factors": [
+          "QL-STOCK",
+          "QL-DESK",
+          "QL-SECOND"
+        ],
+        "covariance_source": "Configured volatility and correlation",
+        "method": "monte_carlo",
+        "estimate": {
+          "confidence": 0.95,
+          "n": 1000,
+          "tail_mass": 50.0,
+          "boundary_weight": 0.0,
+          "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+          "warnings": []
+        }
+      },
+      "rows": [
+        {
+          "loss": 169.70227101332569
+        },
+        {
+          "loss": 154.91359280333805
+        },
+        {
+          "loss": 152.92754126537318
+        },
+        {
+          "loss": 151.6957343982565
+        },
+        {
+          "loss": 137.3566941424314
+        },
+        {
+          "loss": 137.29289880264253
+        },
+        {
+          "loss": 133.7258132639767
+        },
+        {
+          "loss": 132.7168633245333
+        }
+      ],
+      "note": "Read from the existing risk report; no Monte Carlo run is triggered. These results are conditional on holdings, return scenarios and pricing assumptions. Main changed inputs are reported without causal percentages.",
+      "visual": {
+        "kind": "histogram",
+        "edges": [
+          -239.99204420125042,
+          -226.3355670274312,
+          -212.67908985361203,
+          -199.02261267979281,
+          -185.3661355059736,
+          -171.7096583321544,
+          -158.05318115833518,
+          -144.396703984516,
+          -130.74022681069678,
+          -117.08374963687757,
+          -103.42727246305836,
+          -89.77079528923917,
+          -76.11431811541996,
+          -62.45784094160075,
+          -48.80136376778157,
+          -35.144886593962354,
+          -21.488409420143142,
+          -7.83193224632393,
+          5.824544927495282,
+          19.481022101314494,
+          33.137499275133706,
+          46.79397644895286,
+          60.45045362277207,
+          74.10693079659129,
+          87.7634079704105,
+          101.41988514422971,
+          115.07636231804892,
+          128.73283949186813,
+          142.3893166656873,
+          156.0457938395065,
+          169.70227101332569
+        ],
+        "counts": [
+          2,
+          1,
+          3,
+          0,
+          4,
+          10,
+          8,
+          11,
+          13,
+          11,
+          21,
+          25,
+          53,
+          62,
+          59,
+          78,
+          79,
+          69,
+          89,
+          90,
+          72,
+          79,
+          55,
+          38,
+          32,
+          20,
+          8,
+          4,
+          3,
+          1
+        ],
+        "threshold": 94.45946811012372
+      }
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": 94.45946811012372,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "risk",
+        "name": "Conditional return scenarios",
+        "description": "Selected IID return law, covariance, finite paths and fixed-IV option revaluation.",
+        "failure": "Dependence, tail events and volatility shocks outside that model can be missed.",
+        "url": "/explain#var"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "exposure",
+        "name": "Exposure",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "portfolio_variance",
+        "name": "Portfolio variance",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Read from the existing risk report; no Monte Carlo run is triggered. These results are conditional on holdings, return scenarios and pricing assumptions. Main changed inputs are reported without causal percentages."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "VaR is not the maximum possible loss and does not describe severity beyond its threshold."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Market-risk measurement, limits and reporting contexts; this educational implementation is not a regulatory capital engine."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "monte_carlo",
+        "label": "monte carlo"
+      },
+      {
+        "id": "historical",
+        "label": "historical"
+      },
+      {
+        "id": "parametric",
+        "label": "parametric"
+      }
+    ]
+  },
+  "var_change": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "var",
+      "name": "Value at Risk (VaR)",
+      "domain": "Risk",
+      "definition": "A loss threshold at a chosen confidence level and horizon.",
+      "matters": "It summarises a model's loss distribution while allowing worse outcomes.",
+      "changes": "Holdings, prices, horizon, return model, covariance, confidence and scenario count.",
+      "limitation": "VaR is not the maximum possible loss and does not describe severity beyond its threshold.",
+      "prerequisites": [],
+      "related": [
+        "exposure",
+        "portfolio_optimisation",
+        "portfolio_variance",
+        "stress_testing"
+      ],
+      "affected_by": [
+        "exposure",
+        "portfolio_variance"
+      ],
+      "affects": [
+        "portfolio_optimisation",
+        "stress_testing"
+      ],
+      "maths": {
+        "equation": "VaR_\u03b1 = inf{x : F_L(x) \u2265 \u03b1}; L = \u2212P&L",
+        "variables": {
+          "VaR_\u03b1": "loss threshold at confidence \u03b1",
+          "\u03b1": "confidence level",
+          "F_L": "loss cumulative distribution",
+          "x": "candidate loss in GBP",
+          "inf": "lowest qualifying threshold",
+          "L": "loss over the specified horizon",
+          "P&L": "scenario profit/loss"
+        }
+      },
+      "uses": "Market-risk measurement, limits and reporting contexts; this educational implementation is not a regulatory capital engine.",
+      "locations": [
+        {
+          "lab": "risk",
+          "url": "/risk"
+        }
+      ],
+      "assumptions": [
+        "risk"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "VaR is not the maximum possible loss and does not describe severity beyond its threshold.",
+      "interview": "For value at risk (var), which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 103.56857621463942,
+      "unit": "GBP loss",
+      "inputs": {
+        "holdings": [
+          {
+            "instrument": "QL-STOCK",
+            "underlying": "QL-STOCK",
+            "quantity": 5,
+            "multiplier": 1,
+            "mark": 100.21,
+            "spot": 100.21,
+            "kind": "stock",
+            "strike": 0,
+            "years": 0,
+            "volatility": 0,
+            "rate": 0,
+            "dividend": 0,
+            "value": 501.04999999999995,
+            "delta_gbp": 501.04999999999995,
+            "greeks": {
+              "delta": 5.0,
+              "gamma": 0.0,
+              "vega": 0.0,
+              "theta": 0.0,
+              "rho": 0.0
+            }
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "underlying": "QL-STOCK",
+            "quantity": 1,
+            "multiplier": 100,
+            "mark": 2.3583475,
+            "spot": 100.21,
+            "kind": "call",
+            "strike": 100.0,
+            "years": 0.07945205479452055,
+            "volatility": 0.20006315398030408,
+            "rate": 0.0,
+            "dividend": 0.0,
+            "value": 235.83474999999999,
+            "delta_gbp": 5271.754868598454,
+            "greeks": {
+              "delta": 52.60707383093957,
+              "gamma": 7.0445078809643,
+              "vega": 1124.4626335064322,
+              "theta": -1415.718835554963,
+              "rho": 400.11419791717043
+            }
+          },
+          {
+            "instrument": "QL-DESK",
+            "underlying": "QL-DESK",
+            "quantity": 6,
+            "multiplier": 1,
+            "mark": 100.005,
+            "spot": 100.005,
+            "kind": "stock",
+            "strike": 0,
+            "years": 0,
+            "volatility": 0,
+            "rate": 0,
+            "dividend": 0,
+            "value": 600.03,
+            "delta_gbp": 600.03,
+            "greeks": {
+              "delta": 6.0,
+              "gamma": 0.0,
+              "vega": 0.0,
+              "theta": 0.0,
+              "rho": 0.0
+            }
+          }
+        ],
+        "settings": {
+          "confidence": 0.95,
+          "days": 1,
+          "daily_volatility": [
+            0.012,
+            0.01,
+            0.008
+          ],
+          "means": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "correlation": 0.25,
+          "paths": 1000,
+          "seed": 99042,
+          "distribution": "normal",
+          "df": 5.0,
+          "cash_rate": 0.0
+        },
+        "covariance": [
+          [
+            0.000144,
+            3e-05,
+            2.4e-05
+          ],
+          [
+            3e-05,
+            0.0001,
+            2e-05
+          ],
+          [
+            2.4e-05,
+            2e-05,
+            6.4e-05
+          ]
+        ],
+        "factors": [
+          "QL-STOCK",
+          "QL-DESK",
+          "QL-SECOND"
+        ],
+        "covariance_source": "Configured volatility and correlation",
+        "method": "monte_carlo",
+        "estimate": {
+          "confidence": 0.95,
+          "n": 1000,
+          "tail_mass": 50.0,
+          "boundary_weight": 0.0,
+          "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+          "warnings": []
+        }
+      },
+      "rows": [
+        {
+          "loss": 192.41534123594624
+        },
+        {
+          "loss": 172.08100319620212
+        },
+        {
+          "loss": 171.43342161307874
+        },
+        {
+          "loss": 169.38550671421314
+        },
+        {
+          "loss": 152.64132222706854
+        },
+        {
+          "loss": 151.97741999254896
+        },
+        {
+          "loss": 149.07042048942864
+        },
+        {
+          "loss": 148.77805973537724
+        }
+      ],
+      "note": "Read from the existing risk report; no Monte Carlo run is triggered. These results are conditional on holdings, return scenarios and pricing assumptions. Main changed inputs are reported without causal percentages.",
+      "visual": {
+        "kind": "histogram",
+        "edges": [
+          -258.6983025970414,
+          -243.6611811359418,
+          -228.62405967484221,
+          -213.58693821374263,
+          -198.54981675264304,
+          -183.51269529154345,
+          -168.47557383044386,
+          -153.43845236934428,
+          -138.4013309082447,
+          -123.3642094471451,
+          -108.32708798604551,
+          -93.28996652494592,
+          -78.25284506384634,
+          -63.21572360274675,
+          -48.17860214164716,
+          -33.14148068054757,
+          -18.104359219447986,
+          -3.067237758348398,
+          11.96988370275119,
+          27.007005163850806,
+          42.044126624950366,
+          57.081248086049925,
+          72.11836954714954,
+          87.15549100824916,
+          102.19261246934872,
+          117.22973393044828,
+          132.2668553915479,
+          147.3039768526475,
+          162.34109831374707,
+          177.37821977484663,
+          192.41534123594624
+        ],
+        "counts": [
+          2,
+          1,
+          3,
+          0,
+          5,
+          11,
+          7,
+          12,
+          12,
+          18,
+          20,
+          34,
+          52,
+          62,
+          75,
+          78,
+          82,
+          72,
+          85,
+          84,
+          82,
+          70,
+          41,
+          37,
+          23,
+          21,
+          3,
+          4,
+          3,
+          1
+        ],
+        "threshold": 103.56857621463942
+      }
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 0,
+        "status": "active"
+      },
+      "before": 94.45946811012372,
+      "after": 103.56857621463942,
+      "inputs": [
+        {
+          "input": "holdings",
+          "before": [
+            {
+              "instrument": "QL-STOCK:call:100:6/73:x100",
+              "underlying": "QL-STOCK",
+              "quantity": 1,
+              "multiplier": 100,
+              "mark": 2.3583475,
+              "spot": 100.21,
+              "kind": "call",
+              "strike": 100.0,
+              "years": 0.07945205479452055,
+              "volatility": 0.20006315398030408,
+              "rate": 0.0,
+              "dividend": 0.0,
+              "value": 235.83474999999999,
+              "delta_gbp": 5271.754868598454,
+              "greeks": {
+                "delta": 52.60707383093957,
+                "gamma": 7.0445078809643,
+                "vega": 1124.4626335064322,
+                "theta": -1415.718835554963,
+                "rho": 400.11419791717043
+              }
+            },
+            {
+              "instrument": "QL-DESK",
+              "underlying": "QL-DESK",
+              "quantity": 6,
+              "multiplier": 1,
+              "mark": 100.005,
+              "spot": 100.005,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 600.03,
+              "delta_gbp": 600.03,
+              "greeks": {
+                "delta": 6.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              }
+            }
+          ],
+          "after": [
+            {
+              "instrument": "QL-STOCK",
+              "underlying": "QL-STOCK",
+              "quantity": 5,
+              "multiplier": 1,
+              "mark": 100.21,
+              "spot": 100.21,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 501.04999999999995,
+              "delta_gbp": 501.04999999999995,
+              "greeks": {
+                "delta": 5.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              }
+            },
+            {
+              "instrument": "QL-STOCK:call:100:6/73:x100",
+              "underlying": "QL-STOCK",
+              "quantity": 1,
+              "multiplier": 100,
+              "mark": 2.3583475,
+              "spot": 100.21,
+              "kind": "call",
+              "strike": 100.0,
+              "years": 0.07945205479452055,
+              "volatility": 0.20006315398030408,
+              "rate": 0.0,
+              "dividend": 0.0,
+              "value": 235.83474999999999,
+              "delta_gbp": 5271.754868598454,
+              "greeks": {
+                "delta": 52.60707383093957,
+                "gamma": 7.0445078809643,
+                "vega": 1124.4626335064322,
+                "theta": -1415.718835554963,
+                "rho": 400.11419791717043
+              }
+            },
+            {
+              "instrument": "QL-DESK",
+              "underlying": "QL-DESK",
+              "quantity": 6,
+              "multiplier": 1,
+              "mark": 100.005,
+              "spot": 100.005,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 600.03,
+              "delta_gbp": 600.03,
+              "greeks": {
+                "delta": 6.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              }
+            }
+          ],
+          "relation": "observed changed input"
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": 94.45946811012372,
+          "after": 103.56857621463942,
+          "relation": "observed changed input",
+          "difference": 9.1091081045157
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "risk",
+        "name": "Conditional return scenarios",
+        "description": "Selected IID return law, covariance, finite paths and fixed-IV option revaluation.",
+        "failure": "Dependence, tail events and volatility shocks outside that model can be missed.",
+        "url": "/explain#var"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "exposure",
+        "name": "Exposure",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "portfolio_variance",
+        "name": "Portfolio variance",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Read from the existing risk report; no Monte Carlo run is triggered. These results are conditional on holdings, return scenarios and pricing assumptions. Main changed inputs are reported without causal percentages."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "VaR is not the maximum possible loss and does not describe severity beyond its threshold."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Market-risk measurement, limits and reporting contexts; this educational implementation is not a regulatory capital engine."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "monte_carlo",
+        "label": "monte carlo"
+      },
+      {
+        "id": "historical",
+        "label": "historical"
+      },
+      {
+        "id": "parametric",
+        "label": "parametric"
+      }
+    ]
+  },
+  "what_if_correlation": {
+    "schema": "quantlab-explanation-v1",
+    "label": "HYPOTHETICAL SNAPSHOT ANALYSIS",
+    "kind": "correlation",
+    "source_point": {
+      "revision": 1,
+      "frame_index": 0
+    },
+    "isolation": "No live orders, P&L, risk limits, replay actions, research records, market RNG or learning evidence are changed.",
+    "result": {
+      "before": {
+        "covariance": [
+          [
+            0.000144,
+            3e-05,
+            2.4e-05
+          ],
+          [
+            3e-05,
+            0.0001,
+            2e-05
+          ],
+          [
+            2.4e-05,
+            2e-05,
+            6.4e-05
+          ]
+        ],
+        "portfolio": {
+          "positions": [
+            {
+              "instrument": "QL-STOCK",
+              "underlying": "QL-STOCK",
+              "quantity": 5,
+              "multiplier": 1,
+              "mark": 100.21,
+              "spot": 100.21,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 501.04999999999995,
+              "greeks": {
+                "delta": 5.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              },
+              "delta_gbp": 501.04999999999995,
+              "value_share": 0.3747808153062864,
+              "delta_share": 0.07862278096501085
+            },
+            {
+              "instrument": "QL-STOCK:call:100:6/73:x100",
+              "underlying": "QL-STOCK",
+              "quantity": 1,
+              "multiplier": 100,
+              "mark": 2.3583475,
+              "spot": 100.21,
+              "kind": "call",
+              "strike": 100.0,
+              "years": 0.07945205479452055,
+              "volatility": 0.20006315398030408,
+              "rate": 0.0,
+              "dividend": 0.0,
+              "value": 235.83474999999999,
+              "greeks": {
+                "delta": 52.60707383093957,
+                "gamma": 7.0445078809643,
+                "vega": 1124.4626335064322,
+                "theta": -1415.718835554963,
+                "rho": 400.11419791717043
+              },
+              "delta_gbp": 5271.754868598454,
+              "value_share": 0.17640223507145839,
+              "delta_share": 0.8272228886040233
+            },
+            {
+              "instrument": "QL-DESK",
+              "underlying": "QL-DESK",
+              "quantity": 6,
+              "multiplier": 1,
+              "mark": 100.005,
+              "spot": 100.005,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 600.03,
+              "greeks": {
+                "delta": 6.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              },
+              "delta_gbp": 600.03,
+              "value_share": 0.44881694962225527,
+              "delta_share": 0.0941543304309659
+            }
+          ],
+          "cash": 8668.5239,
+          "market_value": 1336.91475,
+          "equity": 10005.43865,
+          "initial_capital": 10000.0,
+          "realised_gross": 0.0,
+          "unrealised": 5.49965,
+          "fees": 0.061,
+          "financing": 0.0,
+          "pnl": 5.438650000000052,
+          "drawdown": 0.05500000000029104,
+          "long": 1336.91475,
+          "short": 0,
+          "gross": 1336.91475,
+          "net": 1336.91475,
+          "delta_gbp": 6372.834868598454,
+          "gross_delta_gbp": 6372.834868598454,
+          "factors": {
+            "QL-STOCK": {
+              "spot": 100.21,
+              "delta": 57.60707383093957,
+              "gamma": 7.0445078809643,
+              "vega": 1124.4626335064322,
+              "theta": -1415.718835554963,
+              "rho": 400.11419791717043
+            },
+            "QL-DESK": {
+              "spot": 100.005,
+              "delta": 6.0,
+              "gamma": 0.0,
+              "vega": 0.0,
+              "theta": 0.0,
+              "rho": 0.0
+            }
+          },
+          "greeks": {
+            "delta": 63.60707383093957,
+            "gamma": 7.0445078809643,
+            "vega": 1124.4626335064322,
+            "theta": -1415.718835554963,
+            "rho": 400.11419791717043
+          },
+          "largest_position_share": 0.44881694962225527,
+          "largest_delta_share": 0.8272228886040233,
+          "hhi": 0.3730150623280768,
+          "max_position": 6,
+          "source": "Actual QuantLab accounts"
+        },
+        "linear_risk": {
+          "var": 116.80400495579626,
+          "es": 146.4769345081612,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 71.0117928075325,
+          "decomposition": {
+            "variance": 5042.674717739926,
+            "volatility": 71.0117928075325,
+            "diagonal_terms": [
+              4798.839751331619,
+              36.00360009,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 207.8313663183078
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 0.0
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 4834.8433514216185,
+            "cross_total": 207.8313663183078,
+            "marginal_volatility": [
+              0.01195977129291813,
+              0.0032837805783889258,
+              0.002120041064931312
+            ],
+            "component_volatility": [
+              69.0414259470818,
+              1.970366860450707,
+              0.0
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "after": {
+        "covariance": [
+          [
+            0.000144,
+            0.00010800000000000001,
+            8.64e-05
+          ],
+          [
+            0.00010800000000000001,
+            0.0001,
+            7.2e-05
+          ],
+          [
+            8.64e-05,
+            7.2e-05,
+            6.4e-05
+          ]
+        ],
+        "portfolio": {
+          "positions": [
+            {
+              "instrument": "QL-STOCK",
+              "underlying": "QL-STOCK",
+              "quantity": 5,
+              "multiplier": 1,
+              "mark": 100.21,
+              "spot": 100.21,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 501.04999999999995,
+              "greeks": {
+                "delta": 5.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              },
+              "delta_gbp": 501.04999999999995,
+              "value_share": 0.3747808153062864,
+              "delta_share": 0.07862278096501085
+            },
+            {
+              "instrument": "QL-STOCK:call:100:6/73:x100",
+              "underlying": "QL-STOCK",
+              "quantity": 1,
+              "multiplier": 100,
+              "mark": 2.3583475,
+              "spot": 100.21,
+              "kind": "call",
+              "strike": 100.0,
+              "years": 0.07945205479452055,
+              "volatility": 0.20006315398030408,
+              "rate": 0.0,
+              "dividend": 0.0,
+              "value": 235.83474999999999,
+              "greeks": {
+                "delta": 52.60707383093957,
+                "gamma": 7.0445078809643,
+                "vega": 1124.4626335064322,
+                "theta": -1415.718835554963,
+                "rho": 400.11419791717043
+              },
+              "delta_gbp": 5271.754868598454,
+              "value_share": 0.17640223507145839,
+              "delta_share": 0.8272228886040233
+            },
+            {
+              "instrument": "QL-DESK",
+              "underlying": "QL-DESK",
+              "quantity": 6,
+              "multiplier": 1,
+              "mark": 100.005,
+              "spot": 100.005,
+              "kind": "stock",
+              "strike": 0,
+              "years": 0,
+              "volatility": 0,
+              "rate": 0,
+              "dividend": 0,
+              "value": 600.03,
+              "greeks": {
+                "delta": 6.0,
+                "gamma": 0.0,
+                "vega": 0.0,
+                "theta": 0.0,
+                "rho": 0.0
+              },
+              "delta_gbp": 600.03,
+              "value_share": 0.44881694962225527,
+              "delta_share": 0.0941543304309659
+            }
+          ],
+          "cash": 8668.5239,
+          "market_value": 1336.91475,
+          "equity": 10005.43865,
+          "initial_capital": 10000.0,
+          "realised_gross": 0.0,
+          "unrealised": 5.49965,
+          "fees": 0.061,
+          "financing": 0.0,
+          "pnl": 5.438650000000052,
+          "drawdown": 0.05500000000029104,
+          "long": 1336.91475,
+          "short": 0,
+          "gross": 1336.91475,
+          "net": 1336.91475,
+          "delta_gbp": 6372.834868598454,
+          "gross_delta_gbp": 6372.834868598454,
+          "factors": {
+            "QL-STOCK": {
+              "spot": 100.21,
+              "delta": 57.60707383093957,
+              "gamma": 7.0445078809643,
+              "vega": 1124.4626335064322,
+              "theta": -1415.718835554963,
+              "rho": 400.11419791717043
+            },
+            "QL-DESK": {
+              "spot": 100.005,
+              "delta": 6.0,
+              "gamma": 0.0,
+              "vega": 0.0,
+              "theta": 0.0,
+              "rho": 0.0
+            }
+          },
+          "greeks": {
+            "delta": 63.60707383093957,
+            "gamma": 7.0445078809643,
+            "vega": 1124.4626335064322,
+            "theta": -1415.718835554963,
+            "rho": 400.11419791717043
+          },
+          "largest_position_share": 0.44881694962225527,
+          "largest_delta_share": 0.8272228886040233,
+          "hhi": 0.3730150623280768,
+          "max_position": 6,
+          "source": "Actual QuantLab accounts"
+        },
+        "linear_risk": {
+          "var": 122.90299929102221,
+          "es": 154.12531945989832,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 74.7197180814243,
+          "decomposition": {
+            "variance": 5583.036270167527,
+            "volatility": 74.7197180814243,
+            "diagonal_terms": [
+              4798.839751331619,
+              36.00360009,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 748.1929187459082
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 0.0
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 4834.8433514216185,
+            "cross_total": 748.1929187459082,
+            "marginal_volatility": [
+              0.01199264617275034,
+              0.009147062426866224,
+              0.007253406658417835
+            ],
+            "component_volatility": [
+              69.23120621343178,
+              5.48851186799254,
+              0.0
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "controlled_inputs": {
+        "correlation": 0.9
+      },
+      "note": "Hypothetical common correlation across the three named factors; current positions and configured daily volatilities held fixed. Any custom covariance is replaced in this hypothesis. Only the fast delta-normal risk API is called; no Monte Carlo or live limit update."
+    }
+  },
+  "z_score": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "z_score",
+      "name": "Z-score",
+      "domain": "Statistical arbitrage",
+      "definition": "The residual's distance from its recent mean in units of recent standard deviation.",
+      "matters": "It expresses a deviation relative to its own recent scale.",
+      "changes": "Current residual, earlier residual mean and earlier residual standard deviation.",
+      "limitation": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable.",
+      "prerequisites": [
+        "residual",
+        "standard_deviation"
+      ],
+      "related": [
+        "residual",
+        "standard_deviation",
+        "stat_arb_signal"
+      ],
+      "affected_by": [
+        "residual"
+      ],
+      "affects": [
+        "stat_arb_signal"
+      ],
+      "maths": {
+        "equation": "z_t = (e_t \u2212 \u03bc_past) / s_past",
+        "variables": {
+          "z_t": "current standardised residual",
+          "e_t": "current residual",
+          "\u03bc_past": "mean of earlier window residuals",
+          "s_past": "sample standard deviation of those earlier residuals",
+          "t": "current observation index excluded from normalisation"
+        }
+      },
+      "uses": "Econometric relationship modelling, factor models and pairs research; regression alone is not a trading edge.",
+      "locations": [
+        {
+          "lab": "statarb",
+          "url": "/statarb"
+        }
+      ],
+      "assumptions": [
+        "regression"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable.",
+      "interview": "For z-score, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "t": 80,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 2.219424722995963,
+      "unit": "dimensionless",
+      "inputs": {
+        "t": 80,
+        "available": true,
+        "reason": null,
+        "spread": 0.32040724277524646,
+        "mean": -0.022077764961042946,
+        "sd": 0.15431251359315076,
+        "n": 40,
+        "normalization_start": 40,
+        "normalization_end": 80,
+        "fit": {
+          "alpha": 5.9970915867180565,
+          "beta": 0.9377952471812149,
+          "start": 0,
+          "end": 80,
+          "n": 80,
+          "r_squared": 0.901383894633018,
+          "warnings": [
+            "Conventional SE assumes IID homoskedastic errors; no price-series inference"
+          ]
+        },
+        "current_X_Y": [
+          97.38,
+          97.64
+        ],
+        "rules": {
+          "entry": 2,
+          "exit": 0.4,
+          "stop": 4,
+          "window": 80,
+          "z_window": 40,
+          "mode": "fixed",
+          "block": 20,
+          "max_holding": 40,
+          "max_loss": 50,
+          "max_gross": 10000
+        }
+      },
+      "rows": [],
+      "note": "The current residual uses the current published X,Y pair and a fit ending before this point. Normalisation uses earlier residuals only. Undefined or insufficient-history scores remain unavailable.",
+      "visual": {
+        "kind": "residual",
+        "value": 0.32040724277524646,
+        "mean": -0.022077764961042946,
+        "sd": 0.15431251359315076,
+        "z": 2.219424722995963
+      }
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": 2.219424722995963,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "regression",
+        "name": "Past-window linear relationship",
+        "description": "OLS training and z-score normalisation use only earlier published observations.",
+        "failure": "Breaks, drift and serial dependence can make a fitted spread unreliable.",
+        "url": "/explain#regression"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "residual",
+        "name": "Residual / spread",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "standard_deviation",
+        "name": "Standard deviation",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "The current residual uses the current published X,Y pair and a fit ending before this point. Normalisation uses earlier residuals only. Undefined or insufficient-history scores remain unavailable."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Econometric relationship modelling, factor models and pairs research; regression alone is not a trading edge."
+      }
+    ],
+    "selectors": []
+  },
+  "z_change": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "z_score",
+      "name": "Z-score",
+      "domain": "Statistical arbitrage",
+      "definition": "The residual's distance from its recent mean in units of recent standard deviation.",
+      "matters": "It expresses a deviation relative to its own recent scale.",
+      "changes": "Current residual, earlier residual mean and earlier residual standard deviation.",
+      "limitation": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable.",
+      "prerequisites": [
+        "residual",
+        "standard_deviation"
+      ],
+      "related": [
+        "residual",
+        "standard_deviation",
+        "stat_arb_signal"
+      ],
+      "affected_by": [
+        "residual"
+      ],
+      "affects": [
+        "stat_arb_signal"
+      ],
+      "maths": {
+        "equation": "z_t = (e_t \u2212 \u03bc_past) / s_past",
+        "variables": {
+          "z_t": "current standardised residual",
+          "e_t": "current residual",
+          "\u03bc_past": "mean of earlier window residuals",
+          "s_past": "sample standard deviation of those earlier residuals",
+          "t": "current observation index excluded from normalisation"
+        }
+      },
+      "uses": "Econometric relationship modelling, factor models and pairs research; regression alone is not a trading edge.",
+      "locations": [
+        {
+          "lab": "statarb",
+          "url": "/statarb"
+        }
+      ],
+      "assumptions": [
+        "regression"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable.",
+      "interview": "For z-score, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 2,
+        "t": 81,
+        "frame_index": 0,
+        "status": "active"
+      }
+    },
+    "current": {
+      "value": 3.558096166128767,
+      "unit": "dimensionless",
+      "inputs": {
+        "t": 81,
+        "available": true,
+        "reason": null,
+        "spread": 0.5683993815436992,
+        "mean": -0.013477371899465495,
+        "sd": 0.163535982805167,
+        "n": 40,
+        "normalization_start": 41,
+        "normalization_end": 81,
+        "fit": {
+          "alpha": 5.9970915867180565,
+          "beta": 0.9377952471812149,
+          "start": 0,
+          "end": 80,
+          "n": 80,
+          "r_squared": 0.901383894633018,
+          "warnings": [
+            "Conventional SE assumes IID homoskedastic errors; no price-series inference"
+          ]
+        },
+        "current_X_Y": [
+          97.83,
+          98.31
+        ],
+        "rules": {
+          "entry": 2,
+          "exit": 0.4,
+          "stop": 4,
+          "window": 80,
+          "z_window": 40,
+          "mode": "fixed",
+          "block": 20,
+          "max_holding": 40,
+          "max_loss": 50,
+          "max_gross": 10000
+        }
+      },
+      "rows": [],
+      "note": "The current residual uses the current published X,Y pair and a fit ending before this point. Normalisation uses earlier residuals only. Undefined or insufficient-history scores remain unavailable.",
+      "visual": {
+        "kind": "residual",
+        "value": 0.5683993815436992,
+        "mean": -0.013477371899465495,
+        "sd": 0.163535982805167,
+        "z": 3.558096166128767
+      }
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 1,
+        "t": 80,
+        "status": "active"
+      },
+      "before": 2.219424722995963,
+      "after": 3.558096166128767,
+      "inputs": [
+        {
+          "input": "current_X_Y",
+          "before": [
+            97.38,
+            97.64
+          ],
+          "after": [
+            97.83,
+            98.31
+          ],
+          "relation": "observed changed input"
+        },
+        {
+          "input": "mean",
+          "before": -0.022077764961042946,
+          "after": -0.013477371899465495,
+          "relation": "observed changed input",
+          "difference": 0.008600393061577451
+        },
+        {
+          "input": "normalization_end",
+          "before": 80,
+          "after": 81,
+          "relation": "observed changed input",
+          "difference": 1.0
+        },
+        {
+          "input": "normalization_start",
+          "before": 40,
+          "after": 41,
+          "relation": "observed changed input",
+          "difference": 1.0
+        },
+        {
+          "input": "sd",
+          "before": 0.15431251359315076,
+          "after": 0.163535982805167,
+          "relation": "observed changed input",
+          "difference": 0.00922346921201624
+        },
+        {
+          "input": "spread",
+          "before": 0.32040724277524646,
+          "after": 0.5683993815436992,
+          "relation": "observed changed input",
+          "difference": 0.24799213876845275
+        },
+        {
+          "input": "t",
+          "before": 80,
+          "after": 81,
+          "relation": "observed changed input",
+          "difference": 1.0
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": 2.219424722995963,
+          "after": 3.558096166128767,
+          "relation": "observed changed input",
+          "difference": 1.338671443132804
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "regression",
+        "name": "Past-window linear relationship",
+        "description": "OLS training and z-score normalisation use only earlier published observations.",
+        "failure": "Breaks, drift and serial dependence can make a fitted spread unreliable.",
+        "url": "/explain#regression"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "residual",
+        "name": "Residual / spread",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "standard_deviation",
+        "name": "Standard deviation",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "The current residual uses the current published X,Y pair and a fit ending before this point. Normalisation uses earlier residuals only. Undefined or insufficient-history scores remain unavailable."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "A z-score is not a probability or a trade recommendation; tiny variance can make it unstable."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Econometric relationship modelling, factor models and pairs research; regression alone is not a trading edge."
+      }
+    ],
+    "selectors": []
+  },
+  "what_if_entry": {
+    "schema": "quantlab-explanation-v1",
+    "label": "HYPOTHETICAL SNAPSHOT ANALYSIS",
+    "kind": "entry_threshold",
+    "source_point": {
+      "revision": 2,
+      "t": 81,
+      "frame_index": 0
+    },
+    "isolation": "No live orders, P&L, risk limits, replay actions, research records, market RNG or learning evidence are changed.",
+    "result": {
+      "before_entry": 2,
+      "after_entry": 2.5,
+      "observations": 82,
+      "rows": [
+        {
+          "t": 80,
+          "z": 2.219424722995963,
+          "before": "short",
+          "after": "wait",
+          "before_reason": "positive residual exceeds prespecified entry",
+          "after_reason": "entry threshold not reached"
+        },
+        {
+          "t": 81,
+          "z": 3.558096166128767,
+          "before": "short",
+          "after": "short",
+          "before_reason": "positive residual exceeds prespecified entry",
+          "after_reason": "positive residual exceeds prespecified entry"
+        }
+      ],
+      "note": "Published synthetic session prefix only. Each signal is evaluated as if flat through the approved decision API; this is a qualification scan, not a backtest, execution forecast or registered evaluation. Holdout research results are never accessed or changed."
+    }
+  },
+  "engineering": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "integer_ticks",
+      "name": "Integer ticks",
+      "domain": "Engineering / reproducibility",
+      "definition": "Matching prices are whole increments on a price grid.",
+      "matters": "Exact tick comparisons avoid floating-point ambiguity in price priority.",
+      "changes": "The instrument tick size and valid integer prices.",
+      "limitation": "Fractional analytical values may still exist; execution must obey the grid.",
+      "prerequisites": [],
+      "related": [],
+      "affected_by": [],
+      "affects": [],
+      "maths": {
+        "equation": null,
+        "variables": {}
+      },
+      "uses": "Auditable trading and research software, incident reproduction and model governance.",
+      "locations": [
+        {
+          "lab": "learning",
+          "url": "/learning"
+        }
+      ],
+      "assumptions": [
+        "replay"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "Fractional analytical values may still exist; execution must obey the grid.",
+      "interview": "For integer ticks, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 1,
+        "time_us": 0,
+        "public_event": 1,
+        "frame_index": 0,
+        "status": "paused"
+      }
+    },
+    "current": {
+      "value": null,
+      "unit": null,
+      "inputs": {
+        "best_bid": "99.99000",
+        "best_ask": "100.02000",
+        "mid": "100.00500",
+        "reference": "100.00500",
+        "reference_source": "external midpoint"
+      },
+      "rows": [],
+      "note": "This concept describes the displayed engine mechanism. It is not a separate numerical metric.",
+      "visual": null
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 0,
+        "status": "paused"
+      },
+      "before": null,
+      "after": null,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "replay",
+        "name": "Versioned deterministic implementation",
+        "description": "Same supported versions, seeds, configuration and actions.",
+        "failure": "A changed implementation need not reproduce an old stream or result.",
+        "url": "/explain#reproducibility"
+      }
+    ],
+    "dependency_trace": [],
+    "quiz_allowed": false,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "This concept describes the displayed engine mechanism. It is not a separate numerical metric."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "Fractional analytical values may still exist; execution must obey the grid."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Auditable trading and research software, incident reproduction and model governance."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "user-1",
+        "label": "user-1 \u00b7 buy \u00b7 6 units"
+      }
+    ]
+  },
+  "reading_preserves_learning": true,
+  "quiz": {
+    "revision": 5,
+    "enabled": true,
+    "current": {
+      "id": "q-2",
+      "mode": "learn",
+      "stage": "test",
+      "attempts": 0,
+      "hints": 0,
+      "closed": false,
+      "feedback": null,
+      "learning_update": null,
+      "result": null,
+      "started": "2026-09-12T16:55:10.720667+00:00",
+      "question": {
+        "concept": "vwap",
+        "difficulty": 1,
+        "prompt": "Which average describes this order's execution price?",
+        "answer_type": "choice",
+        "options": [
+          {
+            "id": "mid",
+            "text": "Use the displayed midpoint"
+          },
+          {
+            "id": "equal",
+            "text": "Give each price level equal weight"
+          },
+          {
+            "id": "weighted",
+            "text": "Weight each actual price by the units executed there"
+          }
+        ],
+        "prerequisites": [
+          "liquidity"
+        ],
+        "quantlab": "explanation-trading, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+        "triggers": [
+          "execution"
+        ],
+        "tolerance": "0"
+      },
+      "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+    },
+    "due_count": 0,
+    "encountered": [
+      "ask",
+      "bid",
+      "black_scholes",
+      "call",
+      "contract_multiplier",
+      "decision_quality",
+      "delta",
+      "derivatives",
+      "drawdown",
+      "expiry",
+      "exposure",
+      "finite_differences",
+      "gamma",
+      "greeks",
+      "implied_volatility",
+      "intrinsic_value",
+      "inventory",
+      "limit_orders",
+      "liquidity",
+      "market_orders",
+      "midpoint",
+      "moneyness",
+      "option_pricing",
+      "pnl_attribution",
+      "put_call_parity",
+      "rho",
+      "slippage",
+      "spread",
+      "strike",
+      "theta",
+      "time_value",
+      "vega",
+      "volatility",
+      "vwap"
+    ]
+  },
+  "research": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "standard_error",
+      "name": "Standard error",
+      "domain": "Statistics",
+      "definition": "The estimated sampling variability of an estimator, such as the mean.",
+      "matters": "It helps distinguish a noisy estimated advantage from a precisely estimated one.",
+      "changes": "Independent sample count and outcome variability.",
+      "limitation": "Treating correlated fills as independent sessions understates uncertainty.",
+      "prerequisites": [
+        "standard_deviation",
+        "sample_mean"
+      ],
+      "related": [
+        "sample_mean",
+        "standard_deviation"
+      ],
+      "affected_by": [],
+      "affects": [],
+      "maths": {
+        "equation": "SE(x\u0304) = s / \u221an",
+        "variables": {
+          "SE": "estimated uncertainty of the sample mean",
+          "x\u0304": "sample mean",
+          "s": "sample standard deviation",
+          "n": "number of independent observations"
+        }
+      },
+      "uses": "Research uncertainty and performance measurement; dependent financial data need appropriate inference methods.",
+      "locations": [
+        {
+          "lab": "research",
+          "url": "/research"
+        },
+        {
+          "lab": "learning",
+          "url": "/learning"
+        }
+      ],
+      "assumptions": [
+        "inference"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "Treating correlated fills as independent sessions understates uncertainty.",
+      "interview": "For standard error, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "ACTUAL SESSION \u2014 LIVE PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "time_us": 0,
+        "status": "ended"
+      }
+    },
+    "current": {
+      "value": 0.012977544708713842,
+      "unit": "GBP",
+      "inputs": {
+        "variant": "fixed",
+        "metric": "net_pnl",
+        "n": 4,
+        "mean": -0.0095,
+        "sd": 0.025955089417427683,
+        "se": 0.012977544708713842,
+        "ci_low": -0.0508003392099005,
+        "ci_high": 0.0318003392099005,
+        "paired": false,
+        "paired_se": null,
+        "unpaired_se": null,
+        "variant_count": 1,
+        "source_digest": "83400e6fad8a6f1332e6089421a663a56c6b3785d451a7c0b418c49753f6149b"
+      },
+      "rows": [],
+      "note": "Existing verified research context; the experimental unit is a complete independent run. No study is launched or modified by this explanation.",
+      "visual": null
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": 0.012977544708713842,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "inference",
+        "name": "Independent research units",
+        "description": "Uncertainty is measured across the defined complete independent runs.",
+        "failure": "Dependent or selected samples make ordinary intervals overconfident.",
+        "url": "/explain#standard_error"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "standard_deviation",
+        "name": "Standard deviation",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "sample_mean",
+        "name": "Sample mean",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Existing verified research context; the experimental unit is a complete independent run. No study is launched or modified by this explanation."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "Treating correlated fills as independent sessions understates uncertainty."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Research uncertainty and performance measurement; dependent financial data need appropriate inference methods."
+      }
+    ],
+    "selectors": []
+  },
+  "live_observer_rejected": "Post-session and observer explanations require the ended session or ended replay frame",
+  "post_session": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "markouts",
+      "name": "Markout",
+      "domain": "Market microstructure",
+      "definition": "A signed comparison between an execution price and a later public reference.",
+      "matters": "It helps assess whether the price subsequently moved against the side that traded.",
+      "changes": "Execution side and price, selected horizon and observed later reference.",
+      "limitation": "A negative markout does not prove the counterparty was informed. Pending horizons have no value yet.",
+      "prerequisites": [
+        "midpoint"
+      ],
+      "related": [
+        "midpoint"
+      ],
+      "affected_by": [],
+      "affects": [],
+      "maths": {
+        "equation": "M = s (R_h \u2212 P)",
+        "variables": {
+          "M": "own-side markout, GBP per unit",
+          "s": "+1 for buyer, \u22121 for seller",
+          "R_h": "public reference observed at horizon h",
+          "P": "execution price",
+          "h": "selected future public-event horizon"
+        }
+      },
+      "uses": "Liquidity provision and execution-quality review; public outcomes alone do not identify private information.",
+      "locations": [
+        {
+          "lab": "trading",
+          "url": "/"
+        },
+        {
+          "lab": "maker",
+          "url": "/#maker"
+        }
+      ],
+      "assumptions": [
+        "valuation"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "A negative markout does not prove the counterparty was informed. Pending horizons have no value yet.",
+      "interview": "For markout, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "post_session",
+    "label": "POST-SESSION PUBLIC REVIEW",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 3,
+        "time_us": 89780,
+        "public_event": 2,
+        "frame_index": 0,
+        "status": "ended"
+      }
+    },
+    "current": {
+      "value": {
+        "trade_id": 2,
+        "role": "aggressor",
+        "horizon": 20,
+        "value": null,
+        "status": "pending",
+        "observed_time_us": null
+      },
+      "unit": "GBP per unit; own-side sign",
+      "inputs": {},
+      "rows": [
+        {
+          "trade_id": 1,
+          "role": "aggressor",
+          "horizon": 1,
+          "value": "0.00000",
+          "status": "matured",
+          "observed_time_us": 89780
+        },
+        {
+          "trade_id": 1,
+          "role": "aggressor",
+          "horizon": 5,
+          "value": null,
+          "status": "pending",
+          "observed_time_us": null
+        },
+        {
+          "trade_id": 1,
+          "role": "aggressor",
+          "horizon": 20,
+          "value": null,
+          "status": "pending",
+          "observed_time_us": null
+        },
+        {
+          "trade_id": 2,
+          "role": "aggressor",
+          "horizon": 1,
+          "value": "-0.01000",
+          "status": "matured",
+          "observed_time_us": 89780
+        },
+        {
+          "trade_id": 2,
+          "role": "aggressor",
+          "horizon": 5,
+          "value": null,
+          "status": "pending",
+          "observed_time_us": null
+        },
+        {
+          "trade_id": 2,
+          "role": "aggressor",
+          "horizon": 20,
+          "value": null,
+          "status": "pending",
+          "observed_time_us": null
+        }
+      ],
+      "note": "Only markouts already present at this public point are available. Positive favours your side; negative opposes it. A pending horizon is not zero and does not reveal a later price.",
+      "visual": null
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": {
+        "trade_id": 2,
+        "role": "aggressor",
+        "horizon": 20,
+        "value": null,
+        "status": "pending",
+        "observed_time_us": null
+      },
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "valuation",
+        "name": "Public reference marks",
+        "description": "Open positions use the specified public mark and documented fee convention.",
+        "failure": "Marked equity can differ from proceeds available on liquidation.",
+        "url": "/explain#model_risk"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "midpoint",
+        "name": "Midpoint",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Only markouts already present at this public point are available. Positive favours your side; negative opposes it. A pending horizon is not zero and does not reveal a later price."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "A negative markout does not prove the counterparty was informed. Pending horizons have no value yet."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Liquidity provision and execution-quality review; public outcomes alone do not identify private information."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "user-1",
+        "label": "user-1 \u00b7 buy \u00b7 6 units"
+      }
+    ]
+  },
+  "observer": {
+    "mode": "observer",
+    "label": "OBSERVER / MODEL EXPLANATION \u2014 hidden synthetic truth, unavailable at decision time",
+    "quiz_allowed": false,
+    "record_count": 2
+  },
+  "replay_initial": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "vwap",
+      "name": "VWAP",
+      "domain": "Trading / execution",
+      "definition": "An average execution price that gives larger fills more weight.",
+      "matters": "It tells you what price you actually paid across several fills.",
+      "changes": "Each recorded execution price and quantity.",
+      "limitation": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "prerequisites": [
+        "partial_fills"
+      ],
+      "related": [
+        "execution_cost",
+        "partial_fills",
+        "slippage"
+      ],
+      "affected_by": [
+        "slippage"
+      ],
+      "affects": [
+        "execution_cost"
+      ],
+      "maths": {
+        "equation": "VWAP = \u03a3\u1d62(P\u1d62 Q\u1d62) / \u03a3\u1d62Q\u1d62",
+        "variables": {
+          "P\u1d62": "recorded price of fill i in GBP",
+          "Q\u1d62": "executed units in fill i",
+          "i": "fill index",
+          "\u03a3": "sum across recorded fills",
+          "VWAP": "quantity-weighted execution price in GBP"
+        }
+      },
+      "uses": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types.",
+      "locations": [
+        {
+          "lab": "trading",
+          "url": "/"
+        }
+      ],
+      "assumptions": [
+        "execution"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "interview": "For vwap, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "SELECTED REPLAY POINT \u2014 PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 0,
+        "frame_index": 0,
+        "status": "paused"
+      }
+    },
+    "current": {
+      "value": null,
+      "unit": null,
+      "inputs": {},
+      "rows": [],
+      "note": "No selected order is recorded at this point. Submit an order, or select an earlier recorded order; no fill price has been invented.",
+      "visual": null
+    },
+    "change": {
+      "available": false,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": null,
+      "before": null,
+      "after": null,
+      "inputs": []
+    },
+    "assumptions": [
+      {
+        "id": "execution",
+        "name": "Visible single-venue execution",
+        "description": "Displayed FIFO liquidity, no hidden orders, latency or exchange competition.",
+        "failure": "Real fills and execution costs can differ when liquidity reacts or moves.",
+        "url": "/explain#model_risk"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "partial_fills",
+        "name": "Partial fill",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "slippage",
+        "name": "Slippage",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "No selected order is recorded at this point. Submit an order, or select an earlier recorded order; no fill price has been invented."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types."
+      }
+    ],
+    "selectors": []
+  },
+  "replay_trade": {
+    "schema": "quantlab-explanation-v1",
+    "concept": {
+      "id": "vwap",
+      "name": "VWAP",
+      "domain": "Trading / execution",
+      "definition": "An average execution price that gives larger fills more weight.",
+      "matters": "It tells you what price you actually paid across several fills.",
+      "changes": "Each recorded execution price and quantity.",
+      "limitation": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "prerequisites": [
+        "partial_fills"
+      ],
+      "related": [
+        "execution_cost",
+        "partial_fills",
+        "slippage"
+      ],
+      "affected_by": [
+        "slippage"
+      ],
+      "affects": [
+        "execution_cost"
+      ],
+      "maths": {
+        "equation": "VWAP = \u03a3\u1d62(P\u1d62 Q\u1d62) / \u03a3\u1d62Q\u1d62",
+        "variables": {
+          "P\u1d62": "recorded price of fill i in GBP",
+          "Q\u1d62": "executed units in fill i",
+          "i": "fill index",
+          "\u03a3": "sum across recorded fills",
+          "VWAP": "quantity-weighted execution price in GBP"
+        }
+      },
+      "uses": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types.",
+      "locations": [
+        {
+          "lab": "trading",
+          "url": "/"
+        }
+      ],
+      "assumptions": [
+        "execution"
+      ],
+      "depths": [
+        "beginner",
+        "maths",
+        "quant",
+        "interview"
+      ],
+      "misconception": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate.",
+      "interview": "For vwap, which input or assumption would you check before trusting the interpretation? Explain your reasoning using the displayed evidence."
+    },
+    "depth": "beginner",
+    "mode": "live",
+    "label": "SELECTED REPLAY POINT \u2014 PUBLIC INFORMATION",
+    "source": {
+      "environment": "synthetic",
+      "relation": "calculated from / model-dependent contributor",
+      "point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 1,
+        "frame_index": 1,
+        "status": "paused"
+      }
+    },
+    "current": {
+      "value": "100.01667",
+      "unit": "GBP per executed unit, fees separate",
+      "inputs": {
+        "order_id": "user-1",
+        "side": "buy",
+        "type": "market",
+        "price": null,
+        "original": 6,
+        "filled": 6,
+        "remaining": 0,
+        "cancelled": 0,
+        "status": "filled",
+        "exact_vwap_gbp": "6001/60",
+        "fills": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "role": "aggressor",
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "role": "aggressor",
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ]
+      },
+      "rows": [
+        {
+          "trade_id": 1,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 2,
+          "role": "aggressor",
+          "price": "100.01000",
+          "fee": "0.00200"
+        },
+        {
+          "trade_id": 2,
+          "time_us": 0,
+          "side": "buy",
+          "quantity": 4,
+          "role": "aggressor",
+          "price": "100.02000",
+          "fee": "0.00400"
+        }
+      ],
+      "note": "Calculated from these recorded fills using the same execution calculation as the order book. Larger fills receive more weight. Display is rounded to five decimal places; the exact fraction is retained.",
+      "visual": {
+        "kind": "fills",
+        "rows": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "role": "aggressor",
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "role": "aggressor",
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ]
+      }
+    },
+    "change": {
+      "available": true,
+      "label": "Main changed inputs between observed public snapshots; not causal percentages",
+      "previous_point": {
+        "revision": 0,
+        "time_us": 0,
+        "public_event": 0,
+        "frame_index": 0
+      },
+      "before": null,
+      "after": "100.01667",
+      "inputs": [
+        {
+          "input": "cancelled",
+          "before": null,
+          "after": 0,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "exact_vwap_gbp",
+          "before": null,
+          "after": "6001/60",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "filled",
+          "before": null,
+          "after": 6,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "fills",
+          "before": null,
+          "after": [
+            {
+              "trade_id": 1,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 2,
+              "role": "aggressor",
+              "price": "100.01000",
+              "fee": "0.00200"
+            },
+            {
+              "trade_id": 2,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 4,
+              "role": "aggressor",
+              "price": "100.02000",
+              "fee": "0.00400"
+            }
+          ],
+          "relation": "observed changed input"
+        },
+        {
+          "input": "order_id",
+          "before": null,
+          "after": "user-1",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "original",
+          "before": null,
+          "after": 6,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "remaining",
+          "before": null,
+          "after": 0,
+          "relation": "observed changed input"
+        },
+        {
+          "input": "side",
+          "before": null,
+          "after": "buy",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "status",
+          "before": null,
+          "after": "filled",
+          "relation": "observed changed input"
+        },
+        {
+          "input": "type",
+          "before": null,
+          "after": "market",
+          "relation": "observed changed input"
+        }
+      ],
+      "output": [
+        {
+          "input": "value",
+          "before": null,
+          "after": "100.01667",
+          "relation": "observed changed input"
+        }
+      ]
+    },
+    "assumptions": [
+      {
+        "id": "execution",
+        "name": "Visible single-venue execution",
+        "description": "Displayed FIFO liquidity, no hidden orders, latency or exchange competition.",
+        "failure": "Real fills and execution costs can differ when liquidity reacts or moves.",
+        "url": "/explain#model_risk"
+      }
+    ],
+    "dependency_trace": [
+      {
+        "id": "partial_fills",
+        "name": "Partial fill",
+        "relation": "prerequisite / model dependency"
+      },
+      {
+        "id": "slippage",
+        "name": "Slippage",
+        "relation": "prerequisite / model dependency"
+      }
+    ],
+    "quiz_allowed": true,
+    "statements": [
+      {
+        "type": "CALCULATION",
+        "text": "Calculated from these recorded fills using the same execution calculation as the order book. Larger fills receive more weight. Display is rounded to five decimal places; the exact fraction is retained."
+      },
+      {
+        "type": "MODEL ASSUMPTION",
+        "text": "QuantLab shows your order's VWAP, not a whole-market daily benchmark; fees are separate."
+      },
+      {
+        "type": "REAL-FINANCE CONTEXT",
+        "text": "Order handling, execution analysis and transaction-cost analysis; live venues have additional fees, latency and order types."
+      }
+    ],
+    "selectors": [
+      {
+        "id": "user-1",
+        "label": "user-1 \u00b7 buy \u00b7 6 units"
+      }
+    ]
+  },
+  "replay_hook": {
+    "schema": "quantlab-explanation-v1",
+    "event_type": "public replay transition",
+    "frame_index": 1,
+    "concept_ids": [
+      "vwap",
+      "pnl_attribution",
+      "markouts"
+    ],
+    "pre": {
+      "vwap": {
+        "value": null,
+        "unit": null,
+        "inputs": {},
+        "rows": [],
+        "note": "No selected order is recorded at this point. Submit an order, or select an earlier recorded order; no fill price has been invented.",
+        "visual": null
+      },
+      "pnl_attribution": {
+        "value": "0.00000",
+        "unit": "GBP",
+        "inputs": {
+          "cash": "10000.00000",
+          "position": 0,
+          "average_entry": null,
+          "realised": "0.00000",
+          "unrealised": "0.00000",
+          "total_pnl": "0.00000",
+          "fees": "0.00000",
+          "exposure": "0.00000",
+          "max_drawdown": "0.00000",
+          "reference": "100.00000",
+          "reference_source": "external midpoint"
+        },
+        "rows": [],
+        "note": "Stock-desk realised P&L is already net of expensed fees. Total equals that realised amount plus unrealised P&L. Fees are shown for context and must not be subtracted twice. Open inventory is valued at the displayed public reference.",
+        "visual": null
+      },
+      "markouts": {
+        "value": null,
+        "unit": "GBP per unit; own-side sign",
+        "inputs": {},
+        "rows": [],
+        "note": "Only markouts already present at this public point are available. Positive favours your side; negative opposes it. A pending horizon is not zero and does not reveal a later price.",
+        "visual": null
+      }
+    },
+    "post": {
+      "vwap": {
+        "value": "100.01667",
+        "unit": "GBP per executed unit, fees separate",
+        "inputs": {
+          "order_id": "user-1",
+          "side": "buy",
+          "type": "market",
+          "price": null,
+          "original": 6,
+          "filled": 6,
+          "remaining": 0,
+          "cancelled": 0,
+          "status": "filled",
+          "exact_vwap_gbp": "6001/60",
+          "fills": [
+            {
+              "trade_id": 1,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 2,
+              "role": "aggressor",
+              "price": "100.01000",
+              "fee": "0.00200"
+            },
+            {
+              "trade_id": 2,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 4,
+              "role": "aggressor",
+              "price": "100.02000",
+              "fee": "0.00400"
+            }
+          ]
+        },
+        "rows": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "role": "aggressor",
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "role": "aggressor",
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ],
+        "note": "Calculated from these recorded fills using the same execution calculation as the order book. Larger fills receive more weight. Display is rounded to five decimal places; the exact fraction is retained.",
+        "visual": {
+          "kind": "fills",
+          "rows": [
+            {
+              "trade_id": 1,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 2,
+              "role": "aggressor",
+              "price": "100.01000",
+              "fee": "0.00200"
+            },
+            {
+              "trade_id": 2,
+              "time_us": 0,
+              "side": "buy",
+              "quantity": 4,
+              "role": "aggressor",
+              "price": "100.02000",
+              "fee": "0.00400"
+            }
+          ]
+        }
+      },
+      "pnl_attribution": {
+        "value": "-0.07600",
+        "unit": "GBP",
+        "inputs": {
+          "cash": "9399.89400",
+          "position": 6,
+          "average_entry": "100.01667",
+          "realised": "-0.00600",
+          "unrealised": "-0.07000",
+          "total_pnl": "-0.07600",
+          "fees": "0.00600",
+          "exposure": "600.03000",
+          "max_drawdown": "0.07600",
+          "reference": "100.00500",
+          "reference_source": "external midpoint"
+        },
+        "rows": [
+          {
+            "trade_id": 1,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 2,
+            "price": "100.01000",
+            "fee": "0.00200"
+          },
+          {
+            "trade_id": 2,
+            "time_us": 0,
+            "side": "buy",
+            "quantity": 4,
+            "price": "100.02000",
+            "fee": "0.00400"
+          }
+        ],
+        "note": "Stock-desk realised P&L is already net of expensed fees. Total equals that realised amount plus unrealised P&L. Fees are shown for context and must not be subtracted twice. Open inventory is valued at the displayed public reference.",
+        "visual": null
+      },
+      "markouts": {
+        "value": {
+          "trade_id": 2,
+          "role": "aggressor",
+          "horizon": 20,
+          "value": null,
+          "status": "pending",
+          "observed_time_us": null
+        },
+        "unit": "GBP per unit; own-side sign",
+        "inputs": {},
+        "rows": [
+          {
+            "trade_id": 1,
+            "role": "aggressor",
+            "horizon": 1,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          },
+          {
+            "trade_id": 1,
+            "role": "aggressor",
+            "horizon": 5,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          },
+          {
+            "trade_id": 1,
+            "role": "aggressor",
+            "horizon": 20,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          },
+          {
+            "trade_id": 2,
+            "role": "aggressor",
+            "horizon": 1,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          },
+          {
+            "trade_id": 2,
+            "role": "aggressor",
+            "horizon": 5,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          },
+          {
+            "trade_id": 2,
+            "role": "aggressor",
+            "horizon": 20,
+            "value": null,
+            "status": "pending",
+            "observed_time_us": null
+          }
+        ],
+        "note": "Only markouts already present at this public point are available. Positive favours your side; negative opposes it. A pending horizon is not zero and does not reveal a later price.",
+        "visual": null
+      }
+    },
+    "note": "Only this frame and its predecessor are exposed; action evidence is the recorded public execution/metric trace. Later frames are excluded."
+  },
+  "example_standard_error": {
+    "id": "se",
+    "title": "Four times as many independent observations",
+    "concept": "standard_error",
+    "label": "INDEPENDENT GUIDED EXAMPLE \u2014 NOT YOUR SESSION",
+    "note": "Two controlled illustrative lists with identical sample standard deviation, evaluated by the core statistics API. The sixteen-observation standard error is exactly half the four-observation one. In research this scaling requires independent observations and stable dispersion; these constructed lists are not new empirical evidence.",
+    "result": {
+      "four_observations": {
+        "requested": 4,
+        "available": 4,
+        "missing": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 6.666666666666667,
+        "standard_deviation": 2.581988897471611,
+        "standard_error": 1.2909944487358056,
+        "p05": -2.7,
+        "p25": -1.5,
+        "p75": 1.5,
+        "p95": 2.6999999999999993,
+        "minimum": -3.0,
+        "maximum": 3.0,
+        "mean_ci": {
+          "low": -4.108520513521041,
+          "high": 4.108520513521041,
+          "confidence": 0.95,
+          "method": "Student t mean"
+        }
+      },
+      "sixteen_observations": {
+        "requested": 16,
+        "available": 16,
+        "missing": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "variance": 6.666666666666667,
+        "standard_deviation": 2.581988897471611,
+        "standard_error": 0.6454972243679028,
+        "p05": -2.5,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 2.5,
+        "minimum": -7.0,
+        "maximum": 7.0,
+        "mean_ci": {
+          "low": -1.375844765539063,
+          "high": 1.375844765539063,
+          "confidence": 0.95,
+          "method": "Student t mean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "strategy.inventory_skew_ticks=0": {
+    "1": {
+      "available_units": 1373,
+      "missing_units": 620,
+      "pending_units": 6,
+      "pooled_mean": 0.00584122359796067,
+      "weighted_sum": "401/50"
+    },
+    "20": {
+      "available_units": 1398,
+      "missing_units": 274,
+      "pending_units": 327,
+      "pooled_mean": 0.008254649499284693,
+      "weighted_sum": "577/50"
+    },
+    "5": {
+      "available_units": 1591,
+      "missing_units": 328,
+      "pending_units": 80,
+      "pooled_mean": 0.006989314896291641,
+      "weighted_sum": "278/25"
+    }
+  },
+  "strategy.inventory_skew_ticks=1": {
+    "1": {
+      "available_units": 2101,
+      "missing_units": 543,
+      "pending_units": 0,
+      "pooled_mean": -0.0018538791051880058,
+      "weighted_sum": "-779/200"
+    },
+    "20": {
+      "available_units": 2012,
+      "missing_units": 153,
+      "pending_units": 479,
+      "pooled_mean": -0.01690854870775348,
+      "weighted_sum": "-1701/50"
+    },
+    "5": {
+      "available_units": 2285,
+      "missing_units": 260,
+      "pending_units": 99,
+      "pooled_mean": -0.004785557986870897,
+      "weighted_sum": "-2187/200"
+    }
+  },
+  "strategy.inventory_skew_ticks=1/2": {
+    "1": {
+      "available_units": 1845,
+      "missing_units": 547,
+      "pending_units": 0,
+      "pooled_mean": 0.0026964769647696476,
+      "weighted_sum": "199/40"
+    },
+    "20": {
+      "available_units": 1784,
+      "missing_units": 169,
+      "pending_units": 439,
+      "pooled_mean": -0.006339686098654708,
+      "weighted_sum": "-1131/100"
+    },
+    "5": {
+      "available_units": 2069,
+      "missing_units": 236,
+      "pending_units": 87,
+      "pooled_mean": 0.00032141130981150313,
+      "weighted_sum": "133/200"
+    }
+  },
+  "strategy.inventory_skew_ticks=1/4": {
+    "1": {
+      "available_units": 1609,
+      "missing_units": 559,
+      "pending_units": 2,
+      "pooled_mean": 0.004623990055935364,
+      "weighted_sum": "186/25"
+    },
+    "20": {
+      "available_units": 1609,
+      "missing_units": 172,
+      "pending_units": 389,
+      "pooled_mean": -0.0005344934742075823,
+      "weighted_sum": "-43/50"
+    },
+    "5": {
+      "available_units": 1820,
+      "missing_units": 257,
+      "pending_units": 93,
+      "pooled_mean": 0.0046950549450549455,
+      "weighted_sum": "1709/200"
+    }
+  },
+  "strategy.inventory_skew_ticks=2": {
+    "1": {
+      "available_units": 2349,
+      "missing_units": 515,
+      "pending_units": 3,
+      "pooled_mean": -0.00741166453810132,
+      "weighted_sum": "-1741/100"
+    },
+    "20": {
+      "available_units": 2215,
+      "missing_units": 137,
+      "pending_units": 515,
+      "pooled_mean": -0.028386004514672686,
+      "weighted_sum": "-503/8"
+    },
+    "5": {
+      "available_units": 2506,
+      "missing_units": 237,
+      "pending_units": 124,
+      "pooled_mean": -0.013499600957701516,
+      "weighted_sum": "-3383/100"
+    }
+  }
+}

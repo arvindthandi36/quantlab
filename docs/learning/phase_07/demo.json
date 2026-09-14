@@ -1,0 +1,2695 @@
+{
+  "corrected_answer": {
+    "attempts": 2,
+    "closed": true,
+    "feedback": "Correct for the recorded context.",
+    "hints": 1,
+    "id": "q-1",
+    "learning_update": {
+      "after": {
+        "category": "Beginning",
+        "score": 40
+      },
+      "at": "2026-09-11T12:00:00+00:00",
+      "before": {
+        "category": "Beginning",
+        "score": 35
+      },
+      "concept": "vwap",
+      "correct": true,
+      "credit": 0.5,
+      "credited": true,
+      "evidence": "vwap, q-1: selected Weight each actual price by the units executed there",
+      "level": 1,
+      "mode": "learn",
+      "question_id": "q-1",
+      "result": "correct_after_hint",
+      "source": "demonstration-session"
+    },
+    "mode": "learn",
+    "question": {
+      "answer_type": "choice",
+      "concept": "vwap",
+      "difficulty": 1,
+      "expected": "weighted",
+      "layers": {
+        "interview": "Why can a large order's VWAP be worse than the best displayed ask?",
+        "intuition": "VWAP gives each executed unit equal weight, so larger fills count more.",
+        "maths": "VWAP = \u03a3(p\u1d62q\u1d62)/\u03a3q\u1d62; p\u1d62 is execution price and q\u1d62 its quantity. Fees are separate. Your order: (2\u00d7\u00a3100.01 + 4\u00d7\u00a3100.02)/6 = \u00a3100.01667.",
+        "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02."
+      },
+      "options": [
+        {
+          "id": "mid",
+          "text": "Use the displayed midpoint"
+        },
+        {
+          "id": "equal",
+          "text": "Give each price level equal weight"
+        },
+        {
+          "id": "weighted",
+          "text": "Weight each actual price by the units executed there"
+        }
+      ],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Which average describes this order's execution price?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "explain",
+    "started": "2026-09-11T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "due_after_three_days": [
+    {
+      "concept": "vwap",
+      "due": "2026-09-13T12:00:00+00:00",
+      "priority": 2,
+      "reason": "1 days overdue; 0 repeated misconceptions; prerequisite for 1 concepts"
+    }
+  ],
+  "interview": {
+    "attempts": 0,
+    "closed": false,
+    "feedback": null,
+    "hints": 0,
+    "id": "q-4",
+    "learning_update": null,
+    "mode": "interview",
+    "question": {
+      "answer_type": "number",
+      "concept": "vwap",
+      "difficulty": 2,
+      "options": [],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Calculate this order's VWAP in pounds (five decimal places is enough).",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0.000005",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "interview_before_debrief": {
+    "attempts": 1,
+    "closed": true,
+    "feedback": "Answer recorded. Request the debrief when ready; no immediate explanation.",
+    "hints": 0,
+    "id": "q-4",
+    "learning_update": null,
+    "mode": "interview",
+    "question": {
+      "answer_type": "number",
+      "concept": "vwap",
+      "difficulty": 2,
+      "options": [],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Calculate this order's VWAP in pounds (five decimal places is enough).",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0.000005",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "debrief",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "interview_debrief": {
+    "attempts": 1,
+    "closed": true,
+    "feedback": "Explanation requested; viewing earns no mastery credit.",
+    "hints": 0,
+    "id": "q-4",
+    "learning_update": {
+      "after": {
+        "category": "Developing",
+        "score": 40
+      },
+      "at": "2026-09-14T12:00:00+00:00",
+      "before": {
+        "category": "Beginning",
+        "score": 30
+      },
+      "concept": "vwap",
+      "correct": true,
+      "credit": 1,
+      "credited": true,
+      "evidence": "vwap, q-4: selected 100.01667",
+      "level": 2,
+      "mode": "interview",
+      "question_id": "q-4",
+      "result": "correct_first",
+      "source": "demonstration-session"
+    },
+    "mode": "interview",
+    "question": {
+      "answer_type": "number",
+      "concept": "vwap",
+      "difficulty": 2,
+      "expected": "6001/60",
+      "layers": {
+        "interview": "Why can a large order's VWAP be worse than the best displayed ask?",
+        "intuition": "VWAP gives each executed unit equal weight, so larger fills count more. For this calculation the answer is 100.017.",
+        "maths": "VWAP = \u03a3(p\u1d62q\u1d62)/\u03a3q\u1d62; p\u1d62 is execution price and q\u1d62 its quantity. Fees are separate. Your order: (2\u00d7\u00a3100.01 + 4\u00d7\u00a3100.02)/6 = \u00a3100.01667.",
+        "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02."
+      },
+      "options": [],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Calculate this order's VWAP in pounds (five decimal places is enough).",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0.000005",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "explain",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "learner": "Demonstration only; not Arvind's mastery record",
+  "learning_export": {
+    "learning": {
+      "concepts": [
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "bid",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Bid"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "ask",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Ask"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "spread",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "bid",
+            "ask"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Spread"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "midpoint",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "bid",
+            "ask"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Midpoint"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "market_orders",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "bid",
+            "ask"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Market orders"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "limit_orders",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Limit orders"
+        },
+        {
+          "attempts": 1,
+          "category": "Beginning",
+          "correct_after_hint": 0,
+          "correct_first": 1,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "liquidity",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": "2026-09-14T12:00:00+00:00",
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "spread"
+          ],
+          "recent_performance": [
+            "correct_first"
+          ],
+          "review_at": "2026-09-17T12:00:00+00:00",
+          "score": 65,
+          "title": "Liquidity"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "depth",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Depth"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "queue_priority",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "limit_orders"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Queue priority"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "partial_fills",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "market_orders"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Partial fills"
+        },
+        {
+          "attempts": 4,
+          "category": "Developing",
+          "correct_after_hint": 1,
+          "correct_first": 1,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "vwap",
+          "implemented": true,
+          "incorrect": 2,
+          "last_answered": "2026-09-14T12:00:00+00:00",
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "liquidity"
+          ],
+          "recent_performance": [
+            "incorrect",
+            "correct_after_hint",
+            "incorrect",
+            "correct_first"
+          ],
+          "review_at": "2026-09-17T12:00:00+00:00",
+          "score": 40,
+          "title": "Vwap"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market mechanics",
+          "due": null,
+          "id": "slippage",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "vwap"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Slippage"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "order_flow",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Order flow"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "adverse_selection",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "markouts"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Adverse selection"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "informed_trading",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "expectation"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Informed trading"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "markouts",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "midpoint"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Markouts"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "inventory",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Inventory"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "spread_capture",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "spread",
+            "inventory"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Spread capture"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "toxic_flow",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "markouts"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Toxic flow"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "quote_skew",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "spread",
+            "inventory"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Quote skew"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Market microstructure",
+          "due": null,
+          "id": "pnl_attribution",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "inventory"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Pnl attribution"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "random_variables",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Random variables"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "expectation",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "random_variables"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Expectation"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "variance",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "expectation"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Variance"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "conditional_probability",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Conditional probability"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "distributions",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Distributions"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "poisson_arrivals",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Poisson arrivals"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "normal_distributions",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Normal distributions"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Probability",
+          "due": null,
+          "id": "law_of_large_numbers",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "expectation"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Law of large numbers"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "sample_mean",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Sample mean"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "standard_deviation",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "variance"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Standard deviation"
+        },
+        {
+          "attempts": 2,
+          "category": "Beginning",
+          "correct_after_hint": 1,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "standard_error",
+          "implemented": true,
+          "incorrect": 1,
+          "last_answered": "2026-09-14T12:00:00+00:00",
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "sample_mean",
+            "standard_deviation"
+          ],
+          "recent_performance": [
+            "incorrect",
+            "correct_after_hint"
+          ],
+          "review_at": "2026-09-16T12:00:00+00:00",
+          "score": 40,
+          "title": "Standard error"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "confidence_intervals",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "standard_error"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Confidence intervals"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "bootstrap",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "sample_mean"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Bootstrap"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "correlation",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Correlation"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "hypothesis_testing",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "standard_error"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Hypothesis testing"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "selection_bias",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "sample_mean"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Selection bias"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Statistics",
+          "due": null,
+          "id": "multiple_testing",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [
+            "hypothesis_testing"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Multiple testing"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Calculus",
+          "due": null,
+          "id": "derivatives",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Derivatives"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Calculus",
+          "due": null,
+          "id": "optimisation_calculus",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Optimisation calculus"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Calculus",
+          "due": null,
+          "id": "continuous_time",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Continuous time"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Linear algebra",
+          "due": null,
+          "id": "covariance_matrices",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Covariance matrices"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Linear algebra",
+          "due": null,
+          "id": "portfolio_linear_algebra",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Portfolio linear algebra"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Linear algebra",
+          "due": null,
+          "id": "factor_models",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Factor models"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Linear algebra",
+          "due": null,
+          "id": "regression",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Regression"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Optimisation",
+          "due": null,
+          "id": "portfolio_optimisation",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Portfolio optimisation"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Optimisation",
+          "due": null,
+          "id": "execution_optimisation",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Execution optimisation"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Optimisation",
+          "due": null,
+          "id": "inventory_control",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Inventory control"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Derivatives",
+          "due": null,
+          "id": "option_pricing",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Option pricing"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Derivatives",
+          "due": null,
+          "id": "greeks",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Greeks"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Derivatives",
+          "due": null,
+          "id": "volatility",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Volatility"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Derivatives",
+          "due": null,
+          "id": "hedging",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Hedging"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "drawdown",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "exposure"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Drawdown"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "var",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Var"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "expected_shortfall",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Expected shortfall"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "stress_testing",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Stress testing"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "exposure",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "inventory"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Exposure"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Risk",
+          "due": null,
+          "id": "tail_outcomes",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Tail outcomes"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Numerical methods",
+          "due": null,
+          "id": "root_finding",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Root finding"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Numerical methods",
+          "due": null,
+          "id": "monte_carlo",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "randomness"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Monte carlo"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Numerical methods",
+          "due": null,
+          "id": "finite_differences",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Finite differences"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Numerical methods",
+          "due": null,
+          "id": "numerical_optimisation",
+          "implemented": false,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Numerical optimisation"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "data_structures",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Data structures"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "testing",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Testing"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "randomness",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Randomness"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "reproducibility",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [
+            "randomness"
+          ],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Reproducibility"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "algorithms",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Algorithms"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "numerical_correctness",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Numerical correctness"
+        },
+        {
+          "attempts": 1,
+          "category": "Beginning",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "architecture",
+          "implemented": true,
+          "incorrect": 1,
+          "last_answered": "2026-09-14T12:00:00+00:00",
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [
+            "incorrect"
+          ],
+          "review_at": "2026-09-15T12:00:00+00:00",
+          "score": 35,
+          "title": "Architecture"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "model_criticism",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": null,
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Model criticism"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "research_integrity",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Research integrity"
+        },
+        {
+          "attempts": 0,
+          "category": "Not assessed",
+          "correct_after_hint": 0,
+          "correct_first": 0,
+          "domain": "Python / implementation",
+          "due": null,
+          "id": "decision_quality",
+          "implemented": true,
+          "incorrect": 0,
+          "last_answered": null,
+          "last_encountered": "2026-09-14T12:00:00+00:00",
+          "level": 1,
+          "prerequisites": [],
+          "recent_performance": [],
+          "review_at": null,
+          "score": null,
+          "title": "Decision quality"
+        }
+      ],
+      "domains": [
+        {
+          "assessed": 2,
+          "attempts": 5,
+          "domain": "Market mechanics",
+          "status": "Evidence in 2 concepts",
+          "total": 12,
+          "weak": [
+            "Liquidity",
+            "Vwap"
+          ]
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Market microstructure",
+          "status": "Not assessed",
+          "total": 9,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Probability",
+          "status": "Not assessed",
+          "total": 8,
+          "weak": []
+        },
+        {
+          "assessed": 1,
+          "attempts": 2,
+          "domain": "Statistics",
+          "status": "Evidence in 1 concepts",
+          "total": 9,
+          "weak": [
+            "Standard error"
+          ]
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Calculus",
+          "status": "Not assessed",
+          "total": 3,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Linear algebra",
+          "status": "Not assessed",
+          "total": 4,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Optimisation",
+          "status": "Not assessed",
+          "total": 3,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Derivatives",
+          "status": "Not assessed",
+          "total": 4,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Risk",
+          "status": "Not assessed",
+          "total": 6,
+          "weak": []
+        },
+        {
+          "assessed": 0,
+          "attempts": 0,
+          "domain": "Numerical methods",
+          "status": "Not assessed",
+          "total": 4,
+          "weak": []
+        },
+        {
+          "assessed": 1,
+          "attempts": 1,
+          "domain": "Python / implementation",
+          "status": "Evidence in 1 concepts",
+          "total": 10,
+          "weak": [
+            "Architecture"
+          ]
+        }
+      ],
+      "due": [],
+      "mistakes": [
+        {
+          "classification": "Repeated misconception",
+          "concept": "vwap",
+          "evidence": [
+            "vwap, q-1: selected Use the displayed midpoint",
+            "vwap, q-2: selected Use the displayed midpoint"
+          ],
+          "id": "vwap:mid",
+          "last_seen": "2026-09-14T12:00:00+00:00",
+          "questions": [
+            "q-1",
+            "q-2"
+          ]
+        },
+        {
+          "classification": "One-off error",
+          "concept": "architecture",
+          "evidence": [
+            "architecture, q-5: selected So the UI can invent convenient fills"
+          ],
+          "id": "architecture:ui",
+          "last_seen": "2026-09-14T12:00:00+00:00",
+          "questions": [
+            "q-5"
+          ]
+        },
+        {
+          "classification": "One-off error",
+          "concept": "standard_error",
+          "evidence": [
+            "standard_error, q-6: selected Standard deviation of individual outcomes"
+          ],
+          "id": "standard_error:sd",
+          "last_seen": "2026-09-14T12:00:00+00:00",
+          "questions": [
+            "q-6"
+          ]
+        }
+      ],
+      "note": "Practice categories describe answer evidence, not calibrated mastery probabilities.",
+      "recent": [
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 35
+          },
+          "at": "2026-09-11T12:00:00+00:00",
+          "before": {
+            "category": "Not assessed",
+            "score": null
+          },
+          "concept": "vwap",
+          "correct": false,
+          "credit": 0,
+          "credited": true,
+          "evidence": "vwap, q-1: selected Use the displayed midpoint",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-1",
+          "result": "incorrect",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 40
+          },
+          "at": "2026-09-11T12:00:00+00:00",
+          "before": {
+            "category": "Beginning",
+            "score": 35
+          },
+          "concept": "vwap",
+          "correct": true,
+          "credit": 0.5,
+          "credited": true,
+          "evidence": "vwap, q-1: selected Weight each actual price by the units executed there",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-1",
+          "result": "correct_after_hint",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 30
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Beginning",
+            "score": 40
+          },
+          "concept": "vwap",
+          "correct": false,
+          "credit": 0,
+          "credited": true,
+          "evidence": "vwap, q-2: selected Use the displayed midpoint",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-2",
+          "result": "incorrect",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 65
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Not assessed",
+            "score": null
+          },
+          "concept": "liquidity",
+          "correct": true,
+          "credit": 1,
+          "credited": true,
+          "evidence": "liquidity, q-3: selected Actual eligible opposite orders, at their resting prices",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-3",
+          "result": "correct_first",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Developing",
+            "score": 40
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Beginning",
+            "score": 30
+          },
+          "concept": "vwap",
+          "correct": true,
+          "credit": 1,
+          "credited": true,
+          "evidence": "vwap, q-4: selected 100.01667",
+          "level": 2,
+          "mode": "interview",
+          "question_id": "q-4",
+          "result": "correct_first",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 35
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Not assessed",
+            "score": null
+          },
+          "concept": "architecture",
+          "correct": false,
+          "credit": 0,
+          "credited": true,
+          "evidence": "architecture, q-5: selected So the UI can invent convenient fills",
+          "level": 1,
+          "mode": "defence",
+          "question_id": "q-5",
+          "result": "incorrect",
+          "source": "demonstration-session"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 35
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Not assessed",
+            "score": null
+          },
+          "concept": "standard_error",
+          "correct": false,
+          "credit": 0,
+          "credited": true,
+          "evidence": "standard_error, q-6: selected Standard deviation of individual outcomes",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-6",
+          "result": "incorrect",
+          "source": "research-8ffe58556095"
+        },
+        {
+          "after": {
+            "category": "Beginning",
+            "score": 40
+          },
+          "at": "2026-09-14T12:00:00+00:00",
+          "before": {
+            "category": "Beginning",
+            "score": 35
+          },
+          "concept": "standard_error",
+          "correct": true,
+          "credit": 0.5,
+          "credited": true,
+          "evidence": "standard_error, q-6: selected Standard error",
+          "level": 1,
+          "mode": "learn",
+          "question_id": "q-6",
+          "result": "correct_after_hint",
+          "source": "research-8ffe58556095"
+        }
+      ],
+      "settings": {
+        "enabled": true,
+        "event_gap": 8,
+        "max_attempts": 3
+      },
+      "strong": [],
+      "weak": [
+        "liquidity",
+        "vwap",
+        "standard_error",
+        "architecture"
+      ]
+    },
+    "schema": 1
+  },
+  "market_duration_used_us": 1000000,
+  "market_independence": {
+    "evidence_digest": "cb7a34c7145fd11fd11fa4ad3db5c66c1247ebe181f9a9c20e71588874fed550",
+    "identical_journals": true,
+    "replay_verified": true
+  },
+  "order": {
+    "message": "You buy 6 market: 6 filled, 0 resting, 0 cancelled; VWAP \u00a3100.01667",
+    "ok": true,
+    "order_id": "user-1"
+  },
+  "privacy": "No observer fields in learning export",
+  "project_defence": {
+    "attempts": 0,
+    "closed": false,
+    "feedback": null,
+    "hints": 0,
+    "id": "q-5",
+    "learning_update": null,
+    "mode": "defence",
+    "question": {
+      "answer_type": "choice",
+      "concept": "architecture",
+      "difficulty": 1,
+      "options": [
+        {
+          "id": "tests",
+          "text": "So UI tests can replace conservation checks"
+        },
+        {
+          "id": "truth",
+          "text": "One financial source of truth, independently testable and replayable"
+        },
+        {
+          "id": "ui",
+          "text": "So the UI can invent convenient fills"
+        }
+      ],
+      "prerequisites": [],
+      "prompt": "Why keep the UI separate from the matching engine?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: best bid \u00a399.99; best ask \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "book"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use architecture to explain this recorded book context and defend the assumptions behind your reasoning."
+  },
+  "question": {
+    "attempts": 0,
+    "closed": false,
+    "feedback": null,
+    "hints": 0,
+    "id": "q-1",
+    "learning_update": null,
+    "mode": "learn",
+    "question": {
+      "answer_type": "choice",
+      "concept": "vwap",
+      "difficulty": 1,
+      "options": [
+        {
+          "id": "mid",
+          "text": "Use the displayed midpoint"
+        },
+        {
+          "id": "equal",
+          "text": "Give each price level equal weight"
+        },
+        {
+          "id": "weighted",
+          "text": "Weight each actual price by the units executed there"
+        }
+      ],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Which average describes this order's execution price?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-11T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "repeated_error": {
+    "attempts": 1,
+    "closed": false,
+    "feedback": "Not yet. Treat each executed unit as one observation; price levels can contain unequal quantities.",
+    "hints": 1,
+    "id": "q-2",
+    "learning_update": {
+      "after": {
+        "category": "Beginning",
+        "score": 30
+      },
+      "at": "2026-09-14T12:00:00+00:00",
+      "before": {
+        "category": "Beginning",
+        "score": 40
+      },
+      "concept": "vwap",
+      "correct": false,
+      "credit": 0,
+      "credited": true,
+      "evidence": "vwap, q-2: selected Use the displayed midpoint",
+      "level": 1,
+      "mode": "learn",
+      "question_id": "q-2",
+      "result": "incorrect",
+      "source": "demonstration-session"
+    },
+    "mode": "learn",
+    "question": {
+      "answer_type": "choice",
+      "concept": "vwap",
+      "difficulty": 1,
+      "options": [
+        {
+          "id": "mid",
+          "text": "Use the displayed midpoint"
+        },
+        {
+          "id": "equal",
+          "text": "Give each price level equal weight"
+        },
+        {
+          "id": "weighted",
+          "text": "Weight each actual price by the units executed there"
+        }
+      ],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Which average describes this order's execution price?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "research": {
+    "hint": {
+      "attempts": 1,
+      "closed": false,
+      "feedback": "Not yet. Distinguish variation among individual runs from uncertainty about their average.",
+      "hints": 1,
+      "id": "q-6",
+      "learning_update": {
+        "after": {
+          "category": "Beginning",
+          "score": 35
+        },
+        "at": "2026-09-14T12:00:00+00:00",
+        "before": {
+          "category": "Not assessed",
+          "score": null
+        },
+        "concept": "standard_error",
+        "correct": false,
+        "credit": 0,
+        "credited": true,
+        "evidence": "standard_error, q-6: selected Standard deviation of individual outcomes",
+        "level": 1,
+        "mode": "learn",
+        "question_id": "q-6",
+        "result": "incorrect",
+        "source": "research-8ffe58556095"
+      },
+      "mode": "learn",
+      "question": {
+        "answer_type": "choice",
+        "concept": "standard_error",
+        "difficulty": 1,
+        "options": [
+          {
+            "id": "se",
+            "text": "Standard error"
+          },
+          {
+            "id": "none",
+            "text": "A sample mean has no uncertainty"
+          },
+          {
+            "id": "sd",
+            "text": "Standard deviation of individual outcomes"
+          }
+        ],
+        "prerequisites": [
+          "sample_mean",
+          "standard_deviation"
+        ],
+        "prompt": "Which quantity describes uncertainty in the estimated mean?",
+        "quantlab": "research-8ffe58556095: fixed, 1600 sessions, mean 0.182372, SD 0.255528, SE 0.00638821 (GBP); range -0.923 to 0.95.",
+        "tolerance": "0",
+        "triggers": [
+          "research"
+        ]
+      },
+      "result": null,
+      "stage": "test",
+      "started": "2026-09-14T12:00:00+00:00",
+      "why": "Use standard error to explain this recorded research context and defend the assumptions behind your reasoning."
+    },
+    "question": {
+      "attempts": 0,
+      "closed": false,
+      "feedback": null,
+      "hints": 0,
+      "id": "q-6",
+      "learning_update": null,
+      "mode": "learn",
+      "question": {
+        "answer_type": "choice",
+        "concept": "standard_error",
+        "difficulty": 1,
+        "options": [
+          {
+            "id": "se",
+            "text": "Standard error"
+          },
+          {
+            "id": "none",
+            "text": "A sample mean has no uncertainty"
+          },
+          {
+            "id": "sd",
+            "text": "Standard deviation of individual outcomes"
+          }
+        ],
+        "prerequisites": [
+          "sample_mean",
+          "standard_deviation"
+        ],
+        "prompt": "Which quantity describes uncertainty in the estimated mean?",
+        "quantlab": "research-8ffe58556095: fixed, 1600 sessions, mean 0.182372, SD 0.255528, SE 0.00638821 (GBP); range -0.923 to 0.95.",
+        "tolerance": "0",
+        "triggers": [
+          "research"
+        ]
+      },
+      "result": null,
+      "stage": "test",
+      "started": "2026-09-14T12:00:00+00:00",
+      "why": "Use standard error to explain this recorded research context and defend the assumptions behind your reasoning."
+    },
+    "summaries": [
+      {
+        "ci_high": 0.19490202587198746,
+        "ci_low": 0.16984172412801246,
+        "maximum": 0.95,
+        "mean": 0.18237187499999996,
+        "mean_difference": null,
+        "metric": "net_pnl",
+        "minimum": -0.923,
+        "n": 1600,
+        "paired": false,
+        "paired_se": null,
+        "sd": 0.25552849712314013,
+        "se": 0.006388212428078503,
+        "source_digest": "8ffe585560956259ee04b2f7670431e959578a248601e1fb2cc477a136b47d49",
+        "unit": "GBP",
+        "unpaired_se": null,
+        "variant": "fixed",
+        "variant_count": 2
+      },
+      {
+        "ci_high": -0.11618679028077672,
+        "ci_low": -0.15567070971922325,
+        "maximum": 0.746,
+        "mean": -0.13592875,
+        "mean_difference": -0.318300625,
+        "metric": "net_pnl",
+        "minimum": -2.973,
+        "n": 1600,
+        "paired": true,
+        "paired_se": 0.009755154472072168,
+        "sd": 0.402599565548449,
+        "se": 0.010064989138711225,
+        "source_digest": "8ffe585560956259ee04b2f7670431e959578a248601e1fb2cc477a136b47d49",
+        "unit": "GBP",
+        "unpaired_se": 0.011921126808680108,
+        "variant": "inventory",
+        "variant_count": 2
+      }
+    ]
+  },
+  "restored_attempts": 2,
+  "revision_notes": "# QuantLab learning revision\n\nPractice categories describe answer evidence, not calibrated mastery probabilities.\n\n## Concepts\n- Liquidity: Beginning; 1 answers, 1 first-attempt successes, 0 incorrect.\n- Vwap: Developing; 4 answers, 1 first-attempt successes, 2 incorrect.\n- Standard error: Beginning; 2 answers, 0 first-attempt successes, 1 incorrect.\n- Architecture: Beginning; 1 answers, 0 first-attempt successes, 1 incorrect.\n\n## Strong concepts\nNot enough evidence yet.\n\n## Weak concepts\nliquidity, vwap, standard_error, architecture\n\n## Common mistakes\n- Repeated misconception: vwap:mid \u2014 vwap, q-1: selected Use the displayed midpoint; vwap, q-2: selected Use the displayed midpoint\n- One-off error: architecture:ui \u2014 architecture, q-5: selected So the UI can invent convenient fills\n- One-off error: standard_error:sd \u2014 standard_error, q-6: selected Standard deviation of individual outcomes\n\n## Recommended review\n\n## Recent questions\n- q-1: vwap \u2014 incorrect\n- q-1: vwap \u2014 correct_after_hint\n- q-2: vwap \u2014 incorrect\n- q-3: liquidity \u2014 correct_first\n- q-4: vwap \u2014 correct_first\n- q-5: architecture \u2014 incorrect\n- q-6: standard_error \u2014 incorrect\n- q-6: standard_error \u2014 correct_after_hint\n",
+  "revisited_question": {
+    "attempts": 0,
+    "closed": false,
+    "feedback": null,
+    "hints": 0,
+    "id": "q-2",
+    "learning_update": null,
+    "mode": "learn",
+    "question": {
+      "answer_type": "choice",
+      "concept": "vwap",
+      "difficulty": 1,
+      "options": [
+        {
+          "id": "mid",
+          "text": "Use the displayed midpoint"
+        },
+        {
+          "id": "equal",
+          "text": "Give each price level equal weight"
+        },
+        {
+          "id": "weighted",
+          "text": "Weight each actual price by the units executed there"
+        }
+      ],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Which average describes this order's execution price?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-14T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  },
+  "seed": 42,
+  "session_review": {
+    "assessment": "Financial outcomes do not identify which decision-quality quadrant applies without contemporaneous reasoning.",
+    "concepts_encountered": [
+      "ask",
+      "bid",
+      "decision_quality",
+      "drawdown",
+      "exposure",
+      "inventory",
+      "limit_orders",
+      "liquidity",
+      "market_orders",
+      "markouts",
+      "midpoint",
+      "pnl_attribution",
+      "slippage",
+      "spread",
+      "vwap"
+    ],
+    "decision_vs_outcome": [
+      "Good decision + good outcome",
+      "Good decision + bad outcome",
+      "Bad decision + good outcome",
+      "Bad decision + bad outcome"
+    ],
+    "interview": {
+      "answer_type": "choices",
+      "concept": "decision_quality",
+      "difficulty": 3,
+      "options": [
+        {
+          "id": "guarantee",
+          "text": "Later hidden value was information the trader should have used"
+        },
+        {
+          "id": "scope",
+          "text": "Explicit assumptions and risk constraints known when deciding"
+        },
+        {
+          "id": "mistake",
+          "text": "Profit alone proves a good decision"
+        },
+        {
+          "id": "mechanism",
+          "text": "Contemporaneous public information and recorded reasoning"
+        }
+      ],
+      "prerequisites": [],
+      "prompt": "What evidence supports decision assessment without hindsight? Select both defensible claims.",
+      "quantlab": "demonstration-session, public event 6, 1.000000s: best bid \u00a3100.02; best ask \u00a3100.03.",
+      "tolerance": "0",
+      "triggers": [
+        "book"
+      ]
+    },
+    "known_then": [
+      {
+        "observed": {
+          "best_ask": "100.01000",
+          "best_bid": "99.99000",
+          "position": 0,
+          "reference": "100.00000"
+        },
+        "order": "Order submission (pre-match public view)",
+        "time_us": 0
+      }
+    ],
+    "later_public": [
+      {
+        "position": 6,
+        "reference": "100.00500",
+        "time_us": 0
+      },
+      {
+        "position": 6,
+        "reference": "100.01000",
+        "time_us": 89780
+      },
+      {
+        "position": 6,
+        "reference": "100.02500",
+        "time_us": 688953
+      },
+      {
+        "position": 6,
+        "reference": "100.02500",
+        "time_us": 980675
+      },
+      {
+        "position": 6,
+        "reference": "100.02500",
+        "time_us": 1000000
+      },
+      {
+        "position": 6,
+        "reference": "100.02500",
+        "time_us": 1000000
+      }
+    ],
+    "mastery_updates": [
+      {
+        "after": {
+          "category": "Beginning",
+          "score": 35
+        },
+        "at": "2026-09-11T12:00:00+00:00",
+        "before": {
+          "category": "Not assessed",
+          "score": null
+        },
+        "concept": "vwap",
+        "correct": false,
+        "credit": 0,
+        "credited": true,
+        "evidence": "vwap, q-1: selected Use the displayed midpoint",
+        "level": 1,
+        "mode": "learn",
+        "question_id": "q-1",
+        "result": "incorrect",
+        "source": "demonstration-session"
+      },
+      {
+        "after": {
+          "category": "Beginning",
+          "score": 40
+        },
+        "at": "2026-09-11T12:00:00+00:00",
+        "before": {
+          "category": "Beginning",
+          "score": 35
+        },
+        "concept": "vwap",
+        "correct": true,
+        "credit": 0.5,
+        "credited": true,
+        "evidence": "vwap, q-1: selected Weight each actual price by the units executed there",
+        "level": 1,
+        "mode": "learn",
+        "question_id": "q-1",
+        "result": "correct_after_hint",
+        "source": "demonstration-session"
+      },
+      {
+        "after": {
+          "category": "Beginning",
+          "score": 30
+        },
+        "at": "2026-09-14T12:00:00+00:00",
+        "before": {
+          "category": "Beginning",
+          "score": 40
+        },
+        "concept": "vwap",
+        "correct": false,
+        "credit": 0,
+        "credited": true,
+        "evidence": "vwap, q-2: selected Use the displayed midpoint",
+        "level": 1,
+        "mode": "learn",
+        "question_id": "q-2",
+        "result": "incorrect",
+        "source": "demonstration-session"
+      },
+      {
+        "after": {
+          "category": "Beginning",
+          "score": 65
+        },
+        "at": "2026-09-14T12:00:00+00:00",
+        "before": {
+          "category": "Not assessed",
+          "score": null
+        },
+        "concept": "liquidity",
+        "correct": true,
+        "credit": 1,
+        "credited": true,
+        "evidence": "liquidity, q-3: selected Actual eligible opposite orders, at their resting prices",
+        "level": 1,
+        "mode": "learn",
+        "question_id": "q-3",
+        "result": "correct_first",
+        "source": "demonstration-session"
+      },
+      {
+        "after": {
+          "category": "Developing",
+          "score": 40
+        },
+        "at": "2026-09-14T12:00:00+00:00",
+        "before": {
+          "category": "Beginning",
+          "score": 30
+        },
+        "concept": "vwap",
+        "correct": true,
+        "credit": 1,
+        "credited": true,
+        "evidence": "vwap, q-4: selected 100.01667",
+        "level": 2,
+        "mode": "interview",
+        "question_id": "q-4",
+        "result": "correct_first",
+        "source": "demonstration-session"
+      },
+      {
+        "after": {
+          "category": "Beginning",
+          "score": 35
+        },
+        "at": "2026-09-14T12:00:00+00:00",
+        "before": {
+          "category": "Not assessed",
+          "score": null
+        },
+        "concept": "architecture",
+        "correct": false,
+        "credit": 0,
+        "credited": true,
+        "evidence": "architecture, q-5: selected So the UI can invent convenient fills",
+        "level": 1,
+        "mode": "defence",
+        "question_id": "q-5",
+        "result": "incorrect",
+        "source": "demonstration-session"
+      }
+    ],
+    "three_questions": [
+      {
+        "answer_type": "choice",
+        "concept": "vwap",
+        "difficulty": 1,
+        "options": [
+          {
+            "id": "mid",
+            "text": "Use the displayed midpoint"
+          },
+          {
+            "id": "equal",
+            "text": "Give each price level equal weight"
+          },
+          {
+            "id": "weighted",
+            "text": "Weight each actual price by the units executed there"
+          }
+        ],
+        "prerequisites": [
+          "liquidity"
+        ],
+        "prompt": "Which average describes this order's execution price?",
+        "quantlab": "demonstration-session, public event 6, 1.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+        "tolerance": "0",
+        "triggers": [
+          "execution"
+        ]
+      },
+      {
+        "answer_type": "choice",
+        "concept": "slippage",
+        "difficulty": 1,
+        "options": [
+          {
+            "id": "fee",
+            "text": "VWAP automatically adds all fees"
+          },
+          {
+            "id": "bug",
+            "text": "Every multi-price fill is a bug"
+          },
+          {
+            "id": "depth",
+            "text": "Later units may consume worse prices deeper in the book"
+          }
+        ],
+        "prerequisites": [
+          "vwap"
+        ],
+        "prompt": "Why can an order's VWAP be worse than the first execution price?",
+        "quantlab": "demonstration-session, public event 6, 1.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+        "tolerance": "0",
+        "triggers": [
+          "execution"
+        ]
+      },
+      {
+        "answer_type": "choice",
+        "concept": "liquidity",
+        "difficulty": 1,
+        "options": [
+          {
+            "id": "orders",
+            "text": "Actual eligible opposite orders, at their resting prices"
+          },
+          {
+            "id": "guaranteed",
+            "text": "All market orders must fill fully"
+          },
+          {
+            "id": "mid",
+            "text": "The midpoint supplies any requested quantity"
+          }
+        ],
+        "prerequisites": [
+          "spread"
+        ],
+        "prompt": "Your order encounters limited visible quantity. What determines its fills?",
+        "quantlab": "demonstration-session, public event 6, 1.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+        "tolerance": "0",
+        "triggers": [
+          "execution"
+        ]
+      }
+    ],
+    "what_happened": {
+      "fees": "0.00600",
+      "final_pnl": "0.04400",
+      "maximum_drawdown": "0.07600",
+      "trade_count": 2
+    },
+    "what_to_improve": [
+      "vwap, q-1: selected Use the displayed midpoint",
+      "vwap, q-2: selected Use the displayed midpoint",
+      "architecture, q-5: selected So the UI can invent convenient fills"
+    ],
+    "what_you_did_well": [
+      "On q-3, your first answer applied liquidity correctly to its recorded public context; this assesses that answer, not the trade's quality.",
+      "On q-4, your first answer applied vwap correctly to its recorded public context; this assesses that answer, not the trade's quality."
+    ]
+  },
+  "wrong_answer": {
+    "attempts": 1,
+    "closed": false,
+    "feedback": "Not yet. Treat each executed unit as one observation; price levels can contain unequal quantities.",
+    "hints": 1,
+    "id": "q-1",
+    "learning_update": {
+      "after": {
+        "category": "Beginning",
+        "score": 35
+      },
+      "at": "2026-09-11T12:00:00+00:00",
+      "before": {
+        "category": "Not assessed",
+        "score": null
+      },
+      "concept": "vwap",
+      "correct": false,
+      "credit": 0,
+      "credited": true,
+      "evidence": "vwap, q-1: selected Use the displayed midpoint",
+      "level": 1,
+      "mode": "learn",
+      "question_id": "q-1",
+      "result": "incorrect",
+      "source": "demonstration-session"
+    },
+    "mode": "learn",
+    "question": {
+      "answer_type": "choice",
+      "concept": "vwap",
+      "difficulty": 1,
+      "options": [
+        {
+          "id": "mid",
+          "text": "Use the displayed midpoint"
+        },
+        {
+          "id": "equal",
+          "text": "Give each price level equal weight"
+        },
+        {
+          "id": "weighted",
+          "text": "Weight each actual price by the units executed there"
+        }
+      ],
+      "prerequisites": [
+        "liquidity"
+      ],
+      "prompt": "Which average describes this order's execution price?",
+      "quantlab": "demonstration-session, public event 1, 0.000000s: user-1 buy 6 market; 6 filled, 0 waiting, 0 cancelled. Actual fills: 2 @ \u00a3100.01; 4 @ \u00a3100.02.",
+      "tolerance": "0",
+      "triggers": [
+        "execution"
+      ]
+    },
+    "result": null,
+    "stage": "test",
+    "started": "2026-09-11T12:00:00+00:00",
+    "why": "Use vwap to explain this recorded execution context and defend the assumptions behind your reasoning."
+  }
+}

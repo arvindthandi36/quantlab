@@ -1,0 +1,235 @@
+{
+  "A_and_D": {
+    "events": [
+      {
+        "event": "A1 buy three manual-desk stock units",
+        "cash": 9699.957,
+        "market_value": 300.015,
+        "equity": 9999.972,
+        "pnl": -0.028000000000247383,
+        "fees": 0.003
+      },
+      {
+        "event": "A2 buy one call, multiplier 100",
+        "cash": 9469.6919,
+        "market_value": 528.73005,
+        "equity": 9998.42195,
+        "pnl": -1.5780500000000757,
+        "fees": 0.053000000000000005
+      },
+      {
+        "event": "A3 sell actual stock delta hedge",
+        "cash": 14569.1309,
+        "market_value": -4571.26995,
+        "equity": 9997.86095,
+        "pnl": -2.13904999999977,
+        "fees": 0.10400000000000001
+      },
+      {
+        "event": "D1 inspect spot -5%, IV +10 percentage points",
+        "cash": 14569.1309,
+        "market_value": -4571.26995,
+        "equity": 9997.86095,
+        "pnl": -2.13904999999977,
+        "fees": 0.10400000000000001
+      },
+      {
+        "event": "A4 observe one day",
+        "cash": 14569.1309,
+        "market_value": -4574.86025,
+        "equity": 9994.27065,
+        "pnl": -5.729349999999613,
+        "fees": 0.10400000000000001
+      },
+      {
+        "event": "A5 close call at its current bid",
+        "cash": 14803.4156,
+        "market_value": -4810.695,
+        "equity": 9992.7206,
+        "pnl": -7.279399999999441,
+        "fees": 0.154
+      },
+      {
+        "event": "A6 close stock through its own book",
+        "cash": 9692.1446,
+        "market_value": 300.015,
+        "equity": 9992.159599999999,
+        "pnl": -7.840400000000955,
+        "fees": 0.20500000000000002
+      },
+      {
+        "event": "A6 close stock through its own book",
+        "cash": 9992.1116,
+        "market_value": 0,
+        "equity": 9992.1116,
+        "pnl": -7.88839999999982,
+        "fees": 0.20800000000000002
+      },
+      {
+        "event": "A7 end and verify replay",
+        "cash": 9992.1116,
+        "market_value": 0,
+        "equity": 9992.1116,
+        "pnl": -7.88839999999982,
+        "fees": 0.20800000000000002
+      }
+    ],
+    "stress": {
+      "scenario": {
+        "name": "CUSTOM",
+        "stock_return": -0.05,
+        "volatility_change": 0.1,
+        "rate_change": 0.0,
+        "days": 0.0,
+        "liquidation_bps": 0.0,
+        "correlation": null
+      },
+      "full_pnl": 153.44457819876925,
+      "loss": -153.44457819876925,
+      "approximate_pnl": 185.54312839721413,
+      "residual": -32.09855019844488,
+      "contributions": {
+        "delta": -15.718626570112423,
+        "gamma": 86.93555096221799,
+        "vega": 114.32620400510858,
+        "theta": 0.0,
+        "rho": 0.0,
+        "cash_carry": 0.0,
+        "liquidity": 0.0
+      },
+      "positions": [
+        {
+          "instrument": "QL-STOCK:call:100:6/73:x100",
+          "full_pnl": -86.55467180123075,
+          "approximate_pnl": -54.456121602785856,
+          "residual": -32.0985501984449,
+          "delta": -255.71787657011242,
+          "gamma": 86.93555096221799,
+          "vega": 114.32620400510858,
+          "theta": -0.0,
+          "rho": 0.0,
+          "liquidity": -0.0
+        },
+        {
+          "instrument": "QL-DESK",
+          "full_pnl": -15.00075,
+          "approximate_pnl": -15.00075,
+          "residual": 0.0,
+          "delta": -15.00075,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "liquidity": -0.0
+        },
+        {
+          "instrument": "QL-STOCK",
+          "full_pnl": 255.0,
+          "approximate_pnl": 255.0,
+          "residual": 0.0,
+          "delta": 255.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "liquidity": -0.0
+        }
+      ],
+      "warnings": [
+        "Hypothetical model changes; never booked as realised P&L",
+        "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+      ]
+    },
+    "var": 7.089287343285289,
+    "es": 8.236370277425179,
+    "replay": true
+  },
+  "B": {
+    "runs": 4,
+    "full_light_identical": true,
+    "outcome_digest": "acbe03e7fd925739f08aa7905fc681273b9157f89e496a2468541393cbce2600",
+    "tutor_concept": "standard_error"
+  },
+  "C": {
+    "incomplete_position": {
+      "cash": 19605.54,
+      "market_value": 394.4,
+      "equity": 19999.940000000002,
+      "pnl": -0.059999999997671694,
+      "fees": 0.02
+    },
+    "stress": {
+      "scenario": {
+        "name": "CUSTOM",
+        "stock_return": -0.05,
+        "volatility_change": 0.0,
+        "rate_change": 0.0,
+        "days": 0.0,
+        "liquidation_bps": 0.0,
+        "correlation": null
+      },
+      "full_pnl": -19.72,
+      "loss": 19.72,
+      "approximate_pnl": -19.72,
+      "residual": 0.0,
+      "contributions": {
+        "delta": -19.72,
+        "gamma": 0.0,
+        "vega": 0.0,
+        "theta": 0.0,
+        "rho": 0.0,
+        "cash_carry": 0.0,
+        "liquidity": 0.0
+      },
+      "positions": [
+        {
+          "instrument": "SA-Y",
+          "full_pnl": -19.72,
+          "approximate_pnl": -19.72,
+          "residual": 0.0,
+          "delta": -19.72,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "liquidity": -0.0
+        }
+      ],
+      "warnings": [
+        "Hypothetical model changes; never booked as realised P&L",
+        "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+      ]
+    },
+    "final": {
+      "net_pnl": -0.12,
+      "return_on_capital": -1.2e-05,
+      "capital": 10000,
+      "drawdown": 0.12,
+      "trade_count": 1,
+      "win_rate": 0.0,
+      "average_trade": -0.12,
+      "median_trade": -0.12,
+      "turnover": 788.8,
+      "mean_holding": 0.0,
+      "execution_cost": 0.07999999999998408,
+      "fees": 0.04,
+      "costs": 0.11999999999998409,
+      "max_gross": 394.4,
+      "max_imbalance": 454.4120941828877,
+      "imbalance_observations": 0.0,
+      "probability_loss": 1.0,
+      "worst_trade": -0.12,
+      "mean_entry_z": -1.6345981049598342,
+      "mean_exit_z": -1.6345981049598342,
+      "residual_inventory": 0
+    },
+    "attribution": {
+      "spread": 0.0,
+      "directional": 0.0,
+      "execution": 0.07999999999998408,
+      "fees": 0.04,
+      "temporary_directional": 0.0
+    },
+    "replay": true
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "meaningful_uncertain": {
+    "analysis": {
+      "bootstrap": {
+        "estimate": 0.05993330219440971,
+        "interval": {
+          "confidence": 0.95,
+          "high": 0.265482182261227,
+          "low": -0.11195114693325514,
+          "method": "percentile bootstrap"
+        },
+        "observational_unit": "complete matched session pair",
+        "resamples": 200,
+        "seed": 80256226475403676234686232850348770193318946726172547494985243373339732678861,
+        "standard_error": 0.09501703683674835
+      },
+      "degrees_of_freedom": 19,
+      "difference": "second minus first",
+      "mean_exceeds_practical_threshold": true,
+      "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+      "p_value_two_sided": 0.5261670137253271,
+      "practical_threshold": 0.05,
+      "proportion_negative": 0.5,
+      "proportion_positive": 0.5,
+      "proportion_zero": 0.0,
+      "standardised_paired_effect": 0.14439304707425082,
+      "summary": {
+        "available": 20,
+        "maximum": 0.8171424524311379,
+        "mean": 0.05993330219440971,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.2541923016383264,
+          "low": -0.13432569724950696,
+          "method": "Student t mean"
+        },
+        "median": -0.003969579628217104,
+        "minimum": -0.7343079634492155,
+        "missing": 0,
+        "p05": -0.5098516885993764,
+        "p25": -0.21635529788524438,
+        "p75": 0.3251014719315487,
+        "p95": 0.7192932113929381,
+        "requested": 20,
+        "standard_deviation": 0.41507055504958196,
+        "standard_error": 0.09281259765494337,
+        "variance": 0.17228356566916803
+      },
+      "t_statistic": 0.645745337472704
+    },
+    "individual_sd": 0.4,
+    "n": 20,
+    "seed": 72630192829045833499217597636172812203842448629371089805009790168798379356217,
+    "true_effect": 0.1
+  },
+  "tiny_precise": {
+    "analysis": {
+      "bootstrap": {
+        "estimate": 0.0009590775832062985,
+        "interval": {
+          "confidence": 0.95,
+          "high": 0.001167609912843494,
+          "low": 0.0007732427563979457,
+          "method": "percentile bootstrap"
+        },
+        "observational_unit": "complete matched session pair",
+        "resamples": 200,
+        "seed": 32528314595650851416804573763460690896993979473277114030549179605452524982592,
+        "standard_error": 0.0001080953222173149
+      },
+      "degrees_of_freedom": 199999,
+      "difference": "second minus first",
+      "mean_exceeds_practical_threshold": false,
+      "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+      "p_value_two_sided": 1.1371066368883031e-17,
+      "practical_threshold": 0.05,
+      "proportion_negative": 0.492565,
+      "proportion_positive": 0.507435,
+      "proportion_zero": 0.0,
+      "standardised_paired_effect": 0.019140599858145986,
+      "summary": {
+        "available": 200000,
+        "maximum": 0.24682694744026334,
+        "mean": 0.0009590775832062985,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.0011786783829754578,
+          "low": 0.0007394767834371391,
+          "method": "Student t mean"
+        },
+        "median": 0.0009944179211746483,
+        "minimum": -0.2398386907172964,
+        "missing": 0,
+        "p05": -0.08137409309154223,
+        "p25": -0.032860214898164854,
+        "p75": 0.03475754555795299,
+        "p95": 0.08319704310705218,
+        "requested": 200000,
+        "standard_deviation": 0.05010697628675038,
+        "standard_error": 0.00011204260512414384,
+        "variance": 0.002510709072600965
+      },
+      "t_statistic": 8.559936482587451
+    },
+    "individual_sd": 0.05,
+    "n": 200000,
+    "seed": 7791454870144310268506244840938311319731082687401245544051182301943957311555,
+    "true_effect": 0.001
+  }
+}

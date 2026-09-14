@@ -1,0 +1,19 @@
+{
+  "analytic_one_price": 9.171199053525925e-07,
+  "checks": "Scalar/vector values agree; reduced/full capture metrics and hashes agree",
+  "hedge_20day_full_evidence": 0.043772249948233366,
+  "hedge_20day_research": 0.02314708405174315,
+  "mc_100k_full_estimation": 0.00695783318951726,
+  "mc_1m_full_estimation": 0.07128420798107982,
+  "scalar_100k_payoff_only": 0.011127083096653223,
+  "timing": "median of five warmed calls, wall seconds",
+  "vector_100k_payoff_only": 0.00047125015407800674,
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.8.0",
+    "scipy": "1.18.1"
+  }
+}

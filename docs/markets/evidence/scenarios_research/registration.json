@@ -1,0 +1,188 @@
+{
+  "design_digest": "09d2ead8b7705f222b89aad07b95d8e94b04bd4793f27a1bf70ad97ca2154247",
+  "registered_at": "2026-09-12T18:16:00.289765+00:00",
+  "schema_version": 1,
+  "simulation_seeds": [
+    147165143500359106264064254969208091013421226669214277393261326133786862395060,
+    167854092204374731823186454209794847382854549882414974893384488656268542627726,
+    78407036672706857540100530307986319563653042403145764954741857789301978133098
+  ],
+  "spec": {
+    "adapter": "environment-scenario-maker-v1",
+    "bootstrap_resamples": 100,
+    "hypothesis": "Execution, inventory and tail outcomes can differ despite the same policy.",
+    "limitations": [
+      "Controlled scenario comparison; never a forecast of real-market performance.",
+      "Independent scenario-specific streams; unpaired comparisons, conditional on the model.",
+      "Arrival rates and model volatility differ; the paths are not claimed to be identical."
+    ],
+    "paired": false,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "How robust is the same maker policy across controlled scenarios?",
+    "relationships": [],
+    "seeds": {
+      "pool": "development",
+      "root": 131042,
+      "runs": 3,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "engine": {
+            "market": {
+              "duration_us": 10000000,
+              "informed_cost_ticks": 0.25,
+              "informed_minimum_edge_ticks": 0.25,
+              "informed_prior_sd_ticks": 8.0,
+              "informed_rate_per_second": 0.5,
+              "informed_uncertainty_multiplier": 0.5,
+              "initial_latent_ticks": 10000,
+              "latent_sigma_ticks": 2,
+              "latent_step_us": 1000000,
+              "liquidity_max_quantity": 3,
+              "liquidity_rate_per_second": 1.5,
+              "markout_horizons_events": [
+                1,
+                5,
+                20
+              ],
+              "max_events": 10000,
+              "noise_max_quantity": 4,
+              "noise_price_radius_ticks": 5,
+              "noise_rate_per_second": 3,
+              "opening_reference_ticks": 10000,
+              "signal_noise_ticks": 2.0,
+              "tick_size": "0.01"
+            },
+            "strategy": {
+              "fee_ticks": "1/10",
+              "half_spread_ticks": "2/1",
+              "hard_limit": 8,
+              "initial_cash_ticks": "1000000/1",
+              "inventory_skew_ticks": "1/2",
+              "max_decisions": 10000,
+              "quote_size": 2,
+              "refresh_us": 1000000,
+              "soft_limit": 4,
+              "strategy": "fixed"
+            }
+          },
+          "environment": {
+            "scenario": "normal",
+            "source": "QuantLab controlled synthetic model",
+            "type": "SCENARIO"
+          }
+        },
+        "name": "normal"
+      },
+      {
+        "configuration": {
+          "engine": {
+            "market": {
+              "duration_us": 10000000,
+              "informed_cost_ticks": 0.25,
+              "informed_minimum_edge_ticks": 0.25,
+              "informed_prior_sd_ticks": 8.0,
+              "informed_rate_per_second": 0.5,
+              "informed_uncertainty_multiplier": 0.5,
+              "initial_latent_ticks": 10000,
+              "latent_sigma_ticks": 8,
+              "latent_step_us": 1000000,
+              "liquidity_max_quantity": 3,
+              "liquidity_rate_per_second": 1.5,
+              "markout_horizons_events": [
+                1,
+                5,
+                20
+              ],
+              "max_events": 10000,
+              "noise_max_quantity": 4,
+              "noise_price_radius_ticks": 5,
+              "noise_rate_per_second": 3,
+              "opening_reference_ticks": 10000,
+              "signal_noise_ticks": 2.0,
+              "tick_size": "0.01"
+            },
+            "strategy": {
+              "fee_ticks": "1/10",
+              "half_spread_ticks": "2/1",
+              "hard_limit": 8,
+              "initial_cash_ticks": "1000000/1",
+              "inventory_skew_ticks": "1/2",
+              "max_decisions": 10000,
+              "quote_size": 2,
+              "refresh_us": 1000000,
+              "soft_limit": 4,
+              "strategy": "fixed"
+            }
+          },
+          "environment": {
+            "scenario": "high_volatility",
+            "source": "QuantLab controlled synthetic model",
+            "type": "SCENARIO"
+          }
+        },
+        "name": "high_volatility"
+      },
+      {
+        "configuration": {
+          "engine": {
+            "market": {
+              "duration_us": 10000000,
+              "informed_cost_ticks": 0.25,
+              "informed_minimum_edge_ticks": 0.25,
+              "informed_prior_sd_ticks": 8.0,
+              "informed_rate_per_second": 4,
+              "informed_uncertainty_multiplier": 0.5,
+              "initial_latent_ticks": 10000,
+              "latent_sigma_ticks": 2,
+              "latent_step_us": 1000000,
+              "liquidity_max_quantity": 3,
+              "liquidity_rate_per_second": 1.5,
+              "markout_horizons_events": [
+                1,
+                5,
+                20
+              ],
+              "max_events": 10000,
+              "noise_max_quantity": 4,
+              "noise_price_radius_ticks": 5,
+              "noise_rate_per_second": 3,
+              "opening_reference_ticks": 10000,
+              "signal_noise_ticks": 1,
+              "tick_size": "0.01"
+            },
+            "strategy": {
+              "fee_ticks": "1/10",
+              "half_spread_ticks": "2/1",
+              "hard_limit": 8,
+              "initial_cash_ticks": "1000000/1",
+              "inventory_skew_ticks": "1/2",
+              "max_decisions": 10000,
+              "quote_size": 2,
+              "refresh_us": 1000000,
+              "soft_limit": 4,
+              "strategy": "fixed"
+            }
+          },
+          "environment": {
+            "scenario": "toxic_flow",
+            "source": "QuantLab controlled synthetic model",
+            "type": "SCENARIO"
+          }
+        },
+        "name": "toxic_flow"
+      }
+    ]
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "1.0.0",
+    "scipy": "1.18.1"
+  }
+}

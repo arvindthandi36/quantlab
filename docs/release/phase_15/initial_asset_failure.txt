@@ -1,0 +1,74 @@
+No entry for terminal type "unknown";
+using dumb terminal settings.
+........................................................................ [  3%]
+........................................................................ [  7%]
+........................................................................ [ 11%]
+........................................................................ [ 14%]
+........................................................................ [ 18%]
+........................................................................ [ 22%]
+........................................................................ [ 26%]
+........................................................................ [ 29%]
+........................................................................ [ 33%]
+........................................................................ [ 37%]
+........................................................................ [ 40%]
+........................................................................ [ 44%]
+........................................................................ [ 48%]
+........................................................................ [ 52%]
+.......................................................................F [ 55%]
+........................................................................ [ 59%]
+........................................................................ [ 63%]
+........................................................................ [ 67%]
+........................................................................ [ 70%]
+........................................................................ [ 74%]
+........................................................................ [ 78%]
+........................................................................ [ 81%]
+........................................................................ [ 85%]
+........................................................................ [ 89%]
+........................................................................ [ 93%]
+........................................................................ [ 96%]
+.............................................................            [100%]
+=================================== FAILURES ===================================
+_______________ test_showcase_doc_links_and_real_captures_exist ________________
+
+    def test_showcase_doc_links_and_real_captures_exist():
+        # Release-facing links, including source; historical audits remain separate evidence.
+        import re
+    
+        paths = [
+            Path("README.md"),
+            *Path("docs/showcase").glob("*.md"),
+            Path("docs/architecture/OVERVIEW.md"),
+        ]
+        for path in paths:
+            for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", path.read_text()):
+                parts = urlsplit(target)
+                if parts.scheme or not parts.path:
+                    continue
+                assert not parts.path.startswith("/"), (path, target)
+                assert (path.parent / unquote(parts.path)).exists(), (path, target)
+        manifest = json.loads(Path("docs/assets/readme/captures.json").read_text())
+        assert len(manifest["captures"]) >= 14
+        for row in manifest["captures"]:
+            image = Path("docs/assets/readme") / row["file"]
+>           assert image.read_bytes().startswith(b"\x89PNG\r\n\x1a\n")
+E           AssertionError: assert False
+E            +  where False = <built-in method startswith of bytes object at 0x970b60000>(b'\x89PNG\r\n\x1a\n')
+E            +    where <built-in method startswith of bytes object at 0x970b60000> = b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00C\x00\x06\x04\x05\x06\x05\x04\x06\x0...0\x00\x00\x00\x00\x02\x1a\xdfy\xcf\xfd\x9b\xbf\x00\x00\xa7\x00\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f\xff\xd9'.startswith
+E            +      where b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00C\x00\x06\x04\x05\x06\x05\x04\x06\x0...0\x00\x00\x00\x00\x02\x1a\xdfy\xcf\xfd\x9b\xbf\x00\x00\xa7\x00\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x7f\xff\xd9' = read_bytes()
+E            +        where read_bytes = PosixPath('docs/assets/readme/home.png').read_bytes
+
+tests/product/test_release.py:189: AssertionError
+============================= slowest 10 durations =============================
+3.75s call     tests/integration/test_statarb_research_tutor.py::test_pair_mining_discloses_fixed_universe_every_candidate_and_selection
+2.02s call     tests/integration/test_statarb_research_tutor.py::test_sweep_preserves_all_tried_settings_and_failure
+1.69s call     tests/integration/test_statarb_sessions.py::test_generated_mixed_operations_conserve_inventory_and_cash
+1.38s call     tests/integration/test_statarb_research_tutor.py::test_phase5_adapter_registered_execution_and_reproduction
+1.05s call     tests/integration/test_statarb_research_tutor.py::test_invalid_oracle_explicitly_rejected_despite_apparent_gain
+0.81s call     tests/demos/test_boundaries.py::test_future_changes_do_not_change_before_response_or_explanation[winner]
+0.67s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[rolling]
+0.62s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[fixed]
+0.60s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[walk_forward]
+0.57s call     tests/integration/test_statarb_research_tutor.py::test_causal_backtests_reproducible_without_capture_difference[rolling]
+=========================== short test summary info ============================
+FAILED tests/product/test_release.py::test_showcase_doc_links_and_real_captures_exist
+1 failed, 1932 passed in 119.01s (0:01:59)

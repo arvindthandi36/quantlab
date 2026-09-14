@@ -1,0 +1,42 @@
+{
+  "port_role": "isolated clean-installed application",
+  "concurrency": 1,
+  "note": "Warm local reads after browser trading; p95 nearest-rank, 12 requests per endpoint; includes response transfer.",
+  "endpoints": {
+    "/api/state": {
+      "requests": 12,
+      "median_ms": 0.6182290380820632,
+      "p95_ms": 9.817874990403652,
+      "largest_bytes": 2996,
+      "first_ms": 9.817874990403652
+    },
+    "/api/options": {
+      "requests": 12,
+      "median_ms": 4.64135454967618,
+      "p95_ms": 5.150167038664222,
+      "largest_bytes": 64550,
+      "first_ms": 5.130541976541281
+    },
+    "/api/risk": {
+      "requests": 12,
+      "median_ms": 6.977062555961311,
+      "p95_ms": 10.037041967734694,
+      "largest_bytes": 60922,
+      "first_ms": 10.037041967734694
+    },
+    "/api/statarb": {
+      "requests": 12,
+      "median_ms": 2.8422086033970118,
+      "p95_ms": 3.391208127140999,
+      "largest_bytes": 37404,
+      "first_ms": 3.287374973297119
+    },
+    "/api/learning": {
+      "requests": 12,
+      "median_ms": 1.297937473282218,
+      "p95_ms": 1.50545802898705,
+      "largest_bytes": 48307,
+      "first_ms": 1.3804170303046703
+    }
+  }
+}

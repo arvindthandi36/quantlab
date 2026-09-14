@@ -1,0 +1,38 @@
+[
+  {
+    "paths": 5000,
+    "mode": "summary",
+    "options": 20,
+    "seconds": 0.014138582861050963,
+    "peak_traced_bytes": 646625,
+    "var": 40.60890118607019,
+    "es": 40.76007921179954
+  },
+  {
+    "paths": 5000,
+    "mode": "full retained losses",
+    "options": 20,
+    "seconds": 0.02812966681085527,
+    "peak_traced_bytes": 610288,
+    "var": 40.60890118607019,
+    "es": 40.76007921179954
+  },
+  {
+    "paths": 100000,
+    "mode": "summary",
+    "options": 20,
+    "seconds": 0.12213979102671146,
+    "peak_traced_bytes": 12104848,
+    "var": 40.62894700721231,
+    "es": 40.765869847820234
+  },
+  {
+    "paths": 100000,
+    "mode": "full retained losses",
+    "options": 20,
+    "seconds": 0.41060966718941927,
+    "peak_traced_bytes": 12104841,
+    "var": 40.62894700721231,
+    "es": 40.765869847820234
+  }
+]

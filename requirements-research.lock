@@ -1,0 +1,15 @@
+# Verified research dependency snapshot: Python 3.14.0, macOS, 2026-09-11.
+# Combine with requirements-dev.lock and install -e '.[dev,research]'.
+# Not a cross-platform or hash-verified lock; other Python versions are unverified.
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.65.0
+kiwisolver==1.5.1
+matplotlib==3.11.1
+numpy==2.5.3
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+scipy==1.18.1
+six==1.17.0

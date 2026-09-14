@@ -1,0 +1,323 @@
+[
+  {
+    "path": "/home",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Home",
+    "viewport": 1440
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Trading desk",
+    "viewport": 1440
+  },
+  {
+    "path": "/options",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Options & Derivatives",
+    "viewport": 1440
+  },
+  {
+    "path": "/risk",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Risk & Portfolio",
+    "viewport": 1440
+  },
+  {
+    "path": "/statarb",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Stat Arb Lab",
+    "viewport": 1440
+  },
+  {
+    "path": "/research",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Research",
+    "viewport": 1440
+  },
+  {
+    "path": "/demos",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Guided demos",
+    "viewport": 1440
+  },
+  {
+    "path": "/learning",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Learning",
+    "viewport": 1440
+  },
+  {
+    "path": "/explain",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Explain",
+    "viewport": 1440
+  },
+  {
+    "path": "/environments",
+    "width": 1440,
+    "content": 1440,
+    "main": true,
+    "title": "QuantLab · Markets",
+    "viewport": 1440
+  },
+  {
+    "path": "/home",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Home",
+    "viewport": 1100
+  },
+  {
+    "path": "/",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Trading desk",
+    "viewport": 1100
+  },
+  {
+    "path": "/options",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Options & Derivatives",
+    "viewport": 1100
+  },
+  {
+    "path": "/risk",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Risk & Portfolio",
+    "viewport": 1100
+  },
+  {
+    "path": "/statarb",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Stat Arb Lab",
+    "viewport": 1100
+  },
+  {
+    "path": "/research",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Research",
+    "viewport": 1100
+  },
+  {
+    "path": "/demos",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Guided demos",
+    "viewport": 1100
+  },
+  {
+    "path": "/learning",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Learning",
+    "viewport": 1100
+  },
+  {
+    "path": "/explain",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Explain",
+    "viewport": 1100
+  },
+  {
+    "path": "/environments",
+    "width": 1100,
+    "content": 1100,
+    "main": true,
+    "title": "QuantLab · Markets",
+    "viewport": 1100
+  },
+  {
+    "path": "/home",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Home",
+    "viewport": 820
+  },
+  {
+    "path": "/",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Trading desk",
+    "viewport": 820
+  },
+  {
+    "path": "/options",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Options & Derivatives",
+    "viewport": 820
+  },
+  {
+    "path": "/risk",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Risk & Portfolio",
+    "viewport": 820
+  },
+  {
+    "path": "/statarb",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Stat Arb Lab",
+    "viewport": 820
+  },
+  {
+    "path": "/research",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Research",
+    "viewport": 820
+  },
+  {
+    "path": "/demos",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Guided demos",
+    "viewport": 820
+  },
+  {
+    "path": "/learning",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Learning",
+    "viewport": 820
+  },
+  {
+    "path": "/explain",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Explain",
+    "viewport": 820
+  },
+  {
+    "path": "/environments",
+    "width": 820,
+    "content": 820,
+    "main": true,
+    "title": "QuantLab · Markets",
+    "viewport": 820
+  },
+  {
+    "path": "/home",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Home",
+    "viewport": 390
+  },
+  {
+    "path": "/",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Trading desk",
+    "viewport": 390
+  },
+  {
+    "path": "/options",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Options & Derivatives",
+    "viewport": 390
+  },
+  {
+    "path": "/risk",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Risk & Portfolio",
+    "viewport": 390
+  },
+  {
+    "path": "/statarb",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Stat Arb Lab",
+    "viewport": 390
+  },
+  {
+    "path": "/research",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Research",
+    "viewport": 390
+  },
+  {
+    "path": "/demos",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Guided demos",
+    "viewport": 390,
+    "corrected": "Grid child minimum width; verified after reload"
+  },
+  {
+    "path": "/learning",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Learning",
+    "viewport": 390
+  },
+  {
+    "path": "/explain",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Explain",
+    "viewport": 390
+  },
+  {
+    "path": "/environments",
+    "width": 390,
+    "content": 390,
+    "main": true,
+    "title": "QuantLab · Markets",
+    "viewport": 390
+  }
+]

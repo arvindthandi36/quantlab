@@ -1,0 +1,43 @@
+No entry for terminal type "unknown";
+using dumb terminal settings.
+........................................................................ [  5%]
+........................................................................ [ 10%]
+........................................................................ [ 16%]
+........................................................................ [ 21%]
+........................................................................ [ 26%]
+........................................................................ [ 32%]
+........................................................................ [ 37%]
+........................................................................ [ 42%]
+........................................................................ [ 48%]
+........................................................................ [ 53%]
+........................................................................ [ 58%]
+........................................................................ [ 64%]
+........................................................................ [ 69%]
+........................................................................ [ 74%]
+........................................................................ [ 80%]
+........................................................................ [ 85%]
+........................................................................ [ 90%]
+........................................................................ [ 96%]
+..................................................                       [100%]
+============================= slowest 20 durations =============================
+3.70s call     tests/integration/test_statarb_research_tutor.py::test_pair_mining_discloses_fixed_universe_every_candidate_and_selection
+1.93s call     tests/integration/test_statarb_research_tutor.py::test_sweep_preserves_all_tried_settings_and_failure
+1.75s call     tests/integration/test_statarb_sessions.py::test_generated_mixed_operations_conserve_inventory_and_cash
+1.33s call     tests/integration/test_statarb_research_tutor.py::test_phase5_adapter_registered_execution_and_reproduction
+0.98s call     tests/integration/test_statarb_research_tutor.py::test_invalid_oracle_explicitly_rejected_despite_apparent_gain
+0.66s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[rolling]
+0.61s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[fixed]
+0.59s call     tests/integration/test_research_cli.py::test_teaching_compare_order_and_saved_answers
+0.59s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[walk_forward]
+0.55s call     tests/integration/test_statarb_research_tutor.py::test_causal_backtests_reproducible_without_capture_difference[rolling]
+0.53s call     tests/integration/test_statarb_research_tutor.py::test_selection_persisted_before_holdout_and_reuse_recorded
+0.53s call     tests/integration/test_statarb_research_tutor.py::test_causal_backtests_reproducible_without_capture_difference[fixed]
+0.52s call     tests/integration/test_manual_sessions.py::test_generated_mixed_manual_and_background_sequences
+0.50s teardown tests/integration/test_statarb_http.py::test_mutations_require_token_and_same_origin[headers1]
+0.50s teardown tests/integration/test_core_http.py::test_duplicate_submission_serializes_as_two_orders_and_cancel_refresh_is_safe
+0.50s teardown tests/integration/test_tutor_http.py::test_invalid_answer_does_not_add_mastery_evidence
+0.50s teardown tests/integration/test_trading_http.py::test_mutation_rejects_missing_token_cross_origin_and_bad_host[extra3]
+0.50s teardown tests/integration/test_tutor_http.py::test_client_cannot_supply_private_context_or_force_future_curriculum[payload2]
+0.50s teardown tests/integration/test_trading_http.py::test_mutation_rejects_missing_token_cross_origin_and_bad_host[extra0]
+0.50s teardown tests/integration/test_tutor_http.py::test_local_tutor_surfaces_and_exports[/api/learning-application/json]
+1346 passed in 74.05s (0:01:14)

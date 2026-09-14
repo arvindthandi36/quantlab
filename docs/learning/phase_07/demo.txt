@@ -1,0 +1,12 @@
+Demonstration only; not Arvind's mastery record
+LIVE: You buy 6 market: 6 filled, 0 resting, 0 cancelled; VWAP £100.01667
+WRONG: Not yet. Treat each executed unit as one observation; price levels can contain unequal quantities.
+EXPLAIN: VWAP = Σ(pᵢqᵢ)/Σqᵢ; pᵢ is execution price and qᵢ its quantity. Fees are separate. Your order: (2×£100.01 + 4×£100.02)/6 = £100.01667.
+RESTART: 2 VWAP attempts restored
+REVISIT: 1 concept due after three learning days
+INTERVIEW: level 2 ; debrief hidden until requested
+SESSION: {'final_pnl': '0.04400', 'trade_count': 2, 'fees': '0.00600', 'maximum_drawdown': '0.07600'}
+RESEARCH: fixed n 1600 mean 0.182372 SE 0.006388 GBP
+RESEARCH: inventory n 1600 mean -0.135929 SE 0.010065 GBP
+CHECK: No observer fields in learning export
+CHECK: identical market journals with/without tutoring; recorded replay verified

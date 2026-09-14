@@ -1,0 +1,48 @@
+{
+  "fixed": {
+    "1": {
+      "available_units": 14047,
+      "missing_units": 6349,
+      "pending_units": 19,
+      "pooled_mean": 0.0060009254645119955,
+      "weighted_sum": "16859/200"
+    },
+    "20": {
+      "available_units": 14379,
+      "missing_units": 2730,
+      "pending_units": 3306,
+      "pooled_mean": 0.008330899228040893,
+      "weighted_sum": "11979/100"
+    },
+    "5": {
+      "available_units": 16099,
+      "missing_units": 3584,
+      "pending_units": 732,
+      "pooled_mean": 0.007525001552891484,
+      "weighted_sum": "24229/200"
+    }
+  },
+  "inventory": {
+    "1": {
+      "available_units": 19295,
+      "missing_units": 5736,
+      "pending_units": 14,
+      "pooled_mean": 0.0017162477325732054,
+      "weighted_sum": "6623/200"
+    },
+    "20": {
+      "available_units": 18852,
+      "missing_units": 1656,
+      "pending_units": 4537,
+      "pooled_mean": -0.006308614470613197,
+      "weighted_sum": "-11893/100"
+    },
+    "5": {
+      "available_units": 21256,
+      "missing_units": 2802,
+      "pending_units": 987,
+      "pooled_mean": 0.0008971584493789989,
+      "weighted_sum": "1907/100"
+    }
+  }
+}

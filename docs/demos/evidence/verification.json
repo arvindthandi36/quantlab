@@ -1,0 +1,14 @@
+{
+  "baseline_test_ids": 1732,
+  "final_test_ids": 1910,
+  "added": 178,
+  "missing_original_ids": [],
+  "changed_preexisting_source_files": [
+    "src/quantlab/trading/navigation.py",
+    "src/quantlab/trading/server.py",
+    "src/quantlab/trading/static/explain.js"
+  ],
+  "changed_preexisting_test_files": [],
+  "core_workflows_equal": true,
+  "financial_source_files_changed": []
+}

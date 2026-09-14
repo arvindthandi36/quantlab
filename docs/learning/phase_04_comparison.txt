@@ -1,0 +1,15 @@
+Predeclared seeds 0..19; 30 seconds; all 20 pairs retained.
+Paired validation: common exogenous randomness; no claim of strategy superiority.
+Metric | Fixed | Inventory-aware
+--- | ---: | ---:
+Mean P&L | £0.1738 | -£0.1188
+Mean average absolute inventory | 2.731 | 1.763
+Mean RMS inventory | 3.147 | 2.170
+Mean maximum absolute inventory | 5.150 | 4.600
+Mean maximum drawdown | £0.1948 | £0.3608
+Mean execution-edge proxy | £0.3788 | £0.3798
+Mean inventory/reference movement | -£0.1850 | -£0.4758
+Mean fees | £0.0200 | £0.0228
+Pooled h1 public-midpoint markout | £0.0055/unit (277/400 units available) | £0.0022/unit (359/456 units available)
+Pooled h5 public-midpoint markout | £0.0066/unit (342/400 units available) | £0.0001/unit (414/456 units available)
+Pooled h20 public-midpoint markout | £0.0102/unit (288/400 units available) | -£0.0058/unit (339/456 units available)

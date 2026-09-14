@@ -1,0 +1,2 @@
+Guard smoke test with separate illustrative seed claims; no market outcomes generated and no baseline evaluation rerun.
+EVALUATION REUSE: 3 seeds were already exposed. Repeated inspection turns evaluation data into development data; this is not a fresh holdout.

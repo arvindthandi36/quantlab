@@ -1,0 +1,62 @@
+QuantLab Phase 3 | seed=42 | OBSERVER DEBUG — truth/error private to observer; informed trader receives only signal
+Start: empty book.
+09:30:00.009521 [e4] INFORMED: hold: no available quote clears costs, minimum edge and uncertainty buffer
+    Private: latent=10000.000 ticks; signal=10003.388; error=+3.388.
+    Estimate=10003.188; uncertainty=1.940; hurdle=1.470 ticks.
+    Edges: buy=unavailable; sell=unavailable ticks.
+09:30:00.26934 [e2] NOISE buy 1 limit £100.01 [noise_arrival-2]
+    Why: random buy/size; configured opening reference 10000 ticks +1.
+    1 remain in book: no eligible opposing order.
+09:30:01 [e1] LATENT £100.0000 → £99.9934; observer only, no order.
+09:30:01.066817 [e5] INFORMED sell 1 limit £100.01 [informed_arrival-5]
+    Why: sell: executable bid minus estimated value strictly exceeds the hurdle.
+    Private: latent=9999.341 ticks; signal=9998.141; error=-1.200.
+    Estimate=9998.250; uncertainty=1.940; hurdle=1.470 ticks.
+    Edges: buy=unavailable; sell=2.750 ticks.
+    Trade #1: 1 @ £100.01; resting noise_arrival-2 supplies the price.
+    Incoming order fully filled.
+09:30:02 [e7] LATENT £99.9934 → £99.9857; observer only, no order.
+09:30:02.066857 [e6] NOISE buy 2 limit £100.02 [noise_arrival-6]
+    Why: random buy/size; last transaction 10001 ticks +1.
+    2 remain in book: no eligible opposing order.
+09:30:02.451686 [e3] LIQUIDITY buy 3 market [liquidity_arrival-3]
+    Why: external buy need for 3; requests immediate execution, no price signal.
+    3 unfilled/cancelled: opposing liquidity exhausted.
+09:30:03 [e9] LATENT £99.9857 → £99.9830; observer only, no order.
+09:30:03.4385 [e11] LIQUIDITY sell 1 market [liquidity_arrival-11]
+    Why: external sell need for 1; requests immediate execution, no price signal.
+    Trade #2: 1 @ £100.02; resting noise_arrival-6 supplies the price.
+    Incoming order fully filled.
+09:30:03.656763 [e13] LIQUIDITY sell 2 market [liquidity_arrival-13]
+    Why: external sell need for 2; requests immediate execution, no price signal.
+    Trade #3: 1 @ £100.02; resting noise_arrival-6 supplies the price.
+    1 unfilled/cancelled: opposing liquidity exhausted.
+09:30:04 [e12] LATENT £99.9830 → £99.9843; observer only, no order.
+09:30:04.209911 [e10] NOISE sell 4 limit £100 [noise_arrival-10]
+    Why: random sell/size; last transaction 10002 ticks -2.
+    4 remain in book: no eligible opposing order.
+09:30:04.4715 [e16] NOISE sell 3 limit £100.02 [noise_arrival-16]
+    Why: random sell/size; last transaction 10002 ticks +0.
+    3 remain in book: no eligible opposing order.
+09:30:04.485043 [e8] INFORMED: hold: no available quote clears costs, minimum edge and uncertainty buffer
+    Private: latent=9998.425 ticks; signal=9998.361; error=-0.064.
+    Estimate=9998.575; uncertainty=1.940; hurdle=1.470 ticks.
+    Edges: buy=-1.425; sell=unavailable ticks.
+09:30:05 [e15] LATENT £99.9843 → £99.9721; observer only, no order.
+End 09:30:05: 15 events; 3 trades / 3 units. Best bid none; ask £100.
+Final visible depth:
+ASKS
+Price | Total Quantity | Order Count
+£100.02 | 3 | 1 order
+£100 | 4 | 1 order
+BIDS
+Price | Total Quantity | Order Count
+(empty)
+Provider markouts (ticks/unit; + favourable, - adverse; event horizons):
+  Trade #1 [public_midpoint] h=1: reference_unavailable_at_horizon; h=5: reference_unavailable_at_horizon; h=20: horizon_not_reached
+  Trade #1 [observer_latent] h=1: -2.426; h=5: -2.698; h=20: horizon_not_reached
+  Trade #2 [public_midpoint] h=1: reference_unavailable_at_horizon; h=5: reference_unavailable_at_horizon; h=20: horizon_not_reached
+  Trade #2 [observer_latent] h=1: -3.698; h=5: -3.575; h=20: horizon_not_reached
+  Trade #3 [public_midpoint] h=1: reference_unavailable_at_horizon; h=5: reference_unavailable_at_horizon; h=20: horizon_not_reached
+  Trade #3 [observer_latent] h=1: -3.575; h=5: -4.786; h=20: horizon_not_reached
+Saved observer journal (includes latent state and any private signals): docs/learning/phase_03_session.json

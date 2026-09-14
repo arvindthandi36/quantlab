@@ -1,0 +1,33 @@
+{
+  "baseline_tests": 1097,
+  "final_tests": 1294,
+  "new_tests": 197,
+  "missing_baseline_tests": [],
+  "full_suite": "1294 passed in 67.35s",
+  "versions": {
+    "quantlab": "0.9.0",
+    "python": "3.14.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "lint": "ruff check src tests: all checks passed",
+  "browser": [
+    "manual short spread and separate second leg",
+    "X external liquidity withdrawn: Y fills, X remains zero",
+    "actual incomplete pair visible in linked Portfolio Risk",
+    "independent controlled correlation examples",
+    "all 28 pair candidates and held-out result displayed",
+    "original journal upload, verified replay and ended frame",
+    "new drift market with walk-forward rules and systematic mode",
+    "1440px desktop and 390px phone: no document overflow",
+    "no browser JavaScript errors"
+  ],
+  "research": {
+    "registered_studies": 5,
+    "evaluation_runs": 288,
+    "failed_runs": 0,
+    "worst_runs_regenerated": 10,
+    "defaults_tuned_after_evaluation": false
+  },
+  "final_review": "Pending-order leg imbalance reservations and zero-volatility correlation validation added; all ten saved worst research runs and all three demo journals reverified unchanged."
+}

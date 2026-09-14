@@ -1,0 +1,2549 @@
+{
+  "simulator_version": "0.4.0",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "duration_us": 30000000,
+  "maker_config": {
+    "strategy": "fixed",
+    "half_spread_ticks": "2/1",
+    "quote_size": 2,
+    "inventory_skew_ticks": "1/2",
+    "soft_limit": 4,
+    "hard_limit": 8,
+    "refresh_us": 1000000,
+    "fee_ticks": "1/10",
+    "initial_cash_ticks": "1000000/1",
+    "max_decisions": 10000
+  },
+  "informed_rate_per_second": 1,
+  "runs": [
+    {
+      "seed": 0,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 2,
+        "execution_cash_ticks": "-19974/1",
+        "cash_ticks": "4900122/5",
+        "fees_ticks": "8/5",
+        "reference_ticks": "9997/1",
+        "marked_value_ticks": "5000092/5",
+        "realised_trading_pnl_ticks": "22/1",
+        "realised_pnl_ticks": "102/5",
+        "unrealised_pnl_ticks": "-2/1",
+        "total_pnl_ticks": "92/5",
+        "spread_capture_ticks": "28/1",
+        "inventory_movement_ticks": "-8/1",
+        "maximum_absolute_inventory": 2
+      },
+      "diagnostics": {
+        "fills": 14,
+        "buy_fills": 8,
+        "sell_fills": 6,
+        "buy_units": 9,
+        "sell_units": 7,
+        "posted_units": 120,
+        "fill_rate": "2/15",
+        "average_inventory": "159127/6000000",
+        "average_absolute_inventory": "5468913/10000000",
+        "rms_inventory": 0.9148937461075284,
+        "maximum_absolute_inventory": 2,
+        "average_quoted_spread_ticks": "122337892/28834473",
+        "two_sided_quote_time_fraction": "9611491/10000000",
+        "average_effective_spread_ticks": "57/14",
+        "effective_spread_covered_units": 14,
+        "turnover_ticks": 159958,
+        "maximum_drawdown_ticks": "23/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "17/2",
+          "available_units": 13,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "25/2",
+          "available_units": 16,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "51/2",
+          "available_units": 14,
+          "missing_units": 0,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 3,
+        "execution_cash_ticks": "-29972/1",
+        "cash_ticks": "9700259/10",
+        "fees_ticks": "21/10",
+        "reference_ticks": "9996/1",
+        "marked_value_ticks": "10000139/10",
+        "realised_trading_pnl_ticks": "20/1",
+        "realised_pnl_ticks": "179/10",
+        "unrealised_pnl_ticks": "-4/1",
+        "total_pnl_ticks": "139/10",
+        "spread_capture_ticks": "63/2",
+        "inventory_movement_ticks": "-31/2",
+        "maximum_absolute_inventory": 3
+      },
+      "diagnostics": {
+        "fills": 17,
+        "buy_fills": 10,
+        "sell_fills": 7,
+        "buy_units": 12,
+        "sell_units": 9,
+        "posted_units": 120,
+        "fill_rate": "7/40",
+        "average_inventory": "-1721759/15000000",
+        "average_absolute_inventory": "57953/125000",
+        "rms_inventory": 0.7726526602124226,
+        "maximum_absolute_inventory": 3,
+        "average_quoted_spread_ticks": "57788841/13575808",
+        "two_sided_quote_time_fraction": "212122/234375",
+        "average_effective_spread_ticks": "72/19",
+        "effective_spread_covered_units": 19,
+        "turnover_ticks": 209960,
+        "maximum_drawdown_ticks": "22/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "3/2",
+          "available_units": 16,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 19,
+          "missing_units": 0,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "23/1",
+          "available_units": 14,
+          "missing_units": 0,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -3,
+        "execution_cash_ticks": "30029/1",
+        "cash_ticks": "10300261/10",
+        "fees_ticks": "29/10",
+        "reference_ticks": "10007/1",
+        "marked_value_ticks": "10000051/10",
+        "realised_trading_pnl_ticks": "8/1",
+        "realised_pnl_ticks": "51/10",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "51/10",
+        "spread_capture_ticks": "109/2",
+        "inventory_movement_ticks": "-93/2",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 22,
+        "buy_fills": 8,
+        "sell_fills": 14,
+        "buy_units": 13,
+        "sell_units": 16,
+        "posted_units": 115,
+        "fill_rate": "29/115",
+        "average_inventory": "-378503/125000",
+        "average_absolute_inventory": "378503/125000",
+        "rms_inventory": 3.3047936597211836,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "98419451/24413934",
+        "two_sided_quote_time_fraction": "4068989/5000000",
+        "average_effective_spread_ticks": "43/14",
+        "effective_spread_covered_units": 28,
+        "turnover_ticks": 290103,
+        "maximum_drawdown_ticks": "129/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "3/1",
+          "available_units": 15,
+          "missing_units": 14,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "17/2",
+          "available_units": 24,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "18/1",
+          "available_units": 15,
+          "missing_units": 6,
+          "pending_units": 8
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 3,
+        "execution_cash_ticks": "-30021/1",
+        "cash_ticks": "1939953/2",
+        "fees_ticks": "5/2",
+        "reference_ticks": "10005/1",
+        "marked_value_ticks": "1999983/2",
+        "realised_trading_pnl_ticks": "0/1",
+        "realised_pnl_ticks": "-5/2",
+        "unrealised_pnl_ticks": "-6/1",
+        "total_pnl_ticks": "-17/2",
+        "spread_capture_ticks": "35/1",
+        "inventory_movement_ticks": "-41/1",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 18,
+        "buy_fills": 8,
+        "sell_fills": 10,
+        "buy_units": 14,
+        "sell_units": 11,
+        "posted_units": 120,
+        "fill_rate": "5/24",
+        "average_inventory": "782739/2000000",
+        "average_absolute_inventory": "12342881/6000000",
+        "rms_inventory": 2.4133741041675796,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "37973149/8460419",
+        "two_sided_quote_time_fraction": "8460419/10000000",
+        "average_effective_spread_ticks": "84/25",
+        "effective_spread_covered_units": 25,
+        "turnover_ticks": 250125,
+        "maximum_drawdown_ticks": "137/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-19/2",
+          "available_units": 18,
+          "missing_units": 7,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-17/1",
+          "available_units": 22,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-17/2",
+          "available_units": 17,
+          "missing_units": 3,
+          "pending_units": 5
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 3,
+        "execution_cash_ticks": "-29999/1",
+        "cash_ticks": "9699987/10",
+        "fees_ticks": "23/10",
+        "reference_ticks": "20001/2",
+        "marked_value_ticks": "5000001/5",
+        "realised_trading_pnl_ticks": "4/1",
+        "realised_pnl_ticks": "17/10",
+        "unrealised_pnl_ticks": "-3/2",
+        "total_pnl_ticks": "1/5",
+        "spread_capture_ticks": "85/2",
+        "inventory_movement_ticks": "-40/1",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 17,
+        "buy_fills": 11,
+        "sell_fills": 6,
+        "buy_units": 13,
+        "sell_units": 10,
+        "posted_units": 116,
+        "fill_rate": "23/116",
+        "average_inventory": "12635383/30000000",
+        "average_absolute_inventory": "23703161/10000000",
+        "rms_inventory": 3.05625675732041,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "6071396/1392849",
+        "two_sided_quote_time_fraction": "4178547/5000000",
+        "average_effective_spread_ticks": "81/22",
+        "effective_spread_covered_units": 22,
+        "turnover_ticks": 230055,
+        "maximum_drawdown_ticks": "164/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 12,
+          "missing_units": 11,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "27/2",
+          "available_units": 21,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-1/1",
+          "available_units": 16,
+          "missing_units": 5,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-10078/1",
+        "cash_ticks": "1979839/2",
+        "fees_ticks": "5/2",
+        "reference_ticks": "19987/2",
+        "marked_value_ticks": "999913/1",
+        "realised_trading_pnl_ticks": "-84/1",
+        "realised_pnl_ticks": "-173/2",
+        "unrealised_pnl_ticks": "-1/2",
+        "total_pnl_ticks": "-87/1",
+        "spread_capture_ticks": "34/1",
+        "inventory_movement_ticks": "-237/2",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 19,
+        "buy_fills": 11,
+        "sell_fills": 8,
+        "buy_units": 13,
+        "sell_units": 12,
+        "posted_units": 115,
+        "fill_rate": "5/23",
+        "average_inventory": "268901/300000",
+        "average_absolute_inventory": "2540567/937500",
+        "rms_inventory": 3.2339999690785404,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "111239693/24645227",
+        "two_sided_quote_time_fraction": "24645227/30000000",
+        "average_effective_spread_ticks": "91/24",
+        "effective_spread_covered_units": 24,
+        "turnover_ticks": 250070,
+        "maximum_drawdown_ticks": "466/5",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 14,
+          "missing_units": 11,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-14/1",
+          "available_units": 22,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-52/1",
+          "available_units": 15,
+          "missing_units": 7,
+          "pending_units": 3
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 6,
+        "execution_cash_ticks": "-59960/1",
+        "cash_ticks": "4700192/5",
+        "fees_ticks": "8/5",
+        "reference_ticks": "9998/1",
+        "marked_value_ticks": "5000132/5",
+        "realised_trading_pnl_ticks": "11/1",
+        "realised_pnl_ticks": "47/5",
+        "unrealised_pnl_ticks": "17/1",
+        "total_pnl_ticks": "132/5",
+        "spread_capture_ticks": "28/1",
+        "inventory_movement_ticks": "0/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 13,
+        "buy_fills": 8,
+        "sell_fills": 5,
+        "buy_units": 11,
+        "sell_units": 5,
+        "posted_units": 109,
+        "fill_rate": "16/109",
+        "average_inventory": "7540657/2000000",
+        "average_absolute_inventory": "7540657/2000000",
+        "rms_inventory": 4.225512572457926,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "111525626/24413333",
+        "two_sided_quote_time_fraction": "24413333/30000000",
+        "average_effective_spread_ticks": "11/4",
+        "effective_spread_covered_units": 16,
+        "turnover_ticks": 159940,
+        "maximum_drawdown_ticks": "243/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 10,
+          "missing_units": 6,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "5/2",
+          "available_units": 15,
+          "missing_units": 0,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "12/1",
+          "available_units": 14,
+          "missing_units": 0,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -1,
+        "execution_cash_ticks": "9998/1",
+        "cash_ticks": "2019993/2",
+        "fees_ticks": "3/2",
+        "reference_ticks": "19987/2",
+        "marked_value_ticks": "1000003/1",
+        "realised_trading_pnl_ticks": "6/1",
+        "realised_pnl_ticks": "9/2",
+        "unrealised_pnl_ticks": "-3/2",
+        "total_pnl_ticks": "3/1",
+        "spread_capture_ticks": "24/1",
+        "inventory_movement_ticks": "-39/2",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 9,
+        "buy_fills": 4,
+        "sell_fills": 5,
+        "buy_units": 7,
+        "sell_units": 8,
+        "posted_units": 120,
+        "fill_rate": "1/8",
+        "average_inventory": "4037989/3000000",
+        "average_absolute_inventory": "24621913/15000000",
+        "rms_inventory": 2.080289370896911,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "20258381/4406592",
+        "two_sided_quote_time_fraction": "68853/78125",
+        "average_effective_spread_ticks": "41/15",
+        "effective_spread_covered_units": 15,
+        "turnover_ticks": 149890,
+        "maximum_drawdown_ticks": "42/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "3/1",
+          "available_units": 11,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-7/1",
+          "available_units": 15,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "15/1",
+          "available_units": 11,
+          "missing_units": 0,
+          "pending_units": 4
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "46/1",
+        "cash_ticks": "5000218/5",
+        "fees_ticks": "12/5",
+        "reference_ticks": "19987/2",
+        "marked_value_ticks": "5000218/5",
+        "realised_trading_pnl_ticks": "46/1",
+        "realised_pnl_ticks": "218/5",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "218/5",
+        "spread_capture_ticks": "46/1",
+        "inventory_movement_ticks": "0/1",
+        "maximum_absolute_inventory": 3
+      },
+      "diagnostics": {
+        "fills": 15,
+        "buy_fills": 7,
+        "sell_fills": 8,
+        "buy_units": 12,
+        "sell_units": 12,
+        "posted_units": 120,
+        "fill_rate": "1/5",
+        "average_inventory": "-8865229/7500000",
+        "average_absolute_inventory": "8388799/5000000",
+        "rms_inventory": 2.01201133197604,
+        "maximum_absolute_inventory": 3,
+        "average_quoted_spread_ticks": "110196866/25244117",
+        "two_sided_quote_time_fraction": "25244117/30000000",
+        "average_effective_spread_ticks": "35/11",
+        "effective_spread_covered_units": 22,
+        "turnover_ticks": 239878,
+        "maximum_drawdown_ticks": "41/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "8/1",
+          "available_units": 21,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 22,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "33/1",
+          "available_units": 19,
+          "missing_units": 0,
+          "pending_units": 5
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -1,
+        "execution_cash_ticks": "10017/1",
+        "cash_ticks": "10100143/10",
+        "fees_ticks": "27/10",
+        "reference_ticks": "9992/1",
+        "marked_value_ticks": "10000223/10",
+        "realised_trading_pnl_ticks": "22/1",
+        "realised_pnl_ticks": "193/10",
+        "unrealised_pnl_ticks": "3/1",
+        "total_pnl_ticks": "223/10",
+        "spread_capture_ticks": "48/1",
+        "inventory_movement_ticks": "-23/1",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 17,
+        "buy_fills": 8,
+        "sell_fills": 9,
+        "buy_units": 13,
+        "sell_units": 14,
+        "posted_units": 120,
+        "fill_rate": "9/40",
+        "average_inventory": "2538221/10000000",
+        "average_absolute_inventory": "11211277/10000000",
+        "rms_inventory": 1.6391233937687546,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "58063381/12467346",
+        "two_sided_quote_time_fraction": "2077891/2500000",
+        "average_effective_spread_ticks": "16/5",
+        "effective_spread_covered_units": 25,
+        "turnover_ticks": 269865,
+        "maximum_drawdown_ticks": "48/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "17/2",
+          "available_units": 25,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "7/1",
+          "available_units": 26,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "21/2",
+          "available_units": 20,
+          "missing_units": 0,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 3,
+        "execution_cash_ticks": "-29948/1",
+        "cash_ticks": "9700497/10",
+        "fees_ticks": "23/10",
+        "reference_ticks": "9995/1",
+        "marked_value_ticks": "10000347/10",
+        "realised_trading_pnl_ticks": "37/1",
+        "realised_pnl_ticks": "347/10",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "347/10",
+        "spread_capture_ticks": "47/1",
+        "inventory_movement_ticks": "-10/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 18,
+        "buy_fills": 10,
+        "sell_fills": 8,
+        "buy_units": 13,
+        "sell_units": 10,
+        "posted_units": 104,
+        "fill_rate": "23/104",
+        "average_inventory": "88805363/30000000",
+        "average_absolute_inventory": "3608417/1200000",
+        "rms_inventory": 4.06230930629365,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "87953355/21055772",
+        "two_sided_quote_time_fraction": "5263943/7500000",
+        "average_effective_spread_ticks": "78/23",
+        "effective_spread_covered_units": 23,
+        "turnover_ticks": 229906,
+        "maximum_drawdown_ticks": "191/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-1/2",
+          "available_units": 15,
+          "missing_units": 8,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "36/1",
+          "available_units": 20,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "26/1",
+          "available_units": 13,
+          "missing_units": 3,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -2,
+        "execution_cash_ticks": "19978/1",
+        "cash_ticks": "1019975/1",
+        "fees_ticks": "3/1",
+        "reference_ticks": "19987/2",
+        "marked_value_ticks": "999988/1",
+        "realised_trading_pnl_ticks": "-12/1",
+        "realised_pnl_ticks": "-15/1",
+        "unrealised_pnl_ticks": "3/1",
+        "total_pnl_ticks": "-12/1",
+        "spread_capture_ticks": "57/1",
+        "inventory_movement_ticks": "-66/1",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 26,
+        "buy_fills": 10,
+        "sell_fills": 16,
+        "buy_units": 14,
+        "sell_units": 16,
+        "posted_units": 115,
+        "fill_rate": "6/23",
+        "average_inventory": "9746169/10000000",
+        "average_absolute_inventory": "50985931/30000000",
+        "rms_inventory": 2.471274293422997,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "114344465/25098399",
+        "two_sided_quote_time_fraction": "8366133/10000000",
+        "average_effective_spread_ticks": "25/6",
+        "effective_spread_covered_units": 30,
+        "turnover_ticks": 299734,
+        "maximum_drawdown_ticks": "437/5",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "6/1",
+          "available_units": 23,
+          "missing_units": 7,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "24/1",
+          "available_units": 29,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-55/2",
+          "available_units": 22,
+          "missing_units": 2,
+          "pending_units": 6
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 4,
+        "execution_cash_ticks": "-39937/1",
+        "cash_ticks": "4800304/5",
+        "fees_ticks": "11/5",
+        "reference_ticks": "19991/2",
+        "marked_value_ticks": "5000214/5",
+        "realised_trading_pnl_ticks": "23/1",
+        "realised_pnl_ticks": "104/5",
+        "unrealised_pnl_ticks": "22/1",
+        "total_pnl_ticks": "214/5",
+        "spread_capture_ticks": "40/1",
+        "inventory_movement_ticks": "5/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 16,
+        "buy_fills": 10,
+        "sell_fills": 6,
+        "buy_units": 13,
+        "sell_units": 9,
+        "posted_units": 115,
+        "fill_rate": "22/115",
+        "average_inventory": "8775751/6000000",
+        "average_absolute_inventory": "34001753/10000000",
+        "rms_inventory": 3.8164823812860273,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "109251636/25562909",
+        "two_sided_quote_time_fraction": "25562909/30000000",
+        "average_effective_spread_ticks": "59/22",
+        "effective_spread_covered_units": 22,
+        "turnover_ticks": 219921,
+        "maximum_drawdown_ticks": "138/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "3/1",
+          "available_units": 16,
+          "missing_units": 6,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-9/2",
+          "available_units": 15,
+          "missing_units": 7,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "9/1",
+          "available_units": 18,
+          "missing_units": 4,
+          "pending_units": 0
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -1,
+        "execution_cash_ticks": "9935/1",
+        "cash_ticks": "10099319/10",
+        "fees_ticks": "31/10",
+        "reference_ticks": "9988/1",
+        "marked_value_ticks": "9999439/10",
+        "realised_trading_pnl_ticks": "-54/1",
+        "realised_pnl_ticks": "-571/10",
+        "unrealised_pnl_ticks": "1/1",
+        "total_pnl_ticks": "-561/10",
+        "spread_capture_ticks": "55/1",
+        "inventory_movement_ticks": "-108/1",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 25,
+        "buy_fills": 12,
+        "sell_fills": 13,
+        "buy_units": 15,
+        "sell_units": 16,
+        "posted_units": 116,
+        "fill_rate": "31/116",
+        "average_inventory": "1170187/2000000",
+        "average_absolute_inventory": "68456051/30000000",
+        "rms_inventory": 2.866180832862202,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "29670751/6450947",
+        "two_sided_quote_time_fraction": "6450947/7500000",
+        "average_effective_spread_ticks": "20/7",
+        "effective_spread_covered_units": 28,
+        "turnover_ticks": 309797,
+        "maximum_drawdown_ticks": "82/1",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 23,
+          "missing_units": 8,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "3/2",
+          "available_units": 25,
+          "missing_units": 6,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-137/2",
+          "available_units": 28,
+          "missing_units": 2,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 5,
+        "execution_cash_ticks": "-49956/1",
+        "cash_ticks": "9500419/10",
+        "fees_ticks": "21/10",
+        "reference_ticks": "9990/1",
+        "marked_value_ticks": "9999919/10",
+        "realised_trading_pnl_ticks": "6/1",
+        "realised_pnl_ticks": "39/10",
+        "unrealised_pnl_ticks": "-12/1",
+        "total_pnl_ticks": "-81/10",
+        "spread_capture_ticks": "35/1",
+        "inventory_movement_ticks": "-41/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 16,
+        "buy_fills": 11,
+        "sell_fills": 5,
+        "buy_units": 13,
+        "sell_units": 8,
+        "posted_units": 103,
+        "fill_rate": "21/103",
+        "average_inventory": "13403569/5000000",
+        "average_absolute_inventory": "58187183/15000000",
+        "rms_inventory": 4.324193967280684,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "51390387/11982875",
+        "two_sided_quote_time_fraction": "95863/120000",
+        "average_effective_spread_ticks": "68/19",
+        "effective_spread_covered_units": 19,
+        "turnover_ticks": 209940,
+        "maximum_drawdown_ticks": "219/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/1",
+          "available_units": 11,
+          "missing_units": 10,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-6/1",
+          "available_units": 15,
+          "missing_units": 5,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-13/1",
+          "available_units": 15,
+          "missing_units": 2,
+          "pending_units": 4
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -2,
+        "execution_cash_ticks": "19990/1",
+        "cash_ticks": "5099938/5",
+        "fees_ticks": "12/5",
+        "reference_ticks": "9991/1",
+        "marked_value_ticks": "5000028/5",
+        "realised_trading_pnl_ticks": "2/1",
+        "realised_pnl_ticks": "-2/5",
+        "unrealised_pnl_ticks": "6/1",
+        "total_pnl_ticks": "28/5",
+        "spread_capture_ticks": "73/2",
+        "inventory_movement_ticks": "-57/2",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 18,
+        "buy_fills": 10,
+        "sell_fills": 8,
+        "buy_units": 11,
+        "sell_units": 13,
+        "posted_units": 120,
+        "fill_rate": "1/5",
+        "average_inventory": "-276347/468750",
+        "average_absolute_inventory": "759937/468750",
+        "rms_inventory": 1.8270851467113767,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "4597475/1025959",
+        "two_sided_quote_time_fraction": "1025959/1250000",
+        "average_effective_spread_ticks": "89/24",
+        "effective_spread_covered_units": 24,
+        "turnover_ticks": 239928,
+        "maximum_drawdown_ticks": "211/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "11/1",
+          "available_units": 17,
+          "missing_units": 7,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-12/1",
+          "available_units": 20,
+          "missing_units": 3,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-46/1",
+          "available_units": 17,
+          "missing_units": 0,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-9990/1",
+        "cash_ticks": "9900089/10",
+        "fees_ticks": "11/10",
+        "reference_ticks": "20009/2",
+        "marked_value_ticks": "5000067/5",
+        "realised_trading_pnl_ticks": "10/1",
+        "realised_pnl_ticks": "89/10",
+        "unrealised_pnl_ticks": "9/2",
+        "total_pnl_ticks": "67/5",
+        "spread_capture_ticks": "20/1",
+        "inventory_movement_ticks": "-11/2",
+        "maximum_absolute_inventory": 3
+      },
+      "diagnostics": {
+        "fills": 8,
+        "buy_fills": 5,
+        "sell_fills": 3,
+        "buy_units": 6,
+        "sell_units": 5,
+        "posted_units": 120,
+        "fill_rate": "11/120",
+        "average_inventory": "-22326137/30000000",
+        "average_absolute_inventory": "50922217/30000000",
+        "rms_inventory": 1.9448381166564996,
+        "maximum_absolute_inventory": 3,
+        "average_quoted_spread_ticks": "124226246/28397377",
+        "two_sided_quote_time_fraction": "28397377/30000000",
+        "average_effective_spread_ticks": "36/11",
+        "effective_spread_covered_units": 11,
+        "turnover_ticks": 110010,
+        "maximum_drawdown_ticks": "41/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "15/2",
+          "available_units": 9,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "10/1",
+          "available_units": 11,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "1/1",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-10000/1",
+        "cash_ticks": "9899987/10",
+        "fees_ticks": "13/10",
+        "reference_ticks": "20009/2",
+        "marked_value_ticks": "5000016/5",
+        "realised_trading_pnl_ticks": "2/1",
+        "realised_pnl_ticks": "7/10",
+        "unrealised_pnl_ticks": "5/2",
+        "total_pnl_ticks": "16/5",
+        "spread_capture_ticks": "20/1",
+        "inventory_movement_ticks": "-31/2",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 9,
+        "buy_fills": 5,
+        "sell_fills": 4,
+        "buy_units": 7,
+        "sell_units": 6,
+        "posted_units": 120,
+        "fill_rate": "13/120",
+        "average_inventory": "-3984519/5000000",
+        "average_absolute_inventory": "23251403/15000000",
+        "rms_inventory": 1.9876438648141506,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "120924684/28231171",
+        "two_sided_quote_time_fraction": "28231171/30000000",
+        "average_effective_spread_ticks": "40/13",
+        "effective_spread_covered_units": 13,
+        "turnover_ticks": 130028,
+        "maximum_drawdown_ticks": "143/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 11,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "3/1",
+          "available_units": 12,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-21/2",
+          "available_units": 12,
+          "missing_units": 0,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 5,
+        "execution_cash_ticks": "-49971/1",
+        "cash_ticks": "9500271/10",
+        "fees_ticks": "19/10",
+        "reference_ticks": "10000/1",
+        "marked_value_ticks": "10000271/10",
+        "realised_trading_pnl_ticks": "31/1",
+        "realised_pnl_ticks": "291/10",
+        "unrealised_pnl_ticks": "-2/1",
+        "total_pnl_ticks": "271/10",
+        "spread_capture_ticks": "37/1",
+        "inventory_movement_ticks": "-8/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 13,
+        "buy_fills": 9,
+        "sell_fills": 4,
+        "buy_units": 12,
+        "sell_units": 7,
+        "posted_units": 104,
+        "fill_rate": "19/104",
+        "average_inventory": "398429/100000",
+        "average_absolute_inventory": "398429/100000",
+        "rms_inventory": 4.541770190869048,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "85849481/20134987",
+        "two_sided_quote_time_fraction": "20134987/30000000",
+        "average_effective_spread_ticks": "62/17",
+        "effective_spread_covered_units": 17,
+        "turnover_ticks": 190019,
+        "maximum_drawdown_ticks": "116/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "7/1",
+          "available_units": 13,
+          "missing_units": 6,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "55/2",
+          "available_units": 18,
+          "missing_units": 0,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "61/2",
+          "available_units": 11,
+          "missing_units": 4,
+          "pending_units": 4
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "23/1",
+        "cash_ticks": "5000103/5",
+        "fees_ticks": "12/5",
+        "reference_ticks": "19991/2",
+        "marked_value_ticks": "5000103/5",
+        "realised_trading_pnl_ticks": "23/1",
+        "realised_pnl_ticks": "103/5",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "103/5",
+        "spread_capture_ticks": "101/2",
+        "inventory_movement_ticks": "-55/2",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 16,
+        "buy_fills": 8,
+        "sell_fills": 8,
+        "buy_units": 12,
+        "sell_units": 12,
+        "posted_units": 119,
+        "fill_rate": "24/119",
+        "average_inventory": "35229727/30000000",
+        "average_absolute_inventory": "46759841/30000000",
+        "rms_inventory": 1.9502109544012582,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "23166055/5053912",
+        "two_sided_quote_time_fraction": "631739/750000",
+        "average_effective_spread_ticks": "42/11",
+        "effective_spread_covered_units": 22,
+        "turnover_ticks": 239937,
+        "maximum_drawdown_ticks": "122/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "19/1",
+          "available_units": 19,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "51/2",
+          "available_units": 23,
+          "missing_units": 0,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "11/1",
+          "available_units": 13,
+          "missing_units": 6,
+          "pending_units": 5
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-9977/1",
+        "cash_ticks": "1980043/2",
+        "fees_ticks": "3/2",
+        "reference_ticks": "19997/2",
+        "marked_value_ticks": "1000020/1",
+        "realised_trading_pnl_ticks": "22/1",
+        "realised_pnl_ticks": "41/2",
+        "unrealised_pnl_ticks": "-1/2",
+        "total_pnl_ticks": "20/1",
+        "spread_capture_ticks": "34/1",
+        "inventory_movement_ticks": "-25/2",
+        "maximum_absolute_inventory": 2
+      },
+      "diagnostics": {
+        "fills": 12,
+        "buy_fills": 7,
+        "sell_fills": 5,
+        "buy_units": 8,
+        "sell_units": 7,
+        "posted_units": 120,
+        "fill_rate": "1/8",
+        "average_inventory": "3011521/6000000",
+        "average_absolute_inventory": "11954327/10000000",
+        "rms_inventory": 1.3250683630162885,
+        "maximum_absolute_inventory": 2,
+        "average_quoted_spread_ticks": "60880047/13603691",
+        "two_sided_quote_time_fraction": "13603691/15000000",
+        "average_effective_spread_ticks": "4/1",
+        "effective_spread_covered_units": 15,
+        "turnover_ticks": 149999,
+        "maximum_drawdown_ticks": "8/1",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "15/1",
+          "available_units": 11,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "33/2",
+          "available_units": 14,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "35/2",
+          "available_units": 14,
+          "missing_units": 0,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "0/1",
+        "cash_ticks": "4999991/5",
+        "fees_ticks": "9/5",
+        "reference_ticks": "10001/1",
+        "marked_value_ticks": "4999991/5",
+        "realised_trading_pnl_ticks": "0/1",
+        "realised_pnl_ticks": "-9/5",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "-9/5",
+        "spread_capture_ticks": "53/2",
+        "inventory_movement_ticks": "-53/2",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 11,
+        "buy_fills": 5,
+        "sell_fills": 6,
+        "buy_units": 9,
+        "sell_units": 9,
+        "posted_units": 120,
+        "fill_rate": "3/20",
+        "average_inventory": "213727/3750000",
+        "average_absolute_inventory": "8160341/7500000",
+        "rms_inventory": 1.5522612108362002,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "115238222/24657469",
+        "two_sided_quote_time_fraction": "24657469/30000000",
+        "average_effective_spread_ticks": "29/9",
+        "effective_spread_covered_units": 18,
+        "turnover_ticks": 180000,
+        "maximum_drawdown_ticks": "103/5",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 16,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-13/2",
+          "available_units": 18,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-11/1",
+          "available_units": 13,
+          "missing_units": 1,
+          "pending_units": 4
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 5,
+        "execution_cash_ticks": "-49935/1",
+        "cash_ticks": "9500617/10",
+        "fees_ticks": "33/10",
+        "reference_ticks": "19991/2",
+        "marked_value_ticks": "5000196/5",
+        "realised_trading_pnl_ticks": "41/1",
+        "realised_pnl_ticks": "377/10",
+        "unrealised_pnl_ticks": "3/2",
+        "total_pnl_ticks": "196/5",
+        "spread_capture_ticks": "61/1",
+        "inventory_movement_ticks": "-37/2",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 24,
+        "buy_fills": 15,
+        "sell_fills": 9,
+        "buy_units": 19,
+        "sell_units": 14,
+        "posted_units": 116,
+        "fill_rate": "33/116",
+        "average_inventory": "22223103/10000000",
+        "average_absolute_inventory": "4739177/2000000",
+        "rms_inventory": 2.793398795971197,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "52657926/11944867",
+        "two_sided_quote_time_fraction": "11944867/15000000",
+        "average_effective_spread_ticks": "133/33",
+        "effective_spread_covered_units": 33,
+        "turnover_ticks": 329959,
+        "maximum_drawdown_ticks": "96/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "27/1",
+          "available_units": 30,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "29/1",
+          "available_units": 33,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "135/2",
+          "available_units": 29,
+          "missing_units": 2,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "11/1",
+        "cash_ticks": "5000038/5",
+        "fees_ticks": "17/5",
+        "reference_ticks": "19983/2",
+        "marked_value_ticks": "5000038/5",
+        "realised_trading_pnl_ticks": "11/1",
+        "realised_pnl_ticks": "38/5",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "38/5",
+        "spread_capture_ticks": "48/1",
+        "inventory_movement_ticks": "-37/1",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 24,
+        "buy_fills": 13,
+        "sell_fills": 11,
+        "buy_units": 17,
+        "sell_units": 17,
+        "posted_units": 120,
+        "fill_rate": "17/60",
+        "average_inventory": "9439391/7500000",
+        "average_absolute_inventory": "7341763/5000000",
+        "rms_inventory": 1.8731100697325114,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "20803590/4781249",
+        "two_sided_quote_time_fraction": "4781249/6000000",
+        "average_effective_spread_ticks": "63/17",
+        "effective_spread_covered_units": 34,
+        "turnover_ticks": 339859,
+        "maximum_drawdown_ticks": "193/10",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-1/2",
+          "available_units": 33,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-16/1",
+          "available_units": 34,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "99/2",
+          "available_units": 31,
+          "missing_units": 0,
+          "pending_units": 3
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -3,
+        "execution_cash_ticks": "30014/1",
+        "cash_ticks": "10300129/10",
+        "fees_ticks": "11/10",
+        "reference_ticks": "10001/1",
+        "marked_value_ticks": "10000099/10",
+        "realised_trading_pnl_ticks": "10/1",
+        "realised_pnl_ticks": "89/10",
+        "unrealised_pnl_ticks": "1/1",
+        "total_pnl_ticks": "99/10",
+        "spread_capture_ticks": "35/2",
+        "inventory_movement_ticks": "-13/2",
+        "maximum_absolute_inventory": 3
+      },
+      "diagnostics": {
+        "fills": 7,
+        "buy_fills": 2,
+        "sell_fills": 5,
+        "buy_units": 4,
+        "sell_units": 7,
+        "posted_units": 120,
+        "fill_rate": "11/120",
+        "average_inventory": "-13175809/7500000",
+        "average_absolute_inventory": "13175809/7500000",
+        "rms_inventory": 2.033262927742827,
+        "maximum_absolute_inventory": 3,
+        "average_quoted_spread_ticks": "9754275/2166188",
+        "two_sided_quote_time_fraction": "7040111/7500000",
+        "average_effective_spread_ticks": "3/1",
+        "effective_spread_covered_units": 11,
+        "turnover_ticks": 110006,
+        "maximum_drawdown_ticks": "6/1",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-1/2",
+          "available_units": 7,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "9/1",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 2
+        }
+      ]
+    },
+    {
+      "seed": 12,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -1,
+        "execution_cash_ticks": "10009/1",
+        "cash_ticks": "10100079/10",
+        "fees_ticks": "11/10",
+        "reference_ticks": "10003/1",
+        "marked_value_ticks": "10000049/10",
+        "realised_trading_pnl_ticks": "5/1",
+        "realised_pnl_ticks": "39/10",
+        "unrealised_pnl_ticks": "1/1",
+        "total_pnl_ticks": "49/10",
+        "spread_capture_ticks": "20/1",
+        "inventory_movement_ticks": "-14/1",
+        "maximum_absolute_inventory": 3
+      },
+      "diagnostics": {
+        "fills": 9,
+        "buy_fills": 4,
+        "sell_fills": 5,
+        "buy_units": 5,
+        "sell_units": 6,
+        "posted_units": 120,
+        "fill_rate": "11/120",
+        "average_inventory": "-2517007/2000000",
+        "average_absolute_inventory": "2517007/2000000",
+        "rms_inventory": 1.6160004022276728,
+        "maximum_absolute_inventory": 3,
+        "average_quoted_spread_ticks": "132939496/28197239",
+        "two_sided_quote_time_fraction": "28197239/30000000",
+        "average_effective_spread_ticks": "39/11",
+        "effective_spread_covered_units": 11,
+        "turnover_ticks": 110023,
+        "maximum_drawdown_ticks": "33/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "2/1",
+          "available_units": 7,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "7/2",
+          "available_units": 10,
+          "missing_units": 0,
+          "pending_units": 1
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "11/1",
+          "available_units": 10,
+          "missing_units": 0,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "20/1",
+        "cash_ticks": "1000019/1",
+        "fees_ticks": "1/1",
+        "reference_ticks": "19999/2",
+        "marked_value_ticks": "1000019/1",
+        "realised_trading_pnl_ticks": "20/1",
+        "realised_pnl_ticks": "19/1",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "19/1",
+        "spread_capture_ticks": "17/1",
+        "inventory_movement_ticks": "3/1",
+        "maximum_absolute_inventory": 2
+      },
+      "diagnostics": {
+        "fills": 9,
+        "buy_fills": 4,
+        "sell_fills": 5,
+        "buy_units": 5,
+        "sell_units": 5,
+        "posted_units": 120,
+        "fill_rate": "1/12",
+        "average_inventory": "21171023/30000000",
+        "average_absolute_inventory": "1073069/1200000",
+        "rms_inventory": 1.0229716027339175,
+        "maximum_absolute_inventory": 2,
+        "average_quoted_spread_ticks": "129875827/29307327",
+        "two_sided_quote_time_fraction": "9769109/10000000",
+        "average_effective_spread_ticks": "11/3",
+        "effective_spread_covered_units": 9,
+        "turnover_ticks": 99982,
+        "maximum_drawdown_ticks": "11/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 5,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "33/2",
+          "available_units": 9,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "35/2",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 13,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-9979/1",
+        "cash_ticks": "9900197/10",
+        "fees_ticks": "13/10",
+        "reference_ticks": "9998/1",
+        "marked_value_ticks": "10000177/10",
+        "realised_trading_pnl_ticks": "20/1",
+        "realised_pnl_ticks": "187/10",
+        "unrealised_pnl_ticks": "-1/1",
+        "total_pnl_ticks": "177/10",
+        "spread_capture_ticks": "22/1",
+        "inventory_movement_ticks": "-3/1",
+        "maximum_absolute_inventory": 2
+      },
+      "diagnostics": {
+        "fills": 10,
+        "buy_fills": 5,
+        "sell_fills": 5,
+        "buy_units": 7,
+        "sell_units": 6,
+        "posted_units": 120,
+        "fill_rate": "13/120",
+        "average_inventory": "22346473/30000000",
+        "average_absolute_inventory": "31407649/30000000",
+        "rms_inventory": 1.0950654622745923,
+        "maximum_absolute_inventory": 2,
+        "average_quoted_spread_ticks": "134752421/27848216",
+        "two_sided_quote_time_fraction": "3481027/3750000",
+        "average_effective_spread_ticks": "23/6",
+        "effective_spread_covered_units": 12,
+        "turnover_ticks": 129975,
+        "maximum_drawdown_ticks": "16/5",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "13/2",
+          "available_units": 8,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "14/1",
+          "available_units": 12,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "17/1",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 4
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -4,
+        "execution_cash_ticks": "40043/1",
+        "cash_ticks": "5200201/5",
+        "fees_ticks": "14/5",
+        "reference_ticks": "10012/1",
+        "marked_value_ticks": "4999961/5",
+        "realised_trading_pnl_ticks": "2/1",
+        "realised_pnl_ticks": "-4/5",
+        "unrealised_pnl_ticks": "-7/1",
+        "total_pnl_ticks": "-39/5",
+        "spread_capture_ticks": "53/1",
+        "inventory_movement_ticks": "-58/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 20,
+        "buy_fills": 7,
+        "sell_fills": 13,
+        "buy_units": 12,
+        "sell_units": 16,
+        "posted_units": 88,
+        "fill_rate": "7/22",
+        "average_inventory": "-26981867/5000000",
+        "average_absolute_inventory": "26981867/5000000",
+        "rms_inventory": 5.714689848685286,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "17658388/4289597",
+        "two_sided_quote_time_fraction": "4289597/15000000",
+        "average_effective_spread_ticks": "101/25",
+        "effective_spread_covered_units": 25,
+        "turnover_ticks": 280159,
+        "maximum_drawdown_ticks": "433/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "18/1",
+          "available_units": 18,
+          "missing_units": 10,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "22/1",
+          "available_units": 17,
+          "missing_units": 9,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "7/1",
+          "available_units": 11,
+          "missing_units": 8,
+          "pending_units": 9
+        }
+      ]
+    },
+    {
+      "seed": 14,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "-60/1",
+        "cash_ticks": "4999688/5",
+        "fees_ticks": "12/5",
+        "reference_ticks": "20045/2",
+        "marked_value_ticks": "4999688/5",
+        "realised_trading_pnl_ticks": "-60/1",
+        "realised_pnl_ticks": "-312/5",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "-312/5",
+        "spread_capture_ticks": "28/1",
+        "inventory_movement_ticks": "-88/1",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 15,
+        "buy_fills": 8,
+        "sell_fills": 7,
+        "buy_units": 12,
+        "sell_units": 12,
+        "posted_units": 110,
+        "fill_rate": "12/55",
+        "average_inventory": "-35814119/10000000",
+        "average_absolute_inventory": "35814119/10000000",
+        "rms_inventory": 3.998196689342167,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "123050732/25377743",
+        "two_sided_quote_time_fraction": "25377743/30000000",
+        "average_effective_spread_ticks": "37/12",
+        "effective_spread_covered_units": 24,
+        "turnover_ticks": 240378,
+        "maximum_drawdown_ticks": "1137/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "2/1",
+          "available_units": 22,
+          "missing_units": 2,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "21/2",
+          "available_units": 24,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "21/2",
+          "available_units": 15,
+          "missing_units": 2,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -4,
+        "execution_cash_ticks": "40028/1",
+        "cash_ticks": "1040027/1",
+        "fees_ticks": "1/1",
+        "reference_ticks": "20011/2",
+        "marked_value_ticks": "1000005/1",
+        "realised_trading_pnl_ticks": "-2/1",
+        "realised_pnl_ticks": "-3/1",
+        "unrealised_pnl_ticks": "8/1",
+        "total_pnl_ticks": "5/1",
+        "spread_capture_ticks": "19/1",
+        "inventory_movement_ticks": "-13/1",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 8,
+        "buy_fills": 3,
+        "sell_fills": 5,
+        "buy_units": 3,
+        "sell_units": 7,
+        "posted_units": 114,
+        "fill_rate": "5/57",
+        "average_inventory": "-23995019/6000000",
+        "average_absolute_inventory": "23995019/6000000",
+        "rms_inventory": 4.204101873963887,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "119500732/27375183",
+        "two_sided_quote_time_fraction": "9125061/10000000",
+        "average_effective_spread_ticks": "16/5",
+        "effective_spread_covered_units": 10,
+        "turnover_ticks": 100056,
+        "maximum_drawdown_ticks": "18/1",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "3/1",
+          "available_units": 6,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-1/1",
+          "available_units": 9,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-11/2",
+          "available_units": 9,
+          "missing_units": 0,
+          "pending_units": 1
+        }
+      ]
+    },
+    {
+      "seed": 15,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -2,
+        "execution_cash_ticks": "20002/1",
+        "cash_ticks": "1020001/1",
+        "fees_ticks": "1/1",
+        "reference_ticks": "10013/1",
+        "marked_value_ticks": "999975/1",
+        "realised_trading_pnl_ticks": "-22/1",
+        "realised_pnl_ticks": "-23/1",
+        "unrealised_pnl_ticks": "-2/1",
+        "total_pnl_ticks": "-25/1",
+        "spread_capture_ticks": "23/2",
+        "inventory_movement_ticks": "-71/2",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 8,
+        "buy_fills": 3,
+        "sell_fills": 5,
+        "buy_units": 4,
+        "sell_units": 6,
+        "posted_units": 115,
+        "fill_rate": "2/23",
+        "average_inventory": "-20797997/7500000",
+        "average_absolute_inventory": "20797997/7500000",
+        "rms_inventory": 3.136181170362027,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "131685501/27656513",
+        "two_sided_quote_time_fraction": "27656513/30000000",
+        "average_effective_spread_ticks": "17/5",
+        "effective_spread_covered_units": 10,
+        "turnover_ticks": 100092,
+        "maximum_drawdown_ticks": "171/5",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-2/1",
+          "available_units": 6,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-31/2",
+          "available_units": 9,
+          "missing_units": 1,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-43/2",
+          "available_units": 10,
+          "missing_units": 0,
+          "pending_units": 0
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 2,
+        "execution_cash_ticks": "-19953/1",
+        "cash_ticks": "4900222/5",
+        "fees_ticks": "13/5",
+        "reference_ticks": "19991/2",
+        "marked_value_ticks": "5000177/5",
+        "realised_trading_pnl_ticks": "33/1",
+        "realised_pnl_ticks": "152/5",
+        "unrealised_pnl_ticks": "5/1",
+        "total_pnl_ticks": "177/5",
+        "spread_capture_ticks": "54/1",
+        "inventory_movement_ticks": "-16/1",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 18,
+        "buy_fills": 9,
+        "sell_fills": 9,
+        "buy_units": 14,
+        "sell_units": 12,
+        "posted_units": 119,
+        "fill_rate": "26/119",
+        "average_inventory": "-145397/6000000",
+        "average_absolute_inventory": "54162727/30000000",
+        "rms_inventory": 2.1179551380203185,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "1432161/325664",
+        "two_sided_quote_time_fraction": "132301/156250",
+        "average_effective_spread_ticks": "54/13",
+        "effective_spread_covered_units": 26,
+        "turnover_ticks": 260005,
+        "maximum_drawdown_ticks": "19/1",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 22,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "8/1",
+          "available_units": 23,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "39/1",
+          "available_units": 18,
+          "missing_units": 3,
+          "pending_units": 5
+        }
+      ]
+    },
+    {
+      "seed": 16,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 0,
+        "execution_cash_ticks": "-28/1",
+        "cash_ticks": "999969/1",
+        "fees_ticks": "3/1",
+        "reference_ticks": "9991/1",
+        "marked_value_ticks": "999969/1",
+        "realised_trading_pnl_ticks": "-28/1",
+        "realised_pnl_ticks": "-31/1",
+        "unrealised_pnl_ticks": "0/1",
+        "total_pnl_ticks": "-31/1",
+        "spread_capture_ticks": "125/2",
+        "inventory_movement_ticks": "-181/2",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 21,
+        "buy_fills": 10,
+        "sell_fills": 11,
+        "buy_units": 15,
+        "sell_units": 15,
+        "posted_units": 119,
+        "fill_rate": "30/119",
+        "average_inventory": "3832003/6000000",
+        "average_absolute_inventory": "19558333/10000000",
+        "rms_inventory": 2.417124262424255,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "113608993/24810052",
+        "two_sided_quote_time_fraction": "6202513/7500000",
+        "average_effective_spread_ticks": "71/15",
+        "effective_spread_covered_units": 30,
+        "turnover_ticks": 299994,
+        "maximum_drawdown_ticks": "527/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "5/1",
+          "available_units": 27,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-4/1",
+          "available_units": 24,
+          "missing_units": 4,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-63/2",
+          "available_units": 22,
+          "missing_units": 0,
+          "pending_units": 8
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -7,
+        "execution_cash_ticks": "70011/1",
+        "cash_ticks": "2140017/2",
+        "fees_ticks": "5/2",
+        "reference_ticks": "9999/1",
+        "marked_value_ticks": "2000031/2",
+        "realised_trading_pnl_ticks": "1/1",
+        "realised_pnl_ticks": "-3/2",
+        "unrealised_pnl_ticks": "17/1",
+        "total_pnl_ticks": "31/2",
+        "spread_capture_ticks": "87/2",
+        "inventory_movement_ticks": "-51/2",
+        "maximum_absolute_inventory": 7
+      },
+      "diagnostics": {
+        "fills": 19,
+        "buy_fills": 6,
+        "sell_fills": 13,
+        "buy_units": 9,
+        "sell_units": 16,
+        "posted_units": 98,
+        "fill_rate": "25/98",
+        "average_inventory": "-18094817/5000000",
+        "average_absolute_inventory": "22144903/5000000",
+        "rms_inventory": 4.9152392074716635,
+        "maximum_absolute_inventory": 7,
+        "average_quoted_spread_ticks": "40992713/9316308",
+        "two_sided_quote_time_fraction": "776359/1250000",
+        "average_effective_spread_ticks": "40/11",
+        "effective_spread_covered_units": 22,
+        "turnover_ticks": 249999,
+        "maximum_drawdown_ticks": "49/2",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "9/2",
+          "available_units": 13,
+          "missing_units": 12,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-1/1",
+          "available_units": 18,
+          "missing_units": 7,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "5/2",
+          "available_units": 16,
+          "missing_units": 6,
+          "pending_units": 3
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -1,
+        "execution_cash_ticks": "9992/1",
+        "cash_ticks": "10099883/10",
+        "fees_ticks": "37/10",
+        "reference_ticks": "10005/1",
+        "marked_value_ticks": "9999833/10",
+        "realised_trading_pnl_ticks": "-12/1",
+        "realised_pnl_ticks": "-157/10",
+        "unrealised_pnl_ticks": "-1/1",
+        "total_pnl_ticks": "-167/10",
+        "spread_capture_ticks": "60/1",
+        "inventory_movement_ticks": "-73/1",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 28,
+        "buy_fills": 15,
+        "sell_fills": 13,
+        "buy_units": 18,
+        "sell_units": 19,
+        "posted_units": 119,
+        "fill_rate": "37/119",
+        "average_inventory": "-29310287/30000000",
+        "average_absolute_inventory": "3626773/2000000",
+        "rms_inventory": 2.1483063949694574,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "13742932/3102753",
+        "two_sided_quote_time_fraction": "7239757/10000000",
+        "average_effective_spread_ticks": "4/1",
+        "effective_spread_covered_units": 36,
+        "turnover_ticks": 370068,
+        "maximum_drawdown_ticks": "511/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "-3/1",
+          "available_units": 26,
+          "missing_units": 11,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "-47/2",
+          "available_units": 32,
+          "missing_units": 3,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-28/1",
+          "available_units": 26,
+          "missing_units": 5,
+          "pending_units": 6
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "strategy": "fixed",
+      "account": {
+        "inventory": 1,
+        "execution_cash_ticks": "-9975/1",
+        "cash_ticks": "9900231/10",
+        "fees_ticks": "19/10",
+        "reference_ticks": "9996/1",
+        "marked_value_ticks": "10000191/10",
+        "realised_trading_pnl_ticks": "26/1",
+        "realised_pnl_ticks": "241/10",
+        "unrealised_pnl_ticks": "-5/1",
+        "total_pnl_ticks": "191/10",
+        "spread_capture_ticks": "43/1",
+        "inventory_movement_ticks": "-22/1",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 16,
+        "buy_fills": 8,
+        "sell_fills": 8,
+        "buy_units": 10,
+        "sell_units": 9,
+        "posted_units": 115,
+        "fill_rate": "19/115",
+        "average_inventory": "22642423/10000000",
+        "average_absolute_inventory": "23239597/10000000",
+        "rms_inventory": 2.9769898051555366,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "15248044/3499511",
+        "two_sided_quote_time_fraction": "3499511/3750000",
+        "average_effective_spread_ticks": "65/18",
+        "effective_spread_covered_units": 18,
+        "turnover_ticks": 189991,
+        "maximum_drawdown_ticks": "37/2",
+        "attribution_comment": "Positive marked P&L; execution edge contributed. Review markouts and inventory risk."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "10/1",
+          "available_units": 16,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "45/2",
+          "available_units": 14,
+          "missing_units": 3,
+          "pending_units": 2
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "10/1",
+          "available_units": 12,
+          "missing_units": 0,
+          "pending_units": 7
+        }
+      ]
+    },
+    {
+      "seed": 18,
+      "strategy": "inventory",
+      "account": {
+        "inventory": -3,
+        "execution_cash_ticks": "29997/1",
+        "cash_ticks": "10299949/10",
+        "fees_ticks": "21/10",
+        "reference_ticks": "10005/1",
+        "marked_value_ticks": "9999799/10",
+        "realised_trading_pnl_ticks": "-10/1",
+        "realised_pnl_ticks": "-121/10",
+        "unrealised_pnl_ticks": "-8/1",
+        "total_pnl_ticks": "-201/10",
+        "spread_capture_ticks": "41/1",
+        "inventory_movement_ticks": "-59/1",
+        "maximum_absolute_inventory": 5
+      },
+      "diagnostics": {
+        "fills": 15,
+        "buy_fills": 7,
+        "sell_fills": 8,
+        "buy_units": 9,
+        "sell_units": 12,
+        "posted_units": 119,
+        "fill_rate": "3/17",
+        "average_inventory": "3200371/7500000",
+        "average_absolute_inventory": "22775411/15000000",
+        "rms_inventory": 2.0307836746766834,
+        "maximum_absolute_inventory": 5,
+        "average_quoted_spread_ticks": "108531918/26183615",
+        "two_sided_quote_time_fraction": "5236723/6000000",
+        "average_effective_spread_ticks": "67/20",
+        "effective_spread_covered_units": 20,
+        "turnover_ticks": 209975,
+        "maximum_drawdown_ticks": "63/2",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "0/1",
+          "available_units": 17,
+          "missing_units": 4,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "16/1",
+          "available_units": 15,
+          "missing_units": 2,
+          "pending_units": 4
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-43/2",
+          "available_units": 13,
+          "missing_units": 0,
+          "pending_units": 8
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "strategy": "fixed",
+      "account": {
+        "inventory": -3,
+        "execution_cash_ticks": "30013/1",
+        "cash_ticks": "10300111/10",
+        "fees_ticks": "19/10",
+        "reference_ticks": "20015/2",
+        "marked_value_ticks": "4999943/5",
+        "realised_trading_pnl_ticks": "-10/1",
+        "realised_pnl_ticks": "-119/10",
+        "unrealised_pnl_ticks": "1/2",
+        "total_pnl_ticks": "-57/5",
+        "spread_capture_ticks": "75/2",
+        "inventory_movement_ticks": "-47/1",
+        "maximum_absolute_inventory": 6
+      },
+      "diagnostics": {
+        "fills": 12,
+        "buy_fills": 5,
+        "sell_fills": 7,
+        "buy_units": 8,
+        "sell_units": 11,
+        "posted_units": 113,
+        "fill_rate": "19/113",
+        "average_inventory": "-11560009/3750000",
+        "average_absolute_inventory": "11560009/3750000",
+        "rms_inventory": 3.636742012662799,
+        "maximum_absolute_inventory": 6,
+        "average_quoted_spread_ticks": "109187277/24499018",
+        "two_sided_quote_time_fraction": "12249509/15000000",
+        "average_effective_spread_ticks": "66/19",
+        "effective_spread_covered_units": 19,
+        "turnover_ticks": 190105,
+        "maximum_drawdown_ticks": "196/5",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "15/2",
+          "available_units": 14,
+          "missing_units": 5,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "5/2",
+          "available_units": 19,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-25/2",
+          "available_units": 17,
+          "missing_units": 2,
+          "pending_units": 0
+        }
+      ]
+    },
+    {
+      "seed": 19,
+      "strategy": "inventory",
+      "account": {
+        "inventory": 3,
+        "execution_cash_ticks": "-30042/1",
+        "cash_ticks": "9699557/10",
+        "fees_ticks": "23/10",
+        "reference_ticks": "20019/2",
+        "marked_value_ticks": "4999921/5",
+        "realised_trading_pnl_ticks": "-14/1",
+        "realised_pnl_ticks": "-163/10",
+        "unrealised_pnl_ticks": "1/2",
+        "total_pnl_ticks": "-79/5",
+        "spread_capture_ticks": "97/2",
+        "inventory_movement_ticks": "-62/1",
+        "maximum_absolute_inventory": 4
+      },
+      "diagnostics": {
+        "fills": 17,
+        "buy_fills": 11,
+        "sell_fills": 6,
+        "buy_units": 13,
+        "sell_units": 10,
+        "posted_units": 120,
+        "fill_rate": "23/120",
+        "average_inventory": "-723337/7500000",
+        "average_absolute_inventory": "15343433/7500000",
+        "rms_inventory": 2.295996791519245,
+        "maximum_absolute_inventory": 4,
+        "average_quoted_spread_ticks": "56450131/12621088",
+        "two_sided_quote_time_fraction": "394409/468750",
+        "average_effective_spread_ticks": "4/1",
+        "effective_spread_covered_units": 23,
+        "turnover_ticks": 230176,
+        "maximum_drawdown_ticks": "303/10",
+        "attribution_comment": "Nonpositive marked P&L; inspect execution edge, inventory movement and fees separately."
+      },
+      "markouts": [
+        {
+          "horizon_events": 1,
+          "weighted_sum_ticks": "7/1",
+          "available_units": 20,
+          "missing_units": 3,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 5,
+          "weighted_sum_ticks": "8/1",
+          "available_units": 23,
+          "missing_units": 0,
+          "pending_units": 0
+        },
+        {
+          "horizon_events": 20,
+          "weighted_sum_ticks": "-17/1",
+          "available_units": 21,
+          "missing_units": 2,
+          "pending_units": 0
+        }
+      ]
+    }
+  ],
+  "python_version": "3.14.0",
+  "market_config_template": {
+    "seed": 0,
+    "duration_us": 30000000,
+    "tick_size": "0.01",
+    "opening_reference_ticks": 10000,
+    "initial_latent_ticks": 10000,
+    "latent_step_us": 1000000,
+    "latent_sigma_ticks": 2.0,
+    "noise_rate_per_second": 1.0,
+    "liquidity_rate_per_second": 0.6,
+    "noise_price_radius_ticks": 2,
+    "noise_max_quantity": 4,
+    "liquidity_max_quantity": 3,
+    "max_events": 10000,
+    "informed_rate_per_second": 1,
+    "signal_noise_ticks": 2.0,
+    "informed_prior_sd_ticks": 8.0,
+    "informed_cost_ticks": 0.25,
+    "informed_minimum_edge_ticks": 0.25,
+    "informed_uncertainty_multiplier": 0.5,
+    "markout_horizons_events": [
+      1,
+      5,
+      20
+    ]
+  },
+  "varying_parameters": "For each seed 0..19, replace only maker strategy: fixed versus inventory."
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuantLab · Trading desk</title><link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/tutor.css"><script src="/app.js" defer></script><script src="/tutor.js" defer></script></head>
+<body>
+<header><div><span class="brand">Q<span>∕</span></span><strong>QuantLab</strong><span class="tag">PERSONAL TRADING LAB</span></div>
+<div class="view-switch"><a class="learning-link" href="/options">Options Lab</a><a class="learning-link" href="/learning">Learning dashboard</a><label for="view">Learning view</label><select id="view"><option value="beginner">Beginner</option><option value="quant">Quant</option></select><span class="local">LOCAL · SIMULATED</span></div></header>
+<main>
+<section class="session-bar"><div><h1 id="session-title">Your trading desk</h1><p id="objective">Connecting to your market…</p></div>
+<details id="setup"><summary>Session setup / New session</summary><form id="new-session" class="setup-grid">
+<label>Mode<select id="mode"><option value="free">Free trading</option><option value="manual_maker">Manual market making</option><option value="challenge">Scenario challenge</option></select></label>
+<label>Scenario<select id="scenario"></select></label><label>Seed<input id="seed" type="number" value="42" min="0" step="1" required></label>
+<label>Duration (seconds)<input id="duration" type="number" value="60" min="1" max="300" required></label>
+<label>Position limit (± units)<input id="position-limit" type="number" value="20" min="2" max="1000" required></label>
+<label>Opening position <small>Position management only</small><input id="initial-position" type="number" value="8" min="-1000" max="1000" disabled></label>
+<button class="primary" type="submit">Open new session</button><p>End an active session first. New sessions start paused. Scenarios are learning models, not calibrated markets.</p></form></details></section>
+<section class="clockbar" aria-label="Market time"><span id="status" class="badge">PAUSED</span><strong id="clock">09:30:00.000</strong><span id="progress"></span>
+<div class="controls"><button id="run">Start</button><button id="step-event">Step event</button><button id="step-time">Step 1 second</button><button id="end" class="danger-outline">End session</button></div></section>
+<div id="notice" role="status" aria-live="polite">Orders use the real exchange. You can trade while paused and inspect each result.</div>
+<section id="account" class="account-strip" aria-label="My account"></section>
+<div class="desk">
+<div class="market-column">
+<section class="panel"><div class="panel-heading"><h2>Market</h2><span>REAL TRANSACTIONS</span></div><div id="prices" class="price-strip"></div>
+<canvas id="price-chart" height="210" role="img" aria-label="Actual transaction prices through simulated time"></canvas><p class="chart-note">Transaction price · public executions only. No hidden value on this chart.</p>
+<div class="panel-heading"><h3>My P&L / Position</h3><select id="chart-kind" aria-label="Account chart"><option value="pnl">Net P&L (£)</option><option value="position">Position (units)</option></select></div>
+<canvas id="account-chart" height="120" role="img" aria-label="Account P&L or position through time"></canvas></section>
+<section class="panel depth-panel"><div class="panel-heading"><h2>Order book</h2><span>BEST PRICE FIRST · FIFO</span></div><p class="hint beginner">Click a level to inspect its queue. Your orders are marked “you”. Earlier orders at the same price trade first.</p>
+<div class="depth-grid"><div><h3 class="buy-text">Bids · buyers</h3><div id="bids"></div></div><div><h3 class="sell-text">Asks · sellers</h3><div id="asks"></div></div></div></section>
+<section class="panel"><div class="panel-heading"><h2>My orders</h2><button id="cancel-all">Cancel all open orders</button></div><div id="orders" class="table-scroll"></div><div id="order-detail"></div></section>
+<section class="panel"><h2>My executions</h2><div id="trades" class="table-scroll"></div></section>
+</div>
+<aside>
+<section class="panel ticket"><div class="panel-heading"><h2>Order ticket</h2><span>B / S TO PREPARE</span></div>
+<form id="order-form"><div class="side-buttons"><button type="button" id="buy" aria-pressed="true">Buy</button><button type="button" id="sell" aria-pressed="false">Sell</button></div>
+<label>Order type<select id="order-type"><option value="market">Market · take available liquidity</option><option value="limit">Limit · set my price</option></select></label>
+<div class="ticket-inputs"><label>Quantity<input id="quantity" type="number" value="1" min="1" max="2000" step="1" required></label>
+<label id="limit-label" hidden>Limit price (£)<input id="limit-price" type="text" inputmode="decimal" value="99.98" autocomplete="off"></label></div>
+<p id="order-hint" class="hint beginner"></p><p id="capacity" class="capacity"></p>
+<button id="submit-order" class="submit-buy" type="submit">Submit buy</button><p class="fine">Fee: £0.001 per executed unit. A market order's unfilled remainder cancels. Short positions are allowed within your limit.</p></form>
+<div id="quote-controls" hidden><hr><h3>Manual two-sided quotes</h3><p class="hint">Distances are ticks from your public reference. One tick = £0.01. Refresh cancels all your open orders and gives new quotes new priority.</p>
+<form id="quote-form"><div class="ticket-inputs"><label>Bid distance<input id="bid-distance" value="2" inputmode="decimal"></label><label>Ask distance<input id="ask-distance" value="2" inputmode="decimal"></label><label>Bid size<input id="bid-size" type="number" value="2" min="0" max="1000"></label><label>Ask size<input id="ask-size" type="number" value="2" min="0" max="1000"></label></div><label>Centre shift (ticks)<input id="quote-shift" value="0" inputmode="decimal"></label><button type="submit">Cancel all & refresh quotes</button></form></div></section>
+<details class="panel tutor-panel" id="quant-tutor" open><summary>Quant Tutor <span>Optional · public facts only</span></summary><div data-tutor></div></details><section class="panel"><h2>Position & risk</h2><div id="risk"></div><p class="fine">The public reference values inventory. It is not a promised liquidation price. Buying capacity includes all your resting buys; selling capacity includes all resting sells.</p></section>
+<section class="panel quant-only" hidden><h2>Quant view</h2><div id="quant"></div><p class="fine">Depth uses the top five levels per side. Flow uses the last 20 executions. Returns are log(price / previous price). Volatility is √sum(log return²) over up to 20 trade returns, unannualised. An empty value means insufficient data.</p></section>
+<section class="panel"><h2>Recent markouts</h2><div id="markouts" class="table-scroll"></div><p class="fine">Own-side signed future-mid change from execution price, £ per unit. Horizons count public exchange actions, not seconds. Positive favours your side; negative opposes it. Provider and aggressor roles are shown separately. Pending ≠ zero.</p></section>
+<div id="learn" hidden></div><div id="tutor" hidden></div>
+</aside>
+</div>
+<div class="bottom-grid"><section class="panel"><h2>Public tape</h2><div id="tape" class="table-scroll"></div></section><section class="panel"><h2>Event timeline</h2><div id="timeline" class="timeline"></div></section></div>
+<section class="panel beginner"><h2>Trading language, from first principles</h2><div id="glossary" class="glossary"></div></section>
+<section class="panel" id="report-panel" hidden><div class="panel-heading"><h2>Session review</h2><a href="/api/journal" download="quantlab-session.json" class="button">Download complete replay journal</a></div><p class="hint">Ending cancels orders and marks the remaining position. It does not close your position. The downloaded observer journal contains hidden market data; it is available only after ending.</p><div id="report"></div></section>
+<section class="panel"><div class="panel-heading"><h2>Replay a saved session</h2><label class="file-label">Load journal<input id="replay-file" type="file" accept=".json,application/json"></label></div><p class="fine">Verification reruns the saved orders and market events through the engine and checks every account. Playback is read-only and exposes public information only.</p><div id="replay-controls" hidden><button id="replay-first">First</button><button id="replay-next">Next recorded frame</button><button id="replay-last">Final report</button><span id="replay-position"></span></div></section>
+<section class="panel learning-surface" id="teaching-review" hidden><h2>Learning from this session</h2><div data-session-review></div></section><footer>QuantLab · Phase 7 · Educational simulation · One exchange, real FIFO matching, exact accounts.</footer>
+</main></body></html>

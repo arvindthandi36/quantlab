@@ -1,0 +1,86 @@
+{
+  "browser": "Codex in-app browser on macOS",
+  "preview_port": 8772,
+  "major_routes": [
+    "/home",
+    "/",
+    "/options",
+    "/risk",
+    "/statarb",
+    "/research",
+    "/learning",
+    "/explain",
+    "/demos",
+    "/limitations"
+  ],
+  "responsive_sizes": [
+    [
+      1440,
+      1000
+    ],
+    [
+      1100,
+      1000
+    ],
+    [
+      820,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "responsive_result": "40 route/width checks; demo table overflow found and corrected; phone retest fits 390px",
+  "keyboard": [
+    "Trade menu opens and Escape closes with focus returned",
+    "Home Tab reaches skip link; Enter focuses main-content"
+  ],
+  "manual_workflows": [
+    "Paused seed-42 BUY 6 market; actual accounting",
+    "Home order deep link opens Quick demo",
+    "Named order, hedge, tails, pairs, research and synthetic captures",
+    "Selected-demo VWAP Explain opens actual evidence",
+    "Risk custom stress reprices six-unit position to -48 GBP without account debit",
+    "Stat Arb observes 120 rows and fits a past-only window",
+    "Learning disposable QA profile shows zero graded answers"
+  ],
+  "recording_mode": "Historical demo retains ARTIFICIAL TEST FIXTURE / SIMULATED HISTORICAL EXECUTION and visible limitations; no private observer reveal",
+  "console_errors_at_last_recorded_check": [],
+  "reduced_motion": "Shared stylesheet honors prefers-reduced-motion",
+  "certification": "No formal WCAG, full assistive-technology or cross-browser certification",
+  "theme": "Light; no dark support claimed",
+  "sampled_palette_contrast": [
+    {
+      "sample": "body text",
+      "foreground": "#203a3b",
+      "background": "#ffffff",
+      "contrast_ratio": 12.14
+    },
+    {
+      "sample": "primary button",
+      "foreground": "#ffffff",
+      "background": "#17675e",
+      "contrast_ratio": 6.69
+    },
+    {
+      "sample": "secondary text",
+      "foreground": "#536666",
+      "background": "#ffffff",
+      "contrast_ratio": 6.07
+    },
+    {
+      "sample": "muted note",
+      "foreground": "#52665f",
+      "background": "#f4f5f2",
+      "contrast_ratio": 5.6
+    },
+    {
+      "sample": "masthead title",
+      "foreground": "#ffffff",
+      "background": "#173d3b",
+      "contrast_ratio": 11.88
+    }
+  ],
+  "contrast_scope": "Sampled core text/button palette only, not an exhaustive rendered-page audit"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-12",
+  "surface": "Codex in-app browser, local loopback preview 8769",
+  "profiles": "Disposable QA and review learning profiles; no answers submitted on behalf of user",
+  "checks": {
+    "trading": "Actual buy6;2@100.01+4@100.02;VWAP100.01667. Depth changes retain same value.",
+    "options": "Selected and portfolio delta match Python. Per-unit delta0.51143575, contract/portfolio51.14357531 for one x100 call. Isolated volatility0.30 yields per-unit value3.43013864.",
+    "risk": "5000-path day-zero MC VaR89.69894770->91.98888068 after5QL-DESK buys; changed holdings shown. Correlation hypothesis linear VaR103.31198389->108.40993990.",
+    "statarb": "Observation80z2.21942472;threshold2->2.5 changes short to wait; no actual order.",
+    "replay": "Verified three-frame Stat Arb replay: frame0 no score, frame1z2.21942472; selected-public-frame label present. Journal loaded with existing local API; frame navigation and explanations tested in browser.",
+    "quiz": "Risk question references actual equity, delta, vega, MC VaR and sample5000. No answer submitted.",
+    "navigation": "Keyword search Why did VaR rise resolves to actual Risk context; dedicated maker menu includes inventory/quote skew; actual inventory6 shown.",
+    "layout": "Desktop1360x900 and narrow390x844 checked. Viewport override reset. Native dialog, labelled controls, full technical trace expandable.",
+    "console": "No error logs observed."
+  },
+  "review_state": "Fresh paused stock session with one real six-unit buy; Explain VWAP opened. Other prior user previews were not stopped."
+}

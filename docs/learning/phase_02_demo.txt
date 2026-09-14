@@ -1,0 +1,39 @@
+QuantLab Phase 2 | seed=42 | OBSERVER DEBUG — latent values shown to you, never to traders
+Start: empty book.
+09:30:00.26934 [e2] NOISE buy 1 limit £100.01 [noise_arrival-2]
+    Why: random buy/size; configured opening reference 10000 ticks +1.
+    1 remain in book: no eligible opposing order.
+09:30:01 [e1] LATENT £100.0000 → £99.9934; observer only, no order.
+09:30:02 [e5] LATENT £99.9934 → £99.9857; observer only, no order.
+09:30:02.066857 [e4] NOISE buy 2 limit £100.01 [noise_arrival-4]
+    Why: random buy/size; configured opening reference 10000 ticks +1.
+    2 remain in book: no eligible opposing order.
+09:30:02.451686 [e3] LIQUIDITY buy 3 market [liquidity_arrival-3]
+    Why: external buy need for 3; requests immediate execution, no price signal.
+    3 unfilled/cancelled: opposing liquidity exhausted.
+09:30:03 [e6] LATENT £99.9857 → £99.9830; observer only, no order.
+09:30:03.4385 [e8] LIQUIDITY sell 1 market [liquidity_arrival-8]
+    Why: external sell need for 1; requests immediate execution, no price signal.
+    Trade #1: 1 @ £100.01; resting noise_arrival-2 supplies the price.
+    Incoming order fully filled.
+09:30:03.656763 [e10] LIQUIDITY sell 2 market [liquidity_arrival-10]
+    Why: external sell need for 2; requests immediate execution, no price signal.
+    Trade #2: 2 @ £100.01; resting noise_arrival-4 supplies the price.
+    Incoming order fully filled.
+09:30:04 [e9] LATENT £99.9830 → £99.9843; observer only, no order.
+09:30:04.209911 [e7] NOISE sell 4 limit £99.99 [noise_arrival-7]
+    Why: random sell/size; last transaction 10001 ticks -2.
+    4 remain in book: no eligible opposing order.
+09:30:04.4715 [e13] NOISE sell 3 limit £100.01 [noise_arrival-13]
+    Why: random sell/size; last transaction 10001 ticks +0.
+    3 remain in book: no eligible opposing order.
+09:30:05 [e12] LATENT £99.9843 → £99.9721; observer only, no order.
+End 09:30:05: 12 events; 2 trades / 3 units. Best bid none; ask £99.99.
+Final visible depth:
+ASKS
+Price | Total Quantity | Order Count
+£100.01 | 3 | 1 order
+£99.99 | 4 | 1 order
+BIDS
+Price | Total Quantity | Order Count
+(empty)

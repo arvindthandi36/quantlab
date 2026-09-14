@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "python": "3.14.0",
+  "source_kind": "temporary local Git release snapshot; original has no commits",
+  "installation": "non-editable .[dev], no-cache, isolated pip",
+  "tests": 1346,
+  "seconds": 97.93,
+  "original_tests_preserved": 1294,
+  "pip_check": "No broken requirements found",
+  "site_packages_install_verified": true,
+  "quantlab_version": "1.0.0",
+  "current_source_tests_pyproject_match_tested_clone": true,
+  "source_manifest_sha256": "742dbaf1725748aa2a5043f4d9409d32d42d9eb8f65d03bc8df8378a08630d83",
+  "launch": "quantlab serve --port 8768",
+  "network": "loopback only"
+}

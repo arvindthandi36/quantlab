@@ -1,0 +1,33 @@
+         9738605 function calls (9728511 primitive calls) in 1.534 seconds
+
+   Ordered by: cumulative time
+   List reduced from 288 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       20    0.000    0.000    1.571    0.079 <project>/src/quantlab/options/research.py:53(run)
+       80    0.000    0.000    1.536    0.019 <project>/src/quantlab/options/session.py:431(command)
+      400    0.004    0.000    1.493    0.004 <project>/src/quantlab/options/session.py:362(_step)
+    12594    0.079    0.000    0.890    0.000 <project>/src/quantlab/portfolio/accounting.py:201(check_invariants)
+134952/128080    0.088    0.000    0.733    0.000 {built-in method builtins.sum}
+   552714    0.147    0.000    0.540    0.000 /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py:697(forward)
+      778    0.002    0.000    0.538    0.001 <project>/src/quantlab/trading/session.py:172(_public_event)
+      818    0.002    0.000    0.532    0.001 <project>/src/quantlab/trading/session.py:138(_sample)
+      378    0.001    0.000    0.495    0.001 <project>/src/quantlab/trading/session.py:429(command)
+      378    0.002    0.000    0.491    0.001 <project>/src/quantlab/trading/session.py:461(_dispatch)
+      420    0.000    0.000    0.468    0.001 <project>/src/quantlab/options/session.py:348(hedge)
+      358    0.001    0.000    0.464    0.001 <project>/src/quantlab/options/session.py:326(_stock_order)
+     1576    0.001    0.000    0.444    0.000 <project>/src/quantlab/trading/session.py:126(_mark)
+      400    0.004    0.000    0.433    0.001 <project>/src/quantlab/options/underlying.py:50(refresh)
+      900    0.005    0.000    0.419    0.000 <project>/src/quantlab/options/session.py:233(_sample)
+     3152    0.004    0.000    0.403    0.000 <project>/src/quantlab/portfolio/accounting.py:125(mark)
+     1718    0.025    0.000    0.374    0.000 <project>/src/quantlab/trading/session.py:610(check_invariants)
+     2138    0.004    0.000    0.268    0.000 <project>/src/quantlab/portfolio/accounting.py:174(snapshot)
+    86975    0.025    0.000    0.235    0.000 <project>/src/quantlab/portfolio/accounting.py:210(<genexpr>)
+     1320    0.005    0.000    0.232    0.000 <project>/src/quantlab/options/session.py:202(accounts)
+      358    0.001    0.000    0.195    0.001 <project>/src/quantlab/trading/session.py:294(_submit)
+   136660    0.048    0.000    0.195    0.000 /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py:711(reverse)
+   343840    0.087    0.000    0.169    0.000 /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py:794(_add)
+   437445    0.112    0.000    0.164    0.000 /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py:206(__new__)
+  1150721    0.081    0.000    0.157    0.000 {built-in method builtins.isinstance}
+
+

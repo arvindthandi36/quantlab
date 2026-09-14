@@ -1,0 +1,43 @@
+QuantLab Market Making Lab | fixed | PUBLIC VIEW
++0.000s centre £100.0000: bid 2 @ £99.9800, ask 2 @ £100.0200; inventory +0
++0.187s Fill #1: sell 2 @ £100.0200; inventory -2, marked P&L -£0.0020
++1.000s centre £100.0200: bid 2 @ £100.0000, ask 2 @ £100.0400; inventory -2
++1.059s Fill #2: sell 1 @ £100.0400; inventory -3, marked P&L -£0.0430
++2.000s centre £100.0400: bid 2 @ £100.0000, ask 2 @ £100.0600; inventory -3
+  buy moved outward to remain passive
++3.000s centre £100.0100: bid 2 @ £99.9900, ask 2 @ £100.0300; inventory -3
++4.000s centre £100.0200: bid 2 @ £100.0000, ask 2 @ £100.0400; inventory -3
++5.000s centre £100.0200: bid 2 @ £100.0000, ask 2 @ £100.0400; inventory -3
++6.000s centre £100.0200: bid 2 @ £100.0000, ask 2 @ £100.0400; inventory -3
++7.000s centre £100.0150: bid 2 @ £99.9900, ask 2 @ £100.0400; inventory -3
++8.000s centre £100.0150: bid 2 @ £99.9900, ask 2 @ £100.0400; inventory -3
++9.000s centre £100.0150: bid 2 @ £99.9900, ask 2 @ £100.0400; inventory -3
+... 31 further maker event groups omitted.
+End: inventory +7; maker quotes cancelled; inventory remains marked.
+Execution cash -£699.7300; fees £0.0170; cash balance £9300.2530.
+FIFO realised trading P&L £0.2100; realised after fees £0.1930; unrealised -£0.0800.
+Total marked P&L £0.1130 = execution-edge proxy £0.2850 + inventory/reference movement -£0.1550 - fees £0.0170.
+Fills 12: 8 buys/4 sells; units 12 bought/5 sold; executed/posted 15.0%.
+Time-weighted inventory +0.684; average |inventory| 3.354; RMS 3.685; max |inventory| 7.
+Average own quoted spread £0.0441 (83.2% time coverage); effective spread £0.0335 (17 units covered).
+Turnover £1699.9700; maximum observed drawdown £0.3170.
+Positive marked P&L; execution edge contributed. Review markouts and inventory risk.
+Provider midpoint markouts (public-event horizons; diagnostic, not cash P&L):
+  Fill #40 [public_midpoint]: h1 +0.000 ticks/unit; h5 +1.500 ticks/unit; h20 -1.500 ticks/unit
+  Fill #44 [public_midpoint]: h1 -1.000 ticks/unit; h5 -1.000 ticks/unit; h20 horizon_not_reached
+  Fill #47 [public_midpoint]: h1 reference_unavailable_at_horizon; h5 +1.500 ticks/unit; h20 horizon_not_reached
+  Mean h1: £0.0046/unit; units available 12, missing 5, pending 0.
+  Mean h5: £0.0116/unit; units available 16, missing 1, pending 0.
+  Mean h20: £0.0035/unit; units available 10, missing 5, pending 2.
+Observer reproduction seed: 104028857410887472668814679577317847870885581108404738183356074930982114099453
+OBSERVER DEBUG — private information, never a normal strategy input
+Current latent: 10011.017 ticks
+  +28.478s signal 10013.412, error +0.225, estimate 10012.388, hurdle 1.470: buy: estimated value minus executable ask strictly exceeds the hurdle
+  +28.771s signal 10013.610, error +0.423, estimate 10012.574, hurdle 1.470: buy: estimated value minus executable ask strictly exceeds the hurdle
+Maker fills against informed traders: 16.7% of execution records
+  Fill #40 [public_midpoint]: h1 +0.000 ticks/unit; h5 +1.500 ticks/unit; h20 -1.500 ticks/unit
+  Fill #40 [observer_latent]: h1 +9.942 ticks/unit; h5 +12.322 ticks/unit; h20 +12.744 ticks/unit
+  Fill #44 [public_midpoint]: h1 -1.000 ticks/unit; h5 -1.000 ticks/unit; h20 horizon_not_reached
+  Fill #44 [observer_latent]: h1 +15.213 ticks/unit; h5 +14.187 ticks/unit; h20 horizon_not_reached
+  Fill #47 [public_midpoint]: h1 reference_unavailable_at_horizon; h5 +1.500 ticks/unit; h20 horizon_not_reached
+  Fill #47 [observer_latent]: h1 +16.187 ticks/unit; h5 +15.744 ticks/unit; h20 horizon_not_reached

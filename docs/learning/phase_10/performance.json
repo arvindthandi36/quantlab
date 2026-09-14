@@ -1,0 +1,28 @@
+{
+  "measured_with": "cProfile + tracemalloc overhead; local Python process",
+  "tasks": {
+    "multi_asset_10_assets_1000_steps": {
+      "peak_mb": 10.461532592773438,
+      "seconds": 20.029125166824088
+    },
+    "pair_mining_28_candidates": {
+      "peak_mb": 1.9843120574951172,
+      "seconds": 35.42357170814648
+    },
+    "rolling_regressions_1000": {
+      "peak_mb": 1.4309453964233398,
+      "seconds": 2.432457792107016
+    },
+    "walk_forward_321_observations": {
+      "peak_mb": 1.962660789489746,
+      "seconds": 2.9967962082009763
+    }
+  },
+  "unprofiled_seconds": {
+    "rolling_regressions_1000": 0.32758120889775455,
+    "multi_asset_10_assets_1000_steps": 2.420949917053804,
+    "walk_forward_321_observations": 0.40792770916596055,
+    "pair_mining_28_candidates": 4.634033875074238
+  },
+  "note": "Unprofiled measurements taken after the final 1,294-test suite, including final reservation checks. Instrumented memory/time was measured earlier with cProfile and tracemalloc overhead while an earlier full test run was also active."
+}

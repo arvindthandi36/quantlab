@@ -1,0 +1,73 @@
+{
+  "design_digest": "bcdadafa0928d9b3af6b6db1d5e211f03027536d521c1f0a08dc83fd0e9507bf",
+  "registered_at": "2026-09-12T03:18:15.283640+00:00",
+  "schema_version": 1,
+  "simulation_seeds": [
+    114079775692154919549566728935832989573234223498452861038698540244655642726841,
+    222289496290815104440648873937602027334509914121095289444552873410046839087689,
+    41346496768913800660633895191640146988857686954352270191632294649349311522795,
+    161090685641127217371148509772247110970382807026046071760238531502027732893345,
+    169173976349068846545178384395105152913357692700738343904588889745001736477955,
+    129648124251930685360041903102709248713166340925260326105852243514488445886299,
+    164464737670739624933983956377979547300243521748189320764656543931821411554335,
+    217503974352107979972190641799874616147948909063526613955799792225918679070715,
+    57757234622381016905055459172855881762700326498381307917447491307298533443373,
+    48247515445128790758161334255681031553084766975943734520889173082909293576973,
+    18562408226169771496196803526450648207854201290364211257757951530202848899759,
+    123647579460923056394700877448067862078342089580143800204210178256369312610397,
+    180232502941845015429667271880805244013992593764996317723931807363974918216269,
+    134579082892102868617277573578790243829392720453542342912640431576181774330893,
+    117138748851299277584424585534613698027169811611248356615518192454832449043049,
+    149542117135566163879036341022204472927133124727219799559901129692380752593453
+  ],
+  "spec": {
+    "adapter": "causal-statarb-fifo-v1",
+    "bootstrap_resamples": 500,
+    "hypothesis": "Ranking 28 null pairs creates winner's curse; selected in-sample success need not persist.",
+    "limitations": [
+      "Synthetic results do not establish real-market alpha.",
+      "Training-selected performance is optimistic; evaluation never selects thresholds.",
+      "The initial fit origin differs across disjoint time blocks; blocks may have different lengths.",
+      "Confidence intervals exclude process, liquidity and model uncertainty."
+    ],
+    "paired": true,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "Does the best unrelated training pair survive an untouched test?",
+    "relationships": [],
+    "seeds": {
+      "pool": "evaluation",
+      "root": 10101004,
+      "runs": 16,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "experiment": "mining",
+          "split": 160,
+          "steps": 320,
+          "variant": "in_sample"
+        },
+        "name": "in_sample"
+      },
+      {
+        "configuration": {
+          "experiment": "mining",
+          "split": 160,
+          "steps": 320,
+          "variant": "out_of_sample"
+        },
+        "name": "out_of_sample"
+      }
+    ]
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.9.0",
+    "scipy": "1.18.1"
+  }
+}

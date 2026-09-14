@@ -1,0 +1,71 @@
+{
+  "design_digest": "e89bccdf3e3d3c76371b4a0eaf301da38b05a0b25637cc831fa44536a948f01a",
+  "registered_at": "2026-09-12T18:16:00.627682+00:00",
+  "schema_version": 1,
+  "simulation_seeds": [
+    147165143500359106264064254969208091013421226669214277393261326133786862395060
+  ],
+  "spec": {
+    "adapter": "environment-historical-paper-pair-v1",
+    "bootstrap_resamples": 100,
+    "hypothesis": "A stricter threshold changes qualification; it need not improve executed outcomes.",
+    "limitations": [
+      "One historical path, not independent Monte Carlo trials; no generalisation claim.",
+      "Training/evaluation boundaries are explicit and fitting is causal. Fixed unit sizing is not beta neutral.",
+      "Next-close bar paper execution; terminal inventory is marked, not falsely liquidated."
+    ],
+    "paired": true,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "How do two prespecified entry thresholds behave on this one recorded path?",
+    "relationships": [],
+    "seeds": {
+      "pool": "development",
+      "root": 131042,
+      "runs": 1,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "entry": 2.0,
+          "environment": {
+            "fingerprints": [
+              "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+              "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+            ],
+            "type": "HISTORICAL"
+          },
+          "evaluation_end": 80,
+          "mode": "rolling",
+          "training_end": 30
+        },
+        "name": "entry-2.0"
+      },
+      {
+        "configuration": {
+          "entry": 2.5,
+          "environment": {
+            "fingerprints": [
+              "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+              "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+            ],
+            "type": "HISTORICAL"
+          },
+          "evaluation_end": 80,
+          "mode": "rolling",
+          "training_end": 30
+        },
+        "name": "entry-2.5"
+      }
+    ]
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "1.0.0",
+    "scipy": "1.18.1"
+  }
+}

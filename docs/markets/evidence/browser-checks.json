@@ -1,0 +1,25 @@
+{
+  "preview": "http://127.0.0.1:8770/",
+  "checks": [
+    "Three distinct environment cards at one Trading landing page",
+    "Labelled artificial paired import, next-observation five-unit fill at 99.64",
+    "VWAP explanation 99.64 and current-holding risk hypothesis, no answer submitted",
+    "Known option trade and delta hedge through existing engines",
+    "Hidden selection, public-only question, explicit ended reveal",
+    "Original ended browser journal uploaded and verified; previous frame removes later fills",
+    "Read-only replay order button disabled",
+    "Portfolio delta 51.14358 display agrees with explanation 51.14357531 after one ATM call",
+    "Returned to fresh original Synthetic desk and open environment selector"
+  ],
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "document_width": 390,
+    "override_reset": true
+  },
+  "observed_step_round_trip_ms": 261,
+  "timing_caveat": "Includes browser control; not isolated JavaScript rendering time",
+  "final_console_errors": [],
+  "final_console_warnings": [],
+  "learner_profile": "Separate temporary Phase 13 profile; no browser answers graded"
+}

@@ -1,0 +1,22 @@
+{
+  "baseline": 747,
+  "final": 898,
+  "added": 151,
+  "removed_original_tests": 0,
+  "pytest_seconds": 27.5,
+  "ruff": "passed; 175 files formatted",
+  "dependencies": "pip check passed",
+  "browser": {
+    "manual_call_and_stock_hedges": "verified; exact final P&L matches saved demo",
+    "finite_difference_greeks": "verified",
+    "iv_fallback": "verified after original midpoint precision fix",
+    "monte_carlo": "verified",
+    "research_to_tutor": "32 complete pairs; actual SD/SE context verified",
+    "expiry": "verified at day 30; cash settlement and zero option exposure",
+    "replay": "original text upload; 38 public frames; final and reverse navigation verified",
+    "console_errors_after_replay": [],
+    "responsive_width": 390,
+    "page_horizontal_overflow": false
+  },
+  "scope": "Phase 8 only; Phase 9 unstarted"
+}

@@ -1,0 +1,33 @@
+         13668 function calls in 0.574 seconds
+
+   Ordered by: cumulative time
+   List reduced from 154 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        4    0.000    0.000    0.572    0.143 <project>/src/quantlab/risk/monte_carlo.py:119(monte_carlo_risk)
+        8    0.001    0.000    0.334    0.042 <project>/src/quantlab/risk/metrics.py:16(empirical_risk)
+       36    0.306    0.009    0.306    0.009 {method 'tolist' of 'numpy.ndarray' objects}
+        4    0.015    0.004    0.223    0.056 <project>/src/quantlab/risk/monte_carlo.py:93(revalue_returns)
+       80    0.200    0.002    0.200    0.003 <project>/src/quantlab/risk/monte_carlo.py:71(vector_option_prices)
+        8    0.000    0.000    0.018    0.002 <project>/venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:941(sort)
+        8    0.018    0.002    0.018    0.002 {method 'sort' of 'numpy.ndarray' objects}
+        4    0.014    0.004    0.015    0.004 <project>/src/quantlab/risk/monte_carlo.py:31(joint_returns)
+        8    0.005    0.001    0.007    0.001 <project>/venv/lib/python3.14/site-packages/numpy/lib/_histograms_impl.py:685(histogram)
+       84    0.001    0.000    0.005    0.000 <project>/src/quantlab/risk/portfolio.py:56(sensitivities)
+       80    0.002    0.000    0.003    0.000 <project>/src/quantlab/options/pricing.py:81(greeks)
+      160    0.000    0.000    0.002    0.000 <project>/src/quantlab/risk/portfolio.py:43(inputs)
+      160    0.001    0.000    0.002    0.000 <project>/src/quantlab/options/models.py:100(__post_init__)
+        4    0.000    0.000    0.002    0.000 <project>/src/quantlab/risk/analytics.py:60(covariance)
+        4    0.000    0.000    0.002    0.000 <project>/src/quantlab/risk/covariance.py:89(covariance_from_volatility)
+      168    0.002    0.000    0.002    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        8    0.000    0.000    0.001    0.000 <project>/venv/lib/python3.14/site-packages/numpy/lib/_histograms_impl.py:356(_get_bin_edges)
+        8    0.000    0.000    0.001    0.000 <project>/src/quantlab/risk/covariance.py:18(validate_covariance)
+       80    0.000    0.000    0.001    0.000 <project>/src/quantlab/options/pricing.py:39(price)
+        8    0.000    0.000    0.001    0.000 {method 'std' of 'numpy.ndarray' objects}
+        8    0.000    0.000    0.001    0.000 <project>/venv/lib/python3.14/site-packages/numpy/_core/_methods.py:217(_std)
+        8    0.001    0.000    0.001    0.000 <project>/venv/lib/python3.14/site-packages/numpy/_core/_methods.py:148(_var)
+      976    0.001    0.000    0.001    0.000 <project>/src/quantlab/options/models.py:11(number)
+       80    0.000    0.000    0.001    0.000 <project>/src/quantlab/options/pricing.py:64(scaled)
+       24    0.000    0.000    0.001    0.000 <project>/venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:66(_wrapreduction)
+
+

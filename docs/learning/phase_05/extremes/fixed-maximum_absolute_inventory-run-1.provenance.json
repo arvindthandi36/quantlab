@@ -1,0 +1,7 @@
+{
+  "experiment_outcome_digest": "ac070885124861a585897eeb3998c793b5518d4bc63ac95a96fa0c02a21d4f78",
+  "run_index": 1,
+  "trajectory_fingerprint": "b4bd831e6f175ee9c0c82c7cfd66439265a56c95d647d1ab6ad13dc9fab18863",
+  "variant": "fixed",
+  "verification": "batch metrics/hash matched full regeneration; full journal replay verified"
+}

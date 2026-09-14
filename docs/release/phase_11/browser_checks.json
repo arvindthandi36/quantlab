@@ -1,0 +1,43 @@
+{
+  "installed_build": "1.0.0 final clean clone",
+  "main_routes": [
+    "/",
+    "/research",
+    "/options",
+    "/risk",
+    "/statarb",
+    "/learning"
+  ],
+  "desktop": {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "document_overflow": false
+  },
+  "narrow": {
+    "viewport": [
+      390,
+      844
+    ],
+    "document_overflow": false,
+    "unlabelled_main_form_fields": 0
+  },
+  "interactions": [
+    "option buy and actual -51 stock hedge",
+    "registered 32-seed x 4-variant research completed",
+    "research tutor context without submitting learner answers",
+    "missing-history error inspected and corrected",
+    "80-observation Stat Arb fit and separate two-leg execution",
+    "shared risk end/reset to manual maker",
+    "actual bid/ask quote placement and cancellation",
+    "manual stock buy",
+    "verified JSON replay upload and frame navigation",
+    "keyboard End to last tab",
+    "skip link focuses MAIN",
+    "clean reset after acceptance"
+  ],
+  "console_errors_after_fresh_navigation": [],
+  "scope": "Practical browser/accessibility pass, not certification. Dense tables scroll internally; no screen-reader audit.",
+  "learner_profile": "Isolated temporary clone; original learner answers untouched; no synthetic quiz answers entered."
+}

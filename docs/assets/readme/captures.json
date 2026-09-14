@@ -1,0 +1,128 @@
+{
+  "capture_method": "Direct native tab screenshots of the actual local application",
+  "generated_mockups": false,
+  "pixel_edits": false,
+  "discarded_method": "Full-page stitching produced padding/repeated strips; replaced",
+  "captures": [
+    {
+      "file": "home.jpg",
+      "route": "/home",
+      "state": "Static overview",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "7152ae612794d16d7c51e5dd26257315967063ed20d926357e0336cde65b2477"
+    },
+    {
+      "file": "home-mobile.jpg",
+      "route": "/home",
+      "state": "Phone 390 \u00d7 844",
+      "width": 390,
+      "height": 844,
+      "sha256": "43a67ff8d8438f3c0fececaf5cd838bac78a545cb75a7b252556833245f53e18"
+    },
+    {
+      "file": "trading-desk.jpg",
+      "route": "/",
+      "state": "Seed 42; paused; BUY 6 MARKET; position 6",
+      "width": 1440,
+      "height": 1234,
+      "sha256": "acef727306d462ac5644e29cc62b622a42d16c55eefab542cd4a42b17aaea8b1"
+    },
+    {
+      "file": "order-vwap.jpg",
+      "route": "/demos",
+      "state": "order-after-multifill; Quick showcase; Recording mode",
+      "width": 1440,
+      "height": 1200,
+      "sha256": "db24b8978ecdf81f9501ebf33b5758da41acd2d112de2ffcb363ef815a477b75"
+    },
+    {
+      "file": "synthetic-prices.jpg",
+      "route": "/demos",
+      "state": "synthetic-after-event; public evidence only",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "4a42de4c6f4beeeb6d448bedf07f48a67d1d64f7fcc778a2e41b0676739254e3"
+    },
+    {
+      "file": "options-lab.jpg",
+      "route": "/options",
+      "state": "Fresh default day-0 chain; no option position",
+      "width": 1440,
+      "height": 1234,
+      "sha256": "ac1bc5ea6dd67039c3a9449b2bdad5b4df6db1751ee8dfa95f1d95f7bb22beee"
+    },
+    {
+      "file": "delta-hedge.jpg",
+      "route": "/demos",
+      "state": "delta-after-hedge; full branch; stock -51",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "d39dbf3a23a38251f00ad92f7231e6f25bb4bec613daaaa8373f81fe424c5278"
+    },
+    {
+      "file": "risk-lab.jpg",
+      "route": "/demos",
+      "state": "var-vs-es-tail; actual calculation",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "a578209b44c51d22aa1733f92c8cb93d859e46088990f6228cca39b70fb8ab0c"
+    },
+    {
+      "file": "stress-test.jpg",
+      "route": "/risk#stress",
+      "state": "Six-unit stock position; default custom stress full repriced",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "45e94d264e8594ac8dda21b7ae1df2c59383307ec93c5e7af43dcfecb5cc0b0c"
+    },
+    {
+      "file": "statarb-lab.jpg",
+      "route": "/statarb#model",
+      "state": "Default seed; 120 observed rows; past-only fit",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "6c431022404ea894a94deeacd434a816bb79e81905c41adcbe98a7abb8c5d853"
+    },
+    {
+      "file": "correlation-residual.jpg",
+      "route": "/demos",
+      "state": "correlation-vs-residual; actual controlled paths",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "9bc50ed53c092907ded5b190486a65e143a8f9ded8956d12d443cbd5d79ccdc9"
+    },
+    {
+      "file": "research-distribution.jpg",
+      "route": "/demos",
+      "state": "winner-before-test; 50 development scores",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "4b9ad888adca30613c8a0001c4d15d05dc42bdc2f071f287ecf5285ccb53a742"
+    },
+    {
+      "file": "explain-mode.jpg",
+      "route": "/demos",
+      "state": "order-after-multifill \u2192 Explain VWAP; selected demo context",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "6358051a9b1165016ab7f75e5278476c4adc15e9a426ff81f7f1f0373f2a7c1c"
+    },
+    {
+      "file": "guided-demo.jpg",
+      "route": "/demos",
+      "state": "order-before-submit; public input checkpoint",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "552f1a57591ae2bd5f0a6cca0e5c2446cc1a6fd629315e7feaaf9a1058649538"
+    },
+    {
+      "file": "learning-dashboard.jpg",
+      "route": "/learning",
+      "state": "Temporary QA profile; zero graded answers",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "fb89ba1952608169f4e948e620b97ddf9fbd59d2986eea42af0cb9e97fc8c96e"
+    }
+  ]
+}

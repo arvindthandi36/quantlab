@@ -1,0 +1,4706 @@
+{
+  "timeline": [
+    {
+      "event": "Buy one ATM call at the actual dealer ask",
+      "result": {
+        "contract_id": "QL-STOCK:call:100:6/73:x100",
+        "side": "buy",
+        "requested": 1,
+        "filled": 1,
+        "cancelled": 0,
+        "premium": 2.302151,
+        "multiplier": 100,
+        "premium_cash_flow": -230.2151,
+        "fee": 0.05,
+        "step": 0,
+        "mechanism": "synthetic dealer quote; IOC"
+      },
+      "delta": 51.143575314022485,
+      "vega": 1143.2620400510857,
+      "pnl": -1.5500499999998283,
+      "cash": 9769.7349,
+      "equity": 9998.44995,
+      "parametric_var": 100.94843442064276,
+      "historical_var": 95.42424100204059,
+      "mc_var": 89.69894769799538,
+      "mc_es": 108.27709626146972,
+      "scenario": null,
+      "challenge": null
+    },
+    {
+      "event": "Set hard delta limit 55",
+      "result": {
+        "ok": true,
+        "message": "limits updated"
+      },
+      "delta": 51.143575314022485,
+      "vega": 1143.2620400510857,
+      "pnl": -1.5500499999998283,
+      "cash": 9769.7349,
+      "equity": 9998.44995,
+      "parametric_var": 100.94843442064276,
+      "historical_var": 95.42424100204059,
+      "mc_var": 89.69894769799538,
+      "mc_es": 108.27709626146972,
+      "scenario": null,
+      "challenge": null
+    },
+    {
+      "event": "Try buying 10 more stock units: prohibited",
+      "result": {
+        "ok": false,
+        "message": "delta: 61.1436 exceeds 55; hard limit prohibits this increase",
+        "actual_filled": 0
+      },
+      "delta": 51.143575314022485,
+      "vega": 1143.2620400510857,
+      "pnl": -1.5500499999998283,
+      "cash": 9769.7349,
+      "equity": 9998.44995,
+      "parametric_var": 100.94843442064276,
+      "historical_var": 95.42424100204059,
+      "mc_var": 89.69894769799538,
+      "mc_es": 108.27709626146972,
+      "scenario": null,
+      "challenge": null
+    },
+    {
+      "event": "Challenge: full MC VaR at most \u00a320",
+      "result": {
+        "ok": true,
+        "message": "challenge updated"
+      },
+      "delta": 51.143575314022485,
+      "vega": 1143.2620400510857,
+      "pnl": -1.5500499999998283,
+      "cash": 9769.7349,
+      "equity": 9998.44995,
+      "parametric_var": 100.94843442064276,
+      "historical_var": 95.42424100204059,
+      "mc_var": 89.69894769799538,
+      "mc_es": 108.27709626146972,
+      "scenario": null,
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 89.69894769799538,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Sell 51 underlying units through the FIFO exchange",
+      "result": {
+        "ok": true,
+        "message": "You sell 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+        "order_id": "user-1",
+        "actual_filled": 51
+      },
+      "delta": 0.1435753140224847,
+      "vega": 1143.2620400510857,
+      "pnl": -2.1110499999995227,
+      "cash": 14869.1739,
+      "equity": 9997.88895,
+      "parametric_var": 0.28339245121269646,
+      "historical_var": 3.820306426845965,
+      "mc_var": 3.8233163927821723,
+      "mc_es": 3.8372640357802186,
+      "scenario": null,
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 3.8233163927821723,
+        "passed": true,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Delta neutral, volatility rises 20 points",
+      "result": {
+        "ok": true,
+        "message": "scenario updated"
+      },
+      "delta": 0.1435753140224847,
+      "vega": 1143.2620400510857,
+      "pnl": -2.1110499999995227,
+      "cash": 14869.1739,
+      "equity": 9997.88895,
+      "parametric_var": 0.28339245121269646,
+      "historical_var": 3.820306426845965,
+      "mc_var": 3.8233163927821723,
+      "mc_es": 3.8372640357802186,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.0,
+          "volatility_change": 0.2,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 228.5271679190636,
+        "loss": -228.5271679190636,
+        "approximate_pnl": 228.65240801021716,
+        "residual": -0.1252400911535574,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 228.65240801021716,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 228.5271679190636,
+            "approximate_pnl": 228.65240801021716,
+            "residual": -0.1252400911535574,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 228.65240801021716,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 3.8233163927821723,
+        "passed": true,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Small stock shock +0.1%",
+      "result": {
+        "ok": true,
+        "message": "scenario updated"
+      },
+      "delta": 0.1435753140224847,
+      "vega": 1143.2620400510857,
+      "pnl": -2.1110499999995227,
+      "cash": 14869.1739,
+      "equity": 9997.88895,
+      "parametric_var": 0.28339245121269646,
+      "historical_var": 3.820306426845965,
+      "mc_var": 3.8233163927821723,
+      "mc_es": 3.8372640357802186,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.001,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 0.049113495453860345,
+        "loss": -0.049113495453860345,
+        "approximate_pnl": 0.04913175178713513,
+        "residual": -1.8256333274783987e-05,
+        "contributions": {
+          "delta": 0.014357531402247936,
+          "gamma": 0.03477422038488719,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -5.1000000000000005,
+            "approximate_pnl": -5.1000000000000005,
+            "residual": 0.0,
+            "delta": -5.1000000000000005,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 5.149113495453861,
+            "approximate_pnl": 5.149131751787135,
+            "residual": -1.825633327445786e-05,
+            "delta": 5.1143575314022485,
+            "gamma": 0.03477422038488719,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 3.8233163927821723,
+        "passed": true,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Custom shock: stock -8%, vol +12 points, rate +50 bps",
+      "result": {
+        "ok": true,
+        "message": "scenario updated"
+      },
+      "delta": 0.1435753140224847,
+      "vega": 1143.2620400510857,
+      "pnl": -2.1110499999995227,
+      "cash": 14869.1739,
+      "equity": 9997.88895,
+      "parametric_var": 0.28339245121269646,
+      "historical_var": 3.820306426845965,
+      "mc_var": 3.8233163927821723,
+      "mc_es": 3.8372640357802186,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": -0.08,
+          "volatility_change": 0.12,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 266.8744185138193,
+        "loss": -266.8744185138193,
+        "approximate_pnl": 360.6056510319946,
+        "residual": -93.73123251817532,
+        "contributions": {
+          "delta": -1.1486025121798775,
+          "gamma": 222.55501046327802,
+          "vega": 137.19144480613028,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -141.1255814861807,
+            "approximate_pnl": -47.394348968005374,
+            "residual": -93.73123251817532,
+            "delta": -409.1486025121799,
+            "gamma": 222.55501046327802,
+            "vega": 137.19144480613028,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 408.0,
+            "approximate_pnl": 408.0,
+            "residual": 0.0,
+            "delta": 408.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 3.8233163927821723,
+        "passed": true,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Clear delta limit for a separate two-stock comparison",
+      "result": {
+        "ok": true,
+        "message": "limits updated"
+      },
+      "delta": 0.1435753140224847,
+      "vega": 1143.2620400510857,
+      "pnl": -2.1110499999995227,
+      "cash": 14869.1739,
+      "equity": 9997.88895,
+      "parametric_var": 0.28339245121269646,
+      "historical_var": 3.820306426845965,
+      "mc_var": 3.8233163927821723,
+      "mc_es": 3.8372640357802186,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": -0.08,
+          "volatility_change": 0.12,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 266.8744185138193,
+        "loss": -266.8744185138193,
+        "approximate_pnl": 360.6056510319946,
+        "residual": -93.73123251817532,
+        "contributions": {
+          "delta": -1.1486025121798775,
+          "gamma": 222.55501046327802,
+          "vega": 137.19144480613028,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -141.1255814861807,
+            "approximate_pnl": -47.394348968005374,
+            "residual": -93.73123251817532,
+            "delta": -409.1486025121799,
+            "gamma": 222.55501046327802,
+            "vega": 137.19144480613028,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 408.0,
+            "approximate_pnl": 408.0,
+            "residual": 0.0,
+            "delta": 408.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 3.8233163927821723,
+        "passed": true,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Buy 50 QL-SECOND shares",
+      "result": {
+        "ok": true,
+        "message": "You buy 50 market: 50 filled, 0 resting, 0 cancelled; VWAP \u00a3100.01000",
+        "order_id": "user-1"
+      },
+      "delta": 50.143575314022485,
+      "vega": 1143.2620400510857,
+      "pnl": -2.661050000000614,
+      "cash": 9868.623899999999,
+      "equity": 9997.33895,
+      "parametric_var": 65.86556475016835,
+      "historical_var": 58.30524229927931,
+      "mc_var": 65.55008303205067,
+      "mc_es": 81.28011303542385,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": -0.08,
+          "volatility_change": 0.12,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -133.1255814861807,
+        "loss": 133.1255814861807,
+        "approximate_pnl": -39.394348968005374,
+        "residual": -93.73123251817532,
+        "contributions": {
+          "delta": -401.1486025121799,
+          "gamma": 222.55501046327802,
+          "vega": 137.19144480613028,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -400.0,
+            "approximate_pnl": -400.0,
+            "residual": 0.0,
+            "delta": -400.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -141.1255814861807,
+            "approximate_pnl": -47.394348968005374,
+            "residual": -93.73123251817532,
+            "delta": -409.1486025121799,
+            "gamma": 222.55501046327802,
+            "vega": 137.19144480613028,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 408.0,
+            "approximate_pnl": 408.0,
+            "residual": 0.0,
+            "delta": 408.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 65.55008303205067,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Buy 50 QL-STOCK shares",
+      "result": {
+        "ok": true,
+        "message": "You buy 50 market: 50 filled, 0 resting, 0 cancelled; VWAP \u00a3100.01000",
+        "order_id": "user-2",
+        "actual_filled": 50
+      },
+      "delta": 100.14357531402248,
+      "vega": 1143.2620400510857,
+      "pnl": -3.2110499999998865,
+      "cash": 4868.0739,
+      "equity": 9996.78895,
+      "parametric_var": 131.83632993854135,
+      "historical_var": 119.36970680723843,
+      "mc_var": 120.95216771209567,
+      "mc_es": 151.49629373374006,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": -0.08,
+          "volatility_change": 0.12,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -533.1255814861806,
+        "loss": 533.1255814861806,
+        "approximate_pnl": -439.3943489680054,
+        "residual": -93.73123251817526,
+        "contributions": {
+          "delta": -801.1486025121799,
+          "gamma": 222.55501046327802,
+          "vega": 137.19144480613028,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -400.0,
+            "approximate_pnl": -400.0,
+            "residual": 0.0,
+            "delta": -400.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -141.1255814861807,
+            "approximate_pnl": -47.394348968005374,
+            "residual": -93.73123251817532,
+            "delta": -409.1486025121799,
+            "gamma": 222.55501046327802,
+            "vega": 137.19144480613028,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 8.0,
+            "approximate_pnl": 8.0,
+            "residual": 0.0,
+            "delta": 8.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 120.95216771209567,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Stress correlation from .25 to .9",
+      "result": {
+        "ok": true,
+        "message": "scenario updated"
+      },
+      "delta": 100.14357531402248,
+      "vega": 1143.2620400510857,
+      "pnl": -3.2110499999998865,
+      "cash": 4868.0739,
+      "equity": 9996.78895,
+      "parametric_var": 131.83632993854135,
+      "historical_var": 119.36970680723843,
+      "mc_var": 120.95216771209567,
+      "mc_es": 151.49629373374006,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 160.76800894986997,
+          "es": 201.6095691827474,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 97.74000939392593,
+          "decomposition": {
+            "variance": 9553.109436324728,
+            "volatility": 97.74000939392593,
+            "diagonal_terms": [
+              3620.704529193185,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4332.404907131542
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5220.7045291931845,
+            "cross_total": 4332.404907131542,
+            "marginal_volatility": [
+              0.011807523773305914,
+              0.009223966919809503,
+              0.007706572726807662
+            ],
+            "component_volatility": [
+              59.2071457598876,
+              0.0,
+              38.53286363403831
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 120.95216771209567,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Solve minimum variance with risky cap 40%, cash exactly 20%",
+      "result": {
+        "ok": true,
+        "message": "optimise updated"
+      },
+      "delta": 100.14357531402248,
+      "vega": 1143.2620400510857,
+      "pnl": -3.2110499999998865,
+      "cash": 4868.0739,
+      "equity": 9996.78895,
+      "parametric_var": 131.83632993854135,
+      "historical_var": 119.36970680723843,
+      "mc_var": 120.95216771209567,
+      "mc_es": 151.49629373374006,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 160.76800894986997,
+          "es": 201.6095691827474,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 97.74000939392593,
+          "decomposition": {
+            "variance": 9553.109436324728,
+            "volatility": 97.74000939392593,
+            "diagonal_terms": [
+              3620.704529193185,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4332.404907131542
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5220.7045291931845,
+            "cross_total": 4332.404907131542,
+            "marginal_volatility": [
+              0.011807523773305914,
+              0.009223966919809503,
+              0.007706572726807662
+            ],
+            "component_volatility": [
+              59.2071457598876,
+              0.0,
+              38.53286363403831
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 120.95216771209567,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "Observe one actual model day",
+      "result": {
+        "ok": true,
+        "message": "Observed step 1"
+      },
+      "delta": 101.60707383093957,
+      "vega": 1124.4626335064322,
+      "pnl": 3.6986500000002707,
+      "cash": 4868.0739,
+      "equity": 10003.69865,
+      "parametric_var": 134.56102030695382,
+      "historical_var": 123.04357614478015,
+      "mc_var": 123.1317103539217,
+      "mc_es": 154.47743710519256,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 163.8217810638437,
+          "es": 205.43912261381905,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 99.5965710137179,
+          "decomposition": {
+            "variance": 9919.476957690553,
+            "volatility": 99.5965710137179,
+            "diagonal_terms": [
+              3851.262191221488,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4468.214766469064
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5451.262191221488,
+            "cross_total": 4468.214766469064,
+            "marginal_volatility": [
+              0.011814688488784465,
+              0.009222474593850425,
+              0.007699275877091074
+            ],
+            "component_volatility": [
+              61.10019162826252,
+              0.0,
+              38.49637938545537
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 123.1317103539217,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    },
+    {
+      "event": "End, retain marked positions and save reproducible evidence",
+      "result": {
+        "ok": true,
+        "message": "end updated"
+      },
+      "delta": 101.60707383093957,
+      "vega": 1124.4626335064322,
+      "pnl": 3.6986500000002707,
+      "cash": 4868.0739,
+      "equity": 10003.69865,
+      "parametric_var": 134.56102030695382,
+      "historical_var": 123.04357614478015,
+      "mc_var": 123.1317103539217,
+      "mc_es": 154.47743710519256,
+      "scenario": {
+        "scenario": {
+          "name": "CUSTOM",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 163.8217810638437,
+          "es": 205.43912261381905,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 99.5965710137179,
+          "decomposition": {
+            "variance": 9919.476957690553,
+            "volatility": 99.5965710137179,
+            "diagonal_terms": [
+              3851.262191221488,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4468.214766469064
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5451.262191221488,
+            "cross_total": 4468.214766469064,
+            "marginal_volatility": [
+              0.011814688488784465,
+              0.009222474593850425,
+              0.007699275877091074
+            ],
+            "component_volatility": [
+              61.10019162826252,
+              0.0,
+              38.49637938545537
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      "challenge": {
+        "kind": "var",
+        "target": 20.0,
+        "vega_max": 10000.0,
+        "minimum_delta_gbp": 1000.0,
+        "actual": 123.1317103539217,
+        "passed": false,
+        "message": "Result follows your actual positions; no automatic hedge"
+      }
+    }
+  ],
+  "hedged_report": {
+    "portfolio": {
+      "positions": [
+        {
+          "instrument": "QL-STOCK",
+          "underlying": "QL-STOCK",
+          "quantity": -51,
+          "multiplier": 1,
+          "mark": 100.0,
+          "spot": 100.0,
+          "kind": "stock",
+          "strike": 0,
+          "years": 0,
+          "volatility": 0,
+          "rate": 0,
+          "dividend": 0,
+          "value": -5100.0,
+          "greeks": {
+            "delta": -51.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0
+          },
+          "delta_gbp": -5100.0,
+          "value_share": 0.9570787614173515,
+          "delta_share": 0.49929718871901096
+        },
+        {
+          "instrument": "QL-STOCK:call:100:6/73:x100",
+          "underlying": "QL-STOCK",
+          "quantity": 1,
+          "multiplier": 100,
+          "mark": 2.2871505,
+          "spot": 100.0,
+          "kind": "call",
+          "strike": 100.0,
+          "years": 0.0821917808219178,
+          "volatility": 0.2,
+          "rate": 0.0,
+          "dividend": 0.0,
+          "value": 228.71505000000002,
+          "greeks": {
+            "delta": 51.143575314022485,
+            "gamma": 6.954844076977438,
+            "vega": 1143.2620400510857,
+            "theta": -1390.9688153954876,
+            "rho": 401.5596549532399
+          },
+          "delta_gbp": 5114.357531402248,
+          "value_share": 0.042921238582648555,
+          "delta_share": 0.5007028112809889
+        }
+      ],
+      "cash": 14869.1739,
+      "market_value": -4871.28495,
+      "equity": 9997.88895,
+      "initial_capital": 10000.0,
+      "realised_gross": 0.0,
+      "unrealised": -2.01005,
+      "fees": 0.101,
+      "financing": 0.0,
+      "pnl": -2.1110499999995227,
+      "drawdown": 2.1110499999995227,
+      "long": 228.71505000000002,
+      "short": 5100.0,
+      "gross": 5328.71505,
+      "net": -4871.28495,
+      "delta_gbp": 14.357531402248242,
+      "gross_delta_gbp": 14.357531402248469,
+      "factors": {
+        "QL-STOCK": {
+          "spot": 100.0,
+          "delta": 0.1435753140224847,
+          "gamma": 6.954844076977438,
+          "vega": 1143.2620400510857,
+          "theta": -1390.9688153954876,
+          "rho": 401.5596549532399
+        }
+      },
+      "greeks": {
+        "delta": 0.1435753140224847,
+        "gamma": 6.954844076977438,
+        "vega": 1143.2620400510857,
+        "theta": -1390.9688153954876,
+        "rho": 401.5596549532399
+      },
+      "largest_position_share": 0.9570787614173515,
+      "largest_delta_share": 0.5007028112809889,
+      "hhi": 0.9178419882776403,
+      "max_position": 51,
+      "source": "Actual QuantLab accounts"
+    },
+    "settings": {
+      "confidence": 0.95,
+      "days": 1,
+      "daily_volatility": [
+        0.012,
+        0.01,
+        0.008
+      ],
+      "means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correlation": 0.25,
+      "paths": 5000,
+      "seed": 99042,
+      "sample_seed": 77042,
+      "sample_size": 500,
+      "distribution": "normal",
+      "df": 5.0,
+      "cash_rate": 0.0
+    },
+    "factors": [
+      "QL-STOCK",
+      "QL-DESK",
+      "QL-SECOND"
+    ],
+    "covariance": [
+      [
+        0.000144,
+        3e-05,
+        2.4e-05
+      ],
+      [
+        3e-05,
+        0.0001,
+        2e-05
+      ],
+      [
+        2.4e-05,
+        2e-05,
+        6.4e-05
+      ]
+    ],
+    "correlation": [
+      [
+        1.0,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        1.0,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        1.0
+      ]
+    ],
+    "sample_covariance": {
+      "covariance": [
+        [
+          0.00014761005700352007,
+          2.7575106397359076e-05,
+          2.0959333453239888e-05
+        ],
+        [
+          2.7575106397359076e-05,
+          9.587225065792567e-05,
+          2.0357712955703137e-05
+        ],
+        [
+          2.0959333453239888e-05,
+          2.0357712955703137e-05,
+          5.775455967593334e-05
+        ]
+      ],
+      "mean": [
+        -0.000503480132734224,
+        -4.9951452832925905e-06,
+        0.00017069812017421593
+      ],
+      "n": 500,
+      "dropped": 0,
+      "ddof": 1,
+      "convention": "sample N-1",
+      "eigenvalues": [
+        4.806932211908256e-05,
+        8.666838027689468e-05,
+        0.0001664991649414018
+      ],
+      "warnings": [],
+      "tolerance": 1.476100570035201e-14,
+      "regularisation": "none"
+    },
+    "covariance_source": "Configured volatility and correlation",
+    "sample_correlation": [
+      [
+        1.0000000000000002,
+        0.23179964229555977,
+        0.22700025999095147
+      ],
+      [
+        0.23179964229555977,
+        1.0000000000000002,
+        0.2735831757593479
+      ],
+      [
+        0.22700025999095147,
+        0.2735831757593479,
+        0.9999999999999999
+      ]
+    ],
+    "parametric": {
+      "var": 0.28339245121269646,
+      "es": 0.3553855668912961,
+      "confidence": 0.95,
+      "days": 1,
+      "mean_loss": -0.0,
+      "loss_sd": 0.17229037682698162,
+      "decomposition": {
+        "variance": 0.029683973947183327,
+        "volatility": 0.17229037682698162,
+        "diagonal_terms": [
+          0.02968397394718333,
+          0.0,
+          0.0
+        ],
+        "cross_terms": [
+          {
+            "i": 0,
+            "j": 1,
+            "value": 0.0
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "value": 0.0
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "value": 0.0
+          }
+        ],
+        "diagonal_total": 0.02968397394718333,
+        "cross_total": 0.0,
+        "marginal_volatility": [
+          0.012,
+          0.0025,
+          0.002
+        ],
+        "component_volatility": [
+          0.17229037682698164,
+          0.0,
+          0.0
+        ],
+        "warnings": []
+      },
+      "method": "Delta-normal approximation",
+      "warnings": [
+        "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+        "Options curvature, volatility changes, decay and cash carry are omitted"
+      ],
+      "interpretation": "VaR is a model loss threshold, never maximum loss"
+    },
+    "historical": {
+      "full": {
+        "var": 3.820306426845965,
+        "es": 3.8374541265609814,
+        "confidence": 0.95,
+        "n": 500,
+        "tail_mass": 25.0,
+        "whole_tail_observations": 25,
+        "boundary_weight": 0.0,
+        "worst": [
+          3.8440643469957236,
+          3.8440433890148396,
+          3.843940781854771,
+          3.843853255501306,
+          3.8437533652928235,
+          3.8437410788787374,
+          3.8437137324894066,
+          3.843051890156013
+        ],
+        "histogram": {
+          "edges": [
+            -58.021244043085375,
+            -55.20918457080896,
+            -52.39712509853255,
+            -49.58506562625613,
+            -46.77300615397972,
+            -43.960946681703305,
+            -41.14888720942689,
+            -38.33682773715048,
+            -35.52476826487407,
+            -32.71270879259765,
+            -29.90064932032124,
+            -27.088589848044826,
+            -24.27653037576841,
+            -21.464470903492,
+            -18.652411431215583,
+            -15.840351958939173,
+            -13.028292486662757,
+            -10.21623301438634,
+            -7.40417354210993,
+            -4.592114069833514,
+            -1.780054597557104,
+            1.0320048747193127,
+            3.8440643469957236
+          ],
+          "counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            1,
+            2,
+            2,
+            7,
+            6,
+            11,
+            20,
+            19,
+            30,
+            47,
+            86,
+            264
+          ]
+        },
+        "mean_loss": -1.3156448922912318,
+        "loss_sd": 7.249053882228358,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "delta": {
+        "var": 0.3007195712165469,
+        "es": 0.3640238549394428,
+        "confidence": 0.95,
+        "n": 500,
+        "tail_mass": 25.0,
+        "whole_tail_observations": 25,
+        "boundary_weight": 0.0,
+        "worst": [
+          0.6110081149930693,
+          0.5247329731580805,
+          0.4328419037763922,
+          0.4076688280942733,
+          0.3811028121674269,
+          0.38102957614290744,
+          0.37752103067768417,
+          0.37619899748295893
+        ],
+        "histogram": {
+          "edges": [
+            -0.5154149600226958,
+            -0.4642139111583429,
+            -0.4130128622939899,
+            -0.361811813429637,
+            -0.310610764565284,
+            -0.259409715700931,
+            -0.20820866683657807,
+            -0.15700761797222512,
+            -0.10580656910787217,
+            -0.05460552024351922,
+            -0.0034044713791662184,
+            0.04779657748518673,
+            0.09899762634953968,
+            0.15019867521389263,
+            0.20139972407824558,
+            0.25260077294259853,
+            0.3038018218069515,
+            0.3550028706713044,
+            0.4062039195356574,
+            0.4574049684000103,
+            0.5086060172643634,
+            0.5598070661287162,
+            0.6110081149930693
+          ],
+          "counts": [
+            1,
+            4,
+            2,
+            8,
+            17,
+            24,
+            35,
+            31,
+            56,
+            62,
+            62,
+            47,
+            48,
+            40,
+            22,
+            17,
+            14,
+            6,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        "mean_loss": 0.007228731816139911,
+        "loss_sd": 0.17443665450121082,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "days": 1,
+      "blocks": 500,
+      "unused_rows": 0,
+      "sample": "Fixed synthetic sample (independent sample seed; NOT observed market history)",
+      "warning": "Non-overlapping compounded blocks; the sample may omit future crises"
+    },
+    "monte_carlo": {
+      "full": {
+        "var": 3.8233163927821723,
+        "es": 3.8372640357802186,
+        "confidence": 0.95,
+        "n": 5000,
+        "tail_mass": 250.0,
+        "whole_tail_observations": 250,
+        "boundary_weight": 0.0,
+        "worst": [
+          3.8442894895746926,
+          3.844288197910306,
+          3.8442863596349075,
+          3.8442850939212625,
+          3.8442844208829485,
+          3.84428154130918,
+          3.8442733431759413,
+          3.8442705957665746
+        ],
+        "histogram": {
+          "edges": [
+            -66.03949726166562,
+            -63.710037703290936,
+            -61.380578144916264,
+            -59.051118586541584,
+            -56.72165902816691,
+            -54.39219946979223,
+            -52.06273991141755,
+            -49.73328035304287,
+            -47.4038207946682,
+            -45.07436123629353,
+            -42.74490167791885,
+            -40.41544211954417,
+            -38.08598256116949,
+            -35.756523002794815,
+            -33.427063444420135,
+            -31.097603886045462,
+            -28.768144327670782,
+            -26.438684769296103,
+            -24.10922521092143,
+            -21.77976565254675,
+            -19.450306094172078,
+            -17.120846535797398,
+            -14.791386977422718,
+            -12.461927419048045,
+            -10.132467860673366,
+            -7.803008302298686,
+            -5.473548743924013,
+            -3.1440891855493334,
+            -0.8146296271746536,
+            1.5148299312000262,
+            3.8442894895746926
+          ],
+          "counts": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            6,
+            1,
+            10,
+            5,
+            7,
+            9,
+            11,
+            20,
+            10,
+            32,
+            28,
+            63,
+            51,
+            88,
+            114,
+            152,
+            199,
+            296,
+            499,
+            813,
+            2576
+          ]
+        },
+        "mean_loss": -1.0624251268883746,
+        "loss_sd": 7.11682632381784,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "delta": {
+        "var": 0.2784713100353713,
+        "es": 0.3565868604283327,
+        "confidence": 0.95,
+        "n": 5000,
+        "tail_mass": 250.0,
+        "whole_tail_observations": 250,
+        "boundary_weight": 0.0,
+        "worst": [
+          0.6508404729323445,
+          0.6238382107330551,
+          0.5767378938721777,
+          0.5674409607184714,
+          0.5629533911244096,
+          0.5558765792738711,
+          0.5461587543102837,
+          0.5302839202044254
+        ],
+        "histogram": {
+          "edges": [
+            -0.5622870109405369,
+            -0.5218494281447742,
+            -0.4814118453490115,
+            -0.4409742625532488,
+            -0.4005366797574861,
+            -0.3600990969617234,
+            -0.3196615141659606,
+            -0.2792239313701979,
+            -0.2387863485744352,
+            -0.1983487657786725,
+            -0.1579111829829098,
+            -0.11747360018714709,
+            -0.07703601739138433,
+            -0.03659843459562162,
+            0.003839148200141085,
+            0.04427673099590379,
+            0.0847143137916665,
+            0.1251518965874292,
+            0.1655894793831919,
+            0.2060270621789546,
+            0.24646464497471732,
+            0.28690222777048,
+            0.32733981056624273,
+            0.36777739336200543,
+            0.40821497615776825,
+            0.44865255895353084,
+            0.48909014174929366,
+            0.5295277245450563,
+            0.5699653073408191,
+            0.6104028901365817,
+            0.6508404729323445
+          ],
+          "counts": [
+            9,
+            6,
+            12,
+            21,
+            45,
+            66,
+            103,
+            136,
+            190,
+            294,
+            347,
+            405,
+            441,
+            492,
+            452,
+            448,
+            422,
+            336,
+            248,
+            166,
+            135,
+            87,
+            58,
+            34,
+            17,
+            12,
+            10,
+            5,
+            1,
+            2
+          ]
+        },
+        "mean_loss": -0.0013281741534945158,
+        "loss_sd": 0.17003626064873725,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "simulation": {
+        "eigenvalues": [
+          5.364740481432245e-05,
+          8.619865357903766e-05,
+          0.00016815394160663995
+        ],
+        "warnings": [],
+        "tolerance": 1.44e-14,
+        "regularisation": "none",
+        "factor_method": "Cholesky",
+        "distribution": "normal",
+        "df": null,
+        "seed": 99042,
+        "paths": 5000,
+        "days": 1
+      },
+      "warning": "Physical IID daily arithmetic-return scenarios; fixed IV; no forecast or guarantee"
+    },
+    "stresses": [
+      {
+        "scenario": {
+          "name": "NORMAL",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 1.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -3.8431977220156455,
+        "loss": 3.8431977220156455,
+        "approximate_pnl": -3.810873466836952,
+        "residual": -0.032324255178693306,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": -3.810873466836952,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -3.8431977220156455,
+            "approximate_pnl": -3.810873466836952,
+            "residual": -0.032324255178693306,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -3.810873466836952,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "EQUITY SELL-OFF",
+          "stock_return": -0.1,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 288.3441477277138,
+        "loss": -288.3441477277138,
+        "approximate_pnl": 346.3064507086471,
+        "residual": -57.962302980933316,
+        "contributions": {
+          "delta": -1.435753140224847,
+          "gamma": 347.74220384887195,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -221.65585227228618,
+            "approximate_pnl": -163.6935492913529,
+            "residual": -57.96230298093329,
+            "delta": -511.43575314022485,
+            "gamma": 347.74220384887195,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 510.0,
+            "approximate_pnl": 510.0,
+            "residual": 0.0,
+            "delta": 510.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "VOLATILITY SPIKE",
+          "stock_return": 0.0,
+          "volatility_change": 0.2,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 228.5271679190636,
+        "loss": -228.5271679190636,
+        "approximate_pnl": 228.65240801021716,
+        "residual": -0.1252400911535574,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 228.65240801021716,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 228.5271679190636,
+            "approximate_pnl": 228.65240801021716,
+            "residual": -0.1252400911535574,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 228.65240801021716,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "CORRELATION BREAKDOWN",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 0.28339245121269646,
+          "es": 0.3553855668912961,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 0.17229037682698162,
+          "decomposition": {
+            "variance": 0.029683973947183327,
+            "volatility": 0.17229037682698162,
+            "diagonal_terms": [
+              0.02968397394718333,
+              0.0,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 0.0
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 0.02968397394718333,
+            "cross_total": 0.0,
+            "marginal_volatility": [
+              0.012,
+              0.009000000000000001,
+              0.007200000000000001
+            ],
+            "component_volatility": [
+              0.17229037682698164,
+              0.0,
+              0.0
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      {
+        "scenario": {
+          "name": "LIQUIDITY SHOCK",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 100.0,
+          "correlation": null
+        },
+        "full_pnl": -53.2871505,
+        "loss": 53.2871505,
+        "approximate_pnl": -53.2871505,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": -53.2871505
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -51.0,
+            "approximate_pnl": -51.0,
+            "residual": 0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -51.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -2.2871505,
+            "approximate_pnl": -2.2871505,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -2.2871505
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "COMBINED STRESS",
+          "stock_return": -0.1,
+          "volatility_change": 0.2,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 100.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 334.1225840624426,
+        "loss": -334.1225840624426,
+        "approximate_pnl": 523.6795064936305,
+        "residual": -189.55692243118784,
+        "contributions": {
+          "delta": -1.435753140224847,
+          "gamma": 347.74220384887195,
+          "vega": 228.65240801021716,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": -53.2871505
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -124.87741593755737,
+            "approximate_pnl": 64.67950649363047,
+            "residual": -189.55692243118784,
+            "delta": -511.43575314022485,
+            "gamma": 347.74220384887195,
+            "vega": 228.65240801021716,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -2.2871505
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 459.0,
+            "approximate_pnl": 459.0,
+            "residual": 0.0,
+            "delta": 510.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -51.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 0.28339245121269646,
+          "es": 0.3553855668912961,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 0.17229037682698162,
+          "decomposition": {
+            "variance": 0.029683973947183327,
+            "volatility": 0.17229037682698162,
+            "diagonal_terms": [
+              0.02968397394718333,
+              0.0,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 0.0
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 0.02968397394718333,
+            "cross_total": 0.0,
+            "marginal_volatility": [
+              0.012,
+              0.009000000000000001,
+              0.007200000000000001
+            ],
+            "component_volatility": [
+              0.17229037682698164,
+              0.0,
+              0.0
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      {
+        "scenario": {
+          "name": "EQUITY -5%",
+          "stock_return": -0.05,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 82.95832005567325,
+        "loss": -82.95832005567325,
+        "approximate_pnl": 86.21767439210556,
+        "residual": -3.2593543364323097,
+        "contributions": {
+          "delta": -0.7178765701124235,
+          "gamma": 86.93555096221799,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -172.04167994432675,
+            "approximate_pnl": -168.78232560789445,
+            "residual": -3.2593543364322954,
+            "delta": -255.71787657011242,
+            "gamma": 86.93555096221799,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 255.0,
+            "approximate_pnl": 255.0,
+            "residual": 0.0,
+            "delta": 255.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "VOL +5 POINTS",
+          "stock_return": 0.0,
+          "volatility_change": 0.05,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 57.15674015241774,
+        "loss": -57.15674015241774,
+        "approximate_pnl": 57.16310200255429,
+        "residual": -0.006361850136549663,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 57.16310200255429,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 57.15674015241774,
+            "approximate_pnl": 57.16310200255429,
+            "residual": -0.006361850136549663,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 57.16310200255429,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      }
+    ],
+    "diversification": {
+      "budget": 10000,
+      "daily_volatility": 0.01,
+      "rows": [
+        {
+          "label": "Concentrated",
+          "weights": [
+            1,
+            0
+          ],
+          "correlation": 0,
+          "var": 164.48536269514716,
+          "volatility_gbp": 100.0,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 10000.0,
+            "volatility": 100.0,
+            "diagonal_terms": [
+              10000.0,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 10000.0,
+            "cross_total": 0.0,
+            "marginal_volatility": [
+              0.01,
+              0.0
+            ],
+            "component_volatility": [
+              100.0,
+              0.0
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Imperfect correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 0.25,
+          "var": 130.0370969688893,
+          "volatility_gbp": 79.05694150420949,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 6250.0,
+            "volatility": 79.05694150420949,
+            "diagonal_terms": [
+              2500.0,
+              2500.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 1250.0
+              }
+            ],
+            "diagonal_total": 5000.0,
+            "cross_total": 1250.0,
+            "marginal_volatility": [
+              0.007905694150420948,
+              0.007905694150420948
+            ],
+            "component_volatility": [
+              39.52847075210474,
+              39.52847075210474
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Strong correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 0.95,
+          "var": 162.4162820576504,
+          "volatility_gbp": 98.74208829065749,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 9750.0,
+            "volatility": 98.74208829065749,
+            "diagonal_terms": [
+              2500.0,
+              2500.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 4750.0
+              }
+            ],
+            "diagonal_total": 5000.0,
+            "cross_total": 4750.0,
+            "marginal_volatility": [
+              0.00987420882906575,
+              0.00987420882906575
+            ],
+            "component_volatility": [
+              49.37104414532875,
+              49.37104414532875
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Negative correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": -0.5,
+          "var": 82.24268134757358,
+          "volatility_gbp": 50.0,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 2500.0,
+            "volatility": 50.0,
+            "diagonal_terms": [
+              2500.0,
+              2500.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": -2500.0
+              }
+            ],
+            "diagonal_total": 5000.0,
+            "cross_total": -2500.0,
+            "marginal_volatility": [
+              0.005,
+              0.005
+            ],
+            "component_volatility": [
+              25.0,
+              25.0
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Identical exposure",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 1,
+          "var": 164.48536269514716,
+          "volatility_gbp": 100.0,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 10000.0,
+            "volatility": 100.0,
+            "diagonal_terms": [
+              2500.0,
+              2500.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 5000.0
+              }
+            ],
+            "diagonal_total": 5000.0,
+            "cross_total": 5000.0,
+            "marginal_volatility": [
+              0.01,
+              0.01
+            ],
+            "component_volatility": [
+              50.0,
+              50.0
+            ],
+            "warnings": [
+              "Singular or near-singular covariance: allocations/contributions may be unstable"
+            ]
+          }
+        }
+      ],
+      "label": "Controlled hypothetical equal-volatility, equal-mean allocations; not actual trades"
+    },
+    "tail_example": {
+      "mild": {
+        "var": 10.0,
+        "es": 12.0,
+        "confidence": 0.95,
+        "n": 100,
+        "tail_mass": 5.0,
+        "whole_tail_observations": 5,
+        "boundary_weight": 0.0,
+        "worst": [
+          20.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "histogram": {
+          "edges": [
+            0.0,
+            2.0,
+            4.0,
+            6.0,
+            8.0,
+            10.0,
+            12.0,
+            14.0,
+            16.0,
+            18.0,
+            20.0
+          ],
+          "counts": [
+            94,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "mean_loss": 0.7,
+        "loss_sd": 2.9318866956210288,
+        "warnings": [
+          "Fewer than 20 effective tail observations; tail estimate is noisy"
+        ],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "severe": {
+        "var": 10.0,
+        "es": 48.0,
+        "confidence": 0.95,
+        "n": 100,
+        "tail_mass": 5.0,
+        "whole_tail_observations": 5,
+        "boundary_weight": 0.0,
+        "worst": [
+          200.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "histogram": {
+          "edges": [
+            0.0,
+            20.0,
+            40.0,
+            60.0,
+            80.0,
+            100.0,
+            120.0,
+            140.0,
+            160.0,
+            180.0,
+            200.0
+          ],
+          "counts": [
+            99,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "mean_loss": 2.5,
+        "loss_sd": 20.06932429798716,
+        "warnings": [
+          "Fewer than 20 effective tail observations; tail estimate is noisy"
+        ],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      }
+    },
+    "units": "GBP loss; one-day simple-return covariance; ACT/365 calendar horizon",
+    "warnings": [
+      "Precise estimates are conditional on model/data, not forecasts",
+      "Delta-normal risk omits nonlinear/volatility risk; inspect full revaluation and stresses",
+      "Greeks summed across different stocks are descriptive; factor exposures retain identity"
+    ]
+  },
+  "diversified_report": {
+    "portfolio": {
+      "positions": [
+        {
+          "instrument": "QL-STOCK",
+          "underlying": "QL-STOCK",
+          "quantity": -1,
+          "multiplier": 1,
+          "mark": 100.0,
+          "spot": 100.0,
+          "kind": "stock",
+          "strike": 0,
+          "years": 0,
+          "volatility": 0,
+          "rate": 0,
+          "dividend": 0,
+          "value": -100.0,
+          "greeks": {
+            "delta": -1.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0
+          },
+          "delta_gbp": -100.0,
+          "value_share": 0.018766250223869636,
+          "delta_share": 0.009790140955274725
+        },
+        {
+          "instrument": "QL-STOCK:call:100:6/73:x100",
+          "underlying": "QL-STOCK",
+          "quantity": 1,
+          "multiplier": 100,
+          "mark": 2.2871505,
+          "spot": 100.0,
+          "kind": "call",
+          "strike": 100.0,
+          "years": 0.0821917808219178,
+          "volatility": 0.2,
+          "rate": 0.0,
+          "dividend": 0.0,
+          "value": 228.71505000000002,
+          "greeks": {
+            "delta": 51.143575314022485,
+            "gamma": 6.954844076977438,
+            "vega": 1143.2620400510857,
+            "theta": -1390.9688153954876,
+            "rho": 401.5596549532399
+          },
+          "delta_gbp": 5114.357531402248,
+          "value_share": 0.042921238582648555,
+          "delta_share": 0.5007028112809889
+        },
+        {
+          "instrument": "QL-SECOND",
+          "underlying": "QL-SECOND",
+          "quantity": 50,
+          "multiplier": 1,
+          "mark": 100.0,
+          "spot": 100.0,
+          "kind": "stock",
+          "strike": 0,
+          "years": 0,
+          "volatility": 0,
+          "rate": 0,
+          "dividend": 0,
+          "value": 5000.0,
+          "greeks": {
+            "delta": 50.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0
+          },
+          "delta_gbp": 5000.0,
+          "value_share": 0.9383125111934818,
+          "delta_share": 0.48950704776373627
+        }
+      ],
+      "cash": 4868.0739,
+      "market_value": 5128.71505,
+      "equity": 9996.78895,
+      "initial_capital": 10000.0,
+      "realised_gross": -1.0,
+      "unrealised": -2.0100499999999997,
+      "fees": 0.201,
+      "financing": 0.0,
+      "pnl": -3.2110499999998865,
+      "drawdown": 3.2110499999998865,
+      "long": 5228.71505,
+      "short": 100.0,
+      "gross": 5328.71505,
+      "net": 5128.71505,
+      "delta_gbp": 10014.35753140225,
+      "gross_delta_gbp": 10014.35753140225,
+      "factors": {
+        "QL-STOCK": {
+          "spot": 100.0,
+          "delta": 50.143575314022485,
+          "gamma": 6.954844076977438,
+          "vega": 1143.2620400510857,
+          "theta": -1390.9688153954876,
+          "rho": 401.5596549532399
+        },
+        "QL-SECOND": {
+          "spot": 100.0,
+          "delta": 50.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0
+        }
+      },
+      "greeks": {
+        "delta": 100.14357531402248,
+        "gamma": 6.954844076977438,
+        "vega": 1143.2620400510857,
+        "theta": -1390.9688153954876,
+        "rho": 401.5596549532399
+      },
+      "largest_position_share": 0.9383125111934818,
+      "largest_delta_share": 0.5007028112809889,
+      "hhi": 0.8826247735311514,
+      "max_position": 50,
+      "source": "Actual QuantLab accounts"
+    },
+    "settings": {
+      "confidence": 0.95,
+      "days": 1,
+      "daily_volatility": [
+        0.012,
+        0.01,
+        0.008
+      ],
+      "means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "correlation": 0.25,
+      "paths": 5000,
+      "seed": 99042,
+      "sample_seed": 77042,
+      "sample_size": 500,
+      "distribution": "normal",
+      "df": 5.0,
+      "cash_rate": 0.0
+    },
+    "factors": [
+      "QL-STOCK",
+      "QL-DESK",
+      "QL-SECOND"
+    ],
+    "covariance": [
+      [
+        0.000144,
+        3e-05,
+        2.4e-05
+      ],
+      [
+        3e-05,
+        0.0001,
+        2e-05
+      ],
+      [
+        2.4e-05,
+        2e-05,
+        6.4e-05
+      ]
+    ],
+    "correlation": [
+      [
+        1.0,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        1.0,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        1.0
+      ]
+    ],
+    "sample_covariance": {
+      "covariance": [
+        [
+          0.00014761005700352007,
+          2.7575106397359076e-05,
+          2.0959333453239888e-05
+        ],
+        [
+          2.7575106397359076e-05,
+          9.587225065792567e-05,
+          2.0357712955703137e-05
+        ],
+        [
+          2.0959333453239888e-05,
+          2.0357712955703137e-05,
+          5.775455967593334e-05
+        ]
+      ],
+      "mean": [
+        -0.000503480132734224,
+        -4.9951452832925905e-06,
+        0.00017069812017421593
+      ],
+      "n": 500,
+      "dropped": 0,
+      "ddof": 1,
+      "convention": "sample N-1",
+      "eigenvalues": [
+        4.806932211908256e-05,
+        8.666838027689468e-05,
+        0.0001664991649414018
+      ],
+      "warnings": [],
+      "tolerance": 1.476100570035201e-14,
+      "regularisation": "none"
+    },
+    "covariance_source": "Configured volatility and correlation",
+    "sample_correlation": [
+      [
+        1.0000000000000002,
+        0.23179964229555977,
+        0.22700025999095147
+      ],
+      [
+        0.23179964229555977,
+        1.0000000000000002,
+        0.2735831757593479
+      ],
+      [
+        0.22700025999095147,
+        0.2735831757593479,
+        0.9999999999999999
+      ]
+    ],
+    "parametric": {
+      "var": 131.83632993854135,
+      "es": 165.32807649457033,
+      "confidence": 0.95,
+      "days": 1,
+      "mean_loss": -0.0,
+      "loss_sd": 80.15079748031036,
+      "decomposition": {
+        "variance": 6424.150336729725,
+        "volatility": 80.15079748031036,
+        "diagonal_terms": [
+          3620.704529193185,
+          0.0,
+          1600.0
+        ],
+        "cross_terms": [
+          {
+            "i": 0,
+            "j": 1,
+            "value": 0.0
+          },
+          {
+            "i": 0,
+            "j": 2,
+            "value": 1203.4458075365396
+          },
+          {
+            "i": 1,
+            "j": 2,
+            "value": 0.0
+          }
+        ],
+        "diagonal_total": 5220.7045291931845,
+        "cross_total": 1203.4458075365396,
+        "marginal_volatility": [
+          0.010506040002019743,
+          0.0031244945005517583,
+          0.005493951334193873
+        ],
+        "component_volatility": [
+          52.68104080934099,
+          0.0,
+          27.469756670969364
+        ],
+        "warnings": []
+      },
+      "method": "Delta-normal approximation",
+      "warnings": [
+        "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+        "Options curvature, volatility changes, decay and cash carry are omitted"
+      ],
+      "interpretation": "VaR is a model loss threshold, never maximum loss"
+    },
+    "historical": {
+      "full": {
+        "var": 119.36970680723843,
+        "es": 148.776679134431,
+        "confidence": 0.95,
+        "n": 500,
+        "tail_mass": 25.0,
+        "whole_tail_observations": 25,
+        "boundary_weight": 0.0,
+        "worst": [
+          214.37122241893272,
+          213.50512042062178,
+          198.23747966212906,
+          159.44251570494387,
+          152.0172884416232,
+          151.12519437564873,
+          149.76234167111238,
+          149.31391460721412
+        ],
+        "histogram": {
+          "edges": [
+            -265.73120123601024,
+            -243.9083637971492,
+            -222.08552635828815,
+            -200.2626889194271,
+            -178.43985148056606,
+            -156.61701404170503,
+            -134.79417660284398,
+            -112.97133916398292,
+            -91.14850172512189,
+            -69.32566428626086,
+            -47.5028268473998,
+            -25.679989408538745,
+            -3.857151969677716,
+            17.965685469183313,
+            39.7885229080444,
+            61.61136034690543,
+            83.43419778576646,
+            105.25703522462749,
+            127.07987266348852,
+            148.9027101023496,
+            170.72554754121063,
+            192.54838498007166,
+            214.37122241893272
+          ],
+          "counts": [
+            3,
+            2,
+            3,
+            2,
+            3,
+            9,
+            18,
+            23,
+            33,
+            36,
+            40,
+            49,
+            69,
+            52,
+            42,
+            46,
+            30,
+            18,
+            14,
+            5,
+            0,
+            3
+          ]
+        },
+        "mean_loss": 0.34826517050880923,
+        "loss_sd": 78.61626859986171,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "delta": {
+        "var": 128.78728298563556,
+        "es": 163.7163652258329,
+        "confidence": 0.95,
+        "n": 500,
+        "tail_mass": 25.0,
+        "whole_tail_observations": 25,
+        "boundary_weight": 0.0,
+        "worst": [
+          273.00347457701116,
+          240.91567412413556,
+          230.47606752855404,
+          170.7579762246485,
+          168.24646214422648,
+          165.84682324678715,
+          164.8628820786317,
+          163.09196076635146
+        ],
+        "histogram": {
+          "edges": [
+            -234.301018147234,
+            -211.2417230234047,
+            -188.18242789957534,
+            -165.12313277574603,
+            -142.06383765191669,
+            -119.00454252808737,
+            -95.94524740425805,
+            -72.88595228042871,
+            -49.826657156599396,
+            -26.76736203277008,
+            -3.7080669089407365,
+            19.35122821488858,
+            42.410523338717894,
+            65.46981846254721,
+            88.52911358637658,
+            111.5884087102059,
+            134.6477038340352,
+            157.70699895786453,
+            180.76629408169384,
+            203.82558920552322,
+            226.88488432935253,
+            249.94417945318185,
+            273.00347457701116
+          ],
+          "counts": [
+            5,
+            2,
+            3,
+            6,
+            15,
+            18,
+            37,
+            45,
+            44,
+            54,
+            70,
+            49,
+            50,
+            34,
+            32,
+            12,
+            11,
+            10,
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        "mean_loss": 1.67113879461618,
+        "loss_sd": 78.78016832277126,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "days": 1,
+      "blocks": 500,
+      "unused_rows": 0,
+      "sample": "Fixed synthetic sample (independent sample seed; NOT observed market history)",
+      "warning": "Non-overlapping compounded blocks; the sample may omit future crises"
+    },
+    "monte_carlo": {
+      "full": {
+        "var": 120.95216771209567,
+        "es": 151.49629373374006,
+        "confidence": 0.95,
+        "n": 5000,
+        "tail_mass": 250.0,
+        "whole_tail_observations": 250,
+        "boundary_weight": 0.0,
+        "worst": [
+          260.3295492103748,
+          233.4648488062126,
+          224.035393416182,
+          222.87479782084927,
+          222.80687332017828,
+          222.7907731769278,
+          221.3058705838325,
+          216.58948794533092
+        ],
+        "histogram": {
+          "edges": [
+            -316.28388743553444,
+            -297.06343954733745,
+            -277.84299165914047,
+            -258.6225437709435,
+            -239.40209588274655,
+            -220.18164799454956,
+            -200.96120010635258,
+            -181.74075221815562,
+            -162.52030432995863,
+            -143.29985644176165,
+            -124.07940855356469,
+            -104.8589606653677,
+            -85.63851277717072,
+            -66.41806488897376,
+            -47.1976170007768,
+            -27.977169112579816,
+            -8.75672122438283,
+            10.463726663814157,
+            29.684174552011143,
+            48.90462244020807,
+            68.12507032840506,
+            87.34551821660204,
+            106.56596610479903,
+            125.78641399299602,
+            145.006861881193,
+            164.22730976938993,
+            183.44775765758692,
+            202.66820554578385,
+            221.88865343398083,
+            241.10910132217782,
+            260.3295492103748
+          ],
+          "counts": [
+            2,
+            2,
+            9,
+            12,
+            16,
+            23,
+            32,
+            51,
+            79,
+            101,
+            172,
+            208,
+            288,
+            382,
+            411,
+            448,
+            483,
+            480,
+            432,
+            407,
+            347,
+            246,
+            149,
+            109,
+            48,
+            24,
+            21,
+            12,
+            5,
+            1
+          ]
+        },
+        "mean_loss": -1.720031925132142,
+        "loss_sd": 79.76133306567955,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "delta": {
+        "var": 127.67677077818325,
+        "es": 165.9291310416654,
+        "confidence": 0.95,
+        "n": 5000,
+        "tail_mass": 250.0,
+        "whole_tail_observations": 250,
+        "boundary_weight": 0.0,
+        "worst": [
+          293.84501836658103,
+          267.74899359450694,
+          261.18300604691245,
+          256.5710638420748,
+          256.4404717741468,
+          254.95169934647151,
+          253.87409402787705,
+          251.64473330772887
+        ],
+        "histogram": {
+          "edges": [
+            -290.1108282920453,
+            -270.6456334034244,
+            -251.18043851480354,
+            -231.71524362618268,
+            -212.2500487375618,
+            -192.7848538489409,
+            -173.31965896032006,
+            -153.85446407169917,
+            -134.38926918307828,
+            -114.9240742944574,
+            -95.45887940583651,
+            -75.99368451721566,
+            -56.52848962859477,
+            -37.063294739973884,
+            -17.598099851353027,
+            1.867095037267859,
+            21.332289925888745,
+            40.79748481450963,
+            60.262679703130516,
+            79.7278745917514,
+            99.19306948037229,
+            118.65826436899312,
+            138.123459257614,
+            157.5886541462349,
+            177.05384903485577,
+            196.51904392347666,
+            215.98423881209754,
+            235.44943370071837,
+            254.91462858933926,
+            274.37982347796014,
+            293.84501836658103
+          ],
+          "counts": [
+            1,
+            1,
+            8,
+            14,
+            25,
+            35,
+            60,
+            87,
+            137,
+            197,
+            272,
+            363,
+            424,
+            465,
+            481,
+            455,
+            483,
+            383,
+            333,
+            287,
+            179,
+            108,
+            85,
+            45,
+            24,
+            19,
+            14,
+            9,
+            5,
+            1
+          ]
+        },
+        "mean_loss": -0.6589349723972618,
+        "loss_sd": 79.58549020389698,
+        "warnings": [],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "simulation": {
+        "eigenvalues": [
+          5.364740481432245e-05,
+          8.619865357903766e-05,
+          0.00016815394160663995
+        ],
+        "warnings": [],
+        "tolerance": 1.44e-14,
+        "regularisation": "none",
+        "factor_method": "Cholesky",
+        "distribution": "normal",
+        "df": null,
+        "seed": 99042,
+        "paths": 5000,
+        "days": 1
+      },
+      "warning": "Physical IID daily arithmetic-return scenarios; fixed IV; no forecast or guarantee"
+    },
+    "stresses": [
+      {
+        "scenario": {
+          "name": "NORMAL",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 1.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -3.8431977220156455,
+        "loss": 3.8431977220156455,
+        "approximate_pnl": -3.810873466836952,
+        "residual": -0.032324255178693306,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": -3.810873466836952,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -3.8431977220156455,
+            "approximate_pnl": -3.810873466836952,
+            "residual": -0.032324255178693306,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -3.810873466836952,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "EQUITY SELL-OFF",
+          "stock_return": -0.1,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -711.6558522722862,
+        "loss": 711.6558522722862,
+        "approximate_pnl": -653.6935492913528,
+        "residual": -57.96230298093337,
+        "contributions": {
+          "delta": -1001.4357531402248,
+          "gamma": 347.74220384887195,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -500.0,
+            "approximate_pnl": -500.0,
+            "residual": 0.0,
+            "delta": -500.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -221.65585227228618,
+            "approximate_pnl": -163.6935492913529,
+            "residual": -57.96230298093329,
+            "delta": -511.43575314022485,
+            "gamma": 347.74220384887195,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 10.0,
+            "approximate_pnl": 10.0,
+            "residual": 0.0,
+            "delta": 10.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "VOLATILITY SPIKE",
+          "stock_return": 0.0,
+          "volatility_change": 0.2,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 228.5271679190636,
+        "loss": -228.5271679190636,
+        "approximate_pnl": 228.65240801021716,
+        "residual": -0.1252400911535574,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 228.65240801021716,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 228.5271679190636,
+            "approximate_pnl": 228.65240801021716,
+            "residual": -0.1252400911535574,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 228.65240801021716,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "CORRELATION BREAKDOWN",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": 0.9
+        },
+        "full_pnl": 0.0,
+        "loss": -0.0,
+        "approximate_pnl": 0.0,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 160.76800894986997,
+          "es": 201.6095691827474,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 97.74000939392593,
+          "decomposition": {
+            "variance": 9553.109436324728,
+            "volatility": 97.74000939392593,
+            "diagonal_terms": [
+              3620.704529193185,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4332.404907131542
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5220.7045291931845,
+            "cross_total": 4332.404907131542,
+            "marginal_volatility": [
+              0.011807523773305914,
+              0.009223966919809503,
+              0.007706572726807662
+            ],
+            "component_volatility": [
+              59.2071457598876,
+              0.0,
+              38.53286363403831
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      {
+        "scenario": {
+          "name": "LIQUIDITY SHOCK",
+          "stock_return": 0.0,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 100.0,
+          "correlation": null
+        },
+        "full_pnl": -53.2871505,
+        "loss": 53.2871505,
+        "approximate_pnl": -53.2871505,
+        "residual": 0.0,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": -53.2871505
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -50.0,
+            "approximate_pnl": -50.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -50.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -2.2871505,
+            "approximate_pnl": -2.2871505,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -2.2871505
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -1.0,
+            "approximate_pnl": -1.0,
+            "residual": 0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -1.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "COMBINED STRESS",
+          "stock_return": -0.1,
+          "volatility_change": 0.2,
+          "rate_change": 0.005,
+          "days": 0.0,
+          "liquidation_bps": 100.0,
+          "correlation": 0.9
+        },
+        "full_pnl": -665.8774159375573,
+        "loss": 665.8774159375573,
+        "approximate_pnl": -476.32049350636953,
+        "residual": -189.5569224311878,
+        "contributions": {
+          "delta": -1001.4357531402248,
+          "gamma": 347.74220384887195,
+          "vega": 228.65240801021716,
+          "theta": 0.0,
+          "rho": 2.0077982747661993,
+          "cash_carry": 0.0,
+          "liquidity": -53.2871505
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -550.0,
+            "approximate_pnl": -550.0,
+            "residual": 0.0,
+            "delta": -500.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -50.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -124.87741593755737,
+            "approximate_pnl": 64.67950649363047,
+            "residual": -189.55692243118784,
+            "delta": -511.43575314022485,
+            "gamma": 347.74220384887195,
+            "vega": 228.65240801021716,
+            "theta": -0.0,
+            "rho": 2.0077982747661993,
+            "liquidity": -2.2871505
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 9.0,
+            "approximate_pnl": 9.0,
+            "residual": 0.0,
+            "delta": 10.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -1.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation",
+          "Correlation changes the distribution, not a deterministic mark by itself"
+        ],
+        "correlation_risk": {
+          "var": 160.76800894986997,
+          "es": 201.6095691827474,
+          "confidence": 0.95,
+          "days": 1,
+          "mean_loss": -0.0,
+          "loss_sd": 97.74000939392593,
+          "decomposition": {
+            "variance": 9553.109436324728,
+            "volatility": 97.74000939392593,
+            "diagonal_terms": [
+              3620.704529193185,
+              0.0,
+              1600.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "value": 4332.404907131542
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 5220.7045291931845,
+            "cross_total": 4332.404907131542,
+            "marginal_volatility": [
+              0.011807523773305914,
+              0.009223966919809503,
+              0.007706572726807662
+            ],
+            "component_volatility": [
+              59.2071457598876,
+              0.0,
+              38.53286363403831
+            ],
+            "warnings": []
+          },
+          "method": "Delta-normal approximation",
+          "warnings": [
+            "IID one-day arithmetic moments scaled only for linear P&L; normal tails assumed",
+            "Options curvature, volatility changes, decay and cash carry are omitted"
+          ],
+          "interpretation": "VaR is a model loss threshold, never maximum loss"
+        }
+      },
+      {
+        "scenario": {
+          "name": "EQUITY -5%",
+          "stock_return": -0.05,
+          "volatility_change": 0.0,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": -417.04167994432675,
+        "loss": 417.04167994432675,
+        "approximate_pnl": -413.78232560789445,
+        "residual": -3.2593543364322954,
+        "contributions": {
+          "delta": -500.7178765701124,
+          "gamma": 86.93555096221799,
+          "vega": 0.0,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": -250.0,
+            "approximate_pnl": -250.0,
+            "residual": 0.0,
+            "delta": -250.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": -172.04167994432675,
+            "approximate_pnl": -168.78232560789445,
+            "residual": -3.2593543364322954,
+            "delta": -255.71787657011242,
+            "gamma": 86.93555096221799,
+            "vega": 0.0,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": 5.0,
+            "approximate_pnl": 5.0,
+            "residual": 0.0,
+            "delta": 5.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      },
+      {
+        "scenario": {
+          "name": "VOL +5 POINTS",
+          "stock_return": 0.0,
+          "volatility_change": 0.05,
+          "rate_change": 0.0,
+          "days": 0.0,
+          "liquidation_bps": 0.0,
+          "correlation": null
+        },
+        "full_pnl": 57.15674015241774,
+        "loss": -57.15674015241774,
+        "approximate_pnl": 57.16310200255429,
+        "residual": -0.006361850136549663,
+        "contributions": {
+          "delta": 0.0,
+          "gamma": 0.0,
+          "vega": 57.16310200255429,
+          "theta": 0.0,
+          "rho": 0.0,
+          "cash_carry": 0.0,
+          "liquidity": 0.0
+        },
+        "positions": [
+          {
+            "instrument": "QL-STOCK",
+            "full_pnl": -0.0,
+            "approximate_pnl": 0.0,
+            "residual": -0.0,
+            "delta": -0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-SECOND",
+            "full_pnl": 0.0,
+            "approximate_pnl": 0.0,
+            "residual": 0.0,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          },
+          {
+            "instrument": "QL-STOCK:call:100:6/73:x100",
+            "full_pnl": 57.15674015241774,
+            "approximate_pnl": 57.16310200255429,
+            "residual": -0.006361850136549663,
+            "delta": 0.0,
+            "gamma": 0.0,
+            "vega": 57.16310200255429,
+            "theta": -0.0,
+            "rho": 0.0,
+            "liquidity": -0.0
+          }
+        ],
+        "warnings": [
+          "Hypothetical model changes; never booked as realised P&L",
+          "Frozen quote/model basis and sticky strike IV; Greek terms are an approximation"
+        ]
+      }
+    ],
+    "diversification": {
+      "budget": 10014.35753140225,
+      "daily_volatility": 0.01,
+      "rows": [
+        {
+          "label": "Concentrated",
+          "weights": [
+            1,
+            0
+          ],
+          "correlation": 0,
+          "var": 164.72152307115772,
+          "volatility_gbp": 100.14357531402248,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 10028.735676675295,
+            "volatility": 100.14357531402248,
+            "diagonal_terms": [
+              10028.735676675295,
+              0.0
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 0.0
+              }
+            ],
+            "diagonal_total": 10028.735676675295,
+            "cross_total": 0.0,
+            "marginal_volatility": [
+              0.01,
+              0.0
+            ],
+            "component_volatility": [
+              100.1435753140225,
+              0.0
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Imperfect correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 0.25,
+          "var": 130.2237981392081,
+          "volatility_gbp": 79.17044775623073,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 6267.959797922059,
+            "volatility": 79.17044775623073,
+            "diagonal_terms": [
+              2507.1839191688236,
+              2507.1839191688236
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 1253.5919595844118
+              }
+            ],
+            "diagonal_total": 5014.367838337647,
+            "cross_total": 1253.5919595844118,
+            "marginal_volatility": [
+              0.007905694150420948,
+              0.007905694150420948
+            ],
+            "component_volatility": [
+              39.585223878115364,
+              39.585223878115364
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Strong correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 0.95,
+          "var": 162.64947174463833,
+          "volatility_gbp": 98.88385755399317,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 9778.017284758413,
+            "volatility": 98.88385755399317,
+            "diagonal_terms": [
+              2507.1839191688236,
+              2507.1839191688236
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 4763.649446420765
+              }
+            ],
+            "diagonal_total": 5014.367838337647,
+            "cross_total": 4763.649446420765,
+            "marginal_volatility": [
+              0.00987420882906575,
+              0.00987420882906575
+            ],
+            "component_volatility": [
+              49.44192877699659,
+              49.44192877699659
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Negative correlation",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": -0.5,
+          "var": 82.36076153557886,
+          "volatility_gbp": 50.07178765701124,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 2507.1839191688236,
+            "volatility": 50.07178765701124,
+            "diagonal_terms": [
+              2507.1839191688236,
+              2507.1839191688236
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": -2507.1839191688236
+              }
+            ],
+            "diagonal_total": 5014.367838337647,
+            "cross_total": -2507.1839191688236,
+            "marginal_volatility": [
+              0.005,
+              0.005
+            ],
+            "component_volatility": [
+              25.035893828505625,
+              25.035893828505625
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "label": "Identical exposure",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "correlation": 1,
+          "var": 164.72152307115772,
+          "volatility_gbp": 100.14357531402248,
+          "expected_return": 0.0,
+          "decomposition": {
+            "variance": 10028.735676675295,
+            "volatility": 100.14357531402248,
+            "diagonal_terms": [
+              2507.1839191688236,
+              2507.1839191688236
+            ],
+            "cross_terms": [
+              {
+                "i": 0,
+                "j": 1,
+                "value": 5014.367838337647
+              }
+            ],
+            "diagonal_total": 5014.367838337647,
+            "cross_total": 5014.367838337647,
+            "marginal_volatility": [
+              0.01,
+              0.01
+            ],
+            "component_volatility": [
+              50.07178765701125,
+              50.07178765701125
+            ],
+            "warnings": [
+              "Singular or near-singular covariance: allocations/contributions may be unstable"
+            ]
+          }
+        }
+      ],
+      "label": "Controlled hypothetical equal-volatility, equal-mean allocations; not actual trades"
+    },
+    "tail_example": {
+      "mild": {
+        "var": 10.0,
+        "es": 12.0,
+        "confidence": 0.95,
+        "n": 100,
+        "tail_mass": 5.0,
+        "whole_tail_observations": 5,
+        "boundary_weight": 0.0,
+        "worst": [
+          20.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "histogram": {
+          "edges": [
+            0.0,
+            2.0,
+            4.0,
+            6.0,
+            8.0,
+            10.0,
+            12.0,
+            14.0,
+            16.0,
+            18.0,
+            20.0
+          ],
+          "counts": [
+            94,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "mean_loss": 0.7,
+        "loss_sd": 2.9318866956210288,
+        "warnings": [
+          "Fewer than 20 effective tail observations; tail estimate is noisy"
+        ],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      },
+      "severe": {
+        "var": 10.0,
+        "es": 48.0,
+        "confidence": 0.95,
+        "n": 100,
+        "tail_mass": 5.0,
+        "whole_tail_observations": 5,
+        "boundary_weight": 0.0,
+        "worst": [
+          200.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "histogram": {
+          "edges": [
+            0.0,
+            20.0,
+            40.0,
+            60.0,
+            80.0,
+            100.0,
+            120.0,
+            140.0,
+            160.0,
+            180.0,
+            200.0
+          ],
+          "counts": [
+            99,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "mean_loss": 2.5,
+        "loss_sd": 20.06932429798716,
+        "warnings": [
+          "Fewer than 20 effective tail observations; tail estimate is noisy"
+        ],
+        "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+        "interpretation": "Model/data loss threshold, never a maximum possible loss"
+      }
+    },
+    "units": "GBP loss; one-day simple-return covariance; ACT/365 calendar horizon",
+    "warnings": [
+      "Precise estimates are conditional on model/data, not forecasts",
+      "Delta-normal risk omits nonlinear/volatility risk; inspect full revaluation and stresses",
+      "Greeks summed across different stocks are descriptive; factor exposures retain identity"
+    ]
+  },
+  "allocation": {
+    "success": true,
+    "message": "Optimization terminated successfully",
+    "weights": [
+      0.14347826086956536,
+      0.25652173913043474,
+      0.4,
+      0.2
+    ],
+    "cash_weight": 0.2,
+    "variance": 2.8852173913043486e-05,
+    "volatility": 0.005371421963786078,
+    "expected_return": 0.00013434782608695656,
+    "objective": 2.8852173913043486e-05,
+    "budget_residual": 2.220446049250313e-16,
+    "bound_violation": 0.0,
+    "constraints": {
+      "sum_weights": 1,
+      "long_only": true,
+      "risky_cap": 0.4,
+      "minimum_cash": 0.2,
+      "maximum_cash": 0.2,
+      "target_return": null
+    },
+    "iterations": 3,
+    "warnings": [
+      "Synthetic expectations are assumptions, not reliable forecasts",
+      "Cash is zero-return/zero-variance here: unconstrained minimum risk may be all cash",
+      "Weights are an allocation study; trading accounts are changed only by actual orders"
+    ],
+    "frontier": [
+      {
+        "success": false,
+        "target_return": 0.0,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": false,
+        "target_return": 3.75e-05,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": false,
+        "target_return": 7.5e-05,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": false,
+        "target_return": 0.0001125,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "weights": [
+          0.21973684210526298,
+          0.2605263157894739,
+          0.3197368421052632,
+          0.2
+        ],
+        "cash_weight": 0.2,
+        "variance": 3.0422368421052632e-05,
+        "volatility": 0.005515647597612871,
+        "expected_return": 0.00015,
+        "objective": 3.0422368421052632e-05,
+        "budget_residual": 0.0,
+        "bound_violation": 0.0,
+        "constraints": {
+          "sum_weights": 1,
+          "long_only": true,
+          "risky_cap": 0.4,
+          "minimum_cash": 0.2,
+          "maximum_cash": 0.2,
+          "target_return": 0.00015
+        },
+        "iterations": 3,
+        "warnings": [
+          "Synthetic expectations are assumptions, not reliable forecasts",
+          "Cash is zero-return/zero-variance here: unconstrained minimum risk may be all cash",
+          "Weights are an allocation study; trading accounts are changed only by actual orders"
+        ]
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "weights": [
+          0.38256578947368425,
+          0.30986842105263135,
+          0.10756578947368445,
+          0.2
+        ],
+        "cash_weight": 0.2,
+        "variance": 4.183889802631579e-05,
+        "volatility": 0.006468299469436754,
+        "expected_return": 0.0001875,
+        "objective": 4.183889802631579e-05,
+        "budget_residual": 2.710505431213761e-20,
+        "bound_violation": 0.0,
+        "constraints": {
+          "sum_weights": 1,
+          "long_only": true,
+          "risky_cap": 0.4,
+          "minimum_cash": 0.2,
+          "maximum_cash": 0.2,
+          "target_return": 0.00018749999999999998
+        },
+        "iterations": 3,
+        "warnings": [
+          "Synthetic expectations are assumptions, not reliable forecasts",
+          "Cash is zero-return/zero-variance here: unconstrained minimum risk may be all cash",
+          "Weights are an allocation study; trading accounts are changed only by actual orders"
+        ]
+      },
+      {
+        "success": false,
+        "target_return": 0.000225,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": false,
+        "target_return": 0.0002625,
+        "message": "Allocation constraints are infeasible"
+      },
+      {
+        "success": false,
+        "target_return": 0.0003,
+        "message": "Allocation constraints are infeasible"
+      }
+    ]
+  },
+  "diversification": {
+    "budget": 10000.0,
+    "daily_volatility": 0.01,
+    "rows": [
+      {
+        "label": "Concentrated",
+        "weights": [
+          1,
+          0
+        ],
+        "correlation": 0,
+        "var": 164.48536269514716,
+        "volatility_gbp": 100.0,
+        "expected_return": 0.0,
+        "decomposition": {
+          "variance": 10000.0,
+          "volatility": 100.0,
+          "diagonal_terms": [
+            10000.0,
+            0.0
+          ],
+          "cross_terms": [
+            {
+              "i": 0,
+              "j": 1,
+              "value": 0.0
+            }
+          ],
+          "diagonal_total": 10000.0,
+          "cross_total": 0.0,
+          "marginal_volatility": [
+            0.01,
+            0.0
+          ],
+          "component_volatility": [
+            100.0,
+            0.0
+          ],
+          "warnings": []
+        }
+      },
+      {
+        "label": "Imperfect correlation",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "correlation": 0.25,
+        "var": 130.0370969688893,
+        "volatility_gbp": 79.05694150420949,
+        "expected_return": 0.0,
+        "decomposition": {
+          "variance": 6250.0,
+          "volatility": 79.05694150420949,
+          "diagonal_terms": [
+            2500.0,
+            2500.0
+          ],
+          "cross_terms": [
+            {
+              "i": 0,
+              "j": 1,
+              "value": 1250.0
+            }
+          ],
+          "diagonal_total": 5000.0,
+          "cross_total": 1250.0,
+          "marginal_volatility": [
+            0.007905694150420948,
+            0.007905694150420948
+          ],
+          "component_volatility": [
+            39.52847075210474,
+            39.52847075210474
+          ],
+          "warnings": []
+        }
+      },
+      {
+        "label": "Strong correlation",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "correlation": 0.95,
+        "var": 162.4162820576504,
+        "volatility_gbp": 98.74208829065749,
+        "expected_return": 0.0,
+        "decomposition": {
+          "variance": 9750.0,
+          "volatility": 98.74208829065749,
+          "diagonal_terms": [
+            2500.0,
+            2500.0
+          ],
+          "cross_terms": [
+            {
+              "i": 0,
+              "j": 1,
+              "value": 4750.0
+            }
+          ],
+          "diagonal_total": 5000.0,
+          "cross_total": 4750.0,
+          "marginal_volatility": [
+            0.00987420882906575,
+            0.00987420882906575
+          ],
+          "component_volatility": [
+            49.37104414532875,
+            49.37104414532875
+          ],
+          "warnings": []
+        }
+      },
+      {
+        "label": "Negative correlation",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "correlation": -0.5,
+        "var": 82.24268134757358,
+        "volatility_gbp": 50.0,
+        "expected_return": 0.0,
+        "decomposition": {
+          "variance": 2500.0,
+          "volatility": 50.0,
+          "diagonal_terms": [
+            2500.0,
+            2500.0
+          ],
+          "cross_terms": [
+            {
+              "i": 0,
+              "j": 1,
+              "value": -2500.0
+            }
+          ],
+          "diagonal_total": 5000.0,
+          "cross_total": -2500.0,
+          "marginal_volatility": [
+            0.005,
+            0.005
+          ],
+          "component_volatility": [
+            25.0,
+            25.0
+          ],
+          "warnings": []
+        }
+      },
+      {
+        "label": "Identical exposure",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "correlation": 1,
+        "var": 164.48536269514716,
+        "volatility_gbp": 100.0,
+        "expected_return": 0.0,
+        "decomposition": {
+          "variance": 10000.0,
+          "volatility": 100.0,
+          "diagonal_terms": [
+            2500.0,
+            2500.0
+          ],
+          "cross_terms": [
+            {
+              "i": 0,
+              "j": 1,
+              "value": 5000.0
+            }
+          ],
+          "diagonal_total": 5000.0,
+          "cross_total": 5000.0,
+          "marginal_volatility": [
+            0.01,
+            0.01
+          ],
+          "component_volatility": [
+            50.0,
+            50.0
+          ],
+          "warnings": [
+            "Singular or near-singular covariance: allocations/contributions may be unstable"
+          ]
+        }
+      }
+    ],
+    "label": "Controlled hypothetical equal-volatility, equal-mean allocations; not actual trades"
+  },
+  "tail_example": {
+    "mild": {
+      "var": 10.0,
+      "es": 12.0,
+      "confidence": 0.95,
+      "n": 100,
+      "tail_mass": 5.0,
+      "whole_tail_observations": 5,
+      "boundary_weight": 0.0,
+      "worst": [
+        20.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        0.0,
+        0.0
+      ],
+      "histogram": {
+        "edges": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0
+        ],
+        "counts": [
+          94,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "mean_loss": 0.7,
+      "loss_sd": 2.9318866956210288,
+      "warnings": [
+        "Fewer than 20 effective tail observations; tail estimate is noisy"
+      ],
+      "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+      "interpretation": "Model/data loss threshold, never a maximum possible loss"
+    },
+    "severe": {
+      "var": 10.0,
+      "es": 48.0,
+      "confidence": 0.95,
+      "n": 100,
+      "tail_mass": 5.0,
+      "whole_tail_observations": 5,
+      "boundary_weight": 0.0,
+      "worst": [
+        200.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        0.0,
+        0.0
+      ],
+      "histogram": {
+        "edges": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          200.0
+        ],
+        "counts": [
+          99,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "mean_loss": 2.5,
+      "loss_sd": 20.06932429798716,
+      "warnings": [
+        "Fewer than 20 effective tail observations; tail estimate is noisy"
+      ],
+      "convention": "Inverse empirical CDF VaR; ES averages exact worst 1-alpha mass with fractional boundary atom",
+      "interpretation": "Model/data loss threshold, never a maximum possible loss"
+    }
+  },
+  "replay_frames": 16,
+  "journal_digest": "462353a29798ba7beb9f15729d90d867eddf9b0dc6fafef3882126ef6ddf42ef"
+}

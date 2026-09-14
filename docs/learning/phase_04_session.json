@@ -1,0 +1,3014 @@
+{
+  "lab_schema_version": 1,
+  "result": {
+    "maker_config": {
+      "fee_ticks": "1/10",
+      "half_spread_ticks": "2/1",
+      "hard_limit": 8,
+      "initial_cash_ticks": "1000000/1",
+      "inventory_skew_ticks": "1/2",
+      "max_decisions": 10000,
+      "quote_size": 2,
+      "refresh_us": 1000000,
+      "soft_limit": 4,
+      "strategy": "inventory"
+    },
+    "market_config": {
+      "duration_us": 5000000,
+      "informed_cost_ticks": 0.25,
+      "informed_minimum_edge_ticks": 0.25,
+      "informed_prior_sd_ticks": 8.0,
+      "informed_rate_per_second": 1,
+      "informed_uncertainty_multiplier": 0.5,
+      "initial_latent_ticks": 10000,
+      "latent_sigma_ticks": 2.0,
+      "latent_step_us": 1000000,
+      "liquidity_max_quantity": 3,
+      "liquidity_rate_per_second": 0.6,
+      "markout_horizons_events": [
+        1,
+        5,
+        20
+      ],
+      "max_events": 10000,
+      "noise_max_quantity": 4,
+      "noise_price_radius_ticks": 2,
+      "noise_rate_per_second": 1.0,
+      "opening_reference_ticks": 10000,
+      "seed": 42,
+      "signal_noise_ticks": 2.0,
+      "tick_size": "0.01"
+    },
+    "python_version": "3.14.0",
+    "records": [
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 2,
+                  "order_id": "mm-0-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 1,
+                  "order_id": "mm-0-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "quote",
+        "market": null,
+        "own_quotes": [
+          {
+            "arrival_sequence": 1,
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 2,
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [
+          {
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "quantity": 2,
+            "side": "buy"
+          },
+          {
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "plan": {
+          "adjustments": [],
+          "ask_size": 2,
+          "ask_ticks": 10002,
+          "bid_size": 2,
+          "bid_ticks": 9998,
+          "centre_ticks": "10000/1"
+        },
+        "public_event_number": 1,
+        "reference_source": "public opening fallback",
+        "reports": [
+          {
+            "arrival_sequence": 1,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-0-buy",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          },
+          {
+            "arrival_sequence": 2,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-0-sell",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        ],
+        "request": {
+          "ask_distance_ticks": "2/1",
+          "ask_size": 2,
+          "bid_distance_ticks": "2/1",
+          "bid_size": 2,
+          "centre_shift_ticks": "0/1"
+        },
+        "time_us": 0
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 2,
+                  "order_id": "mm-0-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 1,
+                  "order_id": "mm-0-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 2,
+                    "order_id": "mm-0-sell",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 1,
+                    "order_id": "mm-0-buy",
+                    "price_ticks": 9998,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9998
+              }
+            ]
+          },
+          "event": {
+            "kind": "informed_arrival",
+            "sequence": 4,
+            "time_us": 9521
+          },
+          "informed": {
+            "decision": {
+              "buy_edge_ticks": 1.1883677441310283,
+              "estimated_value_ticks": 10003.188367744131,
+              "order": null,
+              "posterior_sd_ticks": 1.9402850002906638,
+              "prior_ticks": 10000.0,
+              "reason": "hold: no available quote clears costs, minimum edge and uncertainty buffer",
+              "sell_edge_ticks": -5.188367744131028,
+              "signal_weight": 0.9411764705882353,
+              "threshold_ticks": 1.4701425001453319
+            },
+            "error_ticks": 3.387640728140468,
+            "signal": {
+              "noise_sd_ticks": 2.0,
+              "time_us": 9521,
+              "value_ticks": 10003.38764072814
+            }
+          },
+          "latent_after_ticks": 10000.0,
+          "latent_before_ticks": 10000.0,
+          "order": null,
+          "reason": "hold: no available quote clears costs, minimum edge and uncertainty buffer",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 1,
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 2,
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 1,
+        "reference_source": "public opening fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 9521
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 2,
+                  "order_id": "mm-0-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 3,
+                  "order_id": "noise_arrival-2",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 1,
+                  "order_id": "mm-0-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 2,
+                    "order_id": "mm-0-sell",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 3,
+                    "order_id": "noise_arrival-2",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 1,
+                    "order_id": "mm-0-buy",
+                    "price_ticks": 9998,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9998
+              }
+            ]
+          },
+          "event": {
+            "kind": "noise_arrival",
+            "sequence": 2,
+            "time_us": 269340
+          },
+          "informed": null,
+          "latent_after_ticks": 10000.0,
+          "latent_before_ticks": 10000.0,
+          "order": {
+            "order_id": "noise_arrival-2",
+            "price_ticks": 10001,
+            "quantity": 1,
+            "side": "buy"
+          },
+          "reason": "random buy/size; public midpoint, rounded half-up 10000 ticks +1",
+          "report": {
+            "arrival_sequence": 3,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "noise_arrival-2",
+            "requested_quantity": 1,
+            "resting_quantity": 1,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 1,
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 2,
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 2,
+        "reference_source": "public opening fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 269340
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 2,
+                  "order_id": "mm-0-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 3,
+                  "order_id": "noise_arrival-2",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 1,
+                  "order_id": "mm-0-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 2,
+                    "order_id": "mm-0-sell",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 3,
+                    "order_id": "noise_arrival-2",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 1,
+                    "order_id": "mm-0-buy",
+                    "price_ticks": 9998,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9998
+              }
+            ]
+          },
+          "event": {
+            "kind": "latent_update",
+            "sequence": 1,
+            "time_us": 1000000
+          },
+          "informed": null,
+          "latent_after_ticks": 9999.340705078173,
+          "latent_before_ticks": 10000.0,
+          "order": null,
+          "reason": "scheduled Gaussian value update; no direct order or perfect observation",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 1,
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 2,
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 2,
+        "reference_source": "public opening fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 1000000
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 5,
+                  "order_id": "mm-1-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 3,
+                  "order_id": "noise_arrival-2",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 4,
+                  "order_id": "mm-1-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [
+          {
+            "arrival_sequence": 1,
+            "order_id": "mm-0-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 2,
+            "order_id": "mm-0-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "fills": [],
+        "kind": "quote",
+        "market": null,
+        "own_quotes": [
+          {
+            "arrival_sequence": 4,
+            "order_id": "mm-1-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 5,
+            "order_id": "mm-1-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [
+          {
+            "order_id": "mm-1-buy",
+            "price_ticks": 9998,
+            "quantity": 2,
+            "side": "buy"
+          },
+          {
+            "order_id": "mm-1-sell",
+            "price_ticks": 10002,
+            "quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "plan": {
+          "adjustments": [],
+          "ask_size": 2,
+          "ask_ticks": 10002,
+          "bid_size": 2,
+          "bid_ticks": 9998,
+          "centre_ticks": "10000/1"
+        },
+        "public_event_number": 3,
+        "reference_source": "public opening fallback",
+        "reports": [
+          {
+            "arrival_sequence": 4,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-1-buy",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          },
+          {
+            "arrival_sequence": 5,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-1-sell",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        ],
+        "request": {
+          "ask_distance_ticks": "2/1",
+          "ask_size": 2,
+          "bid_distance_ticks": "2/1",
+          "bid_size": 2,
+          "centre_shift_ticks": "0/1"
+        },
+        "time_us": 1000000
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10001/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 5,
+                  "order_id": "mm-1-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 4,
+                  "order_id": "mm-1-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 5,
+                    "order_id": "mm-1-sell",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 4,
+                    "order_id": "mm-1-buy",
+                    "price_ticks": 9998,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9998
+              }
+            ]
+          },
+          "event": {
+            "kind": "informed_arrival",
+            "sequence": 5,
+            "time_us": 1066817
+          },
+          "informed": {
+            "decision": {
+              "buy_edge_ticks": -3.631859958784844,
+              "estimated_value_ticks": 9998.368140041215,
+              "order": {
+                "order_id": "informed_arrival-5",
+                "price_ticks": 10001,
+                "quantity": 1,
+                "side": "sell"
+              },
+              "posterior_sd_ticks": 1.9402850002906638,
+              "prior_ticks": 10002.0,
+              "reason": "sell: executable bid minus estimated value strictly exceeds the hurdle",
+              "sell_edge_ticks": 2.631859958784844,
+              "signal_weight": 0.9411764705882353,
+              "threshold_ticks": 1.4701425001453319
+            },
+            "error_ticks": -1.1995562843821972,
+            "signal": {
+              "noise_sd_ticks": 2.0,
+              "time_us": 1066817,
+              "value_ticks": 9998.141148793791
+            }
+          },
+          "latent_after_ticks": 9999.340705078173,
+          "latent_before_ticks": 9999.340705078173,
+          "order": {
+            "order_id": "informed_arrival-5",
+            "price_ticks": 10001,
+            "quantity": 1,
+            "side": "sell"
+          },
+          "reason": "sell: executable bid minus estimated value strictly exceeds the hurdle",
+          "report": {
+            "arrival_sequence": 6,
+            "buyer_filled_quantity": 1,
+            "cancelled_quantity": 0,
+            "order_id": "informed_arrival-5",
+            "requested_quantity": 1,
+            "resting_quantity": 0,
+            "seller_filled_quantity": 1,
+            "trades": [
+              {
+                "aggressor_side": "sell",
+                "maker_order_id": "noise_arrival-2",
+                "price_ticks": 10001,
+                "quantity": 1,
+                "taker_order_id": "informed_arrival-5",
+                "trade_id": 1
+              }
+            ]
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 4,
+            "order_id": "mm-1-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 5,
+            "order_id": "mm-1-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 4,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 1066817
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10001/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 5,
+                  "order_id": "mm-1-sell",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 4,
+                  "order_id": "mm-1-buy",
+                  "price_ticks": 9998,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9998
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 5,
+                    "order_id": "mm-1-sell",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 4,
+                    "order_id": "mm-1-buy",
+                    "price_ticks": 9998,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9998
+              }
+            ]
+          },
+          "event": {
+            "kind": "latent_update",
+            "sequence": 7,
+            "time_us": 2000000
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.57351444311,
+          "latent_before_ticks": 9999.340705078173,
+          "order": null,
+          "reason": "scheduled Gaussian value update; no direct order or perfect observation",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 4,
+            "order_id": "mm-1-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 5,
+            "order_id": "mm-1-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 4,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 2000000
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10001/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 8,
+                  "order_id": "mm-2-sell",
+                  "price_ticks": 10003,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10003
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 7,
+                  "order_id": "mm-2-buy",
+                  "price_ticks": 9999,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9999
+            }
+          ]
+        },
+        "cancelled": [
+          {
+            "arrival_sequence": 4,
+            "order_id": "mm-1-buy",
+            "price_ticks": 9998,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 5,
+            "order_id": "mm-1-sell",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "fills": [],
+        "kind": "quote",
+        "market": null,
+        "own_quotes": [
+          {
+            "arrival_sequence": 7,
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 8,
+            "order_id": "mm-2-sell",
+            "price_ticks": 10003,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [
+          {
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "quantity": 2,
+            "side": "buy"
+          },
+          {
+            "order_id": "mm-2-sell",
+            "price_ticks": 10003,
+            "quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "plan": {
+          "adjustments": [],
+          "ask_size": 2,
+          "ask_ticks": 10003,
+          "bid_size": 2,
+          "bid_ticks": 9999,
+          "centre_ticks": "10001/1"
+        },
+        "public_event_number": 5,
+        "reference_source": "last transaction fallback",
+        "reports": [
+          {
+            "arrival_sequence": 7,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-2-buy",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          },
+          {
+            "arrival_sequence": 8,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-2-sell",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        ],
+        "request": {
+          "ask_distance_ticks": "2/1",
+          "ask_size": 2,
+          "bid_distance_ticks": "2/1",
+          "bid_size": 2,
+          "centre_shift_ticks": "0/1"
+        },
+        "time_us": 2000000
+      },
+      {
+        "account": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10001/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 8,
+                  "order_id": "mm-2-sell",
+                  "price_ticks": 10003,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10003
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 9,
+                  "order_id": "noise_arrival-6",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 7,
+                  "order_id": "mm-2-buy",
+                  "price_ticks": 9999,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9999
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 8,
+                    "order_id": "mm-2-sell",
+                    "price_ticks": 10003,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10003
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 9,
+                    "order_id": "noise_arrival-6",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 7,
+                    "order_id": "mm-2-buy",
+                    "price_ticks": 9999,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9999
+              }
+            ]
+          },
+          "event": {
+            "kind": "noise_arrival",
+            "sequence": 6,
+            "time_us": 2066857
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.57351444311,
+          "latent_before_ticks": 9998.57351444311,
+          "order": {
+            "order_id": "noise_arrival-6",
+            "price_ticks": 10002,
+            "quantity": 2,
+            "side": "buy"
+          },
+          "reason": "random buy/size; public midpoint, rounded half-up 10001 ticks +1",
+          "report": {
+            "arrival_sequence": 9,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "noise_arrival-6",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 7,
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 8,
+            "order_id": "mm-2-sell",
+            "price_ticks": 10003,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 6,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 2066857
+      },
+      {
+        "account": {
+          "cash_ticks": "5100029/5",
+          "execution_cash_ticks": "20006/1",
+          "fees_ticks": "1/5",
+          "inventory": -2,
+          "inventory_movement_ticks": "-4/1",
+          "marked_value_ticks": "4999999/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "-1/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10003/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "-1/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 9,
+                  "order_id": "noise_arrival-6",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 7,
+                  "order_id": "mm-2-buy",
+                  "price_ticks": 9999,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9999
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [
+          {
+            "fee_ticks": "1/5",
+            "midpoint_before_ticks": "20005/2",
+            "price_ticks": 10003,
+            "public_event_number": 7,
+            "quantity": 2,
+            "reference_before_ticks": "10001/1",
+            "side": "sell",
+            "time_us": 2451686,
+            "trade_id": 2
+          }
+        ],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 9,
+                    "order_id": "noise_arrival-6",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 7,
+                    "order_id": "mm-2-buy",
+                    "price_ticks": 9999,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9999
+              }
+            ]
+          },
+          "event": {
+            "kind": "liquidity_arrival",
+            "sequence": 3,
+            "time_us": 2451686
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.57351444311,
+          "latent_before_ticks": 9998.57351444311,
+          "order": {
+            "order_id": "liquidity_arrival-3",
+            "quantity": 3,
+            "side": "buy"
+          },
+          "reason": "external buy need for 3; requests immediate execution, no price signal",
+          "report": {
+            "arrival_sequence": 10,
+            "buyer_filled_quantity": 2,
+            "cancelled_quantity": 1,
+            "order_id": "liquidity_arrival-3",
+            "requested_quantity": 3,
+            "resting_quantity": 0,
+            "seller_filled_quantity": 2,
+            "trades": [
+              {
+                "aggressor_side": "buy",
+                "maker_order_id": "mm-2-sell",
+                "price_ticks": 10003,
+                "quantity": 2,
+                "taker_order_id": "liquidity_arrival-3",
+                "trade_id": 2
+              }
+            ]
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 7,
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "remaining_quantity": 2,
+            "side": "buy"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 7,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 2451686
+      },
+      {
+        "account": {
+          "cash_ticks": "5100029/5",
+          "execution_cash_ticks": "20006/1",
+          "fees_ticks": "1/5",
+          "inventory": -2,
+          "inventory_movement_ticks": "-4/1",
+          "marked_value_ticks": "4999999/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "-1/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10003/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "-1/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 9,
+                  "order_id": "noise_arrival-6",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 7,
+                  "order_id": "mm-2-buy",
+                  "price_ticks": 9999,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 9999
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 9,
+                    "order_id": "noise_arrival-6",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 7,
+                    "order_id": "mm-2-buy",
+                    "price_ticks": 9999,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 9999
+              }
+            ]
+          },
+          "event": {
+            "kind": "latent_update",
+            "sequence": 9,
+            "time_us": 3000000
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.301677007996,
+          "latent_before_ticks": 9998.57351444311,
+          "order": null,
+          "reason": "scheduled Gaussian value update; no direct order or perfect observation",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 7,
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "remaining_quantity": 2,
+            "side": "buy"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 7,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 3000000
+      },
+      {
+        "account": {
+          "cash_ticks": "5100029/5",
+          "execution_cash_ticks": "20006/1",
+          "fees_ticks": "1/5",
+          "inventory": -2,
+          "inventory_movement_ticks": "-4/1",
+          "marked_value_ticks": "4999999/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "-1/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10003/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "-1/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 12,
+                  "order_id": "mm-3-sell",
+                  "price_ticks": 10006,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10006
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 9,
+                  "order_id": "noise_arrival-6",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                },
+                {
+                  "arrival_sequence": 11,
+                  "order_id": "mm-3-buy",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ]
+        },
+        "cancelled": [
+          {
+            "arrival_sequence": 7,
+            "order_id": "mm-2-buy",
+            "price_ticks": 9999,
+            "remaining_quantity": 2,
+            "side": "buy"
+          }
+        ],
+        "fills": [],
+        "kind": "quote",
+        "market": null,
+        "own_quotes": [
+          {
+            "arrival_sequence": 11,
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 12,
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [
+          {
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "quantity": 2,
+            "side": "buy"
+          },
+          {
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "plan": {
+          "adjustments": [],
+          "ask_size": 2,
+          "ask_ticks": 10006,
+          "bid_size": 2,
+          "bid_ticks": 10002,
+          "centre_ticks": "10004/1"
+        },
+        "public_event_number": 8,
+        "reference_source": "last transaction fallback",
+        "reports": [
+          {
+            "arrival_sequence": 11,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-3-buy",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          },
+          {
+            "arrival_sequence": 12,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-3-sell",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        ],
+        "request": {
+          "ask_distance_ticks": "2/1",
+          "ask_size": 2,
+          "bid_distance_ticks": "2/1",
+          "bid_size": 2,
+          "centre_shift_ticks": "1/1"
+        },
+        "time_us": 3000000
+      },
+      {
+        "account": {
+          "cash_ticks": "5100029/5",
+          "execution_cash_ticks": "20006/1",
+          "fees_ticks": "1/5",
+          "inventory": -2,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "5000009/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "-1/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "9/5",
+          "unrealised_pnl_ticks": "2/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 12,
+                  "order_id": "mm-3-sell",
+                  "price_ticks": 10006,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10006
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 9,
+                  "order_id": "noise_arrival-6",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                },
+                {
+                  "arrival_sequence": 11,
+                  "order_id": "mm-3-buy",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 12,
+                    "order_id": "mm-3-sell",
+                    "price_ticks": 10006,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10006
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 9,
+                    "order_id": "noise_arrival-6",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  },
+                  {
+                    "arrival_sequence": 11,
+                    "order_id": "mm-3-buy",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ]
+          },
+          "event": {
+            "kind": "liquidity_arrival",
+            "sequence": 11,
+            "time_us": 3438500
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.301677007996,
+          "latent_before_ticks": 9998.301677007996,
+          "order": {
+            "order_id": "liquidity_arrival-11",
+            "quantity": 1,
+            "side": "sell"
+          },
+          "reason": "external sell need for 1; requests immediate execution, no price signal",
+          "report": {
+            "arrival_sequence": 13,
+            "buyer_filled_quantity": 1,
+            "cancelled_quantity": 0,
+            "order_id": "liquidity_arrival-11",
+            "requested_quantity": 1,
+            "resting_quantity": 0,
+            "seller_filled_quantity": 1,
+            "trades": [
+              {
+                "aggressor_side": "sell",
+                "maker_order_id": "noise_arrival-6",
+                "price_ticks": 10002,
+                "quantity": 1,
+                "taker_order_id": "liquidity_arrival-11",
+                "trade_id": 3
+              }
+            ]
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 11,
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 12,
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 9,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 3438500
+      },
+      {
+        "account": {
+          "cash_ticks": "10100037/10",
+          "execution_cash_ticks": "10004/1",
+          "fees_ticks": "3/10",
+          "inventory": -1,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "10000017/10",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "7/10",
+          "realised_trading_pnl_ticks": "1/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "17/10",
+          "unrealised_pnl_ticks": "1/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 12,
+                  "order_id": "mm-3-sell",
+                  "price_ticks": 10006,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10006
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 11,
+                  "order_id": "mm-3-buy",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [
+          {
+            "fee_ticks": "1/10",
+            "midpoint_before_ticks": "10004/1",
+            "price_ticks": 10002,
+            "public_event_number": 10,
+            "quantity": 1,
+            "reference_before_ticks": "10002/1",
+            "side": "buy",
+            "time_us": 3656763,
+            "trade_id": 5
+          }
+        ],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 12,
+                    "order_id": "mm-3-sell",
+                    "price_ticks": 10006,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10006
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 11,
+                    "order_id": "mm-3-buy",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ]
+          },
+          "event": {
+            "kind": "liquidity_arrival",
+            "sequence": 13,
+            "time_us": 3656763
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.301677007996,
+          "latent_before_ticks": 9998.301677007996,
+          "order": {
+            "order_id": "liquidity_arrival-13",
+            "quantity": 2,
+            "side": "sell"
+          },
+          "reason": "external sell need for 2; requests immediate execution, no price signal",
+          "report": {
+            "arrival_sequence": 14,
+            "buyer_filled_quantity": 2,
+            "cancelled_quantity": 0,
+            "order_id": "liquidity_arrival-13",
+            "requested_quantity": 2,
+            "resting_quantity": 0,
+            "seller_filled_quantity": 2,
+            "trades": [
+              {
+                "aggressor_side": "sell",
+                "maker_order_id": "noise_arrival-6",
+                "price_ticks": 10002,
+                "quantity": 1,
+                "taker_order_id": "liquidity_arrival-13",
+                "trade_id": 4
+              },
+              {
+                "aggressor_side": "sell",
+                "maker_order_id": "mm-3-buy",
+                "price_ticks": 10002,
+                "quantity": 1,
+                "taker_order_id": "liquidity_arrival-13",
+                "trade_id": 5
+              }
+            ]
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 11,
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 12,
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 10,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 3656763
+      },
+      {
+        "account": {
+          "cash_ticks": "10100037/10",
+          "execution_cash_ticks": "10004/1",
+          "fees_ticks": "3/10",
+          "inventory": -1,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "10000017/10",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "7/10",
+          "realised_trading_pnl_ticks": "1/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "17/10",
+          "unrealised_pnl_ticks": "1/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 12,
+                  "order_id": "mm-3-sell",
+                  "price_ticks": 10006,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10006
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 11,
+                  "order_id": "mm-3-buy",
+                  "price_ticks": 10002,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10002
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 12,
+                    "order_id": "mm-3-sell",
+                    "price_ticks": 10006,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10006
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 11,
+                    "order_id": "mm-3-buy",
+                    "price_ticks": 10002,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10002
+              }
+            ]
+          },
+          "event": {
+            "kind": "latent_update",
+            "sequence": 12,
+            "time_us": 4000000
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.42504561584,
+          "latent_before_ticks": 9998.301677007996,
+          "order": null,
+          "reason": "scheduled Gaussian value update; no direct order or perfect observation",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 11,
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 12,
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 10,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 4000000
+      },
+      {
+        "account": {
+          "cash_ticks": "10100037/10",
+          "execution_cash_ticks": "10004/1",
+          "fees_ticks": "3/10",
+          "inventory": -1,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "10000017/10",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "7/10",
+          "realised_trading_pnl_ticks": "1/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "17/10",
+          "unrealised_pnl_ticks": "1/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 16,
+                  "order_id": "mm-4-sell",
+                  "price_ticks": 10005,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10005
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 15,
+                  "order_id": "mm-4-buy",
+                  "price_ticks": 10000,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10000
+            }
+          ]
+        },
+        "cancelled": [
+          {
+            "arrival_sequence": 11,
+            "order_id": "mm-3-buy",
+            "price_ticks": 10002,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 12,
+            "order_id": "mm-3-sell",
+            "price_ticks": 10006,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "fills": [],
+        "kind": "quote",
+        "market": null,
+        "own_quotes": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [
+          {
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "quantity": 2,
+            "side": "buy"
+          },
+          {
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "plan": {
+          "adjustments": [],
+          "ask_size": 2,
+          "ask_ticks": 10005,
+          "bid_size": 2,
+          "bid_ticks": 10000,
+          "centre_ticks": "20005/2"
+        },
+        "public_event_number": 11,
+        "reference_source": "last transaction fallback",
+        "reports": [
+          {
+            "arrival_sequence": 15,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-4-buy",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          },
+          {
+            "arrival_sequence": 16,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "mm-4-sell",
+            "requested_quantity": 2,
+            "resting_quantity": 2,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        ],
+        "request": {
+          "ask_distance_ticks": "2/1",
+          "ask_size": 2,
+          "bid_distance_ticks": "2/1",
+          "bid_size": 2,
+          "centre_shift_ticks": "1/2"
+        },
+        "time_us": 4000000
+      },
+      {
+        "account": {
+          "cash_ticks": "10100037/10",
+          "execution_cash_ticks": "10004/1",
+          "fees_ticks": "3/10",
+          "inventory": -1,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "10000017/10",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "7/10",
+          "realised_trading_pnl_ticks": "1/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "17/10",
+          "unrealised_pnl_ticks": "1/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 17,
+                  "order_id": "noise_arrival-10",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 4,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 16,
+                  "order_id": "mm-4-sell",
+                  "price_ticks": 10005,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10005
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 15,
+                  "order_id": "mm-4-buy",
+                  "price_ticks": 10000,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10000
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 17,
+                    "order_id": "noise_arrival-10",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 4,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 16,
+                    "order_id": "mm-4-sell",
+                    "price_ticks": 10005,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10005
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 15,
+                    "order_id": "mm-4-buy",
+                    "price_ticks": 10000,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10000
+              }
+            ]
+          },
+          "event": {
+            "kind": "noise_arrival",
+            "sequence": 10,
+            "time_us": 4209911
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.42504561584,
+          "latent_before_ticks": 9998.42504561584,
+          "order": {
+            "order_id": "noise_arrival-10",
+            "price_ticks": 10001,
+            "quantity": 4,
+            "side": "sell"
+          },
+          "reason": "random sell/size; public midpoint, rounded half-up 10003 ticks -2",
+          "report": {
+            "arrival_sequence": 17,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "noise_arrival-10",
+            "requested_quantity": 4,
+            "resting_quantity": 4,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 12,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 4209911
+      },
+      {
+        "account": {
+          "cash_ticks": "10100037/10",
+          "execution_cash_ticks": "10004/1",
+          "fees_ticks": "3/10",
+          "inventory": -1,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "10000017/10",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "7/10",
+          "realised_trading_pnl_ticks": "1/1",
+          "reference_ticks": "10002/1",
+          "spread_capture_ticks": "4/1",
+          "total_pnl_ticks": "17/10",
+          "unrealised_pnl_ticks": "1/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 17,
+                  "order_id": "noise_arrival-10",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 4,
+                  "side": "sell"
+                },
+                {
+                  "arrival_sequence": 18,
+                  "order_id": "noise_arrival-16",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 3,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 16,
+                  "order_id": "mm-4-sell",
+                  "price_ticks": 10005,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10005
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 15,
+                  "order_id": "mm-4-buy",
+                  "price_ticks": 10000,
+                  "remaining_quantity": 2,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10000
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 17,
+                    "order_id": "noise_arrival-10",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 4,
+                    "side": "sell"
+                  },
+                  {
+                    "arrival_sequence": 18,
+                    "order_id": "noise_arrival-16",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 3,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 16,
+                    "order_id": "mm-4-sell",
+                    "price_ticks": 10005,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10005
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 15,
+                    "order_id": "mm-4-buy",
+                    "price_ticks": 10000,
+                    "remaining_quantity": 2,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10000
+              }
+            ]
+          },
+          "event": {
+            "kind": "noise_arrival",
+            "sequence": 16,
+            "time_us": 4471500
+          },
+          "informed": null,
+          "latent_after_ticks": 9998.42504561584,
+          "latent_before_ticks": 9998.42504561584,
+          "order": {
+            "order_id": "noise_arrival-16",
+            "price_ticks": 10001,
+            "quantity": 3,
+            "side": "sell"
+          },
+          "reason": "random sell/size; public midpoint, rounded half-up 10001 ticks +0",
+          "report": {
+            "arrival_sequence": 18,
+            "buyer_filled_quantity": 0,
+            "cancelled_quantity": 0,
+            "order_id": "noise_arrival-16",
+            "requested_quantity": 3,
+            "resting_quantity": 3,
+            "seller_filled_quantity": 0,
+            "trades": []
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 2,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 13,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 4471500
+      },
+      {
+        "account": {
+          "cash_ticks": "5000018/5",
+          "execution_cash_ticks": "4/1",
+          "fees_ticks": "2/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "5000018/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "18/5",
+          "realised_trading_pnl_ticks": "4/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "6/1",
+          "total_pnl_ticks": "18/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 17,
+                  "order_id": "noise_arrival-10",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 4,
+                  "side": "sell"
+                },
+                {
+                  "arrival_sequence": 18,
+                  "order_id": "noise_arrival-16",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 3,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 16,
+                  "order_id": "mm-4-sell",
+                  "price_ticks": 10005,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10005
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 15,
+                  "order_id": "mm-4-buy",
+                  "price_ticks": 10000,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10000
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [
+          {
+            "fee_ticks": "1/10",
+            "midpoint_before_ticks": "20001/2",
+            "price_ticks": 10000,
+            "public_event_number": 14,
+            "quantity": 1,
+            "reference_before_ticks": "10002/1",
+            "side": "buy",
+            "time_us": 4485043,
+            "trade_id": 6
+          }
+        ],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 17,
+                    "order_id": "noise_arrival-10",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 4,
+                    "side": "sell"
+                  },
+                  {
+                    "arrival_sequence": 18,
+                    "order_id": "noise_arrival-16",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 3,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 16,
+                    "order_id": "mm-4-sell",
+                    "price_ticks": 10005,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10005
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 15,
+                    "order_id": "mm-4-buy",
+                    "price_ticks": 10000,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10000
+              }
+            ]
+          },
+          "event": {
+            "kind": "informed_arrival",
+            "sequence": 8,
+            "time_us": 4485043
+          },
+          "informed": {
+            "decision": {
+              "buy_edge_ticks": -2.4836939284450636,
+              "estimated_value_ticks": 9998.516306071555,
+              "order": {
+                "order_id": "informed_arrival-8",
+                "price_ticks": 10000,
+                "quantity": 1,
+                "side": "sell"
+              },
+              "posterior_sd_ticks": 1.9402850002906638,
+              "prior_ticks": 10001.0,
+              "reason": "sell: executable bid minus estimated value strictly exceeds the hurdle",
+              "sell_edge_ticks": 1.4836939284450636,
+              "signal_weight": 0.9411764705882353,
+              "threshold_ticks": 1.4701425001453319
+            },
+            "error_ticks": -0.06397041481432097,
+            "signal": {
+              "noise_sd_ticks": 2.0,
+              "time_us": 4485043,
+              "value_ticks": 9998.361075201026
+            }
+          },
+          "latent_after_ticks": 9998.42504561584,
+          "latent_before_ticks": 9998.42504561584,
+          "order": {
+            "order_id": "informed_arrival-8",
+            "price_ticks": 10000,
+            "quantity": 1,
+            "side": "sell"
+          },
+          "reason": "sell: executable bid minus estimated value strictly exceeds the hurdle",
+          "report": {
+            "arrival_sequence": 19,
+            "buyer_filled_quantity": 1,
+            "cancelled_quantity": 0,
+            "order_id": "informed_arrival-8",
+            "requested_quantity": 1,
+            "resting_quantity": 0,
+            "seller_filled_quantity": 1,
+            "trades": [
+              {
+                "aggressor_side": "sell",
+                "maker_order_id": "mm-4-buy",
+                "price_ticks": 10000,
+                "quantity": 1,
+                "taker_order_id": "informed_arrival-8",
+                "trade_id": 6
+              }
+            ]
+          }
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 14,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 4485043
+      },
+      {
+        "account": {
+          "cash_ticks": "5000018/5",
+          "execution_cash_ticks": "4/1",
+          "fees_ticks": "2/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "5000018/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "18/5",
+          "realised_trading_pnl_ticks": "4/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "6/1",
+          "total_pnl_ticks": "18/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 17,
+                  "order_id": "noise_arrival-10",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 4,
+                  "side": "sell"
+                },
+                {
+                  "arrival_sequence": 18,
+                  "order_id": "noise_arrival-16",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 3,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10001
+            },
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 16,
+                  "order_id": "mm-4-sell",
+                  "price_ticks": 10005,
+                  "remaining_quantity": 2,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10005
+            }
+          ],
+          "bids": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 15,
+                  "order_id": "mm-4-buy",
+                  "price_ticks": 10000,
+                  "remaining_quantity": 1,
+                  "side": "buy"
+                }
+              ],
+              "price_ticks": 10000
+            }
+          ]
+        },
+        "cancelled": [],
+        "fills": [],
+        "kind": "market",
+        "market": {
+          "book_after": {
+            "asks": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 17,
+                    "order_id": "noise_arrival-10",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 4,
+                    "side": "sell"
+                  },
+                  {
+                    "arrival_sequence": 18,
+                    "order_id": "noise_arrival-16",
+                    "price_ticks": 10001,
+                    "remaining_quantity": 3,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10001
+              },
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 16,
+                    "order_id": "mm-4-sell",
+                    "price_ticks": 10005,
+                    "remaining_quantity": 2,
+                    "side": "sell"
+                  }
+                ],
+                "price_ticks": 10005
+              }
+            ],
+            "bids": [
+              {
+                "orders": [
+                  {
+                    "arrival_sequence": 15,
+                    "order_id": "mm-4-buy",
+                    "price_ticks": 10000,
+                    "remaining_quantity": 1,
+                    "side": "buy"
+                  }
+                ],
+                "price_ticks": 10000
+              }
+            ]
+          },
+          "event": {
+            "kind": "latent_update",
+            "sequence": 15,
+            "time_us": 5000000
+          },
+          "informed": null,
+          "latent_after_ticks": 9997.214215136806,
+          "latent_before_ticks": 9998.42504561584,
+          "order": null,
+          "reason": "scheduled Gaussian value update; no direct order or perfect observation",
+          "report": null
+        },
+        "own_quotes": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 14,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 5000000
+      },
+      {
+        "account": {
+          "cash_ticks": "5000018/5",
+          "execution_cash_ticks": "4/1",
+          "fees_ticks": "2/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "-2/1",
+          "marked_value_ticks": "5000018/5",
+          "maximum_absolute_inventory": 2,
+          "realised_pnl_ticks": "18/5",
+          "realised_trading_pnl_ticks": "4/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "6/1",
+          "total_pnl_ticks": "18/5",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "book_after": {
+          "asks": [
+            {
+              "orders": [
+                {
+                  "arrival_sequence": 17,
+                  "order_id": "noise_arrival-10",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 4,
+                  "side": "sell"
+                },
+                {
+                  "arrival_sequence": 18,
+                  "order_id": "noise_arrival-16",
+                  "price_ticks": 10001,
+                  "remaining_quantity": 3,
+                  "side": "sell"
+                }
+              ],
+              "price_ticks": 10001
+            }
+          ],
+          "bids": []
+        },
+        "cancelled": [
+          {
+            "arrival_sequence": 15,
+            "order_id": "mm-4-buy",
+            "price_ticks": 10000,
+            "remaining_quantity": 1,
+            "side": "buy"
+          },
+          {
+            "arrival_sequence": 16,
+            "order_id": "mm-4-sell",
+            "price_ticks": 10005,
+            "remaining_quantity": 2,
+            "side": "sell"
+          }
+        ],
+        "fills": [],
+        "kind": "end",
+        "market": null,
+        "own_quotes": [],
+        "placed": [],
+        "plan": null,
+        "public_event_number": 15,
+        "reference_source": "last transaction fallback",
+        "reports": [],
+        "request": null,
+        "time_us": 5000000
+      }
+    ],
+    "simulator_version": "0.4.0"
+  }
+}

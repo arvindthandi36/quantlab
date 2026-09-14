@@ -1,0 +1,13 @@
+{
+  "development_outcome_digest": "48456a4eed5dd7779737de58c3b331fc268936ba89b63505119d84ad86af0248",
+  "evaluation_runs": 400,
+  "selected_variant": {
+    "configuration": {
+      "mean": 0.0,
+      "sd": 1.0,
+      "variant_id": "49"
+    },
+    "name": "variant-49"
+  },
+  "selection_rule": "highest development mean; original order breaks ties"
+}

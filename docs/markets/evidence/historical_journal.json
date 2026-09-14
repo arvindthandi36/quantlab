@@ -1,0 +1,85 @@
+{
+  "schema": "quantlab-environment-v1",
+  "environment": "HISTORICAL",
+  "quantlab_version": "1.0.0",
+  "execution_version": "bar-next-close-v1",
+  "datasets": [
+    {
+      "instrument": "TEACHING-FIXTURE",
+      "fingerprint": "e3cfecbde6eab755be5b0a55ef4462b446f2edf08040050f20cbb756e2a42632",
+      "metadata": {
+        "corporate_actions": "none_in_session",
+        "currency": "GBP",
+        "data_kind": "artificial_fixture",
+        "frequency_seconds": 60,
+        "instrument": "TEACHING-FIXTURE",
+        "licence": "Original artificial test data; no third-party market observations",
+        "price_basis": "raw",
+        "source": "QuantLab generated test fixture; NOT historical market data",
+        "tick_size": "0.01",
+        "timezone": "UTC",
+        "transformations": "Artificial OHLC ranges constructed around a seeded synthetic close path"
+      },
+      "timestamp_range": [
+        "2020-01-02T09:30:00+00:00",
+        "2020-01-02T09:34:00+00:00"
+      ]
+    }
+  ],
+  "execution": {
+    "participation": "0.10",
+    "slippage_ticks": 1,
+    "fee_per_unit": "0.001",
+    "position_limit": 100,
+    "initial_cash": "10000"
+  },
+  "model": {
+    "window": 20,
+    "z_window": 12,
+    "mode": "rolling",
+    "block": 10
+  },
+  "actions": [
+    {
+      "kind": "order",
+      "payload": {
+        "instrument": "TEACHING-FIXTURE",
+        "side": "buy",
+        "quantity": 3
+      },
+      "state_digest": "be55781e1d0e8b291a40db37fab1b8d012bb87bbf8a4f9be543d5ae857952164"
+    },
+    {
+      "kind": "step",
+      "payload": {},
+      "state_digest": "1241fcc0c1199d68b496208f341c05f66eb64e76cb99d20218792b67af28146c"
+    },
+    {
+      "kind": "order",
+      "payload": {
+        "instrument": "TEACHING-FIXTURE",
+        "side": "sell",
+        "quantity": 1,
+        "order_type": "limit",
+        "price": "100.04"
+      },
+      "state_digest": "53b55302aecd59a46236658ab3b58e5ceef2957a8558152a06fa7aab175d40d4"
+    },
+    {
+      "kind": "step",
+      "payload": {},
+      "state_digest": "6eee88deb69bade7e1dfeb01489daa83eab968209675646b1b319d24ce62fe6a"
+    },
+    {
+      "kind": "step",
+      "payload": {},
+      "state_digest": "5134a7eed89111291efa15458036a07e865e56dbc2ad7e88e78950d708b4dfdd"
+    },
+    {
+      "kind": "step",
+      "payload": {},
+      "state_digest": "7e9cff366b6953b31f7adf460935202ac78f5320bd3a4e1845d18d303f9b6e3a"
+    }
+  ],
+  "final_digest": "7e9cff366b6953b31f7adf460935202ac78f5320bd3a4e1845d18d303f9b6e3a"
+}

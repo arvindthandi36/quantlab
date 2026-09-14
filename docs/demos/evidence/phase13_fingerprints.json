@@ -1,0 +1,12 @@
+{
+  "historical": {
+    "before_from_approved_phase13_journal": "7e9cff366b6953b31f7adf460935202ac78f5320bd3a4e1845d18d303f9b6e3a",
+    "after_verified_replay": "7e9cff366b6953b31f7adf460935202ac78f5320bd3a4e1845d18d303f9b6e3a",
+    "equal": true
+  },
+  "hidden": {
+    "before_from_approved_phase13_journal": "6f7e28be55bf98713a62bf1c053fa8c8526427bd3cf2e17f826959c5c459e47c",
+    "after_verified_replay": "6f7e28be55bf98713a62bf1c053fa8c8526427bd3cf2e17f826959c5c459e47c",
+    "equal": true
+  }
+}

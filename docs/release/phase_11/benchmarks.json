@@ -1,0 +1,227 @@
+{
+  "versions": {
+    "quantlab": "1.0.0",
+    "python": "3.14.0",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.1"
+  },
+  "seed": 111042,
+  "measurements": {
+    "matching_20000_orders": {
+      "seconds": 0.08972529205493629,
+      "result": {
+        "orders": 20000,
+        "trades": 10000,
+        "filled_units_each_side": 30000,
+        "resting": 0
+      }
+    },
+    "event_simulation_300_seconds": {
+      "seconds": 0.7332140000071377,
+      "result": {
+        "events": 5347,
+        "journal_bytes": 9354834,
+        "fingerprint": "61762a41017345932af98d5b646647e40cc2e40c3afab8437653d4bc625485b6",
+        "seconds_simulated": 300
+      }
+    },
+    "research_1000_runs": {
+      "seconds": 2.3971993748564273,
+      "result": {
+        "runs": 1000,
+        "status": "complete",
+        "outcome_digest": "53913920e846f5973e505f11f20c8c984a9f091f78137e1dbe6da789b1d6d167",
+        "duration_per_market_seconds": 2,
+        "variants": 1,
+        "bytes_on_disk": 3367297
+      }
+    },
+    "option_mc_1000000_paths": {
+      "seconds": 0.16199633316136897,
+      "result": {
+        "estimate": 10.449894017281053,
+        "standard_error": 0.014715315656734127,
+        "confidence_interval": {
+          "low": 10.42105249366392,
+          "high": 10.478735540898187,
+          "confidence": 0.95,
+          "method": "Student t mean"
+        },
+        "paths": 1000000,
+        "analytic": 10.450583572185558,
+        "error": -0.0006895549045040639,
+        "standard_errors_from_analytic": -0.04685967468108677,
+        "seed": 111042,
+        "measure": "risk-neutral; drift = rate \u2212 continuous dividend yield",
+        "sampling": "IID terminal normals; PCG64, named independent pricing stream",
+        "unit": "GBP per underlying unit",
+        "inputs": {
+          "spot": 100.0,
+          "strike": 100.0,
+          "time_years": 1.0,
+          "volatility": 0.2,
+          "rate": 0.05,
+          "dividend_yield": 0.0
+        },
+        "warnings": []
+      }
+    },
+    "risk_100000_scenarios": {
+      "seconds": 0.06035329191945493,
+      "result": {
+        "paths": 100000,
+        "option_positions": 11,
+        "var": 966.1699664073313,
+        "es": 1198.8474050171053,
+        "retained_json_bytes": 2967
+      }
+    },
+    "rolling_statarb_2000_observations": {
+      "seconds": 0.9469882501289248,
+      "result": {
+        "fits": 1920,
+        "history_observations": 2000,
+        "last_fit_end": 1999,
+        "last_signal_digest": "1e0154c5842e2b414fbee237c03957874efe2c06899aa576685c2bda45a70681"
+      }
+    },
+    "full_vs_light_memory": {
+      "seconds": 1.1596146249212325,
+      "result": {
+        "versions": {
+          "quantlab": "1.0.0",
+          "python": "3.14.0",
+          "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1",
+          "matplotlib": "3.11.1"
+        },
+        "seeds": [
+          111042,
+          111043,
+          111044
+        ],
+        "configuration": {
+          "market": {
+            "duration_us": 30000000,
+            "informed_cost_ticks": 0.25,
+            "informed_minimum_edge_ticks": 0.25,
+            "informed_prior_sd_ticks": 8.0,
+            "informed_rate_per_second": 1,
+            "informed_uncertainty_multiplier": 0.5,
+            "initial_latent_ticks": 10000,
+            "latent_sigma_ticks": 2.0,
+            "latent_step_us": 1000000,
+            "liquidity_max_quantity": 3,
+            "liquidity_rate_per_second": 0.6,
+            "markout_horizons_events": [
+              1,
+              5,
+              20
+            ],
+            "max_events": 10000,
+            "noise_max_quantity": 4,
+            "noise_price_radius_ticks": 2,
+            "noise_rate_per_second": 1.0,
+            "opening_reference_ticks": 10000,
+            "signal_noise_ticks": 2.0,
+            "tick_size": "0.01"
+          },
+          "strategy": {
+            "fee_ticks": "1/10",
+            "half_spread_ticks": "2/1",
+            "hard_limit": 8,
+            "initial_cash_ticks": "1000000/1",
+            "inventory_skew_ticks": "1/2",
+            "max_decisions": 10000,
+            "quote_size": 2,
+            "refresh_us": 1000000,
+            "soft_limit": 4,
+            "strategy": "fixed"
+          }
+        },
+        "note": "Sequential local measurements, not a benchmark across machines. tracemalloc peak excludes native allocation not tracked by Python.",
+        "full": {
+          "elapsed_seconds": 0.16007895790971816,
+          "sessions_per_second": 18.740751683878088,
+          "retained_traced_bytes": 430566,
+          "peak_traced_bytes": 471552,
+          "profile_top15": "         594688 function calls (589189 primitive calls) in 0.186 seconds\n\n   Ordered by: cumulative time\n   List reduced from 250 to 15 due to restriction <15>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.193    0.193 maker.py:217(run)\n        1    0.000    0.000    0.192    0.192 lab.py:294(run_to_completion)\n       31    0.000    0.000    0.151    0.005 lab.py:196(advance_to_decision)\n      101    0.000    0.000    0.133    0.001 lab.py:156(_market_step)\n      908    0.011    0.000    0.125    0.000 accounting.py:201(check_invariants)\n      132    0.001    0.000    0.114    0.001 lab.py:119(_append)\n6784/6268    0.010    0.000    0.097    0.000 {built-in method builtins.sum}\n      264    0.001    0.000    0.076    0.000 accounting.py:125(mark)\n    33172    0.018    0.000    0.066    0.000 fractions.py:697(forward)\n       30    0.000    0.000    0.041    0.001 lab.py:228(decide)\n      162    0.001    0.000    0.039    0.000 lab.py:93(_check)\n      192    0.001    0.000    0.034    0.000 accounting.py:174(snapshot)\n     5551    0.003    0.000    0.030    0.000 accounting.py:210(<genexpr>)\n     9268    0.006    0.000    0.027    0.000 fractions.py:711(reverse)\n    20639    0.010    0.000    0.021    0.000 fractions.py:794(_add)\n\n\n"
+        },
+        "lightweight": {
+          "elapsed_seconds": 0.160391875077039,
+          "sessions_per_second": 18.70418933975956,
+          "retained_traced_bytes": 15823,
+          "peak_traced_bytes": 79624,
+          "profile_top15": "         594450 function calls (588951 primitive calls) in 0.192 seconds\n\n   Ordered by: cumulative time\n   List reduced from 247 to 15 due to restriction <15>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.200    0.200 maker.py:217(run)\n        1    0.000    0.000    0.199    0.199 lab.py:294(run_to_completion)\n       31    0.000    0.000    0.156    0.005 lab.py:196(advance_to_decision)\n      101    0.000    0.000    0.138    0.001 lab.py:156(_market_step)\n      908    0.011    0.000    0.130    0.000 accounting.py:201(check_invariants)\n      132    0.000    0.000    0.118    0.001 lab.py:119(_append)\n6784/6268    0.010    0.000    0.101    0.000 {built-in method builtins.sum}\n      264    0.001    0.000    0.079    0.000 accounting.py:125(mark)\n    33172    0.018    0.000    0.069    0.000 fractions.py:697(forward)\n       30    0.000    0.000    0.042    0.001 lab.py:228(decide)\n      162    0.001    0.000    0.041    0.000 lab.py:93(_check)\n      192    0.001    0.000    0.035    0.000 accounting.py:174(snapshot)\n     5551    0.003    0.000    0.031    0.000 accounting.py:210(<genexpr>)\n     9268    0.006    0.000    0.027    0.000 fractions.py:711(reverse)\n    20639    0.011    0.000    0.022    0.000 fractions.py:794(_add)\n\n\n"
+        },
+        "identical_outcomes_verified": true
+      }
+    },
+    "manual_soak": {
+      "seconds": 16.71360291610472,
+      "result": {
+        "actions": 751,
+        "evidence_events": 1537,
+        "journal_bytes": 3208440,
+        "public_bytes": 545017,
+        "replay": true
+      }
+    },
+    "options_hedge_soak": {
+      "seconds": 12.706945499870926,
+      "result": {
+        "steps": 252,
+        "hedge_decisions": 195,
+        "stock_fills": 195,
+        "journal_bytes": 2341018,
+        "final_snapshot_serialization_peak_traced_bytes": 1897228,
+        "checkpoints": [
+          {
+            "day": 63,
+            "public_bytes": 108556
+          },
+          {
+            "day": 126,
+            "public_bytes": 205475
+          },
+          {
+            "day": 189,
+            "public_bytes": 302567
+          },
+          {
+            "day": 252,
+            "public_bytes": 537339
+          }
+        ],
+        "replay": true,
+        "note": "Linear audit-history retention within the 252-step cap."
+      }
+    }
+  },
+  "note": "Sequential local wall-clock measurements; no other validation workload running. Memory uses tracemalloc (Python-tracked, not all native allocation). These are correctness/engineering workloads, not strategy evidence.",
+  "matching_profile": "         920031 function calls in 0.315 seconds\n\n   Ordered by: cumulative time\n   List reduced from 49 to 15 due to restriction <15>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.017    0.017    0.337    0.337 core_benchmark.py:62(matching)\n    20000    0.042    0.000    0.263    0.000 book.py:91(submit)\n    20000    0.059    0.000    0.183    0.000 book.py:146(_match)\n    50000    0.032    0.000    0.055    0.000 conservation.py:4(verify_conservation)\n    20000    0.011    0.000    0.027    0.000 domain.py:33(validate_order)\n   200000    0.023    0.000    0.023    0.000 conservation.py:9(<genexpr>)\n    10000    0.004    0.000    0.020    0.000 domain.py:49(__post_init__)\n    30000    0.012    0.000    0.020    0.000 _side.py:38(first)\n    20000    0.018    0.000    0.018    0.000 <string>:2(__init__)\n    10000    0.006    0.000    0.017    0.000 book.py:204(_remove)\n    10000    0.003    0.000    0.016    0.000 domain.py:62(__post_init__)\n    30000    0.011    0.000    0.016    0.000 {built-in method builtins.sum}\n    20000    0.007    0.000    0.011    0.000 domain.py:17(nonempty_identifier)\n    40003    0.008    0.000    0.011    0.000 enum.py:1298(__hash__)\n    10000    0.004    0.000    0.010    0.000 models.py:98(executed_quantity)\n\n\n",
+  "shared_pricing_kernel_after": {
+    "seconds": [
+      0.007976124994456768,
+      0.005642083939164877,
+      0.0054690418764948845,
+      0.0053922501392662525,
+      0.005379083100706339
+    ],
+    "median": 0.0054690418764948845,
+    "note": "Correctness refactor, no speedup claim"
+  },
+  "shared_pricing_kernel_before": {
+    "workload": "100000 BSM calls, varying spots",
+    "seconds": [
+      0.005136291030794382,
+      0.004664957989007235,
+      0.004674332914873958,
+      0.004747041966766119,
+      0.004763416945934296
+    ]
+  }
+}

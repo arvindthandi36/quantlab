@@ -1,0 +1,961 @@
+{
+  "elapsed_seconds": 48.247089917073026,
+  "paired": {
+    "every-20 minus every-1": {
+      "bootstrap": {
+        "estimate": -0.7613119999999994,
+        "interval": {
+          "confidence": 0.95,
+          "high": 7.822720450000001,
+          "low": -9.18058575,
+          "method": "percentile bootstrap"
+        },
+        "observational_unit": "complete matched session pair",
+        "resamples": 1000,
+        "seed": 14652190049970803324399706233319812937829506870948934042707707995214394469181,
+        "standard_error": 4.384398488331654
+      },
+      "degrees_of_freedom": 999,
+      "difference": "second minus first",
+      "mean_exceeds_practical_threshold": true,
+      "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+      "p_value_two_sided": 0.8632036859044799,
+      "practical_threshold": 0.05,
+      "proportion_negative": 0.59,
+      "proportion_positive": 0.41,
+      "proportion_zero": 0.0,
+      "standardised_paired_effect": -0.00544992806353053,
+      "summary": {
+        "available": 1000,
+        "maximum": 652.71,
+        "mean": -0.7613119999999994,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 7.907238535804193,
+          "low": -9.429862535804192,
+          "method": "Student t mean"
+        },
+        "median": -32.73,
+        "minimum": -252.32,
+        "missing": 0,
+        "p05": -175.85580000000002,
+        "p25": -103.54549999999999,
+        "p75": 79.40450000000001,
+        "p95": 276.5639999999999,
+        "requested": 1000,
+        "standard_deviation": 139.6921190748364,
+        "standard_error": 4.417452674519363,
+        "variance": 19513.88813161827
+      },
+      "t_statistic": -0.17234185764827312
+    },
+    "every-5 minus every-1": {
+      "bootstrap": {
+        "estimate": -1.9358160000000002,
+        "interval": {
+          "confidence": 0.95,
+          "high": 2.3673365499999983,
+          "low": -6.0995551500000005,
+          "method": "percentile bootstrap"
+        },
+        "observational_unit": "complete matched session pair",
+        "resamples": 1000,
+        "seed": 8511793963463025047607764738432854472608064050976259966095175360218983521870,
+        "standard_error": 2.1679179737633842
+      },
+      "degrees_of_freedom": 999,
+      "difference": "second minus first",
+      "mean_exceeds_practical_threshold": true,
+      "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+      "p_value_two_sided": 0.3733905224840275,
+      "practical_threshold": 0.05,
+      "proportion_negative": 0.512,
+      "proportion_positive": 0.488,
+      "proportion_zero": 0.0,
+      "standardised_paired_effect": -0.02816134106531094,
+      "summary": {
+        "available": 1000,
+        "maximum": 280.62800000000004,
+        "mean": -1.9358160000000002,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 2.329835023560017,
+          "low": -6.201467023560017,
+          "method": "Student t mean"
+        },
+        "median": -1.726,
+        "minimum": -208.75799999999998,
+        "missing": 0,
+        "p05": -115.70500000000001,
+        "p25": -44.177,
+        "p75": 35.247,
+        "p95": 115.88079999999984,
+        "requested": 1000,
+        "standard_deviation": 68.74019229093223,
+        "standard_error": 2.1737557443729365,
+        "variance": 4725.214036194339
+      },
+      "t_statistic": -0.8905397973121516
+    },
+    "no-hedge minus every-1": {
+      "bootstrap": {
+        "estimate": -8.40213199999999,
+        "interval": {
+          "confidence": 0.95,
+          "high": 9.5194822,
+          "low": -26.101680999999985,
+          "method": "percentile bootstrap"
+        },
+        "observational_unit": "complete matched session pair",
+        "resamples": 1000,
+        "seed": 82962031252327457746867502461816491665675694972493380315061978096465275614097,
+        "standard_error": 9.11617804483116
+      },
+      "degrees_of_freedom": 999,
+      "difference": "second minus first",
+      "mean_exceeds_practical_threshold": true,
+      "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+      "p_value_two_sided": 0.34952742628700106,
+      "practical_threshold": 0.05,
+      "proportion_negative": 0.688,
+      "proportion_positive": 0.312,
+      "proportion_zero": 0.0,
+      "standardised_paired_effect": -0.029597196226214612,
+      "summary": {
+        "available": 1000,
+        "maximum": 1537.152,
+        "mean": -8.40213199999999,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 9.21411975555653,
+          "low": -26.018383755556506,
+          "method": "Student t mean"
+        },
+        "median": -144.95599999999996,
+        "minimum": -307.714,
+        "missing": 0,
+        "p05": -235.808,
+        "p25": -189.5555,
+        "p75": 97.1135,
+        "p95": 584.0595999999997,
+        "requested": 1000,
+        "standard_deviation": 283.88270077278855,
+        "standard_error": 8.97715922762054,
+        "variance": 80589.38779805262
+      },
+      "t_statistic": -0.9359455242977833
+    }
+  },
+  "runs": 4000,
+  "status": "complete",
+  "variants": {
+    "every-1": {
+      "drawdown": {
+        "available": 1000,
+        "maximum": 129.3056,
+        "mean": 33.01310925,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 34.31251637255847,
+          "low": 31.713702127441532,
+          "method": "Student t mean"
+        },
+        "median": 28.311975000000004,
+        "minimum": 2.11105,
+        "missing": 0,
+        "p05": 8.221260000000001,
+        "p25": 17.277400000000004,
+        "p75": 43.3448,
+        "p95": 76.49456749999997,
+        "requested": 1000,
+        "standard_deviation": 20.93971001742433,
+        "standard_error": 0.6621717719850498,
+        "variance": 438.4714556138208
+      },
+      "fees": {
+        "available": 1000,
+        "maximum": 0.472,
+        "mean": 0.28745800000000005,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.29152580429791664,
+          "low": 0.28339019570208346,
+          "method": "Student t mean"
+        },
+        "median": 0.29,
+        "minimum": 0.152,
+        "missing": 0,
+        "p05": 0.174,
+        "p25": 0.242,
+        "p75": 0.336,
+        "p95": 0.392,
+        "requested": 1000,
+        "standard_deviation": 0.0655519282042206,
+        "standard_error": 0.002072933981411683,
+        "variance": 0.004297055291291292
+      },
+      "gross_hedging_error": {
+        "available": 1000,
+        "maximum": 119.75639999999999,
+        "mean": -3.6060100000000053,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": -1.3321558937960796,
+          "low": -5.8798641062039305,
+          "method": "Student t mean"
+        },
+        "median": -3.9986000000000073,
+        "minimum": -129.05360000000002,
+        "missing": 0,
+        "p05": -67.69460000000001,
+        "p25": -25.1511,
+        "p75": 18.0214,
+        "p95": 59.34589999999996,
+        "requested": 1000,
+        "standard_deviation": 36.64274635657721,
+        "standard_error": 1.158745382106204,
+        "variance": 1342.6908605524525
+      },
+      "hedge_gross_pnl": {
+        "available": 1000,
+        "maximum": 308.01,
+        "mean": 8.639589999999998,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 26.255005032951043,
+          "low": -8.975825032951047,
+          "method": "Student t mean"
+        },
+        "median": 145.28,
+        "minimum": -1536.95,
+        "missing": 0,
+        "p05": -583.8375,
+        "p25": -96.8425,
+        "p75": 189.89,
+        "p95": 236.126,
+        "requested": 1000,
+        "standard_deviation": 283.8692171398151,
+        "standard_error": 8.97673283770724,
+        "variance": 80581.73243957147
+      },
+      "net_pnl": {
+        "available": 1000,
+        "maximum": 119.4104,
+        "mean": -3.893468,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": -1.620120179030958,
+          "low": -6.166815820969042,
+          "method": "Student t mean"
+        },
+        "median": -4.2736,
+        "minimum": -129.3056,
+        "missing": 0,
+        "p05": -67.9538,
+        "p25": -25.3606,
+        "p75": 17.8194,
+        "p95": 58.98809999999995,
+        "requested": 1000,
+        "standard_deviation": 36.63458766187674,
+        "standard_error": 1.1584873815263297,
+        "variance": 1342.0930131557318
+      },
+      "option_gross_pnl": {
+        "available": 1000,
+        "maximum": 1543.7464,
+        "mean": -12.245600000000007,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.491617040856735,
+          "low": -29.982817040856748,
+          "method": "Student t mean"
+        },
+        "median": -188.2536,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -188.2536,
+        "p25": -188.2536,
+        "p75": 91.7464,
+        "p95": 599.8463999999999,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788787
+      },
+      "realised_volatility": {
+        "available": 1000,
+        "maximum": 0.3044451158867822,
+        "mean": 0.19864161451496729,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.20068403039804347,
+          "low": 0.1965991986318911,
+          "method": "Student t mean"
+        },
+        "median": 0.19718974236101683,
+        "minimum": 0.1094943884413617,
+        "missing": 0,
+        "p05": 0.14560661506813227,
+        "p25": 0.176196655783503,
+        "p75": 0.2192601783609351,
+        "p95": 0.25749280387354884,
+        "requested": 1000,
+        "standard_deviation": 0.03291316138270032,
+        "standard_error": 0.0010408055496602983,
+        "variance": 0.0010832761922036755
+      },
+      "rms_delta": {
+        "available": 1000,
+        "maximum": 0.3576105192849303,
+        "mean": 0.26874168908886154,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.2707420314562729,
+          "low": 0.26674134672145017,
+          "method": "Student t mean"
+        },
+        "median": 0.2710128362091385,
+        "minimum": 0.16063646902763212,
+        "missing": 0,
+        "p05": 0.21323793558867107,
+        "p25": 0.24760358258745646,
+        "p75": 0.29067722295289533,
+        "p95": 0.31900246685709205,
+        "requested": 1000,
+        "standard_deviation": 0.03223515431152093,
+        "standard_error": 0.0010193650835140305,
+        "variance": 0.0010391051734875666
+      },
+      "turnover": {
+        "available": 1000,
+        "maximum": 422.0,
+        "mean": 237.458,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 241.52580429791658,
+          "low": 233.39019570208342,
+          "method": "Student t mean"
+        },
+        "median": 240.0,
+        "minimum": 102.0,
+        "missing": 0,
+        "p05": 124.0,
+        "p25": 192.0,
+        "p75": 286.0,
+        "p95": 342.0,
+        "requested": 1000,
+        "standard_deviation": 65.55192820422059,
+        "standard_error": 2.072933981411683,
+        "variance": 4297.055291291291
+      }
+    },
+    "every-20": {
+      "drawdown": {
+        "available": 1000,
+        "maximum": 389.1268,
+        "mean": 137.97193605,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 141.36908344885572,
+          "low": 134.5747886511443,
+          "method": "Student t mean"
+        },
+        "median": 134.518475,
+        "minimum": 13.86435,
+        "missing": 0,
+        "p05": 55.627427499999996,
+        "p25": 97.351525,
+        "p75": 173.835425,
+        "p95": 228.6214375,
+        "requested": 1000,
+        "standard_deviation": 54.74441395890152,
+        "standard_error": 1.7311703728124426,
+        "variance": 2996.9508597035715
+      },
+      "fees": {
+        "available": 1000,
+        "maximum": 0.152,
+        "mean": 0.152,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.152,
+          "low": 0.152,
+          "method": "Student t mean"
+        },
+        "median": 0.152,
+        "minimum": 0.152,
+        "missing": 0,
+        "p05": 0.152,
+        "p25": 0.152,
+        "p75": 0.152,
+        "p95": 0.152,
+        "requested": 1000,
+        "standard_deviation": 0.0,
+        "standard_error": 0.0,
+        "variance": 0.0
+      },
+      "gross_hedging_error": {
+        "available": 1000,
+        "maximum": 659.4064,
+        "mean": -4.502780000000005,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 4.506879480630051,
+          "low": -13.51243948063006,
+          "method": "Student t mean"
+        },
+        "median": -36.273600000000016,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -176.0151,
+        "p25": -119.74860000000001,
+        "p75": 79.8589,
+        "p95": 283.01189999999997,
+        "requested": 1000,
+        "standard_deviation": 145.1890278303768,
+        "standard_error": 4.591280192095657,
+        "variance": 21079.85380232993
+      },
+      "hedge_gross_pnl": {
+        "available": 1000,
+        "maximum": 697.17,
+        "mean": 7.742819999999999,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 22.614159816062955,
+          "low": -7.1285198160629575,
+          "method": "Student t mean"
+        },
+        "median": 17.85,
+        "minimum": -884.34,
+        "missing": 0,
+        "p05": -402.95099999999996,
+        "p25": -143.82,
+        "p75": 166.8975,
+        "p95": 397.85099999999994,
+        "requested": 1000,
+        "standard_deviation": 239.64894290082125,
+        "standard_error": 7.578364984182346,
+        "variance": 57431.61583348108
+      },
+      "net_pnl": {
+        "available": 1000,
+        "maximum": 659.2544,
+        "mean": -4.654779999999998,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 4.354879480630058,
+          "low": -13.664439480630055,
+          "method": "Student t mean"
+        },
+        "median": -36.4256,
+        "minimum": -188.4056,
+        "missing": 0,
+        "p05": -176.1671,
+        "p25": -119.9006,
+        "p75": 79.7069,
+        "p95": 282.8599,
+        "requested": 1000,
+        "standard_deviation": 145.1890278303768,
+        "standard_error": 4.591280192095657,
+        "variance": 21079.85380232993
+      },
+      "option_gross_pnl": {
+        "available": 1000,
+        "maximum": 1543.7464,
+        "mean": -12.245600000000007,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.491617040856735,
+          "low": -29.982817040856748,
+          "method": "Student t mean"
+        },
+        "median": -188.2536,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -188.2536,
+        "p25": -188.2536,
+        "p75": 91.7464,
+        "p95": 599.8463999999999,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788787
+      },
+      "realised_volatility": {
+        "available": 1000,
+        "maximum": 0.3044451158867822,
+        "mean": 0.19864161451496729,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.20068403039804347,
+          "low": 0.1965991986318911,
+          "method": "Student t mean"
+        },
+        "median": 0.19718974236101683,
+        "minimum": 0.1094943884413617,
+        "missing": 0,
+        "p05": 0.14560661506813227,
+        "p25": 0.176196655783503,
+        "p75": 0.2192601783609351,
+        "p95": 0.25749280387354884,
+        "requested": 1000,
+        "standard_deviation": 0.03291316138270032,
+        "standard_error": 0.0010408055496602983,
+        "variance": 0.0010832761922036755
+      },
+      "rms_delta": {
+        "available": 1000,
+        "maximum": 45.76089299915301,
+        "mean": 27.82647122272064,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 28.331658482238172,
+          "low": 27.32128396320311,
+          "method": "Student t mean"
+        },
+        "median": 27.903392700498834,
+        "minimum": 8.717131082251255,
+        "missing": 0,
+        "p05": 14.533538754812119,
+        "p25": 21.435202324723967,
+        "p75": 33.95413489617722,
+        "p95": 41.193735851904876,
+        "requested": 1000,
+        "standard_deviation": 8.141001026657333,
+        "standard_error": 0.2574410567800633,
+        "variance": 66.27589771603576
+      },
+      "turnover": {
+        "available": 1000,
+        "maximum": 102.0,
+        "mean": 102.0,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 102.0,
+          "low": 102.0,
+          "method": "Student t mean"
+        },
+        "median": 102.0,
+        "minimum": 102.0,
+        "missing": 0,
+        "p05": 102.0,
+        "p25": 102.0,
+        "p75": 102.0,
+        "p95": 102.0,
+        "requested": 1000,
+        "standard_deviation": 0.0,
+        "standard_error": 0.0,
+        "variance": 0.0
+      }
+    },
+    "every-5": {
+      "drawdown": {
+        "available": 1000,
+        "maximum": 202.07535000000001,
+        "mean": 67.64416295,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 70.06561937661766,
+          "low": 65.22270652338233,
+          "method": "Student t mean"
+        },
+        "median": 59.889925000000005,
+        "minimum": 2.41040000000001,
+        "missing": 0,
+        "p05": 16.075924999999998,
+        "p25": 37.07056250000001,
+        "p75": 93.4577625,
+        "p95": 140.99156499999998,
+        "requested": 1000,
+        "standard_deviation": 39.02133096928665,
+        "standard_error": 1.2339628319421172,
+        "variance": 1522.6642706146094
+      },
+      "fees": {
+        "available": 1000,
+        "maximum": 0.304,
+        "mean": 0.19991399999999998,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.2023297436355085,
+          "low": 0.19749825636449145,
+          "method": "Student t mean"
+        },
+        "median": 0.197,
+        "minimum": 0.152,
+        "missing": 0,
+        "p05": 0.152,
+        "p25": 0.16,
+        "p75": 0.238,
+        "p95": 0.256,
+        "requested": 1000,
+        "standard_deviation": 0.038929270377083776,
+        "standard_error": 0.0012310516204010668,
+        "variance": 0.0015154880920920921
+      },
+      "gross_hedging_error": {
+        "available": 1000,
+        "maximum": 344.41639999999995,
+        "mean": -5.629370000000006,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": -0.7783242700421731,
+          "low": -10.480415729957839,
+          "method": "Student t mean"
+        },
+        "median": -9.393600000000006,
+        "minimum": -174.3436,
+        "missing": 0,
+        "p05": -129.1456,
+        "p25": -56.5461,
+        "p75": 37.59639999999999,
+        "p95": 129.97189999999995,
+        "requested": 1000,
+        "standard_deviation": 78.17372177133875,
+        "standard_error": 2.4720701396972298,
+        "variance": 6111.130775582682
+      },
+      "hedge_gross_pnl": {
+        "available": 1000,
+        "maximum": 532.67,
+        "mean": 6.61623,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 23.503546540173332,
+          "low": -10.27108654017333,
+          "method": "Student t mean"
+        },
+        "median": 97.095,
+        "minimum": -1312.98,
+        "missing": 0,
+        "p05": -560.3755,
+        "p25": -93.5775,
+        "p75": 188.685,
+        "p95": 279.5704999999999,
+        "requested": 1000,
+        "standard_deviation": 272.1360420338713,
+        "standard_error": 8.605697262503543,
+        "variance": 74058.02537386098
+      },
+      "net_pnl": {
+        "available": 1000,
+        "maximum": 344.2024,
+        "mean": -5.8292839999999995,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": -0.9788160550323699,
+          "low": -10.679751944967629,
+          "method": "Student t mean"
+        },
+        "median": -9.5496,
+        "minimum": -174.5136,
+        "missing": 0,
+        "p05": -129.3321,
+        "p25": -56.7806,
+        "p75": 37.3429,
+        "p95": 129.78979999999996,
+        "requested": 1000,
+        "standard_deviation": 78.16441087105412,
+        "standard_error": 2.4717757031775687,
+        "variance": 6109.675126818963
+      },
+      "option_gross_pnl": {
+        "available": 1000,
+        "maximum": 1543.7464,
+        "mean": -12.245600000000007,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.491617040856735,
+          "low": -29.982817040856748,
+          "method": "Student t mean"
+        },
+        "median": -188.2536,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -188.2536,
+        "p25": -188.2536,
+        "p75": 91.7464,
+        "p95": 599.8463999999999,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788787
+      },
+      "realised_volatility": {
+        "available": 1000,
+        "maximum": 0.3044451158867822,
+        "mean": 0.19864161451496729,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.20068403039804347,
+          "low": 0.1965991986318911,
+          "method": "Student t mean"
+        },
+        "median": 0.19718974236101683,
+        "minimum": 0.1094943884413617,
+        "missing": 0,
+        "p05": 0.14560661506813227,
+        "p25": 0.176196655783503,
+        "p75": 0.2192601783609351,
+        "p95": 0.25749280387354884,
+        "requested": 1000,
+        "standard_deviation": 0.03291316138270032,
+        "standard_error": 0.0010408055496602983,
+        "variance": 0.0010832761922036755
+      },
+      "rms_delta": {
+        "available": 1000,
+        "maximum": 35.41773040814045,
+        "mean": 13.728453506266414,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 14.022783379937144,
+          "low": 13.434123632595684,
+          "method": "Student t mean"
+        },
+        "median": 12.948187093310304,
+        "minimum": 4.667533174522236,
+        "missing": 0,
+        "p05": 7.668146256935154,
+        "p25": 10.186211122023046,
+        "p75": 16.38066148331603,
+        "p95": 22.79855160534241,
+        "requested": 1000,
+        "standard_deviation": 4.743072511404456,
+        "standard_error": 0.14998912243373044,
+        "variance": 22.496736848440577
+      },
+      "turnover": {
+        "available": 1000,
+        "maximum": 254.0,
+        "mean": 149.914,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 152.32974363550852,
+          "low": 147.49825636449145,
+          "method": "Student t mean"
+        },
+        "median": 147.0,
+        "minimum": 102.0,
+        "missing": 0,
+        "p05": 102.0,
+        "p25": 110.0,
+        "p75": 188.0,
+        "p95": 206.0,
+        "requested": 1000,
+        "standard_deviation": 38.929270377083775,
+        "standard_error": 1.2310516204010669,
+        "variance": 1515.4880920920923
+      }
+    },
+    "no-hedge": {
+      "drawdown": {
+        "available": 1000,
+        "maximum": 791.9757999999999,
+        "mean": 255.9000407,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 262.127643410221,
+          "low": 249.67243798977898,
+          "method": "Student t mean"
+        },
+        "median": 226.1227,
+        "minimum": 28.0,
+        "missing": 0,
+        "p05": 144.96876999999995,
+        "p25": 188.3036,
+        "p75": 301.16522499999996,
+        "p95": 467.2715049999999,
+        "requested": 1000,
+        "standard_deviation": 100.35668774771248,
+        "standard_error": 3.173557117130849,
+        "variance": 10071.464775691866
+      },
+      "fees": {
+        "available": 1000,
+        "maximum": 0.05,
+        "mean": 0.05000000000000001,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.05000000000000001,
+          "low": 0.05000000000000001,
+          "method": "Student t mean"
+        },
+        "median": 0.05,
+        "minimum": 0.05,
+        "missing": 0,
+        "p05": 0.05,
+        "p25": 0.05,
+        "p75": 0.05,
+        "p95": 0.05,
+        "requested": 1000,
+        "standard_deviation": 6.9423659551147e-18,
+        "standard_error": 2.1953688768572727e-19,
+        "variance": 4.819644505473564e-35
+      },
+      "gross_hedging_error": {
+        "available": 1000,
+        "maximum": 1543.7464,
+        "mean": -12.245600000000007,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.491617040856735,
+          "low": -29.982817040856748,
+          "method": "Student t mean"
+        },
+        "median": -188.2536,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -188.2536,
+        "p25": -188.2536,
+        "p75": 91.7464,
+        "p95": 599.8463999999999,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788787
+      },
+      "hedge_gross_pnl": {
+        "available": 1000,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.0,
+          "low": 0.0,
+          "method": "Student t mean"
+        },
+        "median": 0.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "requested": 1000,
+        "standard_deviation": 0.0,
+        "standard_error": 0.0,
+        "variance": 0.0
+      },
+      "net_pnl": {
+        "available": 1000,
+        "maximum": 1543.6964,
+        "mean": -12.295599999999984,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.441617040856757,
+          "low": -30.032817040856727,
+          "method": "Student t mean"
+        },
+        "median": -188.3036,
+        "minimum": -188.3036,
+        "missing": 0,
+        "p05": -188.3036,
+        "p25": -188.3036,
+        "p75": 91.6964,
+        "p95": 599.7964,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788789
+      },
+      "option_gross_pnl": {
+        "available": 1000,
+        "maximum": 1543.7464,
+        "mean": -12.245600000000007,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 5.491617040856735,
+          "low": -29.982817040856748,
+          "method": "Student t mean"
+        },
+        "median": -188.2536,
+        "minimum": -188.2536,
+        "missing": 0,
+        "p05": -188.2536,
+        "p25": -188.2536,
+        "p75": 91.7464,
+        "p95": 599.8463999999999,
+        "requested": 1000,
+        "standard_deviation": 285.8320343976299,
+        "standard_error": 9.03880256936105,
+        "variance": 81699.95188788787
+      },
+      "realised_volatility": {
+        "available": 1000,
+        "maximum": 0.3044451158867822,
+        "mean": 0.19864161451496729,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.20068403039804347,
+          "low": 0.1965991986318911,
+          "method": "Student t mean"
+        },
+        "median": 0.19718974236101683,
+        "minimum": 0.1094943884413617,
+        "missing": 0,
+        "p05": 0.14560661506813227,
+        "p25": 0.176196655783503,
+        "p75": 0.2192601783609351,
+        "p95": 0.25749280387354884,
+        "requested": 1000,
+        "standard_deviation": 0.03291316138270032,
+        "standard_error": 0.0010408055496602983,
+        "variance": 0.0010832761922036755
+      },
+      "rms_delta": {
+        "available": 1000,
+        "maximum": 94.29004424560962,
+        "mean": 53.33525116277316,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 54.63546637503588,
+          "low": 52.03503595051044,
+          "method": "Student t mean"
+        },
+        "median": 51.74132897544317,
+        "minimum": 14.1778458389163,
+        "missing": 0,
+        "p05": 21.855746087280796,
+        "p25": 35.31819268510556,
+        "p75": 71.91854314558128,
+        "p95": 86.59812413486685,
+        "requested": 1000,
+        "standard_deviation": 20.952732236389696,
+        "standard_error": 0.6625835707062498,
+        "variance": 439.016988169844
+      },
+      "turnover": {
+        "available": 1000,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "mean_ci": {
+          "confidence": 0.95,
+          "high": 0.0,
+          "low": 0.0,
+          "method": "Student t mean"
+        },
+        "median": 0.0,
+        "minimum": 0.0,
+        "missing": 0,
+        "p05": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p95": 0.0,
+        "requested": 1000,
+        "standard_deviation": 0.0,
+        "standard_error": 0.0,
+        "variance": 0.0
+      }
+    }
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.8.0",
+    "scipy": "1.18.1"
+  }
+}

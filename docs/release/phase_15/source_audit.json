@@ -1,0 +1,7 @@
+{
+  "source_file_count": 619,
+  "secret_and_absolute_path_findings": [],
+  "broken_document_file_links": [],
+  "excluded_user_runs": true,
+  "scope": "Release export allowlist; text-pattern scan, not a formal security audit or credential validity test."
+}

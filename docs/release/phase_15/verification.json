@@ -1,0 +1,57 @@
+{
+  "baseline_test_count": 1910,
+  "final_test_count": 1933,
+  "new_tests": 23,
+  "missing_baseline_tests": [],
+  "changed_existing_source_files": [
+    "src/quantlab/trading/server.py",
+    "src/quantlab/trading/navigation.py",
+    "src/quantlab/trading/static/demos.js"
+  ],
+  "financial_files_changed": [],
+  "old_test_files_changed": [],
+  "core_fingerprint": "fa0e7d6462d735408917806704a47204eb1ca8b1ef84285f3e9ca49680b58882",
+  "core_before_after_identical": true,
+  "flagships": {
+    "order": {
+      "before": "5e0d6b07621450060501f661b9898474e8f90de16bd5e41a2dbb78bc19dc44bf",
+      "after": "5e0d6b07621450060501f661b9898474e8f90de16bd5e41a2dbb78bc19dc44bf",
+      "identical": true
+    },
+    "picked-off": {
+      "before": "c71f58f4b189e79894acd37663aabead59f59d53d0c082b44fce8f5d22881f1e",
+      "after": "c71f58f4b189e79894acd37663aabead59f59d53d0c082b44fce8f5d22881f1e",
+      "identical": true
+    },
+    "delta-hedge": {
+      "before": "e620398ac73d73e5b3803324868e8a04c151549af81cbb78766c4e0ffb80decf",
+      "after": "e620398ac73d73e5b3803324868e8a04c151549af81cbb78766c4e0ffb80decf",
+      "identical": true
+    },
+    "tails": {
+      "before": "1eb096f62f2e35a8d708591674a1ca57f9febc69aa6508a89d5790d3b0ed0ebc",
+      "after": "1eb096f62f2e35a8d708591674a1ca57f9febc69aa6508a89d5790d3b0ed0ebc",
+      "identical": true
+    },
+    "pairs": {
+      "before": "129dc1be401367429c6264e0ee384f6d4c9a219b3d2b61133247e653d4c1ecdc",
+      "after": "129dc1be401367429c6264e0ee384f6d4c9a219b3d2b61133247e653d4c1ecdc",
+      "identical": true
+    },
+    "winner": {
+      "before": "2808ad131b1d87a69e39152cbfc47bbccfa884fc78d67dfdff1cfd5e52a44e0a",
+      "after": "2808ad131b1d87a69e39152cbfc47bbccfa884fc78d67dfdff1cfd5e52a44e0a",
+      "identical": true
+    },
+    "synthetic-prices": {
+      "before": "60d37f5130dd3cad17f5a9ac476a7fe0d4035dd31e91998abc3b984b03fabf97",
+      "after": "60d37f5130dd3cad17f5a9ac476a7fe0d4035dd31e91998abc3b984b03fabf97",
+      "identical": true
+    },
+    "historical": {
+      "before": "1eae5c6da22b97e039d250d0becbefc8789e49de250ac4e4678993e9fcbd4f48",
+      "after": "1eae5c6da22b97e039d250d0becbefc8789e49de250ac4e4678993e9fcbd4f48",
+      "identical": true
+    }
+  }
+}

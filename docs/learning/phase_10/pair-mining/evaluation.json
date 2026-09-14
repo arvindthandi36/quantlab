@@ -1,0 +1,31 @@
+{
+  "evaluation_accessed": true,
+  "metrics": {
+    "average_trade": null,
+    "capital": 10000,
+    "costs": 0.0,
+    "drawdown": 0.0,
+    "execution_cost": 0.0,
+    "fees": 0.0,
+    "imbalance_observations": 0.0,
+    "max_gross": 0.0,
+    "max_imbalance": 0.0,
+    "mean_entry_z": null,
+    "mean_exit_z": null,
+    "mean_holding": null,
+    "median_trade": null,
+    "net_pnl": 0.0,
+    "probability_loss": null,
+    "residual_inventory": 0,
+    "return_on_capital": 0.0,
+    "trade_count": 0,
+    "turnover": 0.0,
+    "win_rate": null,
+    "worst_trade": null
+  },
+  "selection_digest": "171805633421b0d3d676388e913a6d795eefdcc1cd26aae121c854cc95a2cb10",
+  "split": 160,
+  "status": "complete",
+  "trades": [],
+  "warnings": []
+}

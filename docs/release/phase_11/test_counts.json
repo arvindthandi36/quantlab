@@ -1,0 +1,25 @@
+{
+  "total": 1346,
+  "preserved_baseline": 1294,
+  "new": 52,
+  "missing_original_ids": [],
+  "by_domain": {
+    "Cross-core release checks": 52,
+    "Information and adverse selection": 52,
+    "Manual trading": 113,
+    "Market making and accounting": 124,
+    "Market, events and replay": 100,
+    "Matching, domain and conservation": 96,
+    "Options and hedging": 151,
+    "Research and statistical inference": 114,
+    "Risk and portfolio": 199,
+    "Stat Arb": 197,
+    "Tutor": 148
+  },
+  "by_test_type": {
+    "integration": 578,
+    "statistical": 15,
+    "unit": 753
+  },
+  "classification": "Each collected test instance assigned once by filename; cross-domain integration stays with its owning test file."
+}

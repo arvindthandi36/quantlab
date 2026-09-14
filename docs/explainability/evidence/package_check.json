@@ -1,0 +1,17 @@
+{
+  "filename": "quantlab-1.0.0-py3-none-any.whl",
+  "sha256": "8ed63b5fb0acecbef760097afa98dfc7dbf48163fb2869745af73f05afb29087",
+  "included_and_equal_to_source": [
+    "quantlab/explainability/__init__.py",
+    "quantlab/explainability/registry.py",
+    "quantlab/explainability/evidence.py",
+    "quantlab/explainability/service.py",
+    "quantlab/explainability/sandbox.py",
+    "quantlab/explainability/examples.py",
+    "quantlab/trading/static/explain.html",
+    "quantlab/trading/static/explain.css",
+    "quantlab/trading/static/explain.js"
+  ],
+  "build": "isolated PEP 517 wheel through existing setuptools backend",
+  "initial_attempt": "No-build-isolation attempt lacked setuptools in runtime; normal isolated build succeeded. No financial source or dependency declarations changed."
+}

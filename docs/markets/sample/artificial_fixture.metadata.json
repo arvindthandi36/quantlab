@@ -1,0 +1,13 @@
+{
+  "corporate_actions": "none_in_session",
+  "currency": "GBP",
+  "data_kind": "artificial_fixture",
+  "frequency_seconds": 60,
+  "instrument": "TEACHING-FIXTURE",
+  "licence": "Original artificial test data; no third-party market observations",
+  "price_basis": "raw",
+  "source": "QuantLab generated test fixture; NOT historical market data",
+  "tick_size": "0.01",
+  "timezone": "UTC",
+  "transformations": "Artificial OHLC ranges constructed around a seeded synthetic close path"
+}

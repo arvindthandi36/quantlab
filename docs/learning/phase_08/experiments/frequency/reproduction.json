@@ -1,0 +1,6 @@
+{
+  "outcome_digest": "39205d997077e86b32fb839007d7a1cf722d66e2e46853d543a4247edac89bc3",
+  "run_index": 646,
+  "variant": "every-20",
+  "verification": "Full regeneration matched batch metrics and hashes; replay verified"
+}

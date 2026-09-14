@@ -1,0 +1,30 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+runs/manual/
+runs/learning/
+runs/options/
+
+# Local portfolio-risk sessions and exploratory studies
+runs/risk/
+
+# Local generated/private sessions and exploratory work
+runs/
+.env
+.env.*
+*.pem
+*.key
+
+# Local release bundles, archives and temporary capture material
+release-artifacts/
+*.log

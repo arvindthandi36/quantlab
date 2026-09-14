@@ -1,0 +1,19 @@
+{
+  "baseline_test_ids": 1507,
+  "final_test_ids": 1732,
+  "missing_original_ids": [],
+  "added_ids": 225,
+  "preexisting_test_files": 61,
+  "changed_preexisting_test_files": [],
+  "changed_preexisting_source_files": [
+    "src/quantlab/explainability/service.py",
+    "src/quantlab/explainability/registry.py",
+    "src/quantlab/trading/server.py",
+    "src/quantlab/trading/navigation.py",
+    "src/quantlab/trading/static/explain.js"
+  ],
+  "core_workflow_equality": true,
+  "final_test_result": "1732 passed in 101.04s (0:01:41)",
+  "new_environment_cases": 222,
+  "new_registry_cases": 3
+}

@@ -1,0 +1,89 @@
+Scripted verification with test answers; these are not Arvind's answers.
+OBSERVE +0.000s | inventory +0
+Best bid unavailable / ask unavailable
+Reference £100.0000 (public opening fallback)
+Cash £10000.0000 | marked P&L £0.0000
+Your resting quotes: none
+Recent own fills: none
+Provider markouts: public-event horizons, + favourable / - adverse:
+  No own fills yet.
+PREDICT: Scenario: you are long 5 units. To reduce inventory, should the quote centre move up or down?
+Your prediction: Hint: Think about which change discourages another purchase while encouraging someone to buy from you.
+Your prediction: Prediction recorded. Choose your quotes; explanation follows the result.
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): Invalid quote input: not enough values to unpack (expected 4, got 1)
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): DECIDE: posted 1 bid / 2 ask units.
+RESULT: inventory +0; marked P&L £0.0000.
+EXPLAIN: Your prediction was correct. Down: a lower bid discourages more buying; a lower ask makes selling existing inventory easier.
+OBSERVE +1.000s | inventory +0
+Best bid £100.0200 / ask £100.0300
+Reference £100.0000 (public opening fallback)
+Cash £10000.0000 | marked P&L £0.0000
+Your resting quotes: buy 1 @ £99.9800, sell 2 @ £100.0300
+Recent own fills: none
+Provider markouts: public-event horizons, + favourable / - adverse:
+  No own fills yet.
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): DECIDE: posted 1 bid / 2 ask units.
+RESULT: inventory +0; marked P&L £0.0000.
+OBSERVE +2.000s | inventory +0
+Best bid £99.9800 / ask £100.0300
+Reference £100.0200 (last transaction fallback)
+Cash £10000.0000 | marked P&L £0.0000
+Your resting quotes: buy 1 @ £99.9800, sell 2 @ £100.0300
+Recent own fills: none
+Provider markouts: public-event horizons, + favourable / - adverse:
+  No own fills yet.
+PREDICT: Scenario: tight spreads, many fills, consistently negative provider markouts. Could better-informed takers be picking off your quotes? Answer yes or no.
+Your prediction: Hint: A fill only tells you someone accepted your price. Consider why they wanted that trade.
+Your prediction: Prediction recorded. Choose your quotes; explanation follows the result.
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): DECIDE: posted 1 bid / 2 ask units.
+RESULT: inventory -2; marked P&L -£0.0020.
+EXPLAIN: Your prediction was correct. Yes: informed selection is one possible cause. High fill rate alone is not success; unrelated price moves can also produce negative markouts.
+OBSERVE +3.000s | inventory -2
+Best bid £100.0400 / ask unavailable
+Reference £100.0500 (last transaction fallback)
+Cash £10200.0980 | marked P&L -£0.0020
+Your resting quotes: buy 1 @ £100.0000
+Recent own fills: #2 sell 2 @ £100.0500
+Provider markouts: public-event horizons, + favourable / - adverse:
+  Fill #2 [public_midpoint]: h1 horizon_not_reached; h5 horizon_not_reached; h20 horizon_not_reached
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): DECIDE: posted 1 bid / 2 ask units.
+RESULT: inventory -1; marked P&L £0.0370.
+OBSERVE +4.000s | inventory -1
+Best bid unavailable / ask £100.0800
+Reference £100.0300 (last transaction fallback)
+Cash £10100.0670 | marked P&L £0.0370
+Your resting quotes: sell 2 @ £100.0800
+Recent own fills: #2 sell 2 @ £100.0500, #5 buy 1 @ £100.0300
+Provider markouts: public-event horizons, + favourable / - adverse:
+  Fill #2 [public_midpoint]: h1 -1.000 ticks/unit; h5 horizon_not_reached; h20 horizon_not_reached
+  Fill #5 [public_midpoint]: h1 horizon_not_reached; h5 horizon_not_reached; h20 horizon_not_reached
+PREDICT: Scenario: volatility rises while you carry large inventory. Does valuation risk rise or fall?
+Your prediction: Prediction recorded. Choose your quotes; explanation follows the result.
+DECIDE: bid distance, ask distance, bid size, ask size (ticks/units; blank repeats; q stops): DECIDE: posted 1 bid / 2 ask units.
+RESULT: inventory +0; marked P&L £0.0560.
+EXPLAIN: Your prediction was correct. It rises: a larger position multiplies the effect of price changes; higher volatility makes larger changes more likely. This strategy does not yet estimate volatility.
+QuantLab Market Making Lab | manual | PUBLIC VIEW
++0.000s centre £100.0000: bid 1 @ £99.9800, ask 2 @ £100.0300; inventory +0
++1.000s centre £100.0000: bid 1 @ £99.9800, ask 2 @ £100.0300; inventory +0
++2.000s centre £100.0200: bid 1 @ £100.0000, ask 2 @ £100.0500; inventory +0
++2.452s Fill #2: sell 2 @ £100.0500; inventory -2, marked P&L -£0.0020
++3.000s centre £100.0500: bid 1 @ £100.0300, ask 2 @ £100.0800; inventory -2
++3.657s Fill #5: buy 1 @ £100.0300; inventory -1, marked P&L £0.0370
++4.000s centre £100.0300: bid 1 @ £100.0100, ask 2 @ £100.0600; inventory -1
++4.485s Fill #6: buy 1 @ £100.0100; inventory +0, marked P&L £0.0560
+End: inventory +0; maker quotes cancelled; inventory remains marked.
+Execution cash £0.0600; fees £0.0040; cash balance £10000.0560.
+FIFO realised trading P&L £0.0600; realised after fees £0.0560; unrealised £0.0000.
+Total marked P&L £0.0560 = execution-edge proxy £0.0900 + inventory/reference movement -£0.0300 - fees £0.0040.
+Fills 3: 2 buys/1 sells; units 2 bought/2 sold; executed/posted 26.7%.
+Time-weighted inventory -0.648; average |inventory| 0.648; RMS 1.063; max |inventory| 2.
+Average own quoted spread £0.0500 (71.9% time coverage); effective spread £0.0225 (4 units covered).
+Turnover £400.1400; maximum observed drawdown £0.0020.
+Positive marked P&L; execution edge contributed. Review markouts and inventory risk.
+Provider midpoint markouts (public-event horizons; diagnostic, not cash P&L):
+  Fill #2 [public_midpoint]: h1 -1.000 ticks/unit; h5 +3.500 ticks/unit; h20 horizon_not_reached
+  Fill #5 [public_midpoint]: h1 +0.500 ticks/unit; h5 reference_unavailable_at_horizon; h20 horizon_not_reached
+  Fill #6 [public_midpoint]: h1 reference_unavailable_at_horizon; h5 horizon_not_reached; h20 horizon_not_reached
+  Mean h1: -£0.0050/unit; units available 3, missing 1, pending 0.
+  Mean h5: £0.0350/unit; units available 2, missing 1, pending 1.
+  Mean h20: unavailable/unit; units available 0, missing 0, pending 4.

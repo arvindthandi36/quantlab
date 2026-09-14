@@ -1,0 +1,11 @@
+{
+  "actual_evaluation_reuse_warnings": [],
+  "development_outcome_digest": "8ffe585560956259ee04b2f7670431e959578a248601e1fb2cc477a136b47d49",
+  "development_sessions_per_variant": 1600,
+  "evaluation_outcome_digest": "ac070885124861a585897eeb3998c793b5518d4bc63ac95a96fa0c02a21d4f78",
+  "evaluation_registered_after_development_completed": true,
+  "evaluation_sessions_per_variant": 1000,
+  "note": "Development exploration did not alter the frozen baseline. Exact replay inspects existing exposed evaluation evidence, not fresh tuning evidence.",
+  "overlap_count": 0,
+  "same_baseline_configurations_verified": true
+}

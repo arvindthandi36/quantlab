@@ -1,0 +1,59 @@
+{
+  "timings": {
+    "trading_vwap": {
+      "n": 30,
+      "median_ms": 0.8933959761634469,
+      "p95_ms": 0.9847090113908052
+    },
+    "trading_pnl": {
+      "n": 30,
+      "median_ms": 0.9646459948271513,
+      "p95_ms": 1.1426249984651804
+    },
+    "options_delta": {
+      "n": 30,
+      "median_ms": 9.23333305399865,
+      "p95_ms": 9.81750013306737
+    },
+    "risk_var": {
+      "n": 30,
+      "median_ms": 6.933020893484354,
+      "p95_ms": 7.404666859656572
+    },
+    "statarb_z_score": {
+      "n": 30,
+      "median_ms": 1.7915210919454694,
+      "p95_ms": 1.9780839793384075
+    },
+    "what_if_volatility": {
+      "n": 10,
+      "median_ms": 9.321333025582135,
+      "max_ms": 9.89016704261303
+    },
+    "what_if_correlation": {
+      "n": 10,
+      "median_ms": 5.929333972744644,
+      "max_ms": 6.081625120714307
+    },
+    "what_if_order_size": {
+      "n": 10,
+      "median_ms": 0.3828959306702018,
+      "max_ms": 0.4903329536318779
+    },
+    "what_if_inventory": {
+      "n": 10,
+      "median_ms": 0.4788750084117055,
+      "max_ms": 0.5592908710241318
+    },
+    "what_if_entry_threshold": {
+      "n": 10,
+      "median_ms": 3.2989790197461843,
+      "max_ms": 3.694042097777128
+    }
+  },
+  "retained_explanation_cache_bytes": 442909,
+  "traced_retained_bytes": 23142,
+  "traced_peak_bytes": 384848,
+  "workload": "Warm core reports; 1,000 risk paths already computed. Times are local Python response construction, not browser rendering or universal guarantees. Explain does not launch a new experiment.",
+  "memory_scope": "Twenty repeated risk explanations; tracemalloc Python allocations, not whole-process RSS."
+}

@@ -1,0 +1,479 @@
+{
+  "design_digest": "bf9b4fcbee6ec6d4236e1c8a3373b0a3807d50b22bf35eadc740e8bc59384f54",
+  "registered_at": "2026-09-11T00:56:12.076351+00:00",
+  "schema_version": 1,
+  "simulation_seeds": [
+    92032980692353128645868760521166338187439201860391185903062731514006809240266,
+    48712727525638387086227277731330558232683157834994424498578994155713837664794,
+    181257566139319529021668710231748376300511414514468277063305145896184945264024,
+    20017752270695680152233888760251353643806194965790066604834736282325242445588,
+    204003268753843129138049915964353738130143263596142946837695007377134513076412,
+    202436332673822635353397367617762430845570615168057974248936733539514389322128,
+    61220899501351337825269833788851712250170152754735481862445654282643994058602,
+    42810676843598314886338763320918203137855958466555930066835539095178234705324,
+    204361413067686439161865448608322207517466203634819304169414683236897188257826,
+    182758352363698784342164216983176592293729906324889778510656924130509658316328,
+    195391840130457500980818502305404431979912181103234576935600666320141516061872,
+    17641730239132819337919723489863790959992625965063867607216452210026545554218,
+    1484383136199096780328585456327142417348231669794117112239693326182654934430,
+    73601954897173572534615624734910873188415705380033639422684526662524016138332,
+    75701110788388667600665545747971688395814180086946499837669146343925562470824,
+    108558290286211770509424072769078288340019663611797643275114130610000873221760,
+    215698512664337379437853604761166958054210923824808378040606119248936571014680,
+    158973220242278192154016132699624820965419819268112219037686635952891334791332,
+    178550663874872547796473692807573760876420110184197945286668025882135345997650,
+    99003629409724868636513946294053693718806502664384300739864858705948429835720,
+    117277171480747092911002599860461740300313530924451317585064567730868795632702,
+    210418427453984090683183467486756509570132888221518903018895496491673128929918,
+    109006795979948863018140189240777738983241616203327246037960535496267672217726,
+    139073535557910357261445892962952209406170864229888947255931707236835204994106,
+    212360039819845956615547715377096424712330639207303677741122503117296081117318,
+    191463871824032581839690000654146240923037665899998486620379150717548373926490,
+    95520444881240503472865108893167928833856663538983263927089402611660252121048,
+    114493503365076518817687835928115343336617742387905339533969450105940539965170,
+    18595632659765746113308128204685501682783722886651005644751658978085567577786,
+    176853514798196529271708901243018834449899414253490365838666464004639500298924,
+    75189268677950391107092024914092833256509564730917004615110696444503482148566,
+    213111858892867346191887386419863323302432529151035227571676170859234418431210,
+    140788327263062596101587660786334383477034633235737628429115014690334297267486,
+    209728915717659796388982345698829672177467233564060939135774466664656725017160,
+    198300089775388583939360880316385849716397225375629180861738053159499708594058,
+    16752202956147647847956636392610453463630813977030108188685636334056991806130,
+    167581798649470180704402953808071333323210882384825611522511921981363999529758,
+    72423591542693302093580607880055037519138694330852904494077515863697709801238,
+    171880834199780400212358911574398663149818641122693387650655771300801879823130,
+    128656090578512320228093840217964048228057540525785001164220449311068141251858
+  ],
+  "spec": {
+    "adapter": "gaussian-equal-skill-control-v1",
+    "bootstrap_resamples": 2000,
+    "hypothesis": "The selected development winner will tend to overstate its untouched evaluation mean; all variants have known true mean zero. This is a statistical control, not trade P&L.",
+    "limitations": [
+      "Synthetic performance is not evidence of real-world alpha.",
+      "Independent sessions conditional on one model; uncertainty excludes model error.",
+      "Exploratory metrics/intervals are not corrected for multiple testing.",
+      "Missing metrics are reported with coverage, not replaced by zero."
+    ],
+    "paired": false,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "Can selecting the best of equal-skill variants create apparent skill?",
+    "relationships": [],
+    "seeds": {
+      "pool": "development",
+      "root": 113222207025201800389088784922897608555813991227298903875767394167900211115691,
+      "runs": 40,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "0"
+        },
+        "name": "variant-00"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "1"
+        },
+        "name": "variant-01"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "2"
+        },
+        "name": "variant-02"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "3"
+        },
+        "name": "variant-03"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "4"
+        },
+        "name": "variant-04"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "5"
+        },
+        "name": "variant-05"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "6"
+        },
+        "name": "variant-06"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "7"
+        },
+        "name": "variant-07"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "8"
+        },
+        "name": "variant-08"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "9"
+        },
+        "name": "variant-09"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "10"
+        },
+        "name": "variant-10"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "11"
+        },
+        "name": "variant-11"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "12"
+        },
+        "name": "variant-12"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "13"
+        },
+        "name": "variant-13"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "14"
+        },
+        "name": "variant-14"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "15"
+        },
+        "name": "variant-15"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "16"
+        },
+        "name": "variant-16"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "17"
+        },
+        "name": "variant-17"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "18"
+        },
+        "name": "variant-18"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "19"
+        },
+        "name": "variant-19"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "20"
+        },
+        "name": "variant-20"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "21"
+        },
+        "name": "variant-21"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "22"
+        },
+        "name": "variant-22"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "23"
+        },
+        "name": "variant-23"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "24"
+        },
+        "name": "variant-24"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "25"
+        },
+        "name": "variant-25"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "26"
+        },
+        "name": "variant-26"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "27"
+        },
+        "name": "variant-27"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "28"
+        },
+        "name": "variant-28"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "29"
+        },
+        "name": "variant-29"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "30"
+        },
+        "name": "variant-30"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "31"
+        },
+        "name": "variant-31"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "32"
+        },
+        "name": "variant-32"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "33"
+        },
+        "name": "variant-33"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "34"
+        },
+        "name": "variant-34"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "35"
+        },
+        "name": "variant-35"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "36"
+        },
+        "name": "variant-36"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "37"
+        },
+        "name": "variant-37"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "38"
+        },
+        "name": "variant-38"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "39"
+        },
+        "name": "variant-39"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "40"
+        },
+        "name": "variant-40"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "41"
+        },
+        "name": "variant-41"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "42"
+        },
+        "name": "variant-42"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "43"
+        },
+        "name": "variant-43"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "44"
+        },
+        "name": "variant-44"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "45"
+        },
+        "name": "variant-45"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "46"
+        },
+        "name": "variant-46"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "47"
+        },
+        "name": "variant-47"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "48"
+        },
+        "name": "variant-48"
+      },
+      {
+        "configuration": {
+          "mean": 0.0,
+          "sd": 1.0,
+          "variant_id": "49"
+        },
+        "name": "variant-49"
+      }
+    ]
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.5.0",
+    "scipy": "1.18.1"
+  }
+}

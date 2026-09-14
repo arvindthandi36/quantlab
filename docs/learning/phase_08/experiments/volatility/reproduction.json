@@ -1,0 +1,6 @@
+{
+  "outcome_digest": "c1016ea7dcd74522eee3bea32e87cc23dc7daec433a32fe66d8ebee025adcbb2",
+  "run_index": 596,
+  "variant": "process-vol-0.15",
+  "verification": "Full regeneration matched batch metrics and hashes; replay verified"
+}

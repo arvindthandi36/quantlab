@@ -1,0 +1,101 @@
+{
+  "schema": "quantlab-environment-v1",
+  "environment": "SCENARIO",
+  "quantlab_version": "1.0.0",
+  "execution_version": "approved-core-scenario-v1",
+  "configuration": {
+    "key": "liquidity_shock",
+    "seed": 42,
+    "hidden": true,
+    "steps": 40,
+    "mode": "free"
+  },
+  "model_configuration": {
+    "configuration": {
+      "capital": 10000,
+      "depth": 40,
+      "fee": 0.005,
+      "process_config": {
+        "assets": [
+          {
+            "identifier": "SA-X",
+            "initial": 100,
+            "loading": 1,
+            "volatility": 0.25
+          },
+          {
+            "identifier": "SA-Y",
+            "initial": 100,
+            "loading": 1,
+            "volatility": 0.25
+          }
+        ],
+        "common_factor": false,
+        "correlation": 0,
+        "links": [
+          {
+            "alpha": 0,
+            "beta": 1,
+            "break_at": null,
+            "break_kind": "none",
+            "mean": 0,
+            "phi": 0.92,
+            "sigma": 0.16,
+            "x": 0,
+            "y": 1
+          }
+        ],
+        "seed": 42
+      },
+      "rules": {
+        "block": 10,
+        "entry": 2,
+        "execution_order": "y_first",
+        "exit": 0.4,
+        "max_gross": 10000,
+        "max_holding": 40,
+        "max_imbalance": 2000,
+        "max_loss": 50,
+        "mode": "fixed",
+        "notional": 1000,
+        "sizing": "hedge_ratio",
+        "stop": 4,
+        "volatility_budget": 3,
+        "window": 20,
+        "z_window": 12
+      },
+      "scenario_name": "stable",
+      "seed": 42,
+      "spread_ticks": 1,
+      "steps": 40
+    },
+    "engine": "statarb",
+    "mechanism": "Existing venue liquidity command reduces both books to two units at the midpoint",
+    "scenario": "liquidity_shock",
+    "scheduled_input": "Existing venue liquidity command reduces both books to two units at the midpoint",
+    "seed": 42,
+    "title": "Liquidity shock"
+  },
+  "source": "QuantLab controlled synthetic engines",
+  "timestamp_range": [
+    0,
+    40
+  ],
+  "actions": [
+    {
+      "kind": "step",
+      "payload": {
+        "count": 20
+      },
+      "state_digest": "5959db2eacd23b03422ac57db6fe13c5f21d601b9b2bfe8714a67a07b957b8c1"
+    },
+    {
+      "kind": "step",
+      "payload": {
+        "count": 20
+      },
+      "state_digest": "6f7e28be55bf98713a62bf1c053fa8c8526427bd3cf2e17f826959c5c459e47c"
+    }
+  ],
+  "final_digest": "6f7e28be55bf98713a62bf1c053fa8c8526427bd3cf2e17f826959c5c459e47c"
+}

@@ -1,0 +1,116 @@
+{
+  "largest_modules": [
+    [
+      839,
+      "src/quantlab/trading/session.py"
+    ],
+    [
+      820,
+      "src/quantlab/tutor/questions.py"
+    ],
+    [
+      685,
+      "src/quantlab/statarb/session.py"
+    ],
+    [
+      672,
+      "src/quantlab/options/session.py"
+    ],
+    [
+      605,
+      "src/quantlab/tutor/service.py"
+    ],
+    [
+      571,
+      "src/quantlab/tutor/derivatives.py"
+    ],
+    [
+      494,
+      "src/quantlab/statarb/research.py"
+    ],
+    [
+      473,
+      "src/quantlab/risk/session.py"
+    ],
+    [
+      465,
+      "src/quantlab/trading/server.py"
+    ],
+    [
+      440,
+      "src/quantlab/tutor/progress.py"
+    ],
+    [
+      438,
+      "src/quantlab/tutor/curriculum.py"
+    ],
+    [
+      356,
+      "src/quantlab/options/application.py"
+    ],
+    [
+      326,
+      "src/quantlab/tutor/context.py"
+    ],
+    [
+      310,
+      "src/quantlab/market_making/lab.py"
+    ],
+    [
+      297,
+      "src/quantlab/tutor/risk.py"
+    ]
+  ],
+  "dependency_licenses": [
+    {
+      "name": "numpy",
+      "version": "2.5.3",
+      "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+    },
+    {
+      "name": "ruff",
+      "version": "0.16.6",
+      "license": "MIT"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.65.0",
+      "license": "MIT"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.1",
+      "license": "License agreement for matplotlib versions 1.3.0 and later"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "license": "MIT"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "license": "MIT-CMU"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1",
+      "license": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers."
+    },
+    {
+      "name": "hypothesis",
+      "version": "6.168.0",
+      "license": "MPL-2.0"
+    }
+  ],
+  "scanned_files": 378,
+  "high_confidence_credential_findings": [],
+  "absolute_path_files": [
+    "docs/learning/phase_06_report.md",
+    "docs/learning/phase_09/profile.txt",
+    "docs/learning/phase_10/profile.txt",
+    "docs/learning/phase_08/demo/hedging-profile.txt"
+  ],
+  "tracked_files": 0,
+  "note": "No original Git commits; scans include release candidates and historical evidence. No matched credential values emitted."
+}

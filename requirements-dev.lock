@@ -1,0 +1,15 @@
+# Verified development dependency snapshot: Python 3.14.0, macOS, 2026-09-10.
+# Install with: python -m pip install -c requirements-dev.lock -e '.[dev]'
+# Pins installed dev tools and their dependencies, not Python or the build backend.
+hypothesis==6.168.0
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
+ruff==0.16.6
+sortedcontainers==2.4.0
+
+
+# Installer security baseline for the clean-install gate
+pip==26.2.1

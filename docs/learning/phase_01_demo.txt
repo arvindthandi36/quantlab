@@ -1,0 +1,48 @@
+QuantLab | Arvind Thandi | Phase 1 matching-engine demonstration
+Tick: £0.01 | Whole units | Fixed instructions, no randomness | No P&L model
+
+Initial book
+ASKS
+Price | Total Quantity | Order Count
+£100.04 | 5 | 1 order
+£100.02 | 7 | 2 orders
+BIDS
+Price | Total Quantity | Order Count
+£99.98 | 6 | 1 order
+£99.97 | 4 | 1 order
+  Spread: £0.04
+  Mid-price: £100
+
+Incoming buy limit: 5 units, maximum price £100.05
+  Trade 1: 3 at £100.02 | maker=A | taker=buy-aggressive
+  Trade 2: 2 at £100.02 | maker=B | taker=buy-aggressive
+
+After aggressive limit order
+ASKS
+Price | Total Quantity | Order Count
+£100.04 | 5 | 1 order
+£100.02 | 2 | 1 order
+BIDS
+Price | Total Quantity | Order Count
+£99.98 | 6 | 1 order
+£99.97 | 4 | 1 order
+  Spread: £0.04
+  Mid-price: £100
+
+Cancel B's remaining 2 units; then sell 8 units at market:
+  Sell 6 at £99.98
+  Sell 2 at £99.97
+
+Buy 7 at market: executed 5; cancelled 2 because sell liquidity ran out.
+
+Final book
+ASKS
+Price | Total Quantity | Order Count
+(empty)
+BIDS
+Price | Total Quantity | Order Count
+£99.97 | 2 | 1 order
+  Spread / mid-price: unavailable (one or both sides are empty)
+
+Conservation PASS: 42 submitted order-units = 2 × 18 traded units + 2 resting + 4 cancelled.
+Priority and book invariants PASS after every operation.

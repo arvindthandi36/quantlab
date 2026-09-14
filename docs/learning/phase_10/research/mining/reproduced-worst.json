@@ -1,0 +1,10 @@
+[
+  {
+    "run_index": 11,
+    "variant": "in_sample"
+  },
+  {
+    "run_index": 11,
+    "variant": "out_of_sample"
+  }
+]

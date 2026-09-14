@@ -1,0 +1,15 @@
+{
+  "registered_before_evaluation": true,
+  "phase": 10,
+  "default_rules": {"entry":2,"exit":0.4,"stop":4,"window":80,"z_window":40,"max_holding":40,"notional":1000},
+  "research_rules": {"entry":2,"exit":0.4,"stop":4,"window":60,"z_window":30,"max_holding":30,"block":20,"notional":1000},
+  "studies": [
+    {"name":"generalisation","root":10101000,"pool":"evaluation","runs":32},
+    {"name":"walk_forward","root":10101001,"pool":"evaluation","runs":32},
+    {"name":"costs","root":10101002,"pool":"evaluation","runs":32},
+    {"name":"regime","root":10101003,"pool":"evaluation","runs":32},
+    {"name":"mining","root":10101004,"pool":"evaluation","runs":16}
+  ],
+  "single_holdouts": {"parameter_sweep_seed":201042,"pair_mining_seed":201043,"split":160,"steps":240},
+  "rule": "No seed search, default tuning or evaluation-driven selection. All results, failures and losing trades retained. Generalisation/mining compare equal-length trading blocks."
+}

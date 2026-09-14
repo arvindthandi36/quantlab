@@ -1,0 +1,72 @@
+{
+  "configuration": {
+    "market": {
+      "duration_us": 30000000,
+      "informed_cost_ticks": 0.25,
+      "informed_minimum_edge_ticks": 0.25,
+      "informed_prior_sd_ticks": 8.0,
+      "informed_rate_per_second": 1,
+      "informed_uncertainty_multiplier": 0.5,
+      "initial_latent_ticks": 10000,
+      "latent_sigma_ticks": 2.0,
+      "latent_step_us": 1000000,
+      "liquidity_max_quantity": 3,
+      "liquidity_rate_per_second": 0.6,
+      "markout_horizons_events": [
+        1,
+        5,
+        20
+      ],
+      "max_events": 10000,
+      "noise_max_quantity": 4,
+      "noise_price_radius_ticks": 2,
+      "noise_rate_per_second": 1.0,
+      "opening_reference_ticks": 10000,
+      "signal_noise_ticks": 2.0,
+      "tick_size": "0.01"
+    },
+    "strategy": {
+      "fee_ticks": "1/10",
+      "half_spread_ticks": "2/1",
+      "hard_limit": 8,
+      "initial_cash_ticks": "1000000/1",
+      "inventory_skew_ticks": "1/2",
+      "max_decisions": 10000,
+      "quote_size": 2,
+      "refresh_us": 1000000,
+      "soft_limit": 4,
+      "strategy": "fixed"
+    }
+  },
+  "full": {
+    "elapsed_seconds": 0.29013945907354355,
+    "peak_traced_bytes": 488180,
+    "profile_top15": "         664393 function calls (658624 primitive calls) in 0.200 seconds\n\n   Ordered by: cumulative time\n   List reduced from 250 to 15 due to restriction <15>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.207    0.207 maker.py:217(run)\n        1    0.000    0.000    0.207    0.207 lab.py:294(run_to_completion)\n       31    0.000    0.000    0.164    0.005 lab.py:196(advance_to_decision)\n      102    0.000    0.000    0.145    0.001 lab.py:156(_market_step)\n      916    0.011    0.000    0.143    0.000 accounting.py:193(check_invariants)\n      133    0.001    0.000    0.123    0.001 lab.py:119(_append)\n6873/6328    0.012    0.000    0.111    0.000 {built-in method builtins.sum}\n      266    0.001    0.000    0.087    0.000 accounting.py:117(mark)\n    37935    0.020    0.000    0.076    0.000 fractions.py:697(forward)\n     8275    0.005    0.000    0.046    0.000 accounting.py:202(<genexpr>)\n       30    0.000    0.000    0.042    0.001 lab.py:228(decide)\n      163    0.001    0.000    0.042    0.000 lab.py:93(_check)\n      193    0.001    0.000    0.034    0.000 accounting.py:166(snapshot)\n    26188    0.014    0.000    0.026    0.000 fractions.py:794(_add)\n     9365    0.006    0.000    0.026    0.000 fractions.py:711(reverse)\n\n\n",
+    "retained_traced_bytes": 446696,
+    "sessions_per_second": 17.23309203086581
+  },
+  "identical_outcomes_verified": true,
+  "lightweight": {
+    "elapsed_seconds": 0.28848237497732043,
+    "peak_traced_bytes": 76235,
+    "profile_top15": "         664153 function calls (658384 primitive calls) in 0.200 seconds\n\n   Ordered by: cumulative time\n   List reduced from 247 to 15 due to restriction <15>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.207    0.207 maker.py:217(run)\n        1    0.000    0.000    0.206    0.206 lab.py:294(run_to_completion)\n       31    0.000    0.000    0.164    0.005 lab.py:196(advance_to_decision)\n      102    0.000    0.000    0.145    0.001 lab.py:156(_market_step)\n      916    0.012    0.000    0.142    0.000 accounting.py:193(check_invariants)\n      133    0.001    0.000    0.122    0.001 lab.py:119(_append)\n6873/6328    0.012    0.000    0.110    0.000 {built-in method builtins.sum}\n      266    0.001    0.000    0.087    0.000 accounting.py:117(mark)\n    37935    0.020    0.000    0.075    0.000 fractions.py:697(forward)\n     8275    0.005    0.000    0.045    0.000 accounting.py:202(<genexpr>)\n       30    0.000    0.000    0.042    0.001 lab.py:228(decide)\n      163    0.001    0.000    0.042    0.000 lab.py:93(_check)\n      193    0.001    0.000    0.034    0.000 accounting.py:166(snapshot)\n    26188    0.013    0.000    0.026    0.000 fractions.py:794(_add)\n     9365    0.006    0.000    0.026    0.000 fractions.py:711(reverse)\n\n\n",
+    "retained_traced_bytes": 17632,
+    "sessions_per_second": 17.332081380684293
+  },
+  "note": "Sequential local measurements, not a benchmark across machines. tracemalloc peak excludes native allocation not tracked by Python.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.5.0",
+    "scipy": "1.18.1"
+  }
+}

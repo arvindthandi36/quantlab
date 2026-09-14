@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantlab"
+version = "1.1.0"
+description = "Event-Driven Quantitative Trading, Derivatives, Risk & Research Laboratory"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+authors = [{name = "Arvind Thandi"}]
+dependencies = ["numpy>=2,<3", "scipy>=1.15,<2", "matplotlib>=3.10,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "hypothesis>=6,<7", "ruff>=0.12,<1"]
+research = ["numpy>=2,<3", "scipy>=1.15,<2", "matplotlib>=3.10,<4"]
+
+[project.scripts]
+quantlab = "quantlab.product.cli:main"
+quantlab-demo = "quantlab.demo:main"
+quantlab-market-demo = "quantlab.market_demo:main"
+quantlab-maker-demo = "quantlab.maker_demo:main"
+quantlab-research = "quantlab.research.cli:main"
+quantlab-trade = "quantlab.trading.server:main"
+quantlab-tutor-demo = "quantlab.tutor_demo:main"
+quantlab-options-demo = "quantlab.options_demo:main"
+quantlab-risk-demo = "quantlab.risk_demo:main"
+quantlab-options-experiments = "quantlab.options_experiments:main"
+
+[tool.setuptools.package-data]
+"quantlab.trading" = ["static/*.html", "static/*.css", "static/*.js"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 96
+extend-exclude = ["venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

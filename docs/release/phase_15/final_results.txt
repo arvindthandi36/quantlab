@@ -1,0 +1,41 @@
+No entry for terminal type "unknown";
+using dumb terminal settings.
+........................................................................ [  3%]
+........................................................................ [  7%]
+........................................................................ [ 11%]
+........................................................................ [ 14%]
+........................................................................ [ 18%]
+........................................................................ [ 22%]
+........................................................................ [ 26%]
+........................................................................ [ 29%]
+........................................................................ [ 33%]
+........................................................................ [ 37%]
+........................................................................ [ 40%]
+........................................................................ [ 44%]
+........................................................................ [ 48%]
+........................................................................ [ 52%]
+........................................................................ [ 55%]
+........................................................................ [ 59%]
+........................................................................ [ 63%]
+........................................................................ [ 67%]
+........................................................................ [ 70%]
+........................................................................ [ 74%]
+........................................................................ [ 78%]
+........................................................................ [ 81%]
+........................................................................ [ 85%]
+........................................................................ [ 89%]
+........................................................................ [ 93%]
+........................................................................ [ 96%]
+.............................................................            [100%]
+============================= slowest 10 durations =============================
+3.77s call     tests/integration/test_statarb_research_tutor.py::test_pair_mining_discloses_fixed_universe_every_candidate_and_selection
+2.08s call     tests/integration/test_statarb_research_tutor.py::test_sweep_preserves_all_tried_settings_and_failure
+1.75s call     tests/integration/test_statarb_sessions.py::test_generated_mixed_operations_conserve_inventory_and_cash
+1.44s call     tests/integration/test_statarb_research_tutor.py::test_phase5_adapter_registered_execution_and_reproduction
+1.02s call     tests/integration/test_statarb_research_tutor.py::test_invalid_oracle_explicitly_rejected_despite_apparent_gain
+0.79s call     tests/demos/test_boundaries.py::test_future_changes_do_not_change_before_response_or_explanation[winner]
+0.73s call     tests/integration/test_manual_sessions.py::test_generated_mixed_manual_and_background_sequences
+0.66s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[rolling]
+0.65s call     tests/integration/test_statarb_research_tutor.py::test_causal_backtests_reproducible_without_capture_difference[fixed]
+0.61s call     tests/integration/test_statarb_sessions.py::test_future_mutation_cannot_change_past_entry_exit_or_execution[fixed]
+1933 passed in 120.81s (0:02:00)

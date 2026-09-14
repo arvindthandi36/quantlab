@@ -1,0 +1,320 @@
+{
+  "analysis": {
+    "paired": {
+      "entry-2.5 minus entry-2.0": {
+        "bootstrap": null,
+        "degrees_of_freedom": 0,
+        "difference": "second minus first",
+        "mean_exceeds_practical_threshold": true,
+        "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Test undefined: insufficient observations or zero estimated variance. Statistical significance is not strategy validity or practical value.",
+        "p_value_two_sided": null,
+        "practical_threshold": 0.05,
+        "proportion_negative": 0.0,
+        "proportion_positive": 1.0,
+        "proportion_zero": 0.0,
+        "standardised_paired_effect": null,
+        "summary": {
+          "available": 1,
+          "maximum": 0.18399999999928696,
+          "mean": 0.18399999999928696,
+          "mean_ci": null,
+          "median": 0.18399999999928696,
+          "minimum": 0.18399999999928696,
+          "missing": 0,
+          "p05": 0.18399999999928696,
+          "p25": 0.18399999999928696,
+          "p75": 0.18399999999928696,
+          "p95": 0.18399999999928696,
+          "requested": 1,
+          "standard_deviation": null,
+          "standard_error": null,
+          "variance": null
+        },
+        "t_statistic": null
+      }
+    },
+    "variants": {
+      "entry-2.0": {
+        "correlations": {},
+        "distributions": {
+          "drawdown": {
+            "available": 1,
+            "maximum": 1.038,
+            "mean": 1.038,
+            "mean_ci": null,
+            "median": 1.038,
+            "minimum": 1.038,
+            "missing": 0,
+            "p05": 1.038,
+            "p25": 1.038,
+            "p75": 1.038,
+            "p95": 1.038,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          },
+          "fills": {
+            "available": 1,
+            "maximum": 14.0,
+            "mean": 14.0,
+            "mean_ci": null,
+            "median": 14.0,
+            "minimum": 14.0,
+            "missing": 0,
+            "p05": 14.0,
+            "p25": 14.0,
+            "p75": 14.0,
+            "p95": 14.0,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          },
+          "net_pnl": {
+            "available": 1,
+            "maximum": -0.5239999999994325,
+            "mean": -0.5239999999994325,
+            "mean_ci": null,
+            "median": -0.5239999999994325,
+            "minimum": -0.5239999999994325,
+            "missing": 0,
+            "p05": -0.5239999999994325,
+            "p25": -0.5239999999994325,
+            "p75": -0.5239999999994325,
+            "p95": -0.5239999999994325,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          }
+        },
+        "primary_bootstrap": null,
+        "primary_tail": {
+          "convention": "strict breaches; lower-tail mean uses ceil(0.05*n) sorted outcomes",
+          "p05": -0.5239999999994325,
+          "probability_below": {
+            "-0.25": 1.0,
+            "-0.5": 1.0,
+            "-1.0": 0.0,
+            "0.0": 1.0
+          },
+          "tail_count": 1,
+          "worst": -0.5239999999994325,
+          "worst_five_percent_mean": -0.5239999999994325
+        }
+      },
+      "entry-2.5": {
+        "correlations": {},
+        "distributions": {
+          "drawdown": {
+            "available": 1,
+            "maximum": 0.903,
+            "mean": 0.903,
+            "mean_ci": null,
+            "median": 0.903,
+            "minimum": 0.903,
+            "missing": 0,
+            "p05": 0.903,
+            "p25": 0.903,
+            "p75": 0.903,
+            "p95": 0.903,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          },
+          "fills": {
+            "available": 1,
+            "maximum": 10.0,
+            "mean": 10.0,
+            "mean_ci": null,
+            "median": 10.0,
+            "minimum": 10.0,
+            "missing": 0,
+            "p05": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p95": 10.0,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          },
+          "net_pnl": {
+            "available": 1,
+            "maximum": -0.3400000000001455,
+            "mean": -0.3400000000001455,
+            "mean_ci": null,
+            "median": -0.3400000000001455,
+            "minimum": -0.3400000000001455,
+            "missing": 0,
+            "p05": -0.3400000000001455,
+            "p25": -0.3400000000001455,
+            "p75": -0.3400000000001455,
+            "p95": -0.3400000000001455,
+            "requested": 1,
+            "standard_deviation": null,
+            "standard_error": null,
+            "variance": null
+          }
+        },
+        "primary_bootstrap": null,
+        "primary_tail": {
+          "convention": "strict breaches; lower-tail mean uses ceil(0.05*n) sorted outcomes",
+          "p05": -0.3400000000001455,
+          "probability_below": {
+            "-0.25": 1.0,
+            "-0.5": 0.0,
+            "-1.0": 0.0,
+            "0.0": 1.0
+          },
+          "tail_count": 1,
+          "worst": -0.3400000000001455,
+          "worst_five_percent_mean": -0.3400000000001455
+        }
+      }
+    }
+  },
+  "design_digest": "e89bccdf3e3d3c76371b4a0eaf301da38b05a0b25637cc831fa44536a948f01a",
+  "elapsed_seconds": 0.5668524578213692,
+  "finished_at": "2026-09-12T18:16:01.197692+00:00",
+  "interpretation": "entry-2.0: observed mean net_pnl=-0.524; losing/negative outcomes 100.0%. entry-2.5: observed mean net_pnl=-0.34; losing/negative outcomes 100.0%. Compare the full distributions and paired uncertainty with the original hypothesis. These conditional model outcomes do not establish real-world alpha, safety or an optimal parameter. Interpretation remains reviewable.",
+  "limitations": [
+    "One historical path, not independent Monte Carlo trials; no generalisation claim.",
+    "Training/evaluation boundaries are explicit and fitting is causal. Fixed unit sizing is not beta neutral.",
+    "Next-close bar paper execution; terminal inventory is marked, not falsely liquidated."
+  ],
+  "metric_units": {
+    "entry-2.0": {
+      "drawdown": "GBP",
+      "fills": "count",
+      "net_pnl": "GBP"
+    },
+    "entry-2.5": {
+      "drawdown": "GBP",
+      "fills": "count",
+      "net_pnl": "GBP"
+    }
+  },
+  "outcome_digest": "9a67f74730adbc13ecffaee10b16481a17bffe4d12ce311b319ac98cee3b4f6d",
+  "record_digest": "07ab9278d75a9b518d961c2465432212b01f72941e1a09caa00e1525905ac537",
+  "registered_at": "2026-09-12T18:16:00.627682+00:00",
+  "runs": [
+    {
+      "coverage": {
+        "environment": {
+          "fingerprints": [
+            "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+            "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+          ],
+          "type": "HISTORICAL"
+        },
+        "independent_historical_paths": 1
+      },
+      "environment_fingerprint": "169109c2443da48c61463410d4671c6b2052f8b3308057f87127b8c338788f6c",
+      "metrics": {
+        "drawdown": 1.038,
+        "fills": 14,
+        "net_pnl": -0.5239999999994325
+      },
+      "run_index": 0,
+      "simulation_seed": 147165143500359106264064254969208091013421226669214277393261326133786862395060,
+      "status": "complete",
+      "trajectory_fingerprint": "e390ca6d63b417b5b73efa7736127920a6aa4c6ab8068ee1b851e6226cbafa09",
+      "variant": "entry-2.0"
+    },
+    {
+      "coverage": {
+        "environment": {
+          "fingerprints": [
+            "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+            "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+          ],
+          "type": "HISTORICAL"
+        },
+        "independent_historical_paths": 1
+      },
+      "environment_fingerprint": "169109c2443da48c61463410d4671c6b2052f8b3308057f87127b8c338788f6c",
+      "metrics": {
+        "drawdown": 0.903,
+        "fills": 10,
+        "net_pnl": -0.3400000000001455
+      },
+      "run_index": 0,
+      "simulation_seed": 147165143500359106264064254969208091013421226669214277393261326133786862395060,
+      "status": "complete",
+      "trajectory_fingerprint": "c703e91712cb231e2c630fe06486ae7ed69445a788c5e403e296955028ba31d0",
+      "variant": "entry-2.5"
+    }
+  ],
+  "schema_version": 1,
+  "simulation_seeds": [
+    147165143500359106264064254969208091013421226669214277393261326133786862395060
+  ],
+  "spec": {
+    "adapter": "environment-historical-paper-pair-v1",
+    "bootstrap_resamples": 100,
+    "hypothesis": "A stricter threshold changes qualification; it need not improve executed outcomes.",
+    "limitations": [
+      "One historical path, not independent Monte Carlo trials; no generalisation claim.",
+      "Training/evaluation boundaries are explicit and fitting is causal. Fixed unit sizing is not beta neutral.",
+      "Next-close bar paper execution; terminal inventory is marked, not falsely liquidated."
+    ],
+    "paired": true,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "How do two prespecified entry thresholds behave on this one recorded path?",
+    "relationships": [],
+    "seeds": {
+      "pool": "development",
+      "root": 131042,
+      "runs": 1,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "entry": 2.0,
+          "environment": {
+            "fingerprints": [
+              "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+              "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+            ],
+            "type": "HISTORICAL"
+          },
+          "evaluation_end": 80,
+          "mode": "rolling",
+          "training_end": 30
+        },
+        "name": "entry-2.0"
+      },
+      {
+        "configuration": {
+          "entry": 2.5,
+          "environment": {
+            "fingerprints": [
+              "f65bacf7ca277e440e0bcbf52bc1a20cbff1fac7926e7816f04d3d410dcd483a",
+              "25ffecd1bf37f6eb013c32c7b3f288f88848b9ebd039f0baedeccf1c0c305c4b"
+            ],
+            "type": "HISTORICAL"
+          },
+          "evaluation_end": 80,
+          "mode": "rolling",
+          "training_end": 30
+        },
+        "name": "entry-2.5"
+      }
+    ]
+  },
+  "status": "complete",
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "1.0.0",
+    "scipy": "1.18.1"
+  },
+  "warnings": []
+}

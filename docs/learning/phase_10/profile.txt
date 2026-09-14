@@ -1,0 +1,33 @@
+         63132801 function calls (62490368 primitive calls) in 58.601 seconds
+
+   Ordered by: cumulative time
+   List reduced from 429 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     5772    0.155    0.000   40.502    0.007 <project>/src/quantlab/statarb/market.py:92(publish)
+    19544    1.421    0.000   40.283    0.002 <project>/src/quantlab/statarb/market.py:35(refresh)
+       29    0.027    0.001   38.281    1.320 <project>/src/quantlab/statarb/research.py:49(backtest)
+     4772    0.259    0.000   37.995    0.008 <project>/src/quantlab/statarb/session.py:363(publish)
+        1    0.002    0.002   35.424   35.424 <project>/src/quantlab/statarb_demo.py:140(<lambda>)
+        1    0.029    0.029   35.385   35.385 <project>/src/quantlab/statarb/research.py:161(select_pair)
+    49340    2.882    0.000   23.810    0.000 <project>/src/quantlab/trading/session.py:620(check_invariants)
+    19754    0.126    0.000   23.642    0.001 <project>/src/quantlab/trading/session.py:172(_public_event)
+    19822    0.173    0.000   21.612    0.001 <project>/src/quantlab/trading/session.py:138(_sample)
+        1    0.028    0.028   20.029   20.029 <project>/src/quantlab/statarb_demo.py:138(<lambda>)
+        1    0.004    0.004   20.001   20.001 <project>/src/quantlab/statarb_demo.py:174(multi)
+   219914    6.989    0.000   18.421    0.000 <project>/src/quantlab/portfolio/accounting.py:201(check_invariants)
+   307062    0.352    0.000   10.707    0.000 <project>/src/quantlab/orderbook/book.py:81(snapshot)
+   614124    0.699    0.000   10.235    0.000 <project>/src/quantlab/orderbook/book.py:75(depth)
+   614124    1.469    0.000    9.113    0.000 <project>/src/quantlab/orderbook/_side.py:57(snapshot)
+     3912    0.173    0.000    8.155    0.002 <project>/src/quantlab/statarb/statistics.py:168(with_fit)
+     5801    0.065    0.000    7.835    0.001 <project>/src/quantlab/statarb/statistics.py:144(at)
+   198460    0.444    0.000    7.730    0.000 <project>/src/quantlab/trading/session.py:111(_live)
+  1842372    3.844    0.000    7.602    0.000 <project>/src/quantlab/orderbook/_side.py:59(<genexpr>)
+    20032    0.052    0.000    7.340    0.000 <project>/src/quantlab/trading/session.py:126(_mark)
+    40064    0.169    0.000    7.206    0.000 <project>/src/quantlab/portfolio/accounting.py:125(mark)
+2034299/1690891    1.630    0.000    6.808    0.000 {built-in method builtins.sum}
+  2369156    1.148    0.000    5.976    0.000 /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py:697(forward)
+    40686    0.343    0.000    5.364    0.000 <project>/src/quantlab/portfolio/accounting.py:174(snapshot)
+     4982    0.044    0.000    4.983    0.001 <project>/src/quantlab/statarb/session.py:111(_collect)
+
+

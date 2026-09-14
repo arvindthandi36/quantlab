@@ -1,0 +1,21 @@
+{
+  "preview": "http://127.0.0.1:8771/demos",
+  "learning_profile": "separate temporary QA profile",
+  "checks": [
+    "58 topic cards and eight domains; all eight flagships visible",
+    "Order prediction answer; no result before reveal",
+    "Actual 3/4/3 FIFO fills, 100.023 VWAP, 8999.76 cash and 0.01 fees",
+    "Phase 12 panel reads demo fills, with live quiz/what-if controls suppressed",
+    "390 x 844 catalogue has document width 390; filter reduces to historical topic",
+    "390 x 844 historical demo has document width 390; pending order has no invented fill",
+    "Recording hides navigation but retains simulated historical execution, artificial fixture and full limitations",
+    "Restored viewport after mobile checks",
+    "Saved order journal uploaded; initial annotated public point has zero position and no fills",
+    "Saved replay question marked practice only; actual next event revealed separately",
+    "Process assessment says unknown and requires explicit user reflection",
+    "Final restarted server: partial hedge executes stock -26, leaving aggregate delta 25.143575",
+    "Named delta-before-hedge capture restores stock zero and delta 51.143575; showcase disables mastery and makes script/path exports available",
+    "Final preview returned to all 58 catalogue topics"
+  ],
+  "tool_limitation": "Browser-control file chooser delayed despite a short tool timeout; import completed. This delay is not a replay performance measurement."
+}

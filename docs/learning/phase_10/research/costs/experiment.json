@@ -1,0 +1,3376 @@
+{
+  "analysis": {
+    "paired": {
+      "high minus low": {
+        "bootstrap": {
+          "estimate": -9.45625,
+          "interval": {
+            "confidence": 0.95,
+            "high": -8.717015625,
+            "low": -10.1709140625,
+            "method": "percentile bootstrap"
+          },
+          "observational_unit": "complete matched session pair",
+          "resamples": 500,
+          "seed": 14920358537321133205334559452089502402886648192122602870516008116535932871828,
+          "standard_error": 0.3828843450740453
+        },
+        "degrees_of_freedom": 31,
+        "difference": "second minus first",
+        "mean_exceeds_practical_threshold": true,
+        "note": "Paired two-sided t test: H0 E[D]=0; H1 E[D] differs from zero. Statistical significance is not strategy validity or practical value.",
+        "p_value_two_sided": 1.3988133077550163e-21,
+        "practical_threshold": 0.05,
+        "proportion_negative": 1.0,
+        "proportion_positive": 0.0,
+        "proportion_zero": 0.0,
+        "standardised_paired_effect": -4.240770021910899,
+        "summary": {
+          "available": 32,
+          "maximum": -4.589999999999998,
+          "mean": -9.45625,
+          "mean_ci": {
+            "confidence": 0.95,
+            "high": -8.652305982177225,
+            "low": -10.260194017822776,
+            "method": "Student t mean"
+          },
+          "median": -9.18,
+          "minimum": -15.3,
+          "missing": 0,
+          "p05": -12.052999999999999,
+          "p25": -10.8375,
+          "p75": -8.16,
+          "p95": -5.78,
+          "requested": 32,
+          "standard_deviation": 2.229842682140777,
+          "standard_error": 0.3941842203802356,
+          "variance": 4.972198387096774
+        },
+        "t_statistic": -23.989417919566566
+      }
+    },
+    "variants": {
+      "high": {
+        "correlations": {},
+        "distributions": {
+          "average_trade": {
+            "available": 32,
+            "maximum": 1.14,
+            "mean": -0.6777606646825396,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -0.3503894750274873,
+              "low": -1.0051318543375918,
+              "method": "Student t mean"
+            },
+            "median": -0.6183333333333333,
+            "minimum": -2.976,
+            "missing": 0,
+            "p05": -2.378738095238095,
+            "p25": -1.0726785714285714,
+            "p75": -0.12062499999999998,
+            "p95": 0.593095238095238,
+            "requested": 32,
+            "standard_deviation": 0.9080063230932077,
+            "standard_error": 0.16051435710486758,
+            "variance": 0.8244754827772468
+          },
+          "costs": {
+            "available": 32,
+            "maximum": 18.000000000000114,
+            "mean": 11.125000000000005,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 12.070816491556217,
+              "low": 10.179183508443794,
+              "method": "Student t mean"
+            },
+            "median": 10.800000000000107,
+            "minimum": 5.4000000000001025,
+            "missing": 0,
+            "p05": 6.799999999999986,
+            "p25": 9.600000000000083,
+            "p75": 12.74999999999996,
+            "p95": 14.18000000000013,
+            "requested": 32,
+            "standard_deviation": 2.6233443319303396,
+            "standard_error": 0.46374614162380906,
+            "variance": 6.881935483871039
+          },
+          "drawdown": {
+            "available": 32,
+            "maximum": 21.85,
+            "mean": 8.5471875,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 10.135890054484285,
+              "low": 6.958484945515713,
+              "method": "Student t mean"
+            },
+            "median": 7.5600000000000005,
+            "minimum": 2.4799999999999995,
+            "missing": 0,
+            "p05": 3.9050000000000002,
+            "p25": 5.085,
+            "p75": 9.645,
+            "p95": 17.976000000000003,
+            "requested": 32,
+            "standard_deviation": 4.406471951627954,
+            "standard_error": 0.7789615495261116,
+            "variance": 19.41699506048387
+          },
+          "max_gross": {
+            "available": 32,
+            "maximum": 1053.03,
+            "mean": 944.1603125,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 968.3629668005309,
+              "low": 919.9576581994692,
+              "method": "Student t mean"
+            },
+            "median": 945.58,
+            "minimum": 785.92,
+            "missing": 0,
+            "p05": 830.2560000000001,
+            "p25": 913.3925,
+            "p75": 998.4375,
+            "p95": 1041.3039999999999,
+            "requested": 32,
+            "standard_deviation": 67.12919106802629,
+            "standard_error": 11.8668765549422,
+            "variance": 4506.328293447581
+          },
+          "max_imbalance": {
+            "available": 32,
+            "maximum": 631.2497212713249,
+            "mean": 487.3484688870409,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 504.7445125680955,
+              "low": 469.9524252059863,
+              "method": "Student t mean"
+            },
+            "median": 486.97818180244707,
+            "minimum": 420.48,
+            "missing": 0,
+            "p05": 428.0388272437782,
+            "p25": 448.28396165916865,
+            "p75": 507.125,
+            "p95": 579.471,
+            "requested": 32,
+            "standard_deviation": 48.250176430757435,
+            "standard_error": 8.529506736908976,
+            "variance": 2328.0795255992202
+          },
+          "mean_entry_z": {
+            "available": 32,
+            "maximum": 1.292256590427655,
+            "mean": -0.06681110473526398,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.2161818979800441,
+              "low": -0.34980410745057205,
+              "method": "Student t mean"
+            },
+            "median": -0.1607665299035313,
+            "minimum": -1.6666734136024237,
+            "missing": 0,
+            "p05": -1.2046786453013651,
+            "p25": -0.6077626269328684,
+            "p75": 0.4749173055617084,
+            "p95": 1.1652068451315594,
+            "requested": 32,
+            "standard_deviation": 0.7849176835853778,
+            "standard_error": 0.13875515418411435,
+            "variance": 0.6160957700050352
+          },
+          "mean_exit_z": {
+            "available": 32,
+            "maximum": 1.0677438986755932,
+            "mean": 0.06385758054664395,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.21363286554745892,
+              "low": -0.08591770445417102,
+              "method": "Student t mean"
+            },
+            "median": 0.15102391032547988,
+            "minimum": -0.6247291984082446,
+            "missing": 0,
+            "p05": -0.5026374408770555,
+            "p25": -0.30605514960865116,
+            "p75": 0.3753451231223739,
+            "p95": 0.6356335288648928,
+            "requested": 32,
+            "standard_deviation": 0.4154211186608261,
+            "standard_error": 0.07343677251329288,
+            "variance": 0.17257470582941214
+          },
+          "mean_holding": {
+            "available": 32,
+            "maximum": 15.666666666666666,
+            "mean": 10.632415674603173,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 11.513046383555762,
+              "low": 9.751784965650584,
+              "method": "Student t mean"
+            },
+            "median": 10.30952380952381,
+            "minimum": 6.333333333333333,
+            "missing": 0,
+            "p05": 7.20625,
+            "p25": 8.404761904761905,
+            "p75": 12.658333333333333,
+            "p95": 14.26,
+            "requested": 32,
+            "standard_deviation": 2.442543135459035,
+            "standard_error": 0.43178470360593385,
+            "variance": 5.966016968578053
+          },
+          "median_trade": {
+            "available": 32,
+            "maximum": 0.8000000000000003,
+            "mean": -0.6337499999999996,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -0.27906017068806893,
+              "low": -0.9884398293119303,
+              "method": "Student t mean"
+            },
+            "median": -0.5600000000000003,
+            "minimum": -3.8499999999999996,
+            "missing": 0,
+            "p05": -2.243999999999999,
+            "p25": -1.1050000000000004,
+            "p75": 0.04750000000000004,
+            "p95": 0.6125000000000004,
+            "requested": 32,
+            "standard_deviation": 0.9837781024391169,
+            "standard_error": 0.17390904185438338,
+            "variance": 0.9678193548387095
+          },
+          "net_pnl": {
+            "available": 32,
+            "maximum": 4.719999999999999,
+            "mean": -4.4809375,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -2.4103948131960276,
+              "low": -6.551480186803971,
+              "method": "Student t mean"
+            },
+            "median": -3.914999999999999,
+            "minimum": -19.15,
+            "missing": 0,
+            "p05": -16.634999999999998,
+            "p25": -6.8175,
+            "p75": -0.6825,
+            "p95": 3.2769999999999997,
+            "requested": 32,
+            "standard_deviation": 5.742917859795214,
+            "standard_error": 1.0152140406146324,
+            "variance": 32.98110554435484
+          },
+          "probability_loss": {
+            "available": 32,
+            "maximum": 1.0,
+            "mean": 0.5621775793650794,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.6347486450151263,
+              "low": 0.48960651371503255,
+              "method": "Student t mean"
+            },
+            "median": 0.5857142857142856,
+            "minimum": 0.0,
+            "missing": 0,
+            "p05": 0.2125,
+            "p25": 0.5,
+            "p75": 0.6666666666666666,
+            "p95": 0.844047619047619,
+            "requested": 32,
+            "standard_deviation": 0.2012852339061593,
+            "standard_error": 0.0355825384619414,
+            "variance": 0.04051574538865726
+          },
+          "residual_inventory": {
+            "available": 32,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.0,
+              "low": 0.0,
+              "method": "Student t mean"
+            },
+            "median": 0.0,
+            "minimum": 0.0,
+            "missing": 0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p95": 0.0,
+            "requested": 32,
+            "standard_deviation": 0.0,
+            "standard_error": 0.0,
+            "variance": 0.0
+          },
+          "return_on_capital": {
+            "available": 32,
+            "maximum": 0.00047199999999999987,
+            "mean": -0.00044809375000000003,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -0.00024103948131960282,
+              "low": -0.0006551480186803972,
+              "method": "Student t mean"
+            },
+            "median": -0.0003914999999999999,
+            "minimum": -0.0019149999999999998,
+            "missing": 0,
+            "p05": -0.0016635,
+            "p25": -0.0006817500000000001,
+            "p75": -6.824999999999999e-05,
+            "p95": 0.0003277,
+            "requested": 32,
+            "standard_deviation": 0.0005742917859795214,
+            "standard_error": 0.00010152140406146325,
+            "variance": 3.2981105544354835e-07
+          },
+          "trade_count": {
+            "available": 32,
+            "maximum": 9.0,
+            "mean": 6.15625,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 6.641774700889526,
+              "low": 5.670725299110474,
+              "method": "Student t mean"
+            },
+            "median": 6.0,
+            "minimum": 3.0,
+            "missing": 0,
+            "p05": 4.0,
+            "p25": 6.0,
+            "p75": 7.0,
+            "p95": 8.45,
+            "requested": 32,
+            "standard_deviation": 1.3466655355046884,
+            "standard_error": 0.23805908303639461,
+            "variance": 1.813508064516129
+          },
+          "turnover": {
+            "available": 32,
+            "maximum": 17528.62,
+            "mean": 11094.3290625,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 12009.452259228512,
+              "low": 10179.20586577149,
+              "method": "Student t mean"
+            },
+            "median": 10964.98,
+            "minimum": 5401.14,
+            "missing": 0,
+            "p05": 6962.262000000001,
+            "p25": 9970.580000000002,
+            "p75": 12983.130000000001,
+            "p95": 14703.869499999997,
+            "requested": 32,
+            "standard_deviation": 2538.212510130498,
+            "standard_error": 448.6968195014508,
+            "variance": 6442522.746582963
+          },
+          "win_rate": {
+            "available": 32,
+            "maximum": 1.0,
+            "mean": 0.4378224206349206,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.5103934862849675,
+              "low": 0.36525135498487377,
+              "method": "Student t mean"
+            },
+            "median": 0.41428571428571426,
+            "minimum": 0.0,
+            "missing": 0,
+            "p05": 0.15595238095238095,
+            "p25": 0.3333333333333333,
+            "p75": 0.5,
+            "p95": 0.7875,
+            "requested": 32,
+            "standard_deviation": 0.2012852339061593,
+            "standard_error": 0.0355825384619414,
+            "variance": 0.04051574538865726
+          },
+          "worst_trade": {
+            "available": 32,
+            "maximum": 0.10999999999999943,
+            "mean": -3.42,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -2.7668464029993474,
+              "low": -4.073153597000653,
+              "method": "Student t mean"
+            },
+            "median": -3.1600000000000006,
+            "minimum": -8.7,
+            "missing": 0,
+            "p05": -6.466,
+            "p25": -4.155,
+            "p75": -2.342500000000001,
+            "p95": -1.0619999999999996,
+            "requested": 32,
+            "standard_deviation": 1.8116059530240725,
+            "standard_error": 0.3202497135553099,
+            "variance": 3.2819161290322576
+          }
+        },
+        "primary_bootstrap": {
+          "estimate": -4.4809375,
+          "interval": {
+            "confidence": 0.95,
+            "high": -2.526695312500001,
+            "low": -6.594749999999998,
+            "method": "percentile bootstrap"
+          },
+          "observational_unit": "complete independent session",
+          "resamples": 500,
+          "seed": 107059146018034751668943596439621353781025489993099502201491435338463837626400,
+          "standard_error": 1.0338209569902064
+        },
+        "primary_tail": {
+          "convention": "strict breaches; lower-tail mean uses ceil(0.05*n) sorted outcomes",
+          "p05": -16.634999999999998,
+          "probability_below": {
+            "-0.25": 0.78125,
+            "-0.5": 0.75,
+            "-1.0": 0.71875,
+            "0.0": 0.78125
+          },
+          "tail_count": 2,
+          "worst": -19.15,
+          "worst_five_percent_mean": -18.965
+        }
+      },
+      "low": {
+        "correlations": {},
+        "distributions": {
+          "average_trade": {
+            "available": 32,
+            "maximum": 2.6699999999999995,
+            "mean": 0.8566031746031746,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 1.1727966610419924,
+              "low": 0.5404096881643567,
+              "method": "Student t mean"
+            },
+            "median": 0.9216666666666666,
+            "minimum": -1.4460000000000002,
+            "missing": 0,
+            "p05": -0.6787380952380951,
+            "p25": 0.4998214285714285,
+            "p75": 1.3735416666666667,
+            "p95": 2.0616785714285712,
+            "requested": 32,
+            "standard_deviation": 0.8770035179633657,
+            "standard_error": 0.15503378366908852,
+            "variance": 0.7691351705201196
+          },
+          "costs": {
+            "available": 32,
+            "maximum": 2.7000000000002107,
+            "mean": 1.6687499999999655,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 1.8106224737333985,
+              "low": 1.5268775262665326,
+              "method": "Student t mean"
+            },
+            "median": 1.6200000000001333,
+            "minimum": 0.8099999999999494,
+            "missing": 0,
+            "p05": 1.0200000000000153,
+            "p25": 1.4399999999998803,
+            "p75": 1.912500000000013,
+            "p95": 2.1270000000000024,
+            "requested": 32,
+            "standard_deviation": 0.39350164978955415,
+            "standard_error": 0.06956192124357193,
+            "variance": 0.1548435483871009
+          },
+          "drawdown": {
+            "available": 32,
+            "maximum": 13.25,
+            "mean": 5.3771875,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 6.403143116333764,
+              "low": 4.351231883666236,
+              "method": "Student t mean"
+            },
+            "median": 4.6850000000000005,
+            "minimum": 1.54,
+            "missing": 0,
+            "p05": 2.574,
+            "p25": 3.6799999999999997,
+            "p75": 5.96875,
+            "p95": 12.048,
+            "requested": 32,
+            "standard_deviation": 2.845620556364895,
+            "standard_error": 0.5030393980223633,
+            "variance": 8.097556350806453
+          },
+          "max_gross": {
+            "available": 32,
+            "maximum": 1053.03,
+            "mean": 944.1603125,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 968.3629668005309,
+              "low": 919.9576581994692,
+              "method": "Student t mean"
+            },
+            "median": 945.58,
+            "minimum": 785.92,
+            "missing": 0,
+            "p05": 830.2560000000001,
+            "p25": 913.3925,
+            "p75": 998.4375,
+            "p95": 1041.3039999999999,
+            "requested": 32,
+            "standard_deviation": 67.12919106802629,
+            "standard_error": 11.8668765549422,
+            "variance": 4506.328293447581
+          },
+          "max_imbalance": {
+            "available": 32,
+            "maximum": 631.2497212713249,
+            "mean": 487.3484688870409,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 504.7445125680955,
+              "low": 469.9524252059863,
+              "method": "Student t mean"
+            },
+            "median": 486.97818180244707,
+            "minimum": 420.48,
+            "missing": 0,
+            "p05": 428.0388272437782,
+            "p25": 448.28396165916865,
+            "p75": 507.125,
+            "p95": 579.471,
+            "requested": 32,
+            "standard_deviation": 48.250176430757435,
+            "standard_error": 8.529506736908976,
+            "variance": 2328.0795255992202
+          },
+          "mean_entry_z": {
+            "available": 32,
+            "maximum": 1.292256590427655,
+            "mean": -0.06681110473526398,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.2161818979800441,
+              "low": -0.34980410745057205,
+              "method": "Student t mean"
+            },
+            "median": -0.1607665299035313,
+            "minimum": -1.6666734136024237,
+            "missing": 0,
+            "p05": -1.2046786453013651,
+            "p25": -0.6077626269328684,
+            "p75": 0.4749173055617084,
+            "p95": 1.1652068451315594,
+            "requested": 32,
+            "standard_deviation": 0.7849176835853778,
+            "standard_error": 0.13875515418411435,
+            "variance": 0.6160957700050352
+          },
+          "mean_exit_z": {
+            "available": 32,
+            "maximum": 1.0677438986755932,
+            "mean": 0.06385758054664395,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.21363286554745892,
+              "low": -0.08591770445417102,
+              "method": "Student t mean"
+            },
+            "median": 0.15102391032547988,
+            "minimum": -0.6247291984082446,
+            "missing": 0,
+            "p05": -0.5026374408770555,
+            "p25": -0.30605514960865116,
+            "p75": 0.3753451231223739,
+            "p95": 0.6356335288648928,
+            "requested": 32,
+            "standard_deviation": 0.4154211186608261,
+            "standard_error": 0.07343677251329288,
+            "variance": 0.17257470582941214
+          },
+          "mean_holding": {
+            "available": 32,
+            "maximum": 15.666666666666666,
+            "mean": 10.632415674603173,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 11.513046383555762,
+              "low": 9.751784965650584,
+              "method": "Student t mean"
+            },
+            "median": 10.30952380952381,
+            "minimum": 6.333333333333333,
+            "missing": 0,
+            "p05": 7.20625,
+            "p25": 8.404761904761905,
+            "p75": 12.658333333333333,
+            "p95": 14.26,
+            "requested": 32,
+            "standard_deviation": 2.442543135459035,
+            "standard_error": 0.43178470360593385,
+            "variance": 5.966016968578053
+          },
+          "median_trade": {
+            "available": 32,
+            "maximum": 2.330000000000002,
+            "mean": 0.8900000000000001,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 1.2351794633033932,
+              "low": 0.544820536696607,
+              "method": "Student t mean"
+            },
+            "median": 0.9224999999999999,
+            "minimum": -2.1499999999999995,
+            "missing": 0,
+            "p05": -0.6374999999999995,
+            "p25": 0.5250000000000001,
+            "p75": 1.50625,
+            "p95": 2.21725,
+            "requested": 32,
+            "standard_deviation": 0.9573998726389262,
+            "standard_error": 0.1692459855625304,
+            "variance": 0.9166145161290321
+          },
+          "net_pnl": {
+            "available": 32,
+            "maximum": 15.43,
+            "mean": 4.975312499999999,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 6.80509968508421,
+              "low": 3.1455253149157882,
+              "method": "Student t mean"
+            },
+            "median": 5.805,
+            "minimum": -7.249999999999999,
+            "missing": 0,
+            "p05": -5.1675,
+            "p25": 3.09,
+            "p75": 7.837499999999999,
+            "p95": 10.923999999999998,
+            "requested": 32,
+            "standard_deviation": 5.075151346464077,
+            "standard_error": 0.8971684831581964,
+            "variance": 25.75716118951613
+          },
+          "probability_loss": {
+            "available": 32,
+            "maximum": 0.6666666666666666,
+            "mean": 0.3023065476190476,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.3675935848572861,
+              "low": 0.23701951038080915,
+              "method": "Student t mean"
+            },
+            "median": 0.3333333333333333,
+            "minimum": 0.0,
+            "missing": 0,
+            "p05": 0.0,
+            "p25": 0.1607142857142857,
+            "p75": 0.38125,
+            "p95": 0.5842857142857142,
+            "requested": 32,
+            "standard_deviation": 0.18108203929248043,
+            "standard_error": 0.032011084483700436,
+            "variance": 0.03279070495432342
+          },
+          "residual_inventory": {
+            "available": 32,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.0,
+              "low": 0.0,
+              "method": "Student t mean"
+            },
+            "median": 0.0,
+            "minimum": 0.0,
+            "missing": 0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p95": 0.0,
+            "requested": 32,
+            "standard_deviation": 0.0,
+            "standard_error": 0.0,
+            "variance": 0.0
+          },
+          "return_on_capital": {
+            "available": 32,
+            "maximum": 0.0015429999999999999,
+            "mean": 0.0004975312499999999,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.000680509968508421,
+              "low": 0.00031455253149157884,
+              "method": "Student t mean"
+            },
+            "median": 0.0005805,
+            "minimum": -0.000725,
+            "missing": 0,
+            "p05": -0.0005167500000000001,
+            "p25": 0.000309,
+            "p75": 0.0007837499999999999,
+            "p95": 0.0010923999999999997,
+            "requested": 32,
+            "standard_deviation": 0.0005075151346464076,
+            "standard_error": 8.971684831581963e-05,
+            "variance": 2.575716118951612e-07
+          },
+          "trade_count": {
+            "available": 32,
+            "maximum": 9.0,
+            "mean": 6.15625,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 6.641774700889526,
+              "low": 5.670725299110474,
+              "method": "Student t mean"
+            },
+            "median": 6.0,
+            "minimum": 3.0,
+            "missing": 0,
+            "p05": 4.0,
+            "p25": 6.0,
+            "p75": 7.0,
+            "p95": 8.45,
+            "requested": 32,
+            "standard_deviation": 1.3466655355046884,
+            "standard_error": 0.23805908303639461,
+            "variance": 1.813508064516129
+          },
+          "turnover": {
+            "available": 32,
+            "maximum": 17528.61999999999,
+            "mean": 11094.329062499999,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 12009.45225922851,
+              "low": 10179.205865771488,
+              "method": "Student t mean"
+            },
+            "median": 10964.98,
+            "minimum": 5401.14,
+            "missing": 0,
+            "p05": 6962.262000000001,
+            "p25": 9970.579999999998,
+            "p75": 12983.13,
+            "p95": 14703.869499999999,
+            "requested": 32,
+            "standard_deviation": 2538.2125101304973,
+            "standard_error": 448.69681950145076,
+            "variance": 6442522.746582959
+          },
+          "win_rate": {
+            "available": 32,
+            "maximum": 1.0,
+            "mean": 0.6976934523809524,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": 0.7629804896191908,
+              "low": 0.6324064151427139,
+              "method": "Student t mean"
+            },
+            "median": 0.6666666666666666,
+            "minimum": 0.3333333333333333,
+            "missing": 0,
+            "p05": 0.4157142857142857,
+            "p25": 0.61875,
+            "p75": 0.8392857142857143,
+            "p95": 1.0,
+            "requested": 32,
+            "standard_deviation": 0.18108203929248043,
+            "standard_error": 0.032011084483700436,
+            "variance": 0.03279070495432343
+          },
+          "worst_trade": {
+            "available": 32,
+            "maximum": 1.6400000000000006,
+            "mean": -1.8740625000000002,
+            "mean_ci": {
+              "confidence": 0.95,
+              "high": -1.231681128101699,
+              "low": -2.5164438718983013,
+              "method": "Student t mean"
+            },
+            "median": -1.7799999999999998,
+            "minimum": -7.170000000000001,
+            "missing": 0,
+            "p05": -4.8595000000000015,
+            "p25": -2.624999999999999,
+            "p75": -0.925,
+            "p95": 0.33350000000000046,
+            "requested": 32,
+            "standard_deviation": 1.7817277938707734,
+            "standard_error": 0.31496795131864275,
+            "variance": 3.1745539314516136
+          }
+        },
+        "primary_bootstrap": {
+          "estimate": 4.975312499999999,
+          "interval": {
+            "confidence": 0.95,
+            "high": 6.458156249999999,
+            "low": 3.1818125,
+            "method": "percentile bootstrap"
+          },
+          "observational_unit": "complete independent session",
+          "resamples": 500,
+          "seed": 1342163372209693511194979380204593345999623667612435469252648656562823033392,
+          "standard_error": 0.8460521313228154
+        },
+        "primary_tail": {
+          "convention": "strict breaches; lower-tail mean uses ceil(0.05*n) sorted outcomes",
+          "p05": -5.1675,
+          "probability_below": {
+            "-0.25": 0.125,
+            "-0.5": 0.125,
+            "-1.0": 0.125,
+            "0.0": 0.125
+          },
+          "tail_count": 2,
+          "worst": -7.249999999999999,
+          "worst_five_percent_mean": -7.24
+        }
+      }
+    }
+  },
+  "design_digest": "b3fa1e539423d1ab6f6c03d4997955779f877b845022bd0260c98b03c082ffc1",
+  "elapsed_seconds": 27.48146695806645,
+  "finished_at": "2026-09-12T03:17:45.737073+00:00",
+  "interpretation": "high: observed mean net_pnl=-4.48094; losing/negative outcomes 78.1%. low: observed mean net_pnl=4.97531; losing/negative outcomes 12.5%. Compare the full distributions and paired uncertainty with the original hypothesis. These conditional model outcomes do not establish real-world alpha, safety or an optimal parameter. Interpretation remains reviewable.",
+  "limitations": [
+    "Synthetic results do not establish real-market alpha.",
+    "Training-selected performance is optimistic; evaluation never selects thresholds.",
+    "The initial fit origin differs across disjoint time blocks; blocks may have different lengths.",
+    "Confidence intervals exclude process, liquidity and model uncertainty."
+  ],
+  "metric_units": {
+    "high": {
+      "average_trade": "GBP",
+      "costs": "GBP",
+      "drawdown": "GBP",
+      "max_gross": "GBP",
+      "max_imbalance": "GBP",
+      "mean_entry_z": "units",
+      "mean_exit_z": "units",
+      "mean_holding": "observations",
+      "median_trade": "GBP",
+      "net_pnl": "GBP",
+      "probability_loss": "fraction",
+      "residual_inventory": "units",
+      "return_on_capital": "fraction",
+      "trade_count": "units",
+      "turnover": "GBP",
+      "win_rate": "fraction",
+      "worst_trade": "GBP"
+    },
+    "low": {
+      "average_trade": "GBP",
+      "costs": "GBP",
+      "drawdown": "GBP",
+      "max_gross": "GBP",
+      "max_imbalance": "GBP",
+      "mean_entry_z": "units",
+      "mean_exit_z": "units",
+      "mean_holding": "observations",
+      "median_trade": "GBP",
+      "net_pnl": "GBP",
+      "probability_loss": "fraction",
+      "residual_inventory": "units",
+      "return_on_capital": "fraction",
+      "trade_count": "units",
+      "turnover": "GBP",
+      "win_rate": "fraction",
+      "worst_trade": "GBP"
+    }
+  },
+  "outcome_digest": "0dc308c9687dd9982bf35c03ee6bf7dede6aaeb99abfc7492ab2cd0dea46c864",
+  "record_digest": "104e2450e9e2f15c67efc492fb4a6a7ce45bb672e4437bc8e78aa748adfe5322",
+  "registered_at": "2026-09-12T03:17:18.251428+00:00",
+  "runs": [
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "15861ea3afa7ec9c052e3d0ba6753aee7d1006b64ed2804079711f8c4fb567c7",
+      "metrics": {
+        "average_trade": 0.135,
+        "costs": 1.6199999999999983,
+        "drawdown": 6.580000000000001,
+        "max_gross": 908.5699999999999,
+        "max_imbalance": 426.83419958202427,
+        "mean_entry_z": 0.9469434853665714,
+        "mean_exit_z": -0.08881707583653113,
+        "mean_holding": 12.5,
+        "median_trade": -0.39000000000000007,
+        "net_pnl": 0.81,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": 8.1e-05,
+        "trade_count": 6,
+        "turnover": 10589.61,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -2.1399999999999997
+      },
+      "run_index": 0,
+      "simulation_seed": 19088476561718997711481061749104657514408867504324231327074783574666213224075,
+      "status": "complete",
+      "trajectory_fingerprint": "8a31967a424abdc449ee0edcd3d3161409012a6b1e089058b8be459b0ea05a8f",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "15861ea3afa7ec9c052e3d0ba6753aee7d1006b64ed2804079711f8c4fb567c7",
+      "metrics": {
+        "average_trade": -1.3950000000000002,
+        "costs": 10.799999999999823,
+        "drawdown": 11.94,
+        "max_gross": 908.5699999999999,
+        "max_imbalance": 426.83419958202427,
+        "mean_entry_z": 0.9469434853665714,
+        "mean_exit_z": -0.08881707583653113,
+        "mean_holding": 12.5,
+        "median_trade": -1.9199999999999997,
+        "net_pnl": -8.370000000000001,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0008370000000000001,
+        "trade_count": 6,
+        "turnover": 10589.609999999999,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -3.67
+      },
+      "run_index": 0,
+      "simulation_seed": 19088476561718997711481061749104657514408867504324231327074783574666213224075,
+      "status": "complete",
+      "trajectory_fingerprint": "3655b311445f4ec884f6b968edc21d27e64992c2ea764291e5e836cc9d9ea395",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "3e2a567601bd7fd406817ae7ed387067991e2955e38df6616e740319ad56ca93",
+      "metrics": {
+        "average_trade": 0.8949999999999999,
+        "costs": 1.619999999999771,
+        "drawdown": 4.364999999999999,
+        "max_gross": 928.03,
+        "max_imbalance": 447.3831777989013,
+        "mean_entry_z": -0.33098822623271773,
+        "mean_exit_z": 0.14059942417357377,
+        "mean_holding": 8.166666666666666,
+        "median_trade": 1.5999999999999999,
+        "net_pnl": 5.369999999999999,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0005369999999999999,
+        "trade_count": 6,
+        "turnover": 10968.27,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.92
+      },
+      "run_index": 1,
+      "simulation_seed": 4698030149037082609730946482146407623734473418828447421413518212607814973225,
+      "status": "complete",
+      "trajectory_fingerprint": "eab4641dc145f0a9fc1af2ccee5ce8eb3d133d45917ef14ad5b9f017b8c414f0",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "3e2a567601bd7fd406817ae7ed387067991e2955e38df6616e740319ad56ca93",
+      "metrics": {
+        "average_trade": -0.635,
+        "costs": 10.799999999999965,
+        "drawdown": 7.4,
+        "max_gross": 928.03,
+        "max_imbalance": 447.3831777989013,
+        "mean_entry_z": -0.33098822623271773,
+        "mean_exit_z": 0.14059942417357377,
+        "mean_holding": 8.166666666666666,
+        "median_trade": 0.07000000000000006,
+        "net_pnl": -3.81,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000381,
+        "trade_count": 6,
+        "turnover": 10968.270000000002,
+        "win_rate": 0.5,
+        "worst_trade": -4.45
+      },
+      "run_index": 1,
+      "simulation_seed": 4698030149037082609730946482146407623734473418828447421413518212607814973225,
+      "status": "complete",
+      "trajectory_fingerprint": "f5343ceee5000d79db2e152ac32120e7f5b2c102a372479bbc9e6545ff869b69",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "cc989df69907aa6e4147ac1e6737ebdee6ecc23a37fde8d0879fafedb2494615",
+      "metrics": {
+        "average_trade": -1.0357142857142856,
+        "costs": 2.100000000000006,
+        "drawdown": 13.25,
+        "max_gross": 996.7,
+        "max_imbalance": 494.4,
+        "mean_entry_z": -0.4159588410877325,
+        "mean_exit_z": -0.6247291984082446,
+        "mean_holding": 8.0,
+        "median_trade": -2.1499999999999995,
+        "net_pnl": -7.249999999999999,
+        "probability_loss": 0.5714285714285714,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000725,
+        "trade_count": 7,
+        "turnover": 13457.749999999998,
+        "win_rate": 0.42857142857142855,
+        "worst_trade": -3.45
+      },
+      "run_index": 2,
+      "simulation_seed": 52219916624095494269924839294554775344632821031312823243896568474613596782095,
+      "status": "complete",
+      "trajectory_fingerprint": "4095c26b79be1269af4f69e9471510d026aa5256f9194d7296efc1d44e9a31b5",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "cc989df69907aa6e4147ac1e6737ebdee6ecc23a37fde8d0879fafedb2494615",
+      "metrics": {
+        "average_trade": -2.7357142857142853,
+        "costs": 14.000000000000242,
+        "drawdown": 21.85,
+        "max_gross": 996.7,
+        "max_imbalance": 494.4,
+        "mean_entry_z": -0.4159588410877325,
+        "mean_exit_z": -0.6247291984082446,
+        "mean_holding": 8.0,
+        "median_trade": -3.8499999999999996,
+        "net_pnl": -19.15,
+        "probability_loss": 0.8571428571428571,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0019149999999999998,
+        "trade_count": 7,
+        "turnover": 13457.75,
+        "win_rate": 0.14285714285714285,
+        "worst_trade": -5.15
+      },
+      "run_index": 2,
+      "simulation_seed": 52219916624095494269924839294554775344632821031312823243896568474613596782095,
+      "status": "complete",
+      "trajectory_fingerprint": "33fdc65065eb1e83be72f04b4fadbaa6250c6c74f43093f482449c95f8505cd0",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "27d4dbc69cfa32288448c5b3a54587d5a36eeac5870864638bbaa4492f390825",
+      "metrics": {
+        "average_trade": 0.6960000000000001,
+        "costs": 1.1999999999998978,
+        "drawdown": 3.679999999999999,
+        "max_gross": 845.48,
+        "max_imbalance": 438.2548928038583,
+        "mean_entry_z": -0.609501553944878,
+        "mean_exit_z": 0.37285509889748064,
+        "mean_holding": 12.6,
+        "median_trade": 0.7599999999999998,
+        "net_pnl": 3.4800000000000004,
+        "probability_loss": 0.4,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00034800000000000006,
+        "trade_count": 5,
+        "turnover": 8259.560000000001,
+        "win_rate": 0.6,
+        "worst_trade": -1.759999999999999
+      },
+      "run_index": 3,
+      "simulation_seed": 65018473286667307386818101151995123019401183009154149491866676245555329072517,
+      "status": "complete",
+      "trajectory_fingerprint": "8713927a2c8ed7f8ecbbae2bb4d9772bbe304718a4d98bdaf6a5e1c2eb0c0ae3",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "27d4dbc69cfa32288448c5b3a54587d5a36eeac5870864638bbaa4492f390825",
+      "metrics": {
+        "average_trade": -0.664,
+        "costs": 8.000000000000114,
+        "drawdown": 6.4,
+        "max_gross": 845.48,
+        "max_imbalance": 438.2548928038583,
+        "mean_entry_z": -0.609501553944878,
+        "mean_exit_z": 0.37285509889748064,
+        "mean_holding": 12.6,
+        "median_trade": -0.6000000000000001,
+        "net_pnl": -3.3200000000000003,
+        "probability_loss": 0.6,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00033200000000000005,
+        "trade_count": 5,
+        "turnover": 8259.56,
+        "win_rate": 0.4,
+        "worst_trade": -3.12
+      },
+      "run_index": 3,
+      "simulation_seed": 65018473286667307386818101151995123019401183009154149491866676245555329072517,
+      "status": "complete",
+      "trajectory_fingerprint": "8418c35c20ab345b9597717eb255e0e6ea5474d8a0128e170d478cba6a0bc078",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da6084ef111e1162d72e9fd643a7e560522784fb37ecbf4ffab3e4600b8f5ae2",
+      "metrics": {
+        "average_trade": 1.3625,
+        "costs": 1.0199999999999216,
+        "drawdown": 2.4749999999999996,
+        "max_gross": 1013.15,
+        "max_imbalance": 503.75,
+        "mean_entry_z": 1.16505694739292,
+        "mean_exit_z": 0.38480521175075105,
+        "mean_holding": 10.0,
+        "median_trade": 0.94,
+        "net_pnl": 5.45,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000545,
+        "trade_count": 4,
+        "turnover": 6988.29,
+        "win_rate": 0.5,
+        "worst_trade": -0.34999999999999964
+      },
+      "run_index": 4,
+      "simulation_seed": 56097149114697207100032865354415761107065421803672880083292613910193433293753,
+      "status": "complete",
+      "trajectory_fingerprint": "6b8520d7949ce7390f83bf66248cf196de78b614a2624ad58916f633fd0c241e",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da6084ef111e1162d72e9fd643a7e560522784fb37ecbf4ffab3e4600b8f5ae2",
+      "metrics": {
+        "average_trade": -0.0824999999999998,
+        "costs": 6.799999999999978,
+        "drawdown": 4.13,
+        "max_gross": 1013.15,
+        "max_imbalance": 503.75,
+        "mean_entry_z": 1.16505694739292,
+        "mean_exit_z": 0.38480521175075105,
+        "mean_holding": 10.0,
+        "median_trade": -0.42000000000000015,
+        "net_pnl": -0.3299999999999992,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -3.299999999999992e-05,
+        "trade_count": 4,
+        "turnover": 6988.290000000001,
+        "win_rate": 0.5,
+        "worst_trade": -2.05
+      },
+      "run_index": 4,
+      "simulation_seed": 56097149114697207100032865354415761107065421803672880083292613910193433293753,
+      "status": "complete",
+      "trajectory_fingerprint": "728802889f11d20465f866cce104c0a02a247ce919df9a8f3aa2ec368b8ca60e",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "eb670dbf115addf6ff4dca967c5d493b14184fb59528b69230f8a36e8e380fb6",
+      "metrics": {
+        "average_trade": 1.184,
+        "costs": 1.3500000000000627,
+        "drawdown": 4.74,
+        "max_gross": 915.74,
+        "max_imbalance": 506.9,
+        "mean_entry_z": -0.6071829845955319,
+        "mean_exit_z": -0.4933690550553208,
+        "mean_holding": 14.2,
+        "median_trade": 0.16000000000000014,
+        "net_pnl": 5.92,
+        "probability_loss": 0.4,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000592,
+        "trade_count": 5,
+        "turnover": 8877.03,
+        "win_rate": 0.6,
+        "worst_trade": -2.9800000000000004
+      },
+      "run_index": 5,
+      "simulation_seed": 226187319897883175726294227965807574862316821812438021012696238803548885354903,
+      "status": "complete",
+      "trajectory_fingerprint": "07e73bb03ff6b8d0ee6672bd01ed1b64ab2ac9f445b55b1e524bb6cd81025741",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "eb670dbf115addf6ff4dca967c5d493b14184fb59528b69230f8a36e8e380fb6",
+      "metrics": {
+        "average_trade": -0.34599999999999986,
+        "costs": 8.999999999999858,
+        "drawdown": 7.6,
+        "max_gross": 915.74,
+        "max_imbalance": 506.9,
+        "mean_entry_z": -0.6071829845955319,
+        "mean_exit_z": -0.4933690550553208,
+        "mean_holding": 14.2,
+        "median_trade": -1.3699999999999999,
+        "net_pnl": -1.7299999999999998,
+        "probability_loss": 0.6,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00017299999999999998,
+        "trade_count": 5,
+        "turnover": 8877.029999999997,
+        "win_rate": 0.4,
+        "worst_trade": -4.51
+      },
+      "run_index": 5,
+      "simulation_seed": 226187319897883175726294227965807574862316821812438021012696238803548885354903,
+      "status": "complete",
+      "trajectory_fingerprint": "925d49ffd0e1a7e35226f1fd9b53b915efacab1066b21a74d7269f7d5808df2e",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c0cf6ed16f7dc51fcc545afbc2b89e6be586512caa3f0ec05853fe86d6a96cdf",
+      "metrics": {
+        "average_trade": 0.9483333333333333,
+        "costs": 1.8000000000002019,
+        "drawdown": 3.764999999999999,
+        "max_gross": 1047.97,
+        "max_imbalance": 571.02,
+        "mean_entry_z": 1.1653900534787853,
+        "mean_exit_z": -0.016753955531212655,
+        "mean_holding": 8.333333333333334,
+        "median_trade": 0.9049999999999999,
+        "net_pnl": 5.6899999999999995,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000569,
+        "trade_count": 6,
+        "turnover": 11317.429999999998,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.2699999999999996
+      },
+      "run_index": 6,
+      "simulation_seed": 71909637306774663804536254350190602984179331694520600166287416095184966368405,
+      "status": "complete",
+      "trajectory_fingerprint": "d69f82d57d667d5b95f149dc12d87f230516ca1d5baf07d64afde4c3940d53bc",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c0cf6ed16f7dc51fcc545afbc2b89e6be586512caa3f0ec05853fe86d6a96cdf",
+      "metrics": {
+        "average_trade": -0.7516666666666668,
+        "costs": 12.000000000000114,
+        "drawdown": 6.790000000000001,
+        "max_gross": 1047.97,
+        "max_imbalance": 571.02,
+        "mean_entry_z": 1.1653900534787853,
+        "mean_exit_z": -0.016753955531212655,
+        "mean_holding": 8.333333333333334,
+        "median_trade": -0.6249999999999999,
+        "net_pnl": -4.510000000000001,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00045100000000000007,
+        "trade_count": 6,
+        "turnover": 11317.43,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -4.140000000000001
+      },
+      "run_index": 6,
+      "simulation_seed": 71909637306774663804536254350190602984179331694520600166287416095184966368405,
+      "status": "complete",
+      "trajectory_fingerprint": "0903307ecd8d0e358fc08a7d709088337c8cdcfa544124043e9017ac7ee1c237",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fb66b8fde60f4a764839f77d713139bfd3d11d9a701f043b287d641fa68bb794",
+      "metrics": {
+        "average_trade": 1.4971428571428569,
+        "costs": 1.6799999999996067,
+        "drawdown": 4.62,
+        "max_gross": 785.92,
+        "max_imbalance": 429.0244316943041,
+        "mean_entry_z": 1.0582143523609024,
+        "mean_exit_z": 0.16766327682407506,
+        "mean_holding": 11.571428571428571,
+        "median_trade": 1.4000000000000004,
+        "net_pnl": 10.479999999999999,
+        "probability_loss": 0.2857142857142857,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0010479999999999999,
+        "trade_count": 7,
+        "turnover": 10874.239999999998,
+        "win_rate": 0.7142857142857143,
+        "worst_trade": -1.08
+      },
+      "run_index": 7,
+      "simulation_seed": 79203362149959276502036996168591099742708424502701567239527897172779642678735,
+      "status": "complete",
+      "trajectory_fingerprint": "1f77da95330b17df467b75a705ebab45340178c11ff2a3089066996ef534c8a7",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fb66b8fde60f4a764839f77d713139bfd3d11d9a701f043b287d641fa68bb794",
+      "metrics": {
+        "average_trade": 0.13714285714285715,
+        "costs": 11.200000000000081,
+        "drawdown": 6.48,
+        "max_gross": 785.92,
+        "max_imbalance": 429.0244316943041,
+        "mean_entry_z": 1.0582143523609024,
+        "mean_exit_z": 0.16766327682407506,
+        "mean_holding": 11.571428571428571,
+        "median_trade": 0.040000000000000036,
+        "net_pnl": 0.96,
+        "probability_loss": 0.42857142857142855,
+        "residual_inventory": 0,
+        "return_on_capital": 9.6e-05,
+        "trade_count": 7,
+        "turnover": 10874.240000000002,
+        "win_rate": 0.5714285714285714,
+        "worst_trade": -2.4400000000000004
+      },
+      "run_index": 7,
+      "simulation_seed": 79203362149959276502036996168591099742708424502701567239527897172779642678735,
+      "status": "complete",
+      "trajectory_fingerprint": "298f93502123e04a357e273adeb67263c85feaa637c8d9bdfe5fb04de04d1d58",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "d6218dfaa862a643733f9ba737a823b72bc9ef4526bf7377ccd7d59f8f4c40af",
+      "metrics": {
+        "average_trade": 0.36428571428571427,
+        "costs": 2.0999999999996506,
+        "drawdown": 3.7499999999999996,
+        "max_gross": 959.4,
+        "max_imbalance": 478.6,
+        "mean_entry_z": 1.292256590427655,
+        "mean_exit_z": 0.7826014667367215,
+        "mean_holding": 10.285714285714286,
+        "median_trade": 0.6000000000000003,
+        "net_pnl": 2.55,
+        "probability_loss": 0.42857142857142855,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00025499999999999996,
+        "trade_count": 7,
+        "turnover": 13153.050000000001,
+        "win_rate": 0.5714285714285714,
+        "worst_trade": -2.1
+      },
+      "run_index": 8,
+      "simulation_seed": 6089277274462575102771187157700321951831208583975776114629547641317087628527,
+      "status": "complete",
+      "trajectory_fingerprint": "3dc38050094f073196f5dac9f1deab8b478bf1a6132113aa3686e554a927076a",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "d6218dfaa862a643733f9ba737a823b72bc9ef4526bf7377ccd7d59f8f4c40af",
+      "metrics": {
+        "average_trade": -1.3357142857142856,
+        "costs": 14.000000000000028,
+        "drawdown": 9.4,
+        "max_gross": 959.4,
+        "max_imbalance": 478.6,
+        "mean_entry_z": 1.292256590427655,
+        "mean_exit_z": 0.7826014667367215,
+        "mean_holding": 10.285714285714286,
+        "median_trade": -1.1000000000000005,
+        "net_pnl": -9.35,
+        "probability_loss": 0.7142857142857143,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000935,
+        "trade_count": 7,
+        "turnover": 13153.050000000001,
+        "win_rate": 0.2857142857142857,
+        "worst_trade": -3.8000000000000003
+      },
+      "run_index": 8,
+      "simulation_seed": 6089277274462575102771187157700321951831208583975776114629547641317087628527,
+      "status": "complete",
+      "trajectory_fingerprint": "aa81669c2374ff846670c7fac88c9210716030f3d5cbfd64d211c4e9dd633817",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "54c51e85dbfcffaf7eaafec80056fd1cd5d54817f89d934d81823858794025da",
+      "metrics": {
+        "average_trade": 0.8837499999999999,
+        "costs": 1.980000000000036,
+        "drawdown": 5.04,
+        "max_gross": 1005.45,
+        "max_imbalance": 501.45680031099744,
+        "mean_entry_z": -0.47470967600387215,
+        "mean_exit_z": 0.36690484180213095,
+        "mean_holding": 8.125,
+        "median_trade": 0.7800000000000002,
+        "net_pnl": 7.069999999999999,
+        "probability_loss": 0.375,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000707,
+        "trade_count": 8,
+        "turnover": 13331.670000000002,
+        "win_rate": 0.625,
+        "worst_trade": -0.96
+      },
+      "run_index": 9,
+      "simulation_seed": 220622902998294347295200951578829504493982729671513558279858072902148041501923,
+      "status": "complete",
+      "trajectory_fingerprint": "6bf4faed9de68f8f31e38c1fc3b3e9de93785349979a5a899cb6d8d9b30a0903",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "54c51e85dbfcffaf7eaafec80056fd1cd5d54817f89d934d81823858794025da",
+      "metrics": {
+        "average_trade": -0.51875,
+        "costs": 13.200000000000097,
+        "drawdown": 7.5200000000000005,
+        "max_gross": 1005.45,
+        "max_imbalance": 501.45680031099744,
+        "mean_entry_z": -0.47470967600387215,
+        "mean_exit_z": 0.36690484180213095,
+        "mean_holding": 8.125,
+        "median_trade": -0.5800000000000001,
+        "net_pnl": -4.15,
+        "probability_loss": 0.625,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00041500000000000006,
+        "trade_count": 8,
+        "turnover": 13331.670000000002,
+        "win_rate": 0.375,
+        "worst_trade": -2.3200000000000003
+      },
+      "run_index": 9,
+      "simulation_seed": 220622902998294347295200951578829504493982729671513558279858072902148041501923,
+      "status": "complete",
+      "trajectory_fingerprint": "ddd7a34ae1084e38a2e941b08bbcdb0d5f86865b22e44b5bb9ec5b3aea187c81",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "37246795b5a38b6d624c0705f325e1425ea458fcf7e7a68f61b0281beb6eb329",
+      "metrics": {
+        "average_trade": 1.9449999999999998,
+        "costs": 1.139999999999991,
+        "drawdown": 4.9,
+        "max_gross": 1003.65,
+        "max_imbalance": 501.5,
+        "mean_entry_z": -0.2966085341879662,
+        "mean_exit_z": -0.24942346018780434,
+        "mean_holding": 11.25,
+        "median_trade": 2.275,
+        "net_pnl": 7.779999999999999,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0007779999999999999,
+        "trade_count": 4,
+        "turnover": 7588.040000000001,
+        "win_rate": 1.0,
+        "worst_trade": 0.34999999999999964
+      },
+      "run_index": 10,
+      "simulation_seed": 40831719661049044036787552162680627511155186681512752968621302644831322662549,
+      "status": "complete",
+      "trajectory_fingerprint": "9f8dd087167ff25c92e39b5cde75be9b75e548bc97261a991d9f5f3f0c20f72d",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "37246795b5a38b6d624c0705f325e1425ea458fcf7e7a68f61b0281beb6eb329",
+      "metrics": {
+        "average_trade": 0.32999999999999996,
+        "costs": 7.599999999999913,
+        "drawdown": 4.900000000000001,
+        "max_gross": 1003.65,
+        "max_imbalance": 501.5,
+        "mean_entry_z": -0.2966085341879662,
+        "mean_exit_z": -0.24942346018780434,
+        "mean_holding": 11.25,
+        "median_trade": 0.5750000000000001,
+        "net_pnl": 1.3199999999999998,
+        "probability_loss": 0.25,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00013199999999999998,
+        "trade_count": 4,
+        "turnover": 7588.039999999999,
+        "win_rate": 0.75,
+        "worst_trade": -1.35
+      },
+      "run_index": 10,
+      "simulation_seed": 40831719661049044036787552162680627511155186681512752968621302644831322662549,
+      "status": "complete",
+      "trajectory_fingerprint": "f72e064acd19843410d97fad34cde77e98c60cc05120d3d04cbc7a6667e506f9",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "ccbb31e3cd9fc78f9243f986979ad6f5947fe42dbbe22912775f3f49bc0e4243",
+      "metrics": {
+        "average_trade": -0.2966666666666668,
+        "costs": 1.4999999999999716,
+        "drawdown": 8.72,
+        "max_gross": 959.9000000000001,
+        "max_imbalance": 487.60636360489417,
+        "mean_entry_z": 0.04427421735135447,
+        "mean_exit_z": -0.3911370800647342,
+        "mean_holding": 10.833333333333334,
+        "median_trade": 0.2400000000000002,
+        "net_pnl": -1.7800000000000002,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00017800000000000002,
+        "trade_count": 6,
+        "turnover": 10073.72,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -4.16
+      },
+      "run_index": 11,
+      "simulation_seed": 191408039891762028922683867188235416054419589898603755225693200190356184842529,
+      "status": "complete",
+      "trajectory_fingerprint": "b84bff1a4a3e9cca6f413d893cd29b50576cd75a20a11595c5c48436629f4820",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "ccbb31e3cd9fc78f9243f986979ad6f5947fe42dbbe22912775f3f49bc0e4243",
+      "metrics": {
+        "average_trade": -1.7133333333333332,
+        "costs": 10.000000000000199,
+        "drawdown": 12.149999999999999,
+        "max_gross": 959.9000000000001,
+        "max_imbalance": 487.60636360489417,
+        "mean_entry_z": 0.04427421735135447,
+        "mean_exit_z": -0.3911370800647342,
+        "mean_holding": 10.833333333333334,
+        "median_trade": -1.12,
+        "net_pnl": -10.28,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0010279999999999998,
+        "trade_count": 6,
+        "turnover": 10073.72,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -5.52
+      },
+      "run_index": 11,
+      "simulation_seed": 191408039891762028922683867188235416054419589898603755225693200190356184842529,
+      "status": "complete",
+      "trajectory_fingerprint": "4f2017bbbf73c6d88b7bd284ef660273e79de8b37973e899b6efb4e3530bb2ee",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "4fd4715ccd494d9bce02f1bbe02da56e9b075719e3a6c27aa25a88c2f7eda95f",
+      "metrics": {
+        "average_trade": 0.5449999999999999,
+        "costs": 1.6200000000001689,
+        "drawdown": 11.940000000000001,
+        "max_gross": 926.81,
+        "max_imbalance": 437.28628348251254,
+        "mean_entry_z": -0.6756798124241125,
+        "mean_exit_z": 0.21677741223882907,
+        "mean_holding": 14.333333333333334,
+        "median_trade": 0.9900000000000002,
+        "net_pnl": 3.2699999999999996,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000327,
+        "trade_count": 6,
+        "turnover": 10947.45,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -4.450000000000003
+      },
+      "run_index": 12,
+      "simulation_seed": 120488270172819612944993011571893944880507472444513677478393015617007208532797,
+      "status": "complete",
+      "trajectory_fingerprint": "5f3a624d96e2585f435d1bb737f0e11fedf6c7cfdafee908e6a9223012705749",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "4fd4715ccd494d9bce02f1bbe02da56e9b075719e3a6c27aa25a88c2f7eda95f",
+      "metrics": {
+        "average_trade": -0.985,
+        "costs": 10.800000000000207,
+        "drawdown": 13.469999999999999,
+        "max_gross": 926.81,
+        "max_imbalance": 437.28628348251254,
+        "mean_entry_z": -0.6756798124241125,
+        "mean_exit_z": 0.21677741223882907,
+        "mean_holding": 14.333333333333334,
+        "median_trade": -0.5400000000000005,
+        "net_pnl": -5.91,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000591,
+        "trade_count": 6,
+        "turnover": 10947.449999999999,
+        "win_rate": 0.5,
+        "worst_trade": -5.9799999999999995
+      },
+      "run_index": 12,
+      "simulation_seed": 120488270172819612944993011571893944880507472444513677478393015617007208532797,
+      "status": "complete",
+      "trajectory_fingerprint": "0431e9eef69468d399598566f46e3099c8f6ddb26ecaf00e9ef8b6228ae0d662",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "20dd59a566a413e8d986b5cc77ac25c0c8e2b70afe07949806ce767be1e8eb11",
+      "metrics": {
+        "average_trade": 0.7850000000000001,
+        "costs": 1.6199999999998989,
+        "drawdown": 5.38,
+        "max_gross": 935.1600000000001,
+        "max_imbalance": 515.3499999999999,
+        "mean_entry_z": -0.9043196426133201,
+        "mean_exit_z": 0.40265902065194115,
+        "mean_holding": 10.333333333333334,
+        "median_trade": 0.3600000000000002,
+        "net_pnl": 4.710000000000001,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00047100000000000006,
+        "trade_count": 6,
+        "turnover": 10961.69,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -1.6299999999999997
+      },
+      "run_index": 13,
+      "simulation_seed": 174123356269286827130460564859428253059050333942538839512598770725121104400521,
+      "status": "complete",
+      "trajectory_fingerprint": "90d2d38cc7ed1b414dafe2593519c4ff50737d31a5cae947f5f2346b43ee8917",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "20dd59a566a413e8d986b5cc77ac25c0c8e2b70afe07949806ce767be1e8eb11",
+      "metrics": {
+        "average_trade": -0.745,
+        "costs": 10.799999999999937,
+        "drawdown": 9.719999999999999,
+        "max_gross": 935.1600000000001,
+        "max_imbalance": 515.3499999999999,
+        "mean_entry_z": -0.9043196426133201,
+        "mean_exit_z": 0.40265902065194115,
+        "mean_holding": 10.333333333333334,
+        "median_trade": -1.1699999999999995,
+        "net_pnl": -4.47,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00044699999999999997,
+        "trade_count": 6,
+        "turnover": 10961.689999999999,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -3.160000000000001
+      },
+      "run_index": 13,
+      "simulation_seed": 174123356269286827130460564859428253059050333942538839512598770725121104400521,
+      "status": "complete",
+      "trajectory_fingerprint": "80140b406f18cb71b37ac1c87b58edddb6fb935b34ad29ecd73481da225badae",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "cb5508651fe668c87f9456287d8bec84b0204bfc1ebec920bf356e0afb5ed903",
+      "metrics": {
+        "average_trade": 1.0416666666666667,
+        "costs": 1.73999999999994,
+        "drawdown": 3.76,
+        "max_gross": 1035.85,
+        "max_imbalance": 512.35,
+        "mean_entry_z": 0.04229012725141105,
+        "mean_exit_z": 0.16350481473472808,
+        "mean_holding": 8.0,
+        "median_trade": 1.8250000000000004,
+        "net_pnl": 6.25,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000625,
+        "trade_count": 6,
+        "turnover": 11794.030000000002,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.15
+      },
+      "run_index": 14,
+      "simulation_seed": 170389647865530217681075397674029777885614061114239045424453570668420678041409,
+      "status": "complete",
+      "trajectory_fingerprint": "bd59aa6208521969136d4c56570b2ab8f02184593fe8a4afb2f3f7c03f6a2ed3",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "cb5508651fe668c87f9456287d8bec84b0204bfc1ebec920bf356e0afb5ed903",
+      "metrics": {
+        "average_trade": -0.6016666666666666,
+        "costs": 11.599999999999884,
+        "drawdown": 5.1000000000000005,
+        "max_gross": 1035.85,
+        "max_imbalance": 512.35,
+        "mean_entry_z": 0.04229012725141105,
+        "mean_exit_z": 0.16350481473472808,
+        "mean_holding": 8.0,
+        "median_trade": 0.2950000000000005,
+        "net_pnl": -3.6099999999999994,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00036099999999999994,
+        "trade_count": 6,
+        "turnover": 11794.03,
+        "win_rate": 0.5,
+        "worst_trade": -3.8499999999999996
+      },
+      "run_index": 14,
+      "simulation_seed": 170389647865530217681075397674029777885614061114239045424453570668420678041409,
+      "status": "complete",
+      "trajectory_fingerprint": "21764e4320d2712458605c57398e7de487e37a93ce7d6eb9c54aaaab75a1c95f",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c340e92582a6119e8ff9c2a25692713ba15fb2f06ba8b2f9a16908a61a288a18",
+      "metrics": {
+        "average_trade": 1.566666666666667,
+        "costs": 1.8000000000001877,
+        "drawdown": 5.85,
+        "max_gross": 943.7,
+        "max_imbalance": 470.65,
+        "mean_entry_z": 0.03998688833406646,
+        "mean_exit_z": 0.3288386876459776,
+        "mean_holding": 11.333333333333334,
+        "median_trade": 1.45,
+        "net_pnl": 9.4,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0009400000000000001,
+        "trade_count": 6,
+        "turnover": 11146.3,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -1.3499999999999996
+      },
+      "run_index": 15,
+      "simulation_seed": 192803996476464478330665267391945715417322037241271554986010243569642178958537,
+      "status": "complete",
+      "trajectory_fingerprint": "751f13895ae73b1372f9b1147183d8e1141cf57f9f7957e60137c79e7e30d63c",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c340e92582a6119e8ff9c2a25692713ba15fb2f06ba8b2f9a16908a61a288a18",
+      "metrics": {
+        "average_trade": -0.1333333333333334,
+        "costs": 11.999999999999659,
+        "drawdown": 7.25,
+        "max_gross": 943.7,
+        "max_imbalance": 470.65,
+        "mean_entry_z": 0.03998688833406646,
+        "mean_exit_z": 0.3288386876459776,
+        "mean_holding": 11.333333333333334,
+        "median_trade": -0.25,
+        "net_pnl": -0.8000000000000003,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -8.000000000000002e-05,
+        "trade_count": 6,
+        "turnover": 11146.300000000001,
+        "win_rate": 0.5,
+        "worst_trade": -3.05
+      },
+      "run_index": 15,
+      "simulation_seed": 192803996476464478330665267391945715417322037241271554986010243569642178958537,
+      "status": "complete",
+      "trajectory_fingerprint": "2eba1fc528d23abb8481fa73d7091b30761cc2c7a3491c889cdf257a1c90e2e6",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "b1c4ff7a60777906a9916fbd3d7a48755677d4641a780323b957aa13b69e4e6e",
+      "metrics": {
+        "average_trade": 1.1777777777777776,
+        "costs": 2.159999999999998,
+        "drawdown": 3.6799999999999997,
+        "max_gross": 840.84,
+        "max_imbalance": 434.9953927593907,
+        "mean_entry_z": -0.6992678702495804,
+        "mean_exit_z": -0.4943961393559026,
+        "mean_holding": 10.666666666666666,
+        "median_trade": 0.8799999999999999,
+        "net_pnl": 10.599999999999998,
+        "probability_loss": 0.1111111111111111,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0010599999999999997,
+        "trade_count": 9,
+        "turnover": 14674.839999999998,
+        "win_rate": 0.8888888888888888,
+        "worst_trade": -1.8000000000000007
+      },
+      "run_index": 16,
+      "simulation_seed": 74062789958709356127871873507251524874380937572793603870677259263163478636387,
+      "status": "complete",
+      "trajectory_fingerprint": "f16be2f9f62339f433a9d2377e9e894576a8a395ec94d1447548155df0db3319",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "b1c4ff7a60777906a9916fbd3d7a48755677d4641a780323b957aa13b69e4e6e",
+      "metrics": {
+        "average_trade": -0.18222222222222229,
+        "costs": 14.399999999999991,
+        "drawdown": 5.039999999999999,
+        "max_gross": 840.84,
+        "max_imbalance": 434.9953927593907,
+        "mean_entry_z": -0.6992678702495804,
+        "mean_exit_z": -0.4943961393559026,
+        "mean_holding": 10.666666666666666,
+        "median_trade": -0.47999999999999954,
+        "net_pnl": -1.6400000000000006,
+        "probability_loss": 0.5555555555555556,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00016400000000000006,
+        "trade_count": 9,
+        "turnover": 14674.839999999997,
+        "win_rate": 0.4444444444444444,
+        "worst_trade": -3.16
+      },
+      "run_index": 16,
+      "simulation_seed": 74062789958709356127871873507251524874380937572793603870677259263163478636387,
+      "status": "complete",
+      "trajectory_fingerprint": "7e2993996a31d995757d79b64b29dd8872e72ae647b3b4889423c06f3f3260b1",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "e88c97732ba473e13060bbb44cff091123e8b0e95245d7cfc15d667e8f1bd437",
+      "metrics": {
+        "average_trade": 2.6699999999999995,
+        "costs": 0.8099999999999494,
+        "drawdown": 2.6550000000000002,
+        "max_gross": 921.87,
+        "max_imbalance": 509.59956080029275,
+        "mean_entry_z": -0.96124442577567,
+        "mean_exit_z": 0.08863269956419495,
+        "mean_holding": 15.666666666666666,
+        "median_trade": 2.17,
+        "net_pnl": 8.009999999999998,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0008009999999999998,
+        "trade_count": 3,
+        "turnover": 5401.14,
+        "win_rate": 1.0,
+        "worst_trade": 1.6400000000000006
+      },
+      "run_index": 17,
+      "simulation_seed": 76666863264425720951247572935102471665231747007262859409715916026335161172811,
+      "status": "complete",
+      "trajectory_fingerprint": "bee4e8d2b5739b2a6712c4c0fa6ca8fe51c824ed09d513c0769e1a22ee012a05",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "e88c97732ba473e13060bbb44cff091123e8b0e95245d7cfc15d667e8f1bd437",
+      "metrics": {
+        "average_trade": 1.14,
+        "costs": 5.4000000000001025,
+        "drawdown": 3.630000000000001,
+        "max_gross": 921.87,
+        "max_imbalance": 509.59956080029275,
+        "mean_entry_z": -0.96124442577567,
+        "mean_exit_z": 0.08863269956419495,
+        "mean_holding": 15.666666666666666,
+        "median_trade": 0.6400000000000006,
+        "net_pnl": 3.42,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000342,
+        "trade_count": 3,
+        "turnover": 5401.14,
+        "win_rate": 1.0,
+        "worst_trade": 0.10999999999999943
+      },
+      "run_index": 17,
+      "simulation_seed": 76666863264425720951247572935102471665231747007262859409715916026335161172811,
+      "status": "complete",
+      "trajectory_fingerprint": "3d59d07c76473751697a3a7673195f3c32b7d82a0010022ca2d28c9f80ba4b0b",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fceaab468156ded463f28218913a63c3bbf3c28a27c92bd6a45543351f1ea0e4",
+      "metrics": {
+        "average_trade": 0.10166666666666664,
+        "costs": 1.6200000000000978,
+        "drawdown": 4.95,
+        "max_gross": 888.74,
+        "max_imbalance": 504.4618380104425,
+        "mean_entry_z": 0.7140070795161986,
+        "mean_exit_z": -0.15823316451327904,
+        "mean_holding": 12.833333333333334,
+        "median_trade": 0.2849999999999999,
+        "net_pnl": 0.61,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 6.1e-05,
+        "trade_count": 6,
+        "turnover": 10592.31,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.609999999999999
+      },
+      "run_index": 18,
+      "simulation_seed": 143562735838299240481600129121576840328634324546483469336854799464390223757095,
+      "status": "complete",
+      "trajectory_fingerprint": "dcd50613bee73af2435c8f32e676f5ac7230c53fd0f1f20a820fe488ed8c1488",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fceaab468156ded463f28218913a63c3bbf3c28a27c92bd6a45543351f1ea0e4",
+      "metrics": {
+        "average_trade": -1.4283333333333335,
+        "costs": 10.799999999999866,
+        "drawdown": 9.620000000000001,
+        "max_gross": 888.74,
+        "max_imbalance": 504.4618380104425,
+        "mean_entry_z": 0.7140070795161986,
+        "mean_exit_z": -0.15823316451327904,
+        "mean_holding": 12.833333333333334,
+        "median_trade": -1.245,
+        "net_pnl": -8.57,
+        "probability_loss": 0.6666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000857,
+        "trade_count": 6,
+        "turnover": 10592.310000000001,
+        "win_rate": 0.3333333333333333,
+        "worst_trade": -4.140000000000001
+      },
+      "run_index": 18,
+      "simulation_seed": 143562735838299240481600129121576840328634324546483469336854799464390223757095,
+      "status": "complete",
+      "trajectory_fingerprint": "e7d49447dff92eb62966a2372227bf5558eaa667fe54f11a5862ff337a7e976f",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "dc93e09624eeced258ede488472c8834056262e75fa927a90972ae58fc425bd5",
+      "metrics": {
+        "average_trade": 1.4066666666666665,
+        "costs": 1.4399999999997524,
+        "drawdown": 1.54,
+        "max_gross": 817.32,
+        "max_imbalance": 455.37771778820434,
+        "mean_entry_z": 0.7006833490911614,
+        "mean_exit_z": 0.5153870342424879,
+        "mean_holding": 7.0,
+        "median_trade": 1.5999999999999999,
+        "net_pnl": 8.44,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0008439999999999999,
+        "trade_count": 6,
+        "turnover": 9686.36,
+        "win_rate": 1.0,
+        "worst_trade": 0.27999999999999936
+      },
+      "run_index": 19,
+      "simulation_seed": 44147165124565301601155902907305805353715902387315293290189458466643371598493,
+      "status": "complete",
+      "trajectory_fingerprint": "2b890a45cae12b03d59341b3245329e24c30690a13f4b747d5486a37c2ab94b4",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "dc93e09624eeced258ede488472c8834056262e75fa927a90972ae58fc425bd5",
+      "metrics": {
+        "average_trade": 0.04666666666666667,
+        "costs": 9.599999999999955,
+        "drawdown": 2.4799999999999995,
+        "max_gross": 817.32,
+        "max_imbalance": 455.37771778820434,
+        "mean_entry_z": 0.7006833490911614,
+        "mean_exit_z": 0.5153870342424879,
+        "mean_holding": 7.0,
+        "median_trade": 0.24,
+        "net_pnl": 0.28,
+        "probability_loss": 0.16666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": 2.8000000000000003e-05,
+        "trade_count": 6,
+        "turnover": 9686.360000000002,
+        "win_rate": 0.8333333333333334,
+        "worst_trade": -1.08
+      },
+      "run_index": 19,
+      "simulation_seed": 44147165124565301601155902907305805353715902387315293290189458466643371598493,
+      "status": "complete",
+      "trajectory_fingerprint": "7e440221cc652a2b85f95b97d5454f32d69a180077e5c48705563730f6e82d4d",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "78663524190e64974516b65eac693521a2a74322174dc4693378d2d1017b4109",
+      "metrics": {
+        "average_trade": 0.8825000000000001,
+        "costs": 1.0200000000000922,
+        "drawdown": 3.0250000000000004,
+        "max_gross": 1010.8,
+        "max_imbalance": 505.65,
+        "mean_entry_z": 0.18443954070910784,
+        "mean_exit_z": 0.43192991814291615,
+        "mean_holding": 13.0,
+        "median_trade": 0.5800000000000001,
+        "net_pnl": 3.5300000000000002,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000353,
+        "trade_count": 4,
+        "turnover": 6930.450000000001,
+        "win_rate": 1.0,
+        "worst_trade": 0.3200000000000012
+      },
+      "run_index": 20,
+      "simulation_seed": 211744348983040973896298432896013066093936351475134635688056968469279878238195,
+      "status": "complete",
+      "trajectory_fingerprint": "308795d113693b5e0d440efd0a9a21664e4054b44b563654a09be54565350e2b",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "78663524190e64974516b65eac693521a2a74322174dc4693378d2d1017b4109",
+      "metrics": {
+        "average_trade": -0.5625,
+        "costs": 6.799999999999992,
+        "drawdown": 5.800000000000001,
+        "max_gross": 1010.8,
+        "max_imbalance": 505.65,
+        "mean_entry_z": 0.18443954070910784,
+        "mean_exit_z": 0.43192991814291615,
+        "mean_holding": 13.0,
+        "median_trade": -0.7800000000000002,
+        "net_pnl": -2.25,
+        "probability_loss": 0.75,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000225,
+        "trade_count": 4,
+        "turnover": 6930.450000000001,
+        "win_rate": 0.25,
+        "worst_trade": -1.0399999999999991
+      },
+      "run_index": 20,
+      "simulation_seed": 211744348983040973896298432896013066093936351475134635688056968469279878238195,
+      "status": "complete",
+      "trajectory_fingerprint": "34c899c10f72e5175b358359ac307a4793e0983df98f770c44e40f96897352f6",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fd5ed948156030006aee366fc98ce40d63fc383908b0e8d93b47846eb696cebf",
+      "metrics": {
+        "average_trade": 1.8866666666666665,
+        "costs": 1.439999999999923,
+        "drawdown": 3.12,
+        "max_gross": 845.3199999999999,
+        "max_imbalance": 444.35585353616125,
+        "mean_entry_z": -0.7351881028686368,
+        "mean_exit_z": -0.47587680859238796,
+        "mean_holding": 9.833333333333334,
+        "median_trade": 1.7999999999999998,
+        "net_pnl": 11.319999999999999,
+        "probability_loss": 0.16666666666666666,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0011319999999999998,
+        "trade_count": 6,
+        "turnover": 10065.319999999998,
+        "win_rate": 0.8333333333333334,
+        "worst_trade": -0.6400000000000006
+      },
+      "run_index": 21,
+      "simulation_seed": 63584932941365031414652010106528792023855109927021218963363736282751195161501,
+      "status": "complete",
+      "trajectory_fingerprint": "1ec76f9bc651caa886ae8c8e1ef460bc0c406cb1f8ce2d27f620362c9baf3b07",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "fd5ed948156030006aee366fc98ce40d63fc383908b0e8d93b47846eb696cebf",
+      "metrics": {
+        "average_trade": 0.5266666666666667,
+        "costs": 9.600000000000126,
+        "drawdown": 4.839999999999999,
+        "max_gross": 845.3199999999999,
+        "max_imbalance": 444.35585353616125,
+        "mean_entry_z": -0.7351881028686368,
+        "mean_exit_z": -0.47587680859238796,
+        "mean_holding": 9.833333333333334,
+        "median_trade": 0.44000000000000017,
+        "net_pnl": 3.16,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00031600000000000004,
+        "trade_count": 6,
+        "turnover": 10065.320000000002,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.0
+      },
+      "run_index": 21,
+      "simulation_seed": 63584932941365031414652010106528792023855109927021218963363736282751195161501,
+      "status": "complete",
+      "trajectory_fingerprint": "fa1f64d64721a867f4921a20d37800c22406cf41cc4f1622f1545b10a7498918",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "725366eb84154bbe64dd530f958180d27033d41f81980515703c686821ab847a",
+      "metrics": {
+        "average_trade": 1.0166666666666666,
+        "costs": 1.8000000000000456,
+        "drawdown": 6.325,
+        "max_gross": 1013.15,
+        "max_imbalance": 507.8,
+        "mean_entry_z": -0.25708685973384804,
+        "mean_exit_z": -0.43698308374848976,
+        "mean_holding": 8.5,
+        "median_trade": 1.475,
+        "net_pnl": 6.1,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00061,
+        "trade_count": 6,
+        "turnover": 11982.4,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.3499999999999996
+      },
+      "run_index": 22,
+      "simulation_seed": 218387606054177900626324111140946382457082307452761694124138698762524590681859,
+      "status": "complete",
+      "trajectory_fingerprint": "39d6dcb0a8616d686d7acb653c04aed3c6a81209a47c98600ac8993d8d97e66b",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "725366eb84154bbe64dd530f958180d27033d41f81980515703c686821ab847a",
+      "metrics": {
+        "average_trade": -0.6833333333333332,
+        "costs": 11.999999999999801,
+        "drawdown": 8.799999999999999,
+        "max_gross": 1013.15,
+        "max_imbalance": 507.8,
+        "mean_entry_z": -0.25708685973384804,
+        "mean_exit_z": -0.43698308374848976,
+        "mean_holding": 8.5,
+        "median_trade": -0.22499999999999987,
+        "net_pnl": -4.1,
+        "probability_loss": 0.5,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00041,
+        "trade_count": 6,
+        "turnover": 11982.4,
+        "win_rate": 0.5,
+        "worst_trade": -4.049999999999999
+      },
+      "run_index": 22,
+      "simulation_seed": 218387606054177900626324111140946382457082307452761694124138698762524590681859,
+      "status": "complete",
+      "trajectory_fingerprint": "514c33a6d27828d6d6322451dc8923e4c34ade0eac10e9ac5ec72f555b97eea6",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "478a553df1c6e7864a462e764f8d5e90a31aa210c6f196e67c97efe0d9c6128d",
+      "metrics": {
+        "average_trade": -1.4460000000000002,
+        "costs": 1.350000000000077,
+        "drawdown": 12.18,
+        "max_gross": 914.22,
+        "max_imbalance": 631.2497212713249,
+        "mean_entry_z": -1.5022093580549924,
+        "mean_exit_z": 0.16144839647738599,
+        "mean_holding": 13.6,
+        "median_trade": -0.57,
+        "net_pnl": -7.23,
+        "probability_loss": 0.6,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000723,
+        "trade_count": 5,
+        "turnover": 9019.740000000002,
+        "win_rate": 0.4,
+        "worst_trade": -7.170000000000001
+      },
+      "run_index": 23,
+      "simulation_seed": 127525783872057766191645690191515358214084053508311769126313418422930800268315,
+      "status": "complete",
+      "trajectory_fingerprint": "047ae2c933c1f0d83dea13f2e98466c5e94c6f33dfaef99eee7d00dfe967756d",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "478a553df1c6e7864a462e764f8d5e90a31aa210c6f196e67c97efe0d9c6128d",
+      "metrics": {
+        "average_trade": -2.976,
+        "costs": 9.000000000000128,
+        "drawdown": 17.220000000000002,
+        "max_gross": 914.22,
+        "max_imbalance": 631.2497212713249,
+        "mean_entry_z": -1.5022093580549924,
+        "mean_exit_z": 0.16144839647738599,
+        "mean_holding": 13.6,
+        "median_trade": -2.0999999999999996,
+        "net_pnl": -14.879999999999999,
+        "probability_loss": 1.0,
+        "residual_inventory": 0,
+        "return_on_capital": -0.001488,
+        "trade_count": 5,
+        "turnover": 9019.74,
+        "win_rate": 0.0,
+        "worst_trade": -8.7
+      },
+      "run_index": 23,
+      "simulation_seed": 127525783872057766191645690191515358214084053508311769126313418422930800268315,
+      "status": "complete",
+      "trajectory_fingerprint": "bcfb91616b1e789226d5f3fc02695cfa71475921e0f6750cb7ca531866e689a4",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "a34ced487db012e7637d902744b2b478d93b03a2b02cad97ff8d92605fe3d56d",
+      "metrics": {
+        "average_trade": 2.204285714285714,
+        "costs": 1.8900000000000055,
+        "drawdown": 3.4300000000000006,
+        "max_gross": 932.3499999999999,
+        "max_imbalance": 460.0373361186599,
+        "mean_entry_z": 1.1156554878101803,
+        "mean_exit_z": 0.2507829906174087,
+        "mean_holding": 10.285714285714286,
+        "median_trade": 2.330000000000002,
+        "net_pnl": 15.43,
+        "probability_loss": 0.0,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0015429999999999999,
+        "trade_count": 7,
+        "turnover": 12795.780000000002,
+        "win_rate": 1.0,
+        "worst_trade": 0.2999999999999998
+      },
+      "run_index": 24,
+      "simulation_seed": 94567931846403636642724890405855321280304705458357679020066408614460834313555,
+      "status": "complete",
+      "trajectory_fingerprint": "39921f3cfdd5a1675fcf53864d615c14a9bf6476ac10271b2fde16d3d58423b0",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "a34ced487db012e7637d902744b2b478d93b03a2b02cad97ff8d92605fe3d56d",
+      "metrics": {
+        "average_trade": 0.6742857142857142,
+        "costs": 12.599999999999913,
+        "drawdown": 4.73,
+        "max_gross": 932.3499999999999,
+        "max_imbalance": 460.0373361186599,
+        "mean_entry_z": 1.1156554878101803,
+        "mean_exit_z": 0.2507829906174087,
+        "mean_holding": 10.285714285714286,
+        "median_trade": 0.8000000000000003,
+        "net_pnl": 4.719999999999999,
+        "probability_loss": 0.42857142857142855,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00047199999999999987,
+        "trade_count": 7,
+        "turnover": 12795.779999999999,
+        "win_rate": 0.5714285714285714,
+        "worst_trade": -1.23
+      },
+      "run_index": 24,
+      "simulation_seed": 94567931846403636642724890405855321280304705458357679020066408614460834313555,
+      "status": "complete",
+      "trajectory_fingerprint": "7ea287b8b0d5303b4e8277da0a4a47862ed0ced80e5cf0b3620097117e04d0ec",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "89e5f0666dc8de0594b875edda8856644edd9199cf270e9602921b0e77fa7a75",
+      "metrics": {
+        "average_trade": 0.7999999999999999,
+        "costs": 2.0999999999997927,
+        "drawdown": 4.425000000000001,
+        "max_gross": 971.8499999999999,
+        "max_imbalance": 486.34999999999997,
+        "mean_entry_z": -0.06444620007321454,
+        "mean_exit_z": 0.006217286612627485,
+        "mean_holding": 8.428571428571429,
+        "median_trade": 0.9000000000000004,
+        "net_pnl": 5.6,
+        "probability_loss": 0.2857142857142857,
+        "residual_inventory": 0,
+        "return_on_capital": 0.00056,
+        "trade_count": 7,
+        "turnover": 13137.899999999998,
+        "win_rate": 0.7142857142857143,
+        "worst_trade": -2.150000000000001
+      },
+      "run_index": 25,
+      "simulation_seed": 209613383726878007631275370422815917682336616756012916734979571878566991552827,
+      "status": "complete",
+      "trajectory_fingerprint": "bc30e8b9aab6af28f6632dfd30e0aeb15ea848dc8caa37e1690520dc42feca6b",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "89e5f0666dc8de0594b875edda8856644edd9199cf270e9602921b0e77fa7a75",
+      "metrics": {
+        "average_trade": -0.9,
+        "costs": 14.000000000000028,
+        "drawdown": 9.5,
+        "max_gross": 971.8499999999999,
+        "max_imbalance": 486.34999999999997,
+        "mean_entry_z": -0.06444620007321454,
+        "mean_exit_z": 0.006217286612627485,
+        "mean_holding": 8.428571428571429,
+        "median_trade": -0.7999999999999994,
+        "net_pnl": -6.3,
+        "probability_loss": 0.5714285714285714,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00063,
+        "trade_count": 7,
+        "turnover": 13137.9,
+        "win_rate": 0.42857142857142855,
+        "worst_trade": -3.849999999999999
+      },
+      "run_index": 25,
+      "simulation_seed": 209613383726878007631275370422815917682336616756012916734979571878566991552827,
+      "status": "complete",
+      "trajectory_fingerprint": "7eec95613dec94a061419eff4ec0672b6ae8cc387464fc736b34ff3a60eb8797",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c5fd8494f2a6372cab7d1c7d7fa7a4fd3cc6be9fb6f220150f7c58fb16759bb8",
+      "metrics": {
+        "average_trade": 1.718333333333333,
+        "costs": 1.6199999999998989,
+        "drawdown": 3.3700000000000006,
+        "max_gross": 910.9100000000001,
+        "max_imbalance": 448.58422294592447,
+        "mean_entry_z": -1.6666734136024237,
+        "mean_exit_z": -0.3930546303822206,
+        "mean_holding": 6.333333333333333,
+        "median_trade": 2.1199999999999997,
+        "net_pnl": 10.309999999999999,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0010309999999999998,
+        "trade_count": 6,
+        "turnover": 10747.850000000002,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -0.8200000000000003
+      },
+      "run_index": 26,
+      "simulation_seed": 428643641077819543955640332699831360824059848290516795828788505553660868985,
+      "status": "complete",
+      "trajectory_fingerprint": "cdda5c1f06d51043766bdf000297770a2015710e3472b2be812e0644c4071e1b",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "c5fd8494f2a6372cab7d1c7d7fa7a4fd3cc6be9fb6f220150f7c58fb16759bb8",
+      "metrics": {
+        "average_trade": 0.18833333333333316,
+        "costs": 10.79999999999988,
+        "drawdown": 4.710000000000001,
+        "max_gross": 910.9100000000001,
+        "max_imbalance": 448.58422294592447,
+        "mean_entry_z": -1.6666734136024237,
+        "mean_exit_z": -0.3930546303822206,
+        "mean_holding": 6.333333333333333,
+        "median_trade": 0.5900000000000003,
+        "net_pnl": 1.129999999999999,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0001129999999999999,
+        "trade_count": 6,
+        "turnover": 10747.849999999997,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.3500000000000014
+      },
+      "run_index": 26,
+      "simulation_seed": 428643641077819543955640332699831360824059848290516795828788505553660868985,
+      "status": "complete",
+      "trajectory_fingerprint": "6599873f6f05a5dad645f2084c2fee9196c8d180bd6e2f3dded44fc71d4e0aab",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "7d45071c4ee984e97183fc5a7d40052bc94e64a4cfb03eab9bca966c8a12a082",
+      "metrics": {
+        "average_trade": 1.03,
+        "costs": 1.8899999999999202,
+        "drawdown": 4.630000000000001,
+        "max_gross": 965.7,
+        "max_imbalance": 538.35,
+        "mean_entry_z": 0.39966195771855745,
+        "mean_exit_z": -0.5127101427362425,
+        "mean_holding": 9.714285714285714,
+        "median_trade": 1.0700000000000003,
+        "net_pnl": 7.21,
+        "probability_loss": 0.14285714285714285,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000721,
+        "trade_count": 7,
+        "turnover": 13243.120000000003,
+        "win_rate": 0.8571428571428571,
+        "worst_trade": -1.1900000000000004
+      },
+      "run_index": 27,
+      "simulation_seed": 149074765327602943381023194716084136985442868682140599327791672237095646331521,
+      "status": "complete",
+      "trajectory_fingerprint": "f70e47a58f457e4b7119835fe856955b307af2d3f07896d91645b1f26d3083cb",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "7d45071c4ee984e97183fc5a7d40052bc94e64a4cfb03eab9bca966c8a12a082",
+      "metrics": {
+        "average_trade": -0.5,
+        "costs": 12.59999999999987,
+        "drawdown": 7.7,
+        "max_gross": 965.7,
+        "max_imbalance": 538.35,
+        "mean_entry_z": 0.39966195771855745,
+        "mean_exit_z": -0.5127101427362425,
+        "mean_holding": 9.714285714285714,
+        "median_trade": -0.4599999999999991,
+        "net_pnl": -3.5,
+        "probability_loss": 0.7142857142857143,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00035,
+        "trade_count": 7,
+        "turnover": 13243.120000000003,
+        "win_rate": 0.2857142857142857,
+        "worst_trade": -2.7200000000000006
+      },
+      "run_index": 27,
+      "simulation_seed": 149074765327602943381023194716084136985442868682140599327791672237095646331521,
+      "status": "complete",
+      "trajectory_fingerprint": "70a41a38ee10781212ea9c9c13b79e1e353d10fb7f6b3874daee89aa922b29f2",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da28c2435e7c44a4017d0595ec08d8d3623288d0bc3ab52701085d49a35594be",
+      "metrics": {
+        "average_trade": 0.75625,
+        "costs": 2.039999999999886,
+        "drawdown": 5.045,
+        "max_gross": 982.6700000000001,
+        "max_imbalance": 455.84321187741597,
+        "mean_entry_z": -0.5716049951670223,
+        "mean_exit_z": 1.0677438986755932,
+        "mean_holding": 7.375,
+        "median_trade": 1.1800000000000002,
+        "net_pnl": 6.05,
+        "probability_loss": 0.375,
+        "residual_inventory": 0,
+        "return_on_capital": 0.000605,
+        "trade_count": 8,
+        "turnover": 14739.35,
+        "win_rate": 0.625,
+        "worst_trade": -1.2799999999999998
+      },
+      "run_index": 28,
+      "simulation_seed": 221303541642955723985657192495597185150033588641493855137751892315900282259403,
+      "status": "complete",
+      "trajectory_fingerprint": "d8ef94ed751ccbe095cf6d15e49a89123434e94a439d1f7cc2129283e00bf03a",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da28c2435e7c44a4017d0595ec08d8d3623288d0bc3ab52701085d49a35594be",
+      "metrics": {
+        "average_trade": -0.6887500000000001,
+        "costs": 13.600000000000101,
+        "drawdown": 8.92,
+        "max_gross": 982.6700000000001,
+        "max_imbalance": 455.84321187741597,
+        "mean_entry_z": -0.5716049951670223,
+        "mean_exit_z": 1.0677438986755932,
+        "mean_holding": 7.375,
+        "median_trade": -0.3499999999999992,
+        "net_pnl": -5.510000000000001,
+        "probability_loss": 0.625,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0005510000000000001,
+        "trade_count": 8,
+        "turnover": 14739.349999999999,
+        "win_rate": 0.375,
+        "worst_trade": -2.81
+      },
+      "run_index": 28,
+      "simulation_seed": 221303541642955723985657192495597185150033588641493855137751892315900282259403,
+      "status": "complete",
+      "trajectory_fingerprint": "35c1af38ee0592488875511353fdff7ac620675facbcae7defa18b700f562641",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "258ef24e3de891e5d4ca77c1a1c41b9da178a6dc8d02a9e28b22e844a1bccb25",
+      "metrics": {
+        "average_trade": 1.052857142857143,
+        "costs": 2.009999999999876,
+        "drawdown": 4.869999999999998,
+        "max_gross": 1053.03,
+        "max_imbalance": 479.85,
+        "mean_entry_z": 0.3326361204962542,
+        "mean_exit_z": 0.4244542024423902,
+        "mean_holding": 13.857142857142858,
+        "median_trade": 1.0299999999999994,
+        "net_pnl": 7.370000000000001,
+        "probability_loss": 0.14285714285714285,
+        "residual_inventory": 0,
+        "return_on_capital": 0.0007370000000000001,
+        "trade_count": 7,
+        "turnover": 12931.539999999999,
+        "win_rate": 0.8571428571428571,
+        "worst_trade": -1.0700000000000012
+      },
+      "run_index": 29,
+      "simulation_seed": 216807953191875006914908486437460573554378864042755194876060075130707554624991,
+      "status": "complete",
+      "trajectory_fingerprint": "3bfb1fa60ab0221bd65307822a8ade8682445ab9f2546faf4139cac09fef2d3b",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "258ef24e3de891e5d4ca77c1a1c41b9da178a6dc8d02a9e28b22e844a1bccb25",
+      "metrics": {
+        "average_trade": -0.574285714285714,
+        "costs": 13.400000000000217,
+        "drawdown": 9.359999999999998,
+        "max_gross": 1053.03,
+        "max_imbalance": 479.85,
+        "mean_entry_z": 0.3326361204962542,
+        "mean_exit_z": 0.4244542024423902,
+        "mean_holding": 13.857142857142858,
+        "median_trade": -0.639999999999997,
+        "net_pnl": -4.019999999999998,
+        "probability_loss": 0.7142857142857143,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0004019999999999998,
+        "trade_count": 7,
+        "turnover": 12931.54,
+        "win_rate": 0.2857142857142857,
+        "worst_trade": -2.6000000000000005
+      },
+      "run_index": 29,
+      "simulation_seed": 216807953191875006914908486437460573554378864042755194876060075130707554624991,
+      "status": "complete",
+      "trajectory_fingerprint": "a6dbf6c84a895f69a63f90d8734356c1dfe35d00a91fefe4f043c7d336a4bea6",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "a7d67832d11d36d685b07e8b9115c830ee3f116b3d4c1a839039fcafea9bc1a2",
+      "metrics": {
+        "average_trade": 0.023333333333333334,
+        "costs": 1.6200000000000552,
+        "drawdown": 6.400000000000001,
+        "max_gross": 947.46,
+        "max_imbalance": 420.48,
+        "mean_entry_z": -0.029643573490586366,
+        "mean_exit_z": 0.3828151957970536,
+        "mean_holding": 13.5,
+        "median_trade": 0.6050000000000002,
+        "net_pnl": 0.14,
+        "probability_loss": 0.3333333333333333,
+        "residual_inventory": 0,
+        "return_on_capital": 1.4000000000000001e-05,
+        "trade_count": 6,
+        "turnover": 11213.68,
+        "win_rate": 0.6666666666666666,
+        "worst_trade": -2.67
+      },
+      "run_index": 30,
+      "simulation_seed": 70571571162680887448139623130454451670035729284381475485163583331172199325871,
+      "status": "complete",
+      "trajectory_fingerprint": "0a4940be0988a4bc73a378c3e0f91042bd8b10134f4458cdef6981eaea647568",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "a7d67832d11d36d685b07e8b9115c830ee3f116b3d4c1a839039fcafea9bc1a2",
+      "metrics": {
+        "average_trade": -1.5066666666666666,
+        "costs": 10.800000000000008,
+        "drawdown": 10.16,
+        "max_gross": 947.46,
+        "max_imbalance": 420.48,
+        "mean_entry_z": -0.029643573490586366,
+        "mean_exit_z": 0.3828151957970536,
+        "mean_holding": 13.5,
+        "median_trade": -0.9249999999999994,
+        "net_pnl": -9.04,
+        "probability_loss": 0.8333333333333334,
+        "residual_inventory": 0,
+        "return_on_capital": -0.000904,
+        "trade_count": 6,
+        "turnover": 11213.679999999997,
+        "win_rate": 0.16666666666666666,
+        "worst_trade": -4.2
+      },
+      "run_index": 30,
+      "simulation_seed": 70571571162680887448139623130454451670035729284381475485163583331172199325871,
+      "status": "complete",
+      "trajectory_fingerprint": "6b5da7a3c51fd51cd201101ef4a911d66e7e0abec1c20a00b6ace63d922caf39",
+      "variant": "high"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da5038af2d7df7d1cd5531bb7763893e202139994890ed10f75ec40d5280d300",
+      "metrics": {
+        "average_trade": -0.38666666666666666,
+        "costs": 2.7000000000002107,
+        "drawdown": 9.610000000000003,
+        "max_gross": 985.4200000000001,
+        "max_imbalance": 589.8,
+        "mean_entry_z": -0.5371374787274682,
+        "mean_exit_z": -0.27769450612329016,
+        "mean_holding": 9.777777777777779,
+        "median_trade": -0.7199999999999989,
+        "net_pnl": -3.4800000000000004,
+        "probability_loss": 0.5555555555555556,
+        "residual_inventory": 0,
+        "return_on_capital": -0.00034800000000000006,
+        "trade_count": 9,
+        "turnover": 17528.61999999999,
+        "win_rate": 0.4444444444444444,
+        "worst_trade": -5.359999999999999
+      },
+      "run_index": 31,
+      "simulation_seed": 12542480203082973179537671929148517787680378962871859417391738717003908287113,
+      "status": "complete",
+      "trajectory_fingerprint": "73a3a21a3f0f3f352126671de48aa726c93739c17f1654417de46aff1e8569e2",
+      "variant": "low"
+    },
+    {
+      "coverage": {
+        "blocks": null,
+        "residual_positions": {
+          "SA-X": 0,
+          "SA-Y": 0
+        },
+        "selection": null,
+        "trading_end": 321,
+        "trading_start": 160
+      },
+      "environment_fingerprint": "da5038af2d7df7d1cd5531bb7763893e202139994890ed10f75ec40d5280d300",
+      "metrics": {
+        "average_trade": -2.086666666666667,
+        "costs": 18.000000000000114,
+        "drawdown": 18.900000000000002,
+        "max_gross": 985.4200000000001,
+        "max_imbalance": 589.8,
+        "mean_entry_z": -0.5371374787274682,
+        "mean_exit_z": -0.27769450612329016,
+        "mean_holding": 9.777777777777779,
+        "median_trade": -2.419999999999998,
+        "net_pnl": -18.78,
+        "probability_loss": 0.5555555555555556,
+        "residual_inventory": 0,
+        "return_on_capital": -0.0018780000000000001,
+        "trade_count": 9,
+        "turnover": 17528.62,
+        "win_rate": 0.4444444444444444,
+        "worst_trade": -7.0600000000000005
+      },
+      "run_index": 31,
+      "simulation_seed": 12542480203082973179537671929148517787680378962871859417391738717003908287113,
+      "status": "complete",
+      "trajectory_fingerprint": "aa8de6fdef2da8767b509abef7cb4e9cc39225351acc4e7ef57df5e5adb7db17",
+      "variant": "high"
+    }
+  ],
+  "schema_version": 1,
+  "simulation_seeds": [
+    19088476561718997711481061749104657514408867504324231327074783574666213224075,
+    4698030149037082609730946482146407623734473418828447421413518212607814973225,
+    52219916624095494269924839294554775344632821031312823243896568474613596782095,
+    65018473286667307386818101151995123019401183009154149491866676245555329072517,
+    56097149114697207100032865354415761107065421803672880083292613910193433293753,
+    226187319897883175726294227965807574862316821812438021012696238803548885354903,
+    71909637306774663804536254350190602984179331694520600166287416095184966368405,
+    79203362149959276502036996168591099742708424502701567239527897172779642678735,
+    6089277274462575102771187157700321951831208583975776114629547641317087628527,
+    220622902998294347295200951578829504493982729671513558279858072902148041501923,
+    40831719661049044036787552162680627511155186681512752968621302644831322662549,
+    191408039891762028922683867188235416054419589898603755225693200190356184842529,
+    120488270172819612944993011571893944880507472444513677478393015617007208532797,
+    174123356269286827130460564859428253059050333942538839512598770725121104400521,
+    170389647865530217681075397674029777885614061114239045424453570668420678041409,
+    192803996476464478330665267391945715417322037241271554986010243569642178958537,
+    74062789958709356127871873507251524874380937572793603870677259263163478636387,
+    76666863264425720951247572935102471665231747007262859409715916026335161172811,
+    143562735838299240481600129121576840328634324546483469336854799464390223757095,
+    44147165124565301601155902907305805353715902387315293290189458466643371598493,
+    211744348983040973896298432896013066093936351475134635688056968469279878238195,
+    63584932941365031414652010106528792023855109927021218963363736282751195161501,
+    218387606054177900626324111140946382457082307452761694124138698762524590681859,
+    127525783872057766191645690191515358214084053508311769126313418422930800268315,
+    94567931846403636642724890405855321280304705458357679020066408614460834313555,
+    209613383726878007631275370422815917682336616756012916734979571878566991552827,
+    428643641077819543955640332699831360824059848290516795828788505553660868985,
+    149074765327602943381023194716084136985442868682140599327791672237095646331521,
+    221303541642955723985657192495597185150033588641493855137751892315900282259403,
+    216807953191875006914908486437460573554378864042755194876060075130707554624991,
+    70571571162680887448139623130454451670035729284381475485163583331172199325871,
+    12542480203082973179537671929148517787680378962871859417391738717003908287113
+  ],
+  "spec": {
+    "adapter": "causal-statarb-fifo-v1",
+    "bootstrap_resamples": 500,
+    "hypothesis": "Higher spreads and fees should reduce net P&L under this fixed environment.",
+    "limitations": [
+      "Synthetic results do not establish real-market alpha.",
+      "Training-selected performance is optimistic; evaluation never selects thresholds.",
+      "The initial fit origin differs across disjoint time blocks; blocks may have different lengths.",
+      "Confidence intervals exclude process, liquidity and model uncertainty."
+    ],
+    "paired": true,
+    "practical_threshold": 0.05,
+    "primary_metric": "net_pnl",
+    "question": "How do higher two-leg execution costs affect net outcomes?",
+    "relationships": [],
+    "seeds": {
+      "pool": "evaluation",
+      "root": 10101002,
+      "runs": 32,
+      "start": 0
+    },
+    "variants": [
+      {
+        "configuration": {
+          "experiment": "costs",
+          "split": 160,
+          "steps": 320,
+          "variant": "low"
+        },
+        "name": "low"
+      },
+      {
+        "configuration": {
+          "experiment": "costs",
+          "split": 160,
+          "steps": 320,
+          "variant": "high"
+        },
+        "name": "high"
+      }
+    ]
+  },
+  "status": "complete",
+  "versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "quantlab": "0.9.0",
+    "scipy": "1.18.1"
+  },
+  "warnings": []
+}

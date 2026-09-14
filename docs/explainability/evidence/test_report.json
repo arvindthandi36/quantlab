@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-12",
+  "core_version": "1.0.0",
+  "schema": "quantlab-explanation-v1",
+  "baseline_passed": 1346,
+  "baseline_seconds": 73.74,
+  "final_passed": 1507,
+  "final_seconds": 83.43,
+  "new_tests": 161,
+  "original_test_ids_missing": [],
+  "original_tests_byte_identical": true,
+  "original_financial_python_byte_identical": true,
+  "existing_python_adapters_changed": [
+    "src/quantlab/trading/navigation.py",
+    "src/quantlab/trading/server.py"
+  ],
+  "new_test_files": {
+    "tests/integration/test_explanation_http.py": 12,
+    "tests/integration/test_explanation_sandbox.py": 22,
+    "tests/integration/test_explanation_state.py": 45,
+    "tests/unit/test_explanation_registry.py": 82
+  },
+  "lint": "passed",
+  "format": "195 files already formatted",
+  "final_summary": "1507 passed in 83.43s (0:01:23)",
+  "scope": "All original tests unchanged; local HTTP tests run with loopback binding permission. Browser acceptance is separate from the automated count."
+}

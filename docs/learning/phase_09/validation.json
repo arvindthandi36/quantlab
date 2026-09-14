@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-12",
+  "tests_passed": 1097,
+  "seconds": 43.09,
+  "baseline_tests": 898,
+  "baseline_tests_removed": 0,
+  "new_tests": 199,
+  "new_tests_by_file": {
+    "tests/unit/test_portfolio_risk_math.py": 90,
+    "tests/integration/test_risk_sessions.py": 44,
+    "tests/integration/test_risk_tutor_research.py": 53,
+    "tests/integration/test_risk_http.py": 12
+  },
+  "browser": {
+    "actual_option_fill": true,
+    "hard_limit_rejection": true,
+    "actual_stock_hedge": 51,
+    "custom_full_repricing": true,
+    "allocation_validated": true,
+    "registered_research_completed": true,
+    "verified_replay_frames": 16,
+    "mobile_viewport": 390,
+    "page_width": 390,
+    "console_errors": 0
+  },
+  "runtime_url": "http://127.0.0.1:8766/risk",
+  "learning_demo_profile": "isolated temporary file",
+  "research_complete_runs": 1024,
+  "research_failures": 0,
+  "evaluation_reuse_warnings": 0,
+  "phase10_started": false
+}

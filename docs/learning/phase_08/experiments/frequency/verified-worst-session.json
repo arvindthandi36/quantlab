@@ -1,0 +1,5146 @@
+{
+  "actions": [
+    {
+      "kind": "option_order",
+      "payload": {
+        "contract_id": "QL-STOCK:call:100:4/73:x100",
+        "quantity": 1,
+        "quote_revision": 1,
+        "side": "buy"
+      },
+      "result": {
+        "cancelled": 0,
+        "contract_id": "QL-STOCK:call:100:4/73:x100",
+        "fee": 0.05,
+        "filled": 1,
+        "mechanism": "synthetic dealer quote; IOC",
+        "multiplier": 100,
+        "premium": 1.882536,
+        "premium_cash_flow": -188.2536,
+        "requested": 1,
+        "side": "buy",
+        "step": 0
+      }
+    },
+    {
+      "kind": "set_auto",
+      "payload": {
+        "frequency": 20
+      },
+      "result": {
+        "message": "Benchmark hedge interval: 20",
+        "ok": true
+      }
+    },
+    {
+      "kind": "hedge",
+      "payload": {},
+      "result": {
+        "actual_filled": 51,
+        "message": "You sell 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+        "ok": true,
+        "order_id": "user-1"
+      }
+    },
+    {
+      "kind": "step",
+      "payload": {
+        "count": 20
+      },
+      "result": {
+        "message": "Observed step 20",
+        "ok": true
+      }
+    }
+  ],
+  "configuration": {
+    "curvature": 0.0,
+    "dividend_yield": 0.0,
+    "expiries_days": [
+      20.0
+    ],
+    "implied_volatility": 0.2,
+    "multiplier": 100,
+    "option_fee": 0.05,
+    "option_half_spread": 0.015,
+    "physical_drift": 0.0,
+    "process_volatility": 0.2,
+    "quote_size": 20,
+    "rate": 0.0,
+    "seed": 107569341000011846843443398546742958235163151362087031836742993252322134703388,
+    "skew": 0.0,
+    "spot": 100.0,
+    "step_days": 1.0,
+    "steps": 20,
+    "stock_depth": 1000,
+    "stock_fee": 0.001,
+    "stock_spread_ticks": 1,
+    "strikes": [
+      100.0
+    ]
+  },
+  "digest": "82c54f577b49e7a35adbe174995256fa90738b79274e9d854ebd533a57d6b0c3",
+  "evidence": [
+    {
+      "accounts": {
+        "cash": "0/1",
+        "fees": "0/1",
+        "financing": "0/1",
+        "hedge_gross_pnl": "0/1",
+        "option_cash": "0/1",
+        "option_fees": "0/1",
+        "option_gross_pnl": "0/1",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "0/1",
+        "option_value": "0/1",
+        "stock_cash": "0/1",
+        "stock_fees": "0/1",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "0/1",
+        "stock_value": "0/1",
+        "total_pnl": "0/1"
+      },
+      "greeks": {
+        "delta": 0.0,
+        "gamma": 0.0,
+        "option_delta": 0.0,
+        "rho": 0.0,
+        "theta": 0.0,
+        "vega": 0.0
+      },
+      "option_ledger": [],
+      "step": 0,
+      "stock_evidence_digest": "8e87852b33277a01c15d37df73be220a7de5fb6dc9f313fdbfe812f1103fe926"
+    },
+    {
+      "accounts": {
+        "cash": "-470759/2500",
+        "fees": "1/20",
+        "financing": "0/1",
+        "hedge_gross_pnl": "0/1",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-30001/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-30001/20000",
+        "option_value": "3735071/20000",
+        "stock_cash": "0/1",
+        "stock_fees": "0/1",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "0/1",
+        "stock_value": "0/1",
+        "total_pnl": "-31001/20000"
+      },
+      "greeks": {
+        "delta": 50.93376796687241,
+        "gamma": 8.519076531463785,
+        "option_delta": 50.93376796687241,
+        "rho": 268.8560659349457,
+        "theta": -1703.8153062927568,
+        "vega": 933.5974281056201
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 0,
+      "stock_evidence_digest": "8e87852b33277a01c15d37df73be220a7de5fb6dc9f313fdbfe812f1103fe926"
+    },
+    {
+      "accounts": {
+        "cash": "-470759/2500",
+        "fees": "1/20",
+        "financing": "0/1",
+        "hedge_gross_pnl": "0/1",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-30001/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-30001/20000",
+        "option_value": "3735071/20000",
+        "stock_cash": "0/1",
+        "stock_fees": "0/1",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "0/1",
+        "stock_value": "0/1",
+        "total_pnl": "-31001/20000"
+      },
+      "greeks": {
+        "delta": 50.93376796687241,
+        "gamma": 8.519076531463785,
+        "option_delta": 50.93376796687241,
+        "rho": 268.8560659349457,
+        "theta": -1703.8153062927568,
+        "vega": 933.5974281056201
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 0,
+      "stock_evidence_digest": "8e87852b33277a01c15d37df73be220a7de5fb6dc9f313fdbfe812f1103fe926"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "-51/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-30001/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-30001/20000",
+        "option_value": "3735071/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "-51/100",
+        "stock_value": "-5100/1",
+        "total_pnl": "-42221/20000"
+      },
+      "greeks": {
+        "delta": -0.06623203312759074,
+        "gamma": 8.519076531463785,
+        "option_delta": 50.93376796687241,
+        "rho": 268.8560659349457,
+        "theta": -1703.8153062927568,
+        "vega": 933.5974281056201
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 0,
+      "stock_evidence_digest": "35ab599f4e635bf3e2b6f7aabfdea95b3f026dfe291fa7bf250aadf5b7ce2b92"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "9639/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-1745187/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-1745187/20000",
+        "option_value": "403977/4000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "9639/100",
+        "stock_value": "-50031/10",
+        "total_pnl": "180593/20000"
+      },
+      "greeks": {
+        "delta": -16.452795467292447,
+        "gamma": 8.234879810057258,
+        "option_delta": 34.54720453270755,
+        "rho": 171.16066666905004,
+        "theta": -1584.9854337773027,
+        "vega": 825.0609107333904
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 1,
+      "stock_evidence_digest": "5f973e2cc71e785ae9bae0a70b63a6f847a1644aa366cb33d1945fb218d8f48f"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "11271/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2042703/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2042703/20000",
+        "option_value": "1722369/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "11271/100",
+        "stock_value": "-249339/50",
+        "total_pnl": "209477/20000"
+      },
+      "greeks": {
+        "delta": -19.554699985954137,
+        "gamma": 8.173839054474634,
+        "option_delta": 31.445300014045863,
+        "rho": 147.3831625642631,
+        "theta": -1562.989799059114,
+        "vega": 770.7894899469603
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 2,
+      "stock_evidence_digest": "7e205f7de200fa0dc8c1473b183b6209b53f34cded2399e33206b644fe01841c"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "6171/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-1425007/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-1425007/20000",
+        "option_value": "468013/4000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "6171/100",
+        "stock_value": "-251889/50",
+        "total_pnl": "-192827/20000"
+      },
+      "greeks": {
+        "delta": -11.365103959238475,
+        "gamma": 9.039303919572957,
+        "option_delta": 39.634896040761525,
+        "rho": 176.89928886554625,
+        "theta": -1764.018062786153,
+        "vega": 821.5974539004
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 3,
+      "stock_evidence_digest": "75aa77f86028ed48c21e1274e0095f823f5ea05a5c4976741add5206c0c0dda8"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "1071/20",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-1394949/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-1394949/20000",
+        "option_value": "2370123/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "1071/20",
+        "stock_value": "-252297/50",
+        "total_pnl": "-325969/20000"
+      },
+      "greeks": {
+        "delta": -10.233482172072463,
+        "gamma": 9.37021716917318,
+        "option_delta": 40.76651782792754,
+        "rho": 171.6135066669244,
+        "theta": -1834.524280557568,
+        "vega": 804.1750270937283
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 4,
+      "stock_evidence_digest": "bf800c84dbf0acf01a4da49d4e87670b9891054ec4d0877c013278826d866333"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "4539/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2036379/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2036379/20000",
+        "option_value": "1728693/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "4539/50",
+        "stock_value": "-500871/100",
+        "total_pnl": "-222799/20000"
+      },
+      "greeks": {
+        "delta": -17.466186621718713,
+        "gamma": 9.152975812052437,
+        "option_delta": 33.53381337828129,
+        "rho": 131.79127907248244,
+        "theta": -1765.6463965921798,
+        "vega": 725.608108188567
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 5,
+      "stock_evidence_digest": "f677b77e8955f10c69263709c697b8a601703b5ced2bfeeb60f086fcf9616488"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "1734/25",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-73637/800",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-73637/800",
+        "option_value": "1924147/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "1734/25",
+        "stock_value": "-503013/100",
+        "total_pnl": "-91149/4000"
+      },
+      "greeks": {
+        "delta": -14.02801959779265,
+        "gamma": 9.770857242806017,
+        "option_delta": 36.97198040220735,
+        "rho": 136.17739064709215,
+        "theta": -1900.9939293098068,
+        "vega": 729.1483564475972
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 6,
+      "stock_evidence_digest": "0128d36b46f359dbf547191e2761ed3a4dfb9661437da5a83095b7e72c87392c"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "2499/25",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2348449/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2348449/20000",
+        "option_value": "1416623/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "2499/25",
+        "stock_value": "-499953/100",
+        "total_pnl": "-351269/20000"
+      },
+      "greeks": {
+        "delta": -20.43664819654321,
+        "gamma": 9.475438304618319,
+        "option_delta": 30.56335180345679,
+        "rho": 104.18856181792329,
+        "theta": -1821.1566716535995,
+        "vega": 648.6311433286793
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 7,
+      "stock_evidence_digest": "aa7d43a33ce8a1a0df02a866e4542147022d5fd5ba721114860c9a4056fce4e7"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "4233/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-452409/4000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-452409/4000",
+        "option_value": "1503027/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "4233/50",
+        "stock_value": "-501483/100",
+        "total_pnl": "-114173/4000"
+      },
+      "greeks": {
+        "delta": -18.22989308128122,
+        "gamma": 10.127527778947016,
+        "option_delta": 32.77010691871878,
+        "rho": 103.46739574699467,
+        "theta": -1958.4185634704916,
+        "vega": 643.8636373053671
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 8,
+      "stock_evidence_digest": "c0b2c47a8939a6151ce3961a1e4713ab489df2f720c006940d861462b9d8fe33"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "10251/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-516507/4000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-516507/4000",
+        "option_value": "1182537/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "10251/100",
+        "stock_value": "-249849/50",
+        "total_pnl": "-106871/4000"
+      },
+      "greeks": {
+        "delta": -22.57945725152891,
+        "gamma": 9.96653391356075,
+        "option_delta": 28.42054274847109,
+        "rho": 82.13889745212035,
+        "theta": -1913.5905375901973,
+        "vega": 576.6985181778676
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 9,
+      "stock_evidence_digest": "9e6443ac75f765c4119c641c8bad30eda7e660c820ff24efc2725c795bcb62da"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "2397/25",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2615923/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2615923/20000",
+        "option_value": "1149149/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "2397/25",
+        "stock_value": "-500361/100",
+        "total_pnl": "-700343/20000"
+      },
+      "greeks": {
+        "delta": -22.22043449844625,
+        "gamma": 10.50160630947,
+        "option_delta": 28.77956550155375,
+        "rho": 75.78371968423613,
+        "theta": -2021.679373952368,
+        "vega": 553.8847599869501
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 10,
+      "stock_evidence_digest": "55cc7122f8be3c7db3ef19aefac2f4a89b508327504b59e5031b7f9292626ebe"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "12597/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3019027/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3019027/20000",
+        "option_value": "149209/4000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "12597/100",
+        "stock_value": "-124338/25",
+        "total_pnl": "-501647/20000"
+      },
+      "greeks": {
+        "delta": -29.34583533726785,
+        "gamma": 9.580005456745786,
+        "option_delta": 21.65416466273215,
+        "rho": 51.14988321617769,
+        "theta": -1822.1458545294627,
+        "vega": 449.2962381031551
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 11,
+      "stock_evidence_digest": "dc5e25af0fe4415e9538bd10f815c06d4bbd08b386c62f884ad22f6e06b34c12"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "15249/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3305163/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3305163/20000",
+        "option_value": "459909/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "15249/100",
+        "stock_value": "-4947/1",
+        "total_pnl": "-257383/20000"
+      },
+      "greeks": {
+        "delta": -35.468438755200744,
+        "gamma": 8.307772219156941,
+        "option_delta": 15.531561244799258,
+        "rho": 32.51651436653427,
+        "theta": -1563.3565762009534,
+        "vega": 342.6534961536336
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 12,
+      "stock_evidence_digest": "69396aaab83ce1d88ead93cde9ce76df68db99e01738d17720346f03360e6b1c"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "12087/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3184229/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3184229/20000",
+        "option_value": "580843/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "12087/100",
+        "stock_value": "-248931/50",
+        "total_pnl": "-768849/20000"
+      },
+      "greeks": {
+        "delta": -31.3957270769661,
+        "gamma": 10.230244122884372,
+        "option_delta": 19.6042729230339,
+        "rho": 36.145449063696475,
+        "theta": -1949.8158644232087,
+        "vega": 373.93728906746463
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 13,
+      "stock_evidence_digest": "ff98de130f9d2a7cf37dddafb8ed04e521e359cb56ef6530e231c89a6d1fb8ea"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "13923/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3406527/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3406527/20000",
+        "option_value": "71709/4000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "13923/100",
+        "stock_value": "-248013/50",
+        "total_pnl": "-623947/20000"
+      },
+      "greeks": {
+        "delta": -36.783259806835204,
+        "gamma": 9.01801248574369,
+        "option_delta": 14.216740193164792,
+        "rho": 22.43495126965956,
+        "theta": -1706.1191529157468,
+        "vega": 280.4579429450543
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 14,
+      "stock_evidence_digest": "5a9ad402fe061e78379c0df10a99ab9054c1c18bb7379d26311604e2b8d86dba"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "9027/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3643321/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3643321/20000",
+        "option_value": "121751/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "9027/50",
+        "stock_value": "-98379/20",
+        "total_pnl": "-34541/20000"
+      },
+      "greeks": {
+        "delta": -44.72918256805644,
+        "gamma": 5.46139159910432,
+        "option_delta": 6.270817431943561,
+        "rho": 8.201818824505503,
+        "theta": -1016.1031028661372,
+        "vega": 139.19220587207352
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 15,
+      "stock_evidence_digest": "4f6cca83537712468767ec7d4c074cf55782dca8d95158f41d0551fccb855cff"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "2091/25",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-3261183/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-3261183/20000",
+        "option_value": "503889/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "2091/25",
+        "stock_value": "-100317/20",
+        "total_pnl": "-1590403/20000"
+      },
+      "greeks": {
+        "delta": -29.353443476515842,
+        "gamma": 14.245839200580996,
+        "option_delta": 21.646556523484158,
+        "rho": 23.054733077784654,
+        "theta": -2755.920987336837,
+        "vega": 302.0187383382834
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 16,
+      "stock_evidence_digest": "fe5ced8bd304fa81834860a3a45d925ab3f8bb68640819870c2bac61170432d0"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "1989/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2978389/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2978389/20000",
+        "option_value": "786683/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "1989/50",
+        "stock_value": "-505971/100",
+        "total_pnl": "-2184809/20000"
+      },
+      "greeks": {
+        "delta": -17.580528671857145,
+        "gamma": 20.233251471623344,
+        "option_delta": 33.419471328142855,
+        "rho": 26.927766469974358,
+        "theta": -3982.965771119207,
+        "vega": 327.3670496810307
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 17,
+      "stock_evidence_digest": "1cd0f30a42969364d5b0fb219132290e8e517e2a11421b0418301590f7286230"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "867/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-580599/4000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-580599/4000",
+        "option_value": "862077/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "867/50",
+        "stock_value": "-101643/20",
+        "total_pnl": "-511643/4000"
+      },
+      "greeks": {
+        "delta": -10.073043930664696,
+        "gamma": 26.33931899498464,
+        "option_delta": 40.926956069335304,
+        "rho": 22.111053871755686,
+        "theta": -5231.053283735489,
+        "vega": 286.6330566430405
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 18,
+      "stock_evidence_digest": "9f4d386514898a9bbeac4f10e4a8bc0db5c99b60386b67b362353ab2b8d1e428"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "-561/50",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-2702203/20000",
+        "option_realised_gross": "0/1",
+        "option_unrealised": "-2702203/20000",
+        "option_value": "1062869/20000",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "-561/50",
+        "stock_value": "-511071/100",
+        "total_pnl": "-2928623/20000"
+      },
+      "greeks": {
+        "delta": 7.14585135154168,
+        "gamma": 37.23351168105962,
+        "option_delta": 58.14585135154168,
+        "rho": 15.818225495447438,
+        "theta": -7478.011325981316,
+        "vega": 204.8770226296251
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        }
+      ],
+      "step": 19,
+      "stock_evidence_digest": "a95d8e2c75af4d8fe444bedea53c2a76f27d72e31e23aa35c2ce5cb578380c64"
+    },
+    {
+      "accounts": {
+        "cash": "24555677/5000",
+        "fees": "101/1000",
+        "financing": "0/1",
+        "hedge_gross_pnl": "51/100",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-235317/1250",
+        "option_realised_gross": "-235317/1250",
+        "option_unrealised": "0/1",
+        "option_value": "0/1",
+        "stock_cash": "5099439/1000",
+        "stock_fees": "51/1000",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "51/100",
+        "stock_value": "-254949/50",
+        "total_pnl": "-939223/5000"
+      },
+      "greeks": {
+        "delta": -51.0,
+        "gamma": 0.0,
+        "option_delta": 0.0,
+        "rho": 0.0,
+        "theta": 0.0,
+        "vega": 0.0
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        },
+        {
+          "cash_flow": "0/1",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "0/1",
+          "id": "settlement-QL-STOCK:call:100:4/73:x100",
+          "kind": "settlement",
+          "multiplier": 100,
+          "premium": "0/1",
+          "quantity": -1
+        }
+      ],
+      "step": 20,
+      "stock_evidence_digest": "8d812d749542e670b000c88d5ef44a8fa6f0abc68ae3bbba664ce486fbe8895e"
+    },
+    {
+      "accounts": {
+        "cash": "-235507/1250",
+        "fees": "19/125",
+        "financing": "0/1",
+        "hedge_gross_pnl": "0/1",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-235317/1250",
+        "option_realised_gross": "-235317/1250",
+        "option_unrealised": "0/1",
+        "option_value": "0/1",
+        "stock_cash": "-51/500",
+        "stock_fees": "51/500",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "0/1",
+        "stock_value": "0/1",
+        "total_pnl": "-235507/1250"
+      },
+      "greeks": {
+        "delta": 0.0,
+        "gamma": 0.0,
+        "option_delta": 0.0,
+        "rho": 0.0,
+        "theta": 0.0,
+        "vega": 0.0
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        },
+        {
+          "cash_flow": "0/1",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "0/1",
+          "id": "settlement-QL-STOCK:call:100:4/73:x100",
+          "kind": "settlement",
+          "multiplier": 100,
+          "premium": "0/1",
+          "quantity": -1
+        }
+      ],
+      "step": 20,
+      "stock_evidence_digest": "09a00cb68bd19a1ee8cdef2d20ea520359608b0b28d12f97517a260c73ae887e"
+    },
+    {
+      "accounts": {
+        "cash": "-235507/1250",
+        "fees": "19/125",
+        "financing": "0/1",
+        "hedge_gross_pnl": "0/1",
+        "option_cash": "-470759/2500",
+        "option_fees": "1/20",
+        "option_gross_pnl": "-235317/1250",
+        "option_realised_gross": "-235317/1250",
+        "option_unrealised": "0/1",
+        "option_value": "0/1",
+        "stock_cash": "-51/500",
+        "stock_fees": "51/500",
+        "stock_realised_gross": "0/1",
+        "stock_unrealised": "0/1",
+        "stock_value": "0/1",
+        "total_pnl": "-235507/1250"
+      },
+      "greeks": {
+        "delta": 0.0,
+        "gamma": 0.0,
+        "option_delta": 0.0,
+        "rho": 0.0,
+        "theta": 0.0,
+        "vega": 0.0
+      },
+      "option_ledger": [
+        {
+          "cash_flow": "-235317/1250",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "1/20",
+          "id": "option-1",
+          "kind": "trade",
+          "multiplier": 100,
+          "premium": "235317/125000",
+          "quantity": 1
+        },
+        {
+          "cash_flow": "0/1",
+          "contract_id": "QL-STOCK:call:100:4/73:x100",
+          "fee": "0/1",
+          "id": "settlement-QL-STOCK:call:100:4/73:x100",
+          "kind": "settlement",
+          "multiplier": 100,
+          "premium": "0/1",
+          "quantity": -1
+        }
+      ],
+      "step": 20,
+      "stock_evidence_digest": "2ce4cf4e012086925bf454e3d6636d2e0d40499fd19a86be589879b17021962b"
+    }
+  ],
+  "final": {
+    "accounts": {
+      "absolute_residual_delta": 0.0,
+      "cash": -188.4056,
+      "drawdown": 198.87945,
+      "fees": 0.152,
+      "financing": 0.0,
+      "gross_hedging_error": -188.2536,
+      "hedge_gross_pnl": 0.0,
+      "hedges": 2,
+      "max_absolute_delta": 51.0,
+      "max_absolute_gamma": 37.23351168105962,
+      "max_absolute_vega": 933.5974281056201,
+      "net_pnl": -188.4056,
+      "option_cash": -188.3036,
+      "option_fees": 0.05,
+      "option_gross_pnl": -188.2536,
+      "option_realised_gross": -188.2536,
+      "option_unrealised": 0.0,
+      "option_value": 0.0,
+      "realised_volatility": 0.15524941279301246,
+      "residual_delta": 0.0,
+      "rms_delta": 23.371146733447965,
+      "stock_cash": -0.102,
+      "stock_fees": 0.102,
+      "stock_realised_gross": 0.0,
+      "stock_unrealised": 0.0,
+      "stock_value": 0.0,
+      "total_pnl": -188.4056,
+      "turnover": 102
+    },
+    "auto_frequency": 20,
+    "chain": [],
+    "current_volatility_input": 0.2,
+    "dividend_yield": 0,
+    "elapsed_days": 20.0,
+    "ending_quote_iv": null,
+    "greek_units": "Per underlying unit; vega/rho per 1.00 annual decimal; theta per model year",
+    "greeks": {
+      "delta": 0.0,
+      "gamma": 0.0,
+      "option_delta": 0.0,
+      "rho": 0.0,
+      "theta": 0.0,
+      "vega": 0.0
+    },
+    "hedges": [
+      {
+        "benchmark": true,
+        "order_id": "user-1",
+        "quantity": 51,
+        "side": "sell",
+        "step": 0
+      },
+      {
+        "benchmark": true,
+        "order_id": "user-2",
+        "quantity": 51,
+        "side": "buy",
+        "step": 20
+      }
+    ],
+    "history": [
+      {
+        "delta": 0.0,
+        "elapsed_days": 0.0,
+        "fees": 0.0,
+        "gamma": 0.0,
+        "hedge_pnl": 0.0,
+        "message": "Session opened; all instruments synthetic",
+        "option_pnl": 0.0,
+        "spot": 100.0,
+        "step": 0,
+        "stock_position": 0,
+        "total_pnl": 0.0,
+        "vega": 0.0
+      },
+      {
+        "delta": 50.93376796687241,
+        "elapsed_days": 0.0,
+        "fees": 0.05,
+        "gamma": 8.519076531463785,
+        "hedge_pnl": 0.0,
+        "message": "option order",
+        "option_pnl": -1.50005,
+        "spot": 100.0,
+        "step": 0,
+        "stock_position": 0,
+        "total_pnl": -1.55005,
+        "vega": 933.5974281056201
+      },
+      {
+        "delta": 50.93376796687241,
+        "elapsed_days": 0.0,
+        "fees": 0.05,
+        "gamma": 8.519076531463785,
+        "hedge_pnl": 0.0,
+        "message": "set auto",
+        "option_pnl": -1.50005,
+        "spot": 100.0,
+        "step": 0,
+        "stock_position": 0,
+        "total_pnl": -1.55005,
+        "vega": 933.5974281056201
+      },
+      {
+        "delta": -0.06623203312759074,
+        "elapsed_days": 0.0,
+        "fees": 0.101,
+        "gamma": 8.519076531463785,
+        "hedge_pnl": -0.51,
+        "message": "hedge",
+        "option_pnl": -1.50005,
+        "spot": 100.0,
+        "step": 0,
+        "stock_position": -51,
+        "total_pnl": -2.11105,
+        "vega": 933.5974281056201
+      },
+      {
+        "delta": -16.452795467292447,
+        "elapsed_days": 1.0,
+        "fees": 0.101,
+        "gamma": 8.234879810057258,
+        "hedge_pnl": 96.39,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -87.25935,
+        "spot": 98.1,
+        "step": 1,
+        "stock_position": -51,
+        "total_pnl": 9.02965,
+        "vega": 825.0609107333904
+      },
+      {
+        "delta": -19.554699985954137,
+        "elapsed_days": 2.0,
+        "fees": 0.101,
+        "gamma": 8.173839054474634,
+        "hedge_pnl": 112.71,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -102.13515,
+        "spot": 97.78,
+        "step": 2,
+        "stock_position": -51,
+        "total_pnl": 10.47385,
+        "vega": 770.7894899469603
+      },
+      {
+        "delta": -11.365103959238475,
+        "elapsed_days": 3.0,
+        "fees": 0.101,
+        "gamma": 9.039303919572957,
+        "hedge_pnl": 61.71,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -71.25035,
+        "spot": 98.78,
+        "step": 3,
+        "stock_position": -51,
+        "total_pnl": -9.64135,
+        "vega": 821.5974539004
+      },
+      {
+        "delta": -10.233482172072463,
+        "elapsed_days": 4.0,
+        "fees": 0.101,
+        "gamma": 9.37021716917318,
+        "hedge_pnl": 53.55,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -69.74745,
+        "spot": 98.94,
+        "step": 4,
+        "stock_position": -51,
+        "total_pnl": -16.29845,
+        "vega": 804.1750270937283
+      },
+      {
+        "delta": -17.466186621718713,
+        "elapsed_days": 5.0,
+        "fees": 0.101,
+        "gamma": 9.152975812052437,
+        "hedge_pnl": 90.78,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -101.81895,
+        "spot": 98.21,
+        "step": 5,
+        "stock_position": -51,
+        "total_pnl": -11.13995,
+        "vega": 725.608108188567
+      },
+      {
+        "delta": -14.02801959779265,
+        "elapsed_days": 6.0,
+        "fees": 0.101,
+        "gamma": 9.770857242806017,
+        "hedge_pnl": 69.36,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -92.04625,
+        "spot": 98.63,
+        "step": 6,
+        "stock_position": -51,
+        "total_pnl": -22.78725,
+        "vega": 729.1483564475972
+      },
+      {
+        "delta": -20.43664819654321,
+        "elapsed_days": 7.0,
+        "fees": 0.101,
+        "gamma": 9.475438304618319,
+        "hedge_pnl": 99.96,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -117.42245,
+        "spot": 98.03,
+        "step": 7,
+        "stock_position": -51,
+        "total_pnl": -17.56345,
+        "vega": 648.6311433286793
+      },
+      {
+        "delta": -18.22989308128122,
+        "elapsed_days": 8.0,
+        "fees": 0.101,
+        "gamma": 10.127527778947016,
+        "hedge_pnl": 84.66,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -113.10225,
+        "spot": 98.33,
+        "step": 8,
+        "stock_position": -51,
+        "total_pnl": -28.54325,
+        "vega": 643.8636373053671
+      },
+      {
+        "delta": -22.57945725152891,
+        "elapsed_days": 9.0,
+        "fees": 0.101,
+        "gamma": 9.96653391356075,
+        "hedge_pnl": 102.51,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -129.12675,
+        "spot": 97.98,
+        "step": 9,
+        "stock_position": -51,
+        "total_pnl": -26.71775,
+        "vega": 576.6985181778676
+      },
+      {
+        "delta": -22.22043449844625,
+        "elapsed_days": 10.0,
+        "fees": 0.101,
+        "gamma": 10.50160630947,
+        "hedge_pnl": 95.88,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -130.79615,
+        "spot": 98.11,
+        "step": 10,
+        "stock_position": -51,
+        "total_pnl": -35.01715,
+        "vega": 553.8847599869501
+      },
+      {
+        "delta": -29.34583533726785,
+        "elapsed_days": 11.0,
+        "fees": 0.101,
+        "gamma": 9.580005456745786,
+        "hedge_pnl": 125.97,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -150.95135,
+        "spot": 97.52,
+        "step": 11,
+        "stock_position": -51,
+        "total_pnl": -25.08235,
+        "vega": 449.2962381031551
+      },
+      {
+        "delta": -35.468438755200744,
+        "elapsed_days": 12.0,
+        "fees": 0.101,
+        "gamma": 8.307772219156941,
+        "hedge_pnl": 152.49,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -165.25815,
+        "spot": 97.0,
+        "step": 12,
+        "stock_position": -51,
+        "total_pnl": -12.86915,
+        "vega": 342.6534961536336
+      },
+      {
+        "delta": -31.3957270769661,
+        "elapsed_days": 13.0,
+        "fees": 0.101,
+        "gamma": 10.230244122884372,
+        "hedge_pnl": 120.87,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -159.21145,
+        "spot": 97.62,
+        "step": 13,
+        "stock_position": -51,
+        "total_pnl": -38.44245,
+        "vega": 373.93728906746463
+      },
+      {
+        "delta": -36.783259806835204,
+        "elapsed_days": 14.0,
+        "fees": 0.101,
+        "gamma": 9.01801248574369,
+        "hedge_pnl": 139.23,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -170.32635,
+        "spot": 97.26,
+        "step": 14,
+        "stock_position": -51,
+        "total_pnl": -31.19735,
+        "vega": 280.4579429450543
+      },
+      {
+        "delta": -44.72918256805644,
+        "elapsed_days": 15.0,
+        "fees": 0.101,
+        "gamma": 5.46139159910432,
+        "hedge_pnl": 180.54,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -182.16605,
+        "spot": 96.45,
+        "step": 15,
+        "stock_position": -51,
+        "total_pnl": -1.72705,
+        "vega": 139.19220587207352
+      },
+      {
+        "delta": -29.353443476515842,
+        "elapsed_days": 16.0,
+        "fees": 0.101,
+        "gamma": 14.245839200580996,
+        "hedge_pnl": 83.64,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -163.05915,
+        "spot": 98.35,
+        "step": 16,
+        "stock_position": -51,
+        "total_pnl": -79.52015,
+        "vega": 302.0187383382834
+      },
+      {
+        "delta": -17.580528671857145,
+        "elapsed_days": 17.0,
+        "fees": 0.101,
+        "gamma": 20.233251471623344,
+        "hedge_pnl": 39.78,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -148.91945,
+        "spot": 99.21,
+        "step": 17,
+        "stock_position": -51,
+        "total_pnl": -109.24045,
+        "vega": 327.3670496810307
+      },
+      {
+        "delta": -10.073043930664696,
+        "elapsed_days": 18.0,
+        "fees": 0.101,
+        "gamma": 26.33931899498464,
+        "hedge_pnl": 17.34,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -145.14975,
+        "spot": 99.65,
+        "step": 18,
+        "stock_position": -51,
+        "total_pnl": -127.91075,
+        "vega": 286.6330566430405
+      },
+      {
+        "delta": 7.14585135154168,
+        "elapsed_days": 19.0,
+        "fees": 0.101,
+        "gamma": 37.23351168105962,
+        "hedge_pnl": -11.22,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -135.11015,
+        "spot": 100.21,
+        "step": 19,
+        "stock_position": -51,
+        "total_pnl": -146.43115,
+        "vega": 204.8770226296251
+      },
+      {
+        "delta": -51.0,
+        "elapsed_days": 20.0,
+        "fees": 0.101,
+        "gamma": 0.0,
+        "hedge_pnl": 0.51,
+        "message": "Observed stock move; option time and quotes updated",
+        "option_pnl": -188.2536,
+        "spot": 99.98,
+        "step": 20,
+        "stock_position": -51,
+        "total_pnl": -187.8446,
+        "vega": 0.0
+      },
+      {
+        "delta": 0.0,
+        "elapsed_days": 20.0,
+        "fees": 0.152,
+        "gamma": 0.0,
+        "hedge_pnl": 0.0,
+        "message": "Automatic benchmark hedge used actual stock matching",
+        "option_pnl": -188.2536,
+        "spot": 99.98,
+        "step": 20,
+        "stock_position": 0,
+        "total_pnl": -188.4056,
+        "vega": 0.0
+      },
+      {
+        "delta": 0.0,
+        "elapsed_days": 20.0,
+        "fees": 0.152,
+        "gamma": 0.0,
+        "hedge_pnl": 0.0,
+        "message": "step",
+        "option_pnl": -188.2536,
+        "spot": 99.98,
+        "step": 20,
+        "stock_position": 0,
+        "total_pnl": -188.4056,
+        "vega": 0.0
+      }
+    ],
+    "mechanism": "Finite synthetic option dealer quotes; stock on Phase 1 FIFO exchange",
+    "option_trades": [
+      {
+        "cancelled": 0,
+        "contract_id": "QL-STOCK:call:100:4/73:x100",
+        "fee": 0.05,
+        "filled": 1,
+        "mechanism": "synthetic dealer quote; IOC",
+        "multiplier": 100,
+        "premium": 1.882536,
+        "premium_cash_flow": -188.2536,
+        "requested": 1,
+        "side": "buy",
+        "step": 0
+      }
+    ],
+    "positions": [
+      {
+        "expiry_days": 20.0,
+        "expiry_years": "4/73",
+        "id": "QL-STOCK:call:100:4/73:x100",
+        "mark": 0.0,
+        "multiplier": 100,
+        "position_greeks": {
+          "delta": 0,
+          "gamma": 0,
+          "rho": 0,
+          "theta": 0,
+          "vega": 0
+        },
+        "quantity": 0,
+        "realised_gross": -188.2536,
+        "remaining_days": 0.0,
+        "remaining_years": 0.0,
+        "settled": true,
+        "settlement": "European cash settlement",
+        "strike": 100.0,
+        "type": "call",
+        "underlying": "QL-STOCK",
+        "unrealised": 0.0,
+        "value": 0.0
+      }
+    ],
+    "process_volatility_setting": 0.2,
+    "rate": 0.0,
+    "revision": 4,
+    "selected": {
+      "expired": true,
+      "expiry_days": 20.0,
+      "expiry_spot": 99.98,
+      "expiry_years": "4/73",
+      "id": "QL-STOCK:call:100:4/73:x100",
+      "multiplier": 100,
+      "payoff": 0.0,
+      "remaining_days": 0.0,
+      "remaining_years": 0.0,
+      "settlement": "European cash settlement",
+      "strike": 100.0,
+      "time_value": 0,
+      "type": "call",
+      "underlying": "QL-STOCK"
+    },
+    "settlements": [
+      {
+        "cash_flow": "0/1",
+        "contract_id": "QL-STOCK:call:100:4/73:x100",
+        "fee": "0/1",
+        "id": "settlement-QL-STOCK:call:100:4/73:x100",
+        "kind": "settlement",
+        "multiplier": 100,
+        "premium": "0/1",
+        "quantity": -1
+      }
+    ],
+    "spot": 99.98,
+    "starting_greeks": {
+      "delta": 50.93376796687241,
+      "gamma": 8.519076531463785,
+      "option_delta": 50.93376796687241,
+      "rho": 268.8560659349457,
+      "theta": -1703.8153062927568,
+      "vega": 933.5974281056201
+    },
+    "starting_volatility_input": 0.2,
+    "status": "ended",
+    "step": 20,
+    "step_days": 1.0,
+    "steps": 20,
+    "stock": {
+      "account": {
+        "average_entry": null,
+        "buy_capacity": 100000,
+        "cash": "-0.10200",
+        "drawdown": "180.59100",
+        "exposure": "0.00000",
+        "fees": "0.10200",
+        "max_drawdown": "191.76000",
+        "position": 0,
+        "position_limit": 100000,
+        "realised": "-0.10200",
+        "sell_capacity": 100000,
+        "total_pnl": "-0.10200",
+        "unrealised": "0.00000"
+      },
+      "asks": [
+        {
+          "order_count": 1,
+          "own_quantity": 0,
+          "price": "99.99000",
+          "quantity": 949,
+          "queue": [
+            {
+              "id": "order-84",
+              "quantity": 949,
+              "yours": false
+            }
+          ]
+        },
+        {
+          "order_count": 1,
+          "own_quantity": 0,
+          "price": "100.00000",
+          "quantity": 4000,
+          "queue": [
+            {
+              "id": "order-85",
+              "quantity": 4000,
+              "yours": false
+            }
+          ]
+        }
+      ],
+      "best_ask": "99.99000",
+      "best_bid": "99.97000",
+      "bids": [
+        {
+          "order_count": 1,
+          "own_quantity": 0,
+          "price": "99.97000",
+          "quantity": 1000,
+          "queue": [
+            {
+              "id": "order-82",
+              "quantity": 1000,
+              "yours": false
+            }
+          ]
+        },
+        {
+          "order_count": 1,
+          "own_quantity": 0,
+          "price": "99.96000",
+          "quantity": 4000,
+          "queue": [
+            {
+              "id": "order-83",
+              "quantity": 4000,
+              "yours": false
+            }
+          ]
+        }
+      ],
+      "duration_us": 21000000,
+      "failure": null,
+      "glossary": {
+        "Ask": "A resting offer to sell. Best ask is the lowest visible selling price.",
+        "Bid": "A resting offer to buy. Best bid is the highest visible buying price.",
+        "Limit order": "Buy no higher, or sell no lower, than your limit. The remainder queues.",
+        "Market order": "Trade now against available opposite orders. Unfilled remainder cancels.",
+        "Mid": "Halfway between best bid and ask. Nobody promises to trade there.",
+        "P&L": "Profit and loss from opening equity. The public mark values unsold inventory.",
+        "Partial fill": "Only some requested units traded. A limit remainder may keep waiting.",
+        "Position": "Units owned: positive is long, negative is short. Buys add; sells subtract.",
+        "Spread": "Best ask minus best bid. It is a price gap, not guaranteed profit.",
+        "VWAP": "Sum of each fill's price \u00d7 quantity, divided by total filled units."
+      },
+      "history": [
+        {
+          "pnl": "0.00000",
+          "position": 0,
+          "reference": "100.00000",
+          "time_us": 0
+        },
+        {
+          "pnl": "-0.56100",
+          "position": -51,
+          "reference": "100.00000",
+          "time_us": 0
+        },
+        {
+          "pnl": "96.33900",
+          "position": -51,
+          "reference": "98.10000",
+          "time_us": 1000000
+        },
+        {
+          "pnl": "112.65900",
+          "position": -51,
+          "reference": "97.78000",
+          "time_us": 2000000
+        },
+        {
+          "pnl": "61.65900",
+          "position": -51,
+          "reference": "98.78000",
+          "time_us": 3000000
+        },
+        {
+          "pnl": "53.49900",
+          "position": -51,
+          "reference": "98.94000",
+          "time_us": 4000000
+        },
+        {
+          "pnl": "90.72900",
+          "position": -51,
+          "reference": "98.21000",
+          "time_us": 5000000
+        },
+        {
+          "pnl": "69.30900",
+          "position": -51,
+          "reference": "98.63000",
+          "time_us": 6000000
+        },
+        {
+          "pnl": "99.90900",
+          "position": -51,
+          "reference": "98.03000",
+          "time_us": 7000000
+        },
+        {
+          "pnl": "84.60900",
+          "position": -51,
+          "reference": "98.33000",
+          "time_us": 8000000
+        },
+        {
+          "pnl": "102.45900",
+          "position": -51,
+          "reference": "97.98000",
+          "time_us": 9000000
+        },
+        {
+          "pnl": "95.82900",
+          "position": -51,
+          "reference": "98.11000",
+          "time_us": 10000000
+        },
+        {
+          "pnl": "125.91900",
+          "position": -51,
+          "reference": "97.52000",
+          "time_us": 11000000
+        },
+        {
+          "pnl": "152.43900",
+          "position": -51,
+          "reference": "97.00000",
+          "time_us": 12000000
+        },
+        {
+          "pnl": "120.81900",
+          "position": -51,
+          "reference": "97.62000",
+          "time_us": 13000000
+        },
+        {
+          "pnl": "139.17900",
+          "position": -51,
+          "reference": "97.26000",
+          "time_us": 14000000
+        },
+        {
+          "pnl": "180.48900",
+          "position": -51,
+          "reference": "96.45000",
+          "time_us": 15000000
+        },
+        {
+          "pnl": "83.58900",
+          "position": -51,
+          "reference": "98.35000",
+          "time_us": 16000000
+        },
+        {
+          "pnl": "39.72900",
+          "position": -51,
+          "reference": "99.21000",
+          "time_us": 17000000
+        },
+        {
+          "pnl": "17.28900",
+          "position": -51,
+          "reference": "99.65000",
+          "time_us": 18000000
+        },
+        {
+          "pnl": "-11.27100",
+          "position": -51,
+          "reference": "100.21000",
+          "time_us": 19000000
+        },
+        {
+          "pnl": "0.45900",
+          "position": -51,
+          "reference": "99.98000",
+          "time_us": 20000000
+        },
+        {
+          "pnl": "-0.10200",
+          "position": 0,
+          "reference": "99.98000",
+          "time_us": 20000000
+        }
+      ],
+      "last_price": "99.99000",
+      "markouts": [
+        {
+          "horizon": 1,
+          "observed_time_us": 1000000,
+          "role": "aggressor",
+          "status": "matured",
+          "trade_id": 1,
+          "value": "1.89000"
+        },
+        {
+          "horizon": 5,
+          "observed_time_us": 5000000,
+          "role": "aggressor",
+          "status": "matured",
+          "trade_id": 1,
+          "value": "1.78000"
+        },
+        {
+          "horizon": 20,
+          "observed_time_us": 20000000,
+          "role": "aggressor",
+          "status": "matured",
+          "trade_id": 1,
+          "value": "0.01000"
+        },
+        {
+          "horizon": 1,
+          "observed_time_us": null,
+          "role": "aggressor",
+          "status": "pending",
+          "trade_id": 2,
+          "value": null
+        },
+        {
+          "horizon": 5,
+          "observed_time_us": null,
+          "role": "aggressor",
+          "status": "pending",
+          "trade_id": 2,
+          "value": null
+        },
+        {
+          "horizon": 20,
+          "observed_time_us": null,
+          "role": "aggressor",
+          "status": "pending",
+          "trade_id": 2,
+          "value": null
+        }
+      ],
+      "mid": "99.98000",
+      "mode": "free",
+      "objective": "Stock hedges execute against actual resting orders",
+      "orders": [
+        {
+          "cancelled": 0,
+          "filled": 51,
+          "fills": [
+            {
+              "fee": "0.05100",
+              "order_id": "user-1",
+              "price": "99.99000",
+              "quantity": 51,
+              "role": "aggressor",
+              "side": "sell",
+              "time_us": 0,
+              "trade_id": 1
+            }
+          ],
+          "order_id": "user-1",
+          "original": 51,
+          "price": null,
+          "remaining": 0,
+          "side": "sell",
+          "status": "filled",
+          "time_us": 0,
+          "type": "market",
+          "vwap": "99.99000",
+          "vwap_exact_ticks": "9999"
+        },
+        {
+          "cancelled": 0,
+          "filled": 51,
+          "fills": [
+            {
+              "fee": "0.05100",
+              "order_id": "user-2",
+              "price": "99.99000",
+              "quantity": 51,
+              "role": "aggressor",
+              "side": "buy",
+              "time_us": 20000000,
+              "trade_id": 2
+            }
+          ],
+          "order_id": "user-2",
+          "original": 51,
+          "price": null,
+          "remaining": 0,
+          "side": "buy",
+          "status": "filled",
+          "time_us": 20000000,
+          "type": "market",
+          "vwap": "99.99000",
+          "vwap_exact_ticks": "9999"
+        }
+      ],
+      "public_event": 22,
+      "quant": {
+        "aggressor_buy_volume": 51,
+        "aggressor_sell_volume": 51,
+        "depth_imbalance_top_5": 0.005126143330988039,
+        "flow_imbalance": 0.0,
+        "last_log_return": 0.0,
+        "realised_volatility_trade_window": 0.0,
+        "return_observations": 1,
+        "trade_window_count": 2
+      },
+      "reference": "99.98000",
+      "reference_source": "external midpoint",
+      "report": {
+        "average_absolute_notional": "5013.70800",
+        "average_absolute_position": 51.0,
+        "buy_vwap": "99.99000",
+        "cancelled_orders": 0,
+        "challenge": null,
+        "decisions": [
+          {
+            "event": 1,
+            "message": "You sell 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+            "observed_before": {
+              "best_ask": "100.01000",
+              "best_bid": "99.99000",
+              "position": 0,
+              "reference": "100.00000"
+            },
+            "position": -51,
+            "reference": "100.00000",
+            "time_us": 0
+          },
+          {
+            "event": 2,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.10000",
+            "time_us": 1000000
+          },
+          {
+            "event": 3,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.78000",
+            "time_us": 2000000
+          },
+          {
+            "event": 4,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.78000",
+            "time_us": 3000000
+          },
+          {
+            "event": 5,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.94000",
+            "time_us": 4000000
+          },
+          {
+            "event": 6,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.21000",
+            "time_us": 5000000
+          },
+          {
+            "event": 7,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.63000",
+            "time_us": 6000000
+          },
+          {
+            "event": 8,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.03000",
+            "time_us": 7000000
+          },
+          {
+            "event": 9,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.33000",
+            "time_us": 8000000
+          },
+          {
+            "event": 10,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.98000",
+            "time_us": 9000000
+          },
+          {
+            "event": 11,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.11000",
+            "time_us": 10000000
+          },
+          {
+            "event": 12,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.52000",
+            "time_us": 11000000
+          },
+          {
+            "event": 13,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.00000",
+            "time_us": 12000000
+          },
+          {
+            "event": 14,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.62000",
+            "time_us": 13000000
+          },
+          {
+            "event": 15,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "97.26000",
+            "time_us": 14000000
+          },
+          {
+            "event": 16,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "96.45000",
+            "time_us": 15000000
+          },
+          {
+            "event": 17,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "98.35000",
+            "time_us": 16000000
+          },
+          {
+            "event": 18,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "99.21000",
+            "time_us": 17000000
+          },
+          {
+            "event": 19,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "99.65000",
+            "time_us": 18000000
+          },
+          {
+            "event": 20,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "100.21000",
+            "time_us": 19000000
+          },
+          {
+            "event": 21,
+            "message": "Observed stock move; external FIFO liquidity refreshed",
+            "position": -51,
+            "reference": "99.98000",
+            "time_us": 20000000
+          },
+          {
+            "event": 22,
+            "message": "You buy 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+            "observed_before": {
+              "best_ask": "99.99000",
+              "best_bid": "99.97000",
+              "position": -51,
+              "reference": "99.98000"
+            },
+            "position": 0,
+            "reference": "99.98000",
+            "time_us": 20000000
+          },
+          {
+            "event": 22,
+            "message": "Session ended; open orders cancelled, remaining position marked",
+            "position": 0,
+            "reference": "99.98000",
+            "time_us": 20000000
+          }
+        ],
+        "fees": "0.10200",
+        "filled_units": 102,
+        "final_pnl": "-0.10200",
+        "limit_fill_rate": null,
+        "markouts": [
+          {
+            "horizon": 1,
+            "observed_time_us": 1000000,
+            "role": "aggressor",
+            "status": "matured",
+            "trade_id": 1,
+            "value": "1.89000"
+          },
+          {
+            "horizon": 5,
+            "observed_time_us": 5000000,
+            "role": "aggressor",
+            "status": "matured",
+            "trade_id": 1,
+            "value": "1.78000"
+          },
+          {
+            "horizon": 20,
+            "observed_time_us": 20000000,
+            "role": "aggressor",
+            "status": "matured",
+            "trade_id": 1,
+            "value": "0.01000"
+          },
+          {
+            "horizon": 1,
+            "observed_time_us": null,
+            "role": "aggressor",
+            "status": "pending",
+            "trade_id": 2,
+            "value": null
+          },
+          {
+            "horizon": 5,
+            "observed_time_us": null,
+            "role": "aggressor",
+            "status": "pending",
+            "trade_id": 2,
+            "value": null
+          },
+          {
+            "horizon": 20,
+            "observed_time_us": null,
+            "role": "aggressor",
+            "status": "pending",
+            "trade_id": 2,
+            "value": null
+          }
+        ],
+        "max_long_units": 0,
+        "max_short_units": -51,
+        "maximum_drawdown": "191.76000",
+        "orders_ever_partially_filled": 0,
+        "pooled_execution_vwap": "99.99000",
+        "realised_pnl": "-0.10200",
+        "sell_vwap": "99.99000",
+        "trade_count": 2,
+        "turnover": "10198.98000",
+        "unrealised_pnl": "0.00000",
+        "valuation_note": "Remaining inventory is marked, not liquidated. Markouts are diagnostics, never additional P&L. Outcomes do not grade reasoning."
+      },
+      "revision": 23,
+      "scenario": "Derivatives underlying",
+      "spread": "0.02000",
+      "status": "ended",
+      "tape": [
+        {
+          "price": "99.99000",
+          "quantity": 51,
+          "side": "sell",
+          "time_us": 0
+        },
+        {
+          "price": "99.99000",
+          "quantity": 51,
+          "side": "buy",
+          "time_us": 20000000
+        }
+      ],
+      "time_us": 20000000,
+      "timeline": [
+        {
+          "event": 1,
+          "message": "You sell 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+          "observed_before": {
+            "best_ask": "100.01000",
+            "best_bid": "99.99000",
+            "position": 0,
+            "reference": "100.00000"
+          },
+          "position": -51,
+          "reference": "100.00000",
+          "time_us": 0
+        },
+        {
+          "event": 2,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.10000",
+          "time_us": 1000000
+        },
+        {
+          "event": 3,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.78000",
+          "time_us": 2000000
+        },
+        {
+          "event": 4,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.78000",
+          "time_us": 3000000
+        },
+        {
+          "event": 5,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.94000",
+          "time_us": 4000000
+        },
+        {
+          "event": 6,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.21000",
+          "time_us": 5000000
+        },
+        {
+          "event": 7,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.63000",
+          "time_us": 6000000
+        },
+        {
+          "event": 8,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.03000",
+          "time_us": 7000000
+        },
+        {
+          "event": 9,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.33000",
+          "time_us": 8000000
+        },
+        {
+          "event": 10,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.98000",
+          "time_us": 9000000
+        },
+        {
+          "event": 11,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.11000",
+          "time_us": 10000000
+        },
+        {
+          "event": 12,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.52000",
+          "time_us": 11000000
+        },
+        {
+          "event": 13,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.00000",
+          "time_us": 12000000
+        },
+        {
+          "event": 14,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.62000",
+          "time_us": 13000000
+        },
+        {
+          "event": 15,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "97.26000",
+          "time_us": 14000000
+        },
+        {
+          "event": 16,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "96.45000",
+          "time_us": 15000000
+        },
+        {
+          "event": 17,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "98.35000",
+          "time_us": 16000000
+        },
+        {
+          "event": 18,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "99.21000",
+          "time_us": 17000000
+        },
+        {
+          "event": 19,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "99.65000",
+          "time_us": 18000000
+        },
+        {
+          "event": 20,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "100.21000",
+          "time_us": 19000000
+        },
+        {
+          "event": 21,
+          "message": "Observed stock move; external FIFO liquidity refreshed",
+          "position": -51,
+          "reference": "99.98000",
+          "time_us": 20000000
+        },
+        {
+          "event": 22,
+          "message": "You buy 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+          "observed_before": {
+            "best_ask": "99.99000",
+            "best_bid": "99.97000",
+            "position": -51,
+            "reference": "99.98000"
+          },
+          "position": 0,
+          "reference": "99.98000",
+          "time_us": 20000000
+        },
+        {
+          "event": 22,
+          "message": "Session ended; open orders cancelled, remaining position marked",
+          "position": 0,
+          "reference": "99.98000",
+          "time_us": 20000000
+        }
+      ],
+      "trades": [
+        {
+          "fee": "0.05100",
+          "order_id": "user-1",
+          "price": "99.99000",
+          "quantity": 51,
+          "role": "aggressor",
+          "side": "sell",
+          "time_us": 0,
+          "trade_id": 1
+        },
+        {
+          "fee": "0.05100",
+          "order_id": "user-2",
+          "price": "99.99000",
+          "quantity": 51,
+          "role": "aggressor",
+          "side": "buy",
+          "time_us": 20000000,
+          "trade_id": 2
+        }
+      ],
+      "tutor": {
+        "stage": "idle"
+      }
+    },
+    "valuation": "Option midpoint and stock public mark are not guaranteed liquidation prices"
+  },
+  "schema": "quantlab-options-v1",
+  "stock_evidence": [
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "0/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "0/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 3,
+                "order_id": "opening-2",
+                "price_ticks": 10001,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10001
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 4,
+                "order_id": "opening-3",
+                "price_ticks": 10002,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10002
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 1,
+                "order_id": "opening-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 2,
+                "order_id": "opening-1",
+                "price_ticks": 9998,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9998
+          }
+        ]
+      },
+      "cancelled": 0,
+      "kind": "opening",
+      "public_number": 0,
+      "submitted": 10000,
+      "time_us": 0
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "-561/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "-561/10",
+          "unrealised_pnl_ticks": "-51/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 3,
+                "order_id": "opening-2",
+                "price_ticks": 10001,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10001
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 4,
+                "order_id": "opening-3",
+                "price_ticks": 10002,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10002
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 1,
+                "order_id": "opening-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 2,
+                "order_id": "opening-1",
+                "price_ticks": 9998,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9998
+          }
+        ]
+      },
+      "cancelled": 0,
+      "kind": "order",
+      "observed": {
+        "best_ask": 10001,
+        "best_bid": 9999,
+        "position": 0,
+        "reference": "10000/1"
+      },
+      "order": {
+        "order_id": "user-1",
+        "quantity": 51,
+        "side": "sell"
+      },
+      "public_number": 1,
+      "report": {
+        "arrival_sequence": 5,
+        "buyer_filled_quantity": 51,
+        "cancelled_quantity": 0,
+        "order_id": "user-1",
+        "requested_quantity": 51,
+        "resting_quantity": 0,
+        "seller_filled_quantity": 51,
+        "trades": [
+          {
+            "aggressor_side": "sell",
+            "maker_order_id": "opening-0",
+            "price_ticks": 9999,
+            "quantity": 51,
+            "taker_order_id": "user-1",
+            "trade_id": 1
+          }
+        ]
+      },
+      "submitted": 10051,
+      "time_us": 0
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "-561/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10000/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "-561/10",
+          "unrealised_pnl_ticks": "-51/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 3,
+                "order_id": "opening-2",
+                "price_ticks": 10001,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10001
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 4,
+                "order_id": "opening-3",
+                "price_ticks": 10002,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10002
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 1,
+                "order_id": "opening-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 2,
+                "order_id": "opening-1",
+                "price_ticks": 9998,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9998
+          }
+        ]
+      },
+      "cancelled": 0,
+      "command": "order",
+      "kind": "command",
+      "public_number": 1,
+      "result": {
+        "message": "You sell 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+        "ok": true,
+        "order_id": "user-1"
+      },
+      "submitted": 10051,
+      "time_us": 0
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9810/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "9690/1",
+          "marked_value_ticks": "96339/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9810/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "96339/10",
+          "unrealised_pnl_ticks": "9639/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 8,
+                "order_id": "stock-1-sell-0",
+                "price_ticks": 9811,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9811
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 9,
+                "order_id": "stock-1-sell-1",
+                "price_ticks": 9812,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9812
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 6,
+                "order_id": "stock-1-buy-0",
+                "price_ticks": 9809,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9809
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 7,
+                "order_id": "stock-1-buy-1",
+                "price_ticks": 9808,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9808
+          }
+        ]
+      },
+      "cancelled": 9949,
+      "kind": "observed-stock",
+      "public_number": 2,
+      "spot_ticks": 9810,
+      "submitted": 20051,
+      "time_us": 1000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9778/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "11322/1",
+          "marked_value_ticks": "112659/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9778/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "112659/10",
+          "unrealised_pnl_ticks": "11271/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 12,
+                "order_id": "stock-2-sell-0",
+                "price_ticks": 9779,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9779
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 13,
+                "order_id": "stock-2-sell-1",
+                "price_ticks": 9780,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9780
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 10,
+                "order_id": "stock-2-buy-0",
+                "price_ticks": 9777,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9777
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 11,
+                "order_id": "stock-2-buy-1",
+                "price_ticks": 9776,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9776
+          }
+        ]
+      },
+      "cancelled": 19949,
+      "kind": "observed-stock",
+      "public_number": 3,
+      "spot_ticks": 9778,
+      "submitted": 30051,
+      "time_us": 2000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9878/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "6222/1",
+          "marked_value_ticks": "61659/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9878/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "61659/10",
+          "unrealised_pnl_ticks": "6171/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 16,
+                "order_id": "stock-3-sell-0",
+                "price_ticks": 9879,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9879
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 17,
+                "order_id": "stock-3-sell-1",
+                "price_ticks": 9880,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9880
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 14,
+                "order_id": "stock-3-buy-0",
+                "price_ticks": 9877,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9877
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 15,
+                "order_id": "stock-3-buy-1",
+                "price_ticks": 9876,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9876
+          }
+        ]
+      },
+      "cancelled": 29949,
+      "kind": "observed-stock",
+      "public_number": 4,
+      "spot_ticks": 9878,
+      "submitted": 40051,
+      "time_us": 3000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9894/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "5406/1",
+          "marked_value_ticks": "53499/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9894/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "53499/10",
+          "unrealised_pnl_ticks": "5355/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 20,
+                "order_id": "stock-4-sell-0",
+                "price_ticks": 9895,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9895
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 21,
+                "order_id": "stock-4-sell-1",
+                "price_ticks": 9896,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9896
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 18,
+                "order_id": "stock-4-buy-0",
+                "price_ticks": 9893,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9893
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 19,
+                "order_id": "stock-4-buy-1",
+                "price_ticks": 9892,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9892
+          }
+        ]
+      },
+      "cancelled": 39949,
+      "kind": "observed-stock",
+      "public_number": 5,
+      "spot_ticks": 9894,
+      "submitted": 50051,
+      "time_us": 4000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9821/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "9129/1",
+          "marked_value_ticks": "90729/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9821/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "90729/10",
+          "unrealised_pnl_ticks": "9078/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 24,
+                "order_id": "stock-5-sell-0",
+                "price_ticks": 9822,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9822
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 25,
+                "order_id": "stock-5-sell-1",
+                "price_ticks": 9823,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9823
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 22,
+                "order_id": "stock-5-buy-0",
+                "price_ticks": 9820,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9820
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 23,
+                "order_id": "stock-5-buy-1",
+                "price_ticks": 9819,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9819
+          }
+        ]
+      },
+      "cancelled": 49949,
+      "kind": "observed-stock",
+      "public_number": 6,
+      "spot_ticks": 9821,
+      "submitted": 60051,
+      "time_us": 5000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9863/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "6987/1",
+          "marked_value_ticks": "69309/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9863/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "69309/10",
+          "unrealised_pnl_ticks": "6936/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 28,
+                "order_id": "stock-6-sell-0",
+                "price_ticks": 9864,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9864
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 29,
+                "order_id": "stock-6-sell-1",
+                "price_ticks": 9865,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9865
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 26,
+                "order_id": "stock-6-buy-0",
+                "price_ticks": 9862,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9862
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 27,
+                "order_id": "stock-6-buy-1",
+                "price_ticks": 9861,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9861
+          }
+        ]
+      },
+      "cancelled": 59949,
+      "kind": "observed-stock",
+      "public_number": 7,
+      "spot_ticks": 9863,
+      "submitted": 70051,
+      "time_us": 6000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9803/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "10047/1",
+          "marked_value_ticks": "99909/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9803/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "99909/10",
+          "unrealised_pnl_ticks": "9996/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 32,
+                "order_id": "stock-7-sell-0",
+                "price_ticks": 9804,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9804
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 33,
+                "order_id": "stock-7-sell-1",
+                "price_ticks": 9805,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9805
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 30,
+                "order_id": "stock-7-buy-0",
+                "price_ticks": 9802,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9802
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 31,
+                "order_id": "stock-7-buy-1",
+                "price_ticks": 9801,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9801
+          }
+        ]
+      },
+      "cancelled": 69949,
+      "kind": "observed-stock",
+      "public_number": 8,
+      "spot_ticks": 9803,
+      "submitted": 80051,
+      "time_us": 7000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9833/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "8517/1",
+          "marked_value_ticks": "84609/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9833/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "84609/10",
+          "unrealised_pnl_ticks": "8466/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 36,
+                "order_id": "stock-8-sell-0",
+                "price_ticks": 9834,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9834
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 37,
+                "order_id": "stock-8-sell-1",
+                "price_ticks": 9835,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9835
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 34,
+                "order_id": "stock-8-buy-0",
+                "price_ticks": 9832,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9832
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 35,
+                "order_id": "stock-8-buy-1",
+                "price_ticks": 9831,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9831
+          }
+        ]
+      },
+      "cancelled": 79949,
+      "kind": "observed-stock",
+      "public_number": 9,
+      "spot_ticks": 9833,
+      "submitted": 90051,
+      "time_us": 8000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9798/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "10302/1",
+          "marked_value_ticks": "102459/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9798/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "102459/10",
+          "unrealised_pnl_ticks": "10251/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 40,
+                "order_id": "stock-9-sell-0",
+                "price_ticks": 9799,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9799
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 41,
+                "order_id": "stock-9-sell-1",
+                "price_ticks": 9800,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9800
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 38,
+                "order_id": "stock-9-buy-0",
+                "price_ticks": 9797,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9797
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 39,
+                "order_id": "stock-9-buy-1",
+                "price_ticks": 9796,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9796
+          }
+        ]
+      },
+      "cancelled": 89949,
+      "kind": "observed-stock",
+      "public_number": 10,
+      "spot_ticks": 9798,
+      "submitted": 100051,
+      "time_us": 9000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9811/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "9639/1",
+          "marked_value_ticks": "95829/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9811/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "95829/10",
+          "unrealised_pnl_ticks": "9588/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 44,
+                "order_id": "stock-10-sell-0",
+                "price_ticks": 9812,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9812
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 45,
+                "order_id": "stock-10-sell-1",
+                "price_ticks": 9813,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9813
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 42,
+                "order_id": "stock-10-buy-0",
+                "price_ticks": 9810,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9810
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 43,
+                "order_id": "stock-10-buy-1",
+                "price_ticks": 9809,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9809
+          }
+        ]
+      },
+      "cancelled": 99949,
+      "kind": "observed-stock",
+      "public_number": 11,
+      "spot_ticks": 9811,
+      "submitted": 110051,
+      "time_us": 10000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9752/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "12648/1",
+          "marked_value_ticks": "125919/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9752/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "125919/10",
+          "unrealised_pnl_ticks": "12597/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 48,
+                "order_id": "stock-11-sell-0",
+                "price_ticks": 9753,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9753
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 49,
+                "order_id": "stock-11-sell-1",
+                "price_ticks": 9754,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9754
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 46,
+                "order_id": "stock-11-buy-0",
+                "price_ticks": 9751,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9751
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 47,
+                "order_id": "stock-11-buy-1",
+                "price_ticks": 9750,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9750
+          }
+        ]
+      },
+      "cancelled": 109949,
+      "kind": "observed-stock",
+      "public_number": 12,
+      "spot_ticks": 9752,
+      "submitted": 120051,
+      "time_us": 11000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9700/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "15300/1",
+          "marked_value_ticks": "152439/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9700/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "152439/10",
+          "unrealised_pnl_ticks": "15249/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 52,
+                "order_id": "stock-12-sell-0",
+                "price_ticks": 9701,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9701
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 53,
+                "order_id": "stock-12-sell-1",
+                "price_ticks": 9702,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9702
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 50,
+                "order_id": "stock-12-buy-0",
+                "price_ticks": 9699,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9699
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 51,
+                "order_id": "stock-12-buy-1",
+                "price_ticks": 9698,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9698
+          }
+        ]
+      },
+      "cancelled": 119949,
+      "kind": "observed-stock",
+      "public_number": 13,
+      "spot_ticks": 9700,
+      "submitted": 130051,
+      "time_us": 12000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9762/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "12138/1",
+          "marked_value_ticks": "120819/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9762/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "120819/10",
+          "unrealised_pnl_ticks": "12087/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 56,
+                "order_id": "stock-13-sell-0",
+                "price_ticks": 9763,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9763
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 57,
+                "order_id": "stock-13-sell-1",
+                "price_ticks": 9764,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9764
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 54,
+                "order_id": "stock-13-buy-0",
+                "price_ticks": 9761,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9761
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 55,
+                "order_id": "stock-13-buy-1",
+                "price_ticks": 9760,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9760
+          }
+        ]
+      },
+      "cancelled": 129949,
+      "kind": "observed-stock",
+      "public_number": 14,
+      "spot_ticks": 9762,
+      "submitted": 140051,
+      "time_us": 13000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9726/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "13974/1",
+          "marked_value_ticks": "139179/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9726/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "139179/10",
+          "unrealised_pnl_ticks": "13923/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 60,
+                "order_id": "stock-14-sell-0",
+                "price_ticks": 9727,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9727
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 61,
+                "order_id": "stock-14-sell-1",
+                "price_ticks": 9728,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9728
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 58,
+                "order_id": "stock-14-buy-0",
+                "price_ticks": 9725,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9725
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 59,
+                "order_id": "stock-14-buy-1",
+                "price_ticks": 9724,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9724
+          }
+        ]
+      },
+      "cancelled": 139949,
+      "kind": "observed-stock",
+      "public_number": 15,
+      "spot_ticks": 9726,
+      "submitted": 150051,
+      "time_us": 14000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9645/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "18105/1",
+          "marked_value_ticks": "180489/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9645/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "180489/10",
+          "unrealised_pnl_ticks": "18054/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 64,
+                "order_id": "stock-15-sell-0",
+                "price_ticks": 9646,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9646
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 65,
+                "order_id": "stock-15-sell-1",
+                "price_ticks": 9647,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9647
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 62,
+                "order_id": "stock-15-buy-0",
+                "price_ticks": 9644,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9644
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 63,
+                "order_id": "stock-15-buy-1",
+                "price_ticks": 9643,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9643
+          }
+        ]
+      },
+      "cancelled": 149949,
+      "kind": "observed-stock",
+      "public_number": 16,
+      "spot_ticks": 9645,
+      "submitted": 160051,
+      "time_us": 15000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9835/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "8415/1",
+          "marked_value_ticks": "83589/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9835/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "83589/10",
+          "unrealised_pnl_ticks": "8364/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 68,
+                "order_id": "stock-16-sell-0",
+                "price_ticks": 9836,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9836
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 69,
+                "order_id": "stock-16-sell-1",
+                "price_ticks": 9837,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9837
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 66,
+                "order_id": "stock-16-buy-0",
+                "price_ticks": 9834,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9834
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 67,
+                "order_id": "stock-16-buy-1",
+                "price_ticks": 9833,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9833
+          }
+        ]
+      },
+      "cancelled": 159949,
+      "kind": "observed-stock",
+      "public_number": 17,
+      "spot_ticks": 9835,
+      "submitted": 170051,
+      "time_us": 16000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9921/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "4029/1",
+          "marked_value_ticks": "39729/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9921/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "39729/10",
+          "unrealised_pnl_ticks": "3978/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 72,
+                "order_id": "stock-17-sell-0",
+                "price_ticks": 9922,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9922
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 73,
+                "order_id": "stock-17-sell-1",
+                "price_ticks": 9923,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9923
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 70,
+                "order_id": "stock-17-buy-0",
+                "price_ticks": 9920,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9920
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 71,
+                "order_id": "stock-17-buy-1",
+                "price_ticks": 9919,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9919
+          }
+        ]
+      },
+      "cancelled": 169949,
+      "kind": "observed-stock",
+      "public_number": 18,
+      "spot_ticks": 9921,
+      "submitted": 180051,
+      "time_us": 17000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9965/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "1785/1",
+          "marked_value_ticks": "17289/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9965/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "17289/10",
+          "unrealised_pnl_ticks": "1734/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 76,
+                "order_id": "stock-18-sell-0",
+                "price_ticks": 9966,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9966
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 77,
+                "order_id": "stock-18-sell-1",
+                "price_ticks": 9967,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9967
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 74,
+                "order_id": "stock-18-buy-0",
+                "price_ticks": 9964,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9964
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 75,
+                "order_id": "stock-18-buy-1",
+                "price_ticks": 9963,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9963
+          }
+        ]
+      },
+      "cancelled": 179949,
+      "kind": "observed-stock",
+      "public_number": 19,
+      "spot_ticks": 9965,
+      "submitted": 190051,
+      "time_us": 18000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10021/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "-1071/1",
+          "marked_value_ticks": "-11271/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "10021/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "-11271/10",
+          "unrealised_pnl_ticks": "-1122/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 80,
+                "order_id": "stock-19-sell-0",
+                "price_ticks": 10022,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10022
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 81,
+                "order_id": "stock-19-sell-1",
+                "price_ticks": 10023,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10023
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 78,
+                "order_id": "stock-19-buy-0",
+                "price_ticks": 10020,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 10020
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 79,
+                "order_id": "stock-19-buy-1",
+                "price_ticks": 10019,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 10019
+          }
+        ]
+      },
+      "cancelled": 189949,
+      "kind": "observed-stock",
+      "public_number": 20,
+      "spot_ticks": 10021,
+      "submitted": 200051,
+      "time_us": 19000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "5099439/10",
+          "execution_cash_ticks": "509949/1",
+          "fees_ticks": "51/10",
+          "inventory": -51,
+          "inventory_movement_ticks": "102/1",
+          "marked_value_ticks": "459/10",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/10",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "-51/1",
+          "total_pnl_ticks": "459/10",
+          "unrealised_pnl_ticks": "51/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 84,
+                "order_id": "stock-20-sell-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 1000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 85,
+                "order_id": "stock-20-sell-1",
+                "price_ticks": 10000,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10000
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 82,
+                "order_id": "stock-20-buy-0",
+                "price_ticks": 9997,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9997
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 83,
+                "order_id": "stock-20-buy-1",
+                "price_ticks": 9996,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9996
+          }
+        ]
+      },
+      "cancelled": 199949,
+      "kind": "observed-stock",
+      "public_number": 21,
+      "spot_ticks": 9998,
+      "submitted": 210051,
+      "time_us": 20000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "-51/5",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "51/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "102/1",
+          "marked_value_ticks": "-51/5",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "-102/1",
+          "total_pnl_ticks": "-51/5",
+          "unrealised_pnl_ticks": "0/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 84,
+                "order_id": "stock-20-sell-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 85,
+                "order_id": "stock-20-sell-1",
+                "price_ticks": 10000,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10000
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 82,
+                "order_id": "stock-20-buy-0",
+                "price_ticks": 9997,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9997
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 83,
+                "order_id": "stock-20-buy-1",
+                "price_ticks": 9996,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9996
+          }
+        ]
+      },
+      "cancelled": 199949,
+      "kind": "order",
+      "observed": {
+        "best_ask": 9999,
+        "best_bid": 9997,
+        "position": -51,
+        "reference": "9998/1"
+      },
+      "order": {
+        "order_id": "user-2",
+        "quantity": 51,
+        "side": "buy"
+      },
+      "public_number": 22,
+      "report": {
+        "arrival_sequence": 86,
+        "buyer_filled_quantity": 51,
+        "cancelled_quantity": 0,
+        "order_id": "user-2",
+        "requested_quantity": 51,
+        "resting_quantity": 0,
+        "seller_filled_quantity": 51,
+        "trades": [
+          {
+            "aggressor_side": "buy",
+            "maker_order_id": "stock-20-sell-0",
+            "price_ticks": 9999,
+            "quantity": 51,
+            "taker_order_id": "user-2",
+            "trade_id": 2
+          }
+        ]
+      },
+      "submitted": 210102,
+      "time_us": 20000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "-51/5",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "51/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "102/1",
+          "marked_value_ticks": "-51/5",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "-102/1",
+          "total_pnl_ticks": "-51/5",
+          "unrealised_pnl_ticks": "0/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 84,
+                "order_id": "stock-20-sell-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 85,
+                "order_id": "stock-20-sell-1",
+                "price_ticks": 10000,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10000
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 82,
+                "order_id": "stock-20-buy-0",
+                "price_ticks": 9997,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9997
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 83,
+                "order_id": "stock-20-buy-1",
+                "price_ticks": 9996,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9996
+          }
+        ]
+      },
+      "cancelled": 199949,
+      "command": "order",
+      "kind": "command",
+      "public_number": 22,
+      "result": {
+        "message": "You buy 51 market: 51 filled, 0 resting, 0 cancelled; VWAP \u00a399.99000",
+        "ok": true,
+        "order_id": "user-2"
+      },
+      "submitted": 210102,
+      "time_us": 20000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "-51/5",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "51/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "102/1",
+          "marked_value_ticks": "-51/5",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "-102/1",
+          "total_pnl_ticks": "-51/5",
+          "unrealised_pnl_ticks": "0/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 84,
+                "order_id": "stock-20-sell-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 85,
+                "order_id": "stock-20-sell-1",
+                "price_ticks": 10000,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10000
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 82,
+                "order_id": "stock-20-buy-0",
+                "price_ticks": 9997,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9997
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 83,
+                "order_id": "stock-20-buy-1",
+                "price_ticks": 9996,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9996
+          }
+        ]
+      },
+      "cancelled": 199949,
+      "cancelled_orders": [],
+      "kind": "end",
+      "public_number": 22,
+      "submitted": 210102,
+      "time_us": 20000000
+    },
+    {
+      "accounts": {
+        "auto": {
+          "cash_ticks": "1000000/1",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "0/1",
+          "inventory": 0,
+          "inventory_movement_ticks": "0/1",
+          "marked_value_ticks": "1000000/1",
+          "maximum_absolute_inventory": 0,
+          "realised_pnl_ticks": "0/1",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "0/1",
+          "total_pnl_ticks": "0/1",
+          "unrealised_pnl_ticks": "0/1"
+        },
+        "user": {
+          "cash_ticks": "-51/5",
+          "execution_cash_ticks": "0/1",
+          "fees_ticks": "51/5",
+          "inventory": 0,
+          "inventory_movement_ticks": "102/1",
+          "marked_value_ticks": "-51/5",
+          "maximum_absolute_inventory": 51,
+          "realised_pnl_ticks": "-51/5",
+          "realised_trading_pnl_ticks": "0/1",
+          "reference_ticks": "9998/1",
+          "spread_capture_ticks": "-102/1",
+          "total_pnl_ticks": "-51/5",
+          "unrealised_pnl_ticks": "0/1"
+        }
+      },
+      "book": {
+        "asks": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 84,
+                "order_id": "stock-20-sell-0",
+                "price_ticks": 9999,
+                "remaining_quantity": 949,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 9999
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 85,
+                "order_id": "stock-20-sell-1",
+                "price_ticks": 10000,
+                "remaining_quantity": 4000,
+                "side": "sell"
+              }
+            ],
+            "price_ticks": 10000
+          }
+        ],
+        "bids": [
+          {
+            "orders": [
+              {
+                "arrival_sequence": 82,
+                "order_id": "stock-20-buy-0",
+                "price_ticks": 9997,
+                "remaining_quantity": 1000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9997
+          },
+          {
+            "orders": [
+              {
+                "arrival_sequence": 83,
+                "order_id": "stock-20-buy-1",
+                "price_ticks": 9996,
+                "remaining_quantity": 4000,
+                "side": "buy"
+              }
+            ],
+            "price_ticks": 9996
+          }
+        ]
+      },
+      "cancelled": 199949,
+      "command": "end",
+      "kind": "command",
+      "public_number": 22,
+      "result": {
+        "message": "end",
+        "ok": true
+      },
+      "submitted": 210102,
+      "time_us": 20000000
+    }
+  ],
+  "versions": {
+    "python": "3.14.0",
+    "quantlab": "0.8.0"
+  }
+}
